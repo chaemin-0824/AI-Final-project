@@ -20,8 +20,10 @@ Method | InfoVQA | ChartQA | DocVQA | SlideVQA | 평균 Δ vs Baseline
 cd "/home/chaemin/projects/AI algorithm study"
 source .venv/bin/activate
 
-# 0) Dry-run smoke test for the whole pipeline (no API/GPU required):
-SMOKE_LIMIT=2 bash scripts/smoke_test_ppt_pipeline.sh
+# 0) Dry-run smoke test for the whole pipeline (no API/GPU required). The
+#    smoke script is archived under backup/ as it is not part of the
+#    submitted reproduction path.
+SMOKE_LIMIT=2 bash backup/scripts/smoke_test_ppt_pipeline.sh
 
 # 1) Inspect the 4 PPT datasets:
 python scripts/prepare_visrag_datasets.py \

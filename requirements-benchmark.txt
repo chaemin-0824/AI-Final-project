@@ -1,35 +1,28 @@
-# Lightweight dependencies for the comparison harness.
-# Install full VisRAG dependencies separately when running model inference/GPU retrieval:
-#   pip install -r visrag/requirements.txt && pip install -e visrag && (cd visrag/timm_modified && pip install -e .)
+# Runtime dependencies for the Parsed-Visual RAG (v12-general) vs VisRAG
+# benchmark harness in this workspace. Reproduces results/ppt_format/
+# today_results_table.{md,csv,json} via scripts/run_today_ppt_pipeline.sh.
+#
+# NVIDIA driver 572.61 (CUDA 12.8 compatible). Install torch with CUDA 12.4
+# wheels so an RTX 4060 (8 GB) is detected:
+#   pip install --upgrade --force-reinstall torch torchvision \
+#       --index-url https://download.pytorch.org/whl/cu124
 
+# Core
 datasets>=2.18
 Pillow>=10.1
 numpy>=1.26
-scipy>=1.13
-openpyxl>=3.1
-pandas>=2.2
-google-generativeai>=0.7
-python-dotenv>=1.0
-langchain-core>=0.2
-langchain-community>=0.2
 rank_bm25>=0.2.2
-PyMuPDF>=1.24
+fsspec<=2026.2.0
+requests>=2.31
 
-# Required by v12_port (paper_visual_rag-derived modules) at runtime
-pdf2image>=1.17
-scikit-learn>=1.5
-
-# Generator backend deps (Qwen2-VL workspace default for PPT alignment).
-# transformers 4.51.x is the latest stable line that exposes Qwen2VLForConditionalGeneration.
-# Reinstall torch with cu124 wheels so RTX 4060 (driver 572.61 / cu128) sees GPU:
-#   pip install --upgrade --force-reinstall torch torchvision \
-#       --index-url https://download.pytorch.org/whl/cu124
+# Generator: Qwen2-VL-7B + bitsandbytes NF4 (workspace default)
+torch>=2.6
+torchvision>=0.21
 transformers>=4.51,<4.52
 qwen-vl-utils>=0.0.8
 accelerate>=0.34
-torch>=2.6
-torchvision>=0.21
-# 4-bit quantisation. We use bitsandbytes NF4 (replaces deprecated AutoAWQ).
 bitsandbytes>=0.43
-# datasets pin: keep fsspec under 2026.2.0 so datasets 4.x doesn't complain.
-fsspec<=2026.2.0
+
+# Optional generator backend: GPT-4o (paper API fallback)
+openai>=1.30
+python-dotenv>=1.0

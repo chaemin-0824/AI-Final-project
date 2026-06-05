@@ -1,0 +1,272 @@
+nohup: ignoring input
+==> Upstage parse InfoVQA first 100 qrels -> data/parsed/InfoVQA_first100_qrels_upstage.jsonl
+Generating train split:   0%|          | 0/459 [00:00<?, ? examples/s]Generating train split:  22%|██▏       | 100/459 [00:00<00:01, 254.71 examples/s]Generating train split:  65%|██████▌   | 300/459 [00:00<00:00, 613.15 examples/s]Generating train split: 100%|██████████| 459/459 [00:00<00:00, 739.56 examples/s]
+target_docids_from_qrels=29
+InfoVQA:36966.jpeg
+InfoVQA:37159.jpeg
+InfoVQA:37318.jpeg
+InfoVQA:41142.jpeg
+InfoVQA:41170.jpeg
+InfoVQA:43600.jpeg
+InfoVQA:43772.jpeg
+InfoVQA:34510.jpeg
+InfoVQA:34498.jpeg
+InfoVQA:42093.jpeg
+InfoVQA:42555.jpeg
+InfoVQA:41980.jpeg
+InfoVQA:41966.jpeg
+InfoVQA:42012.jpeg
+InfoVQA:42077.jpeg
+InfoVQA:41699.jpeg
+InfoVQA:41785.jpeg
+InfoVQA:41787.jpeg
+InfoVQA:42050.jpeg
+InfoVQA:42097.jpeg
+InfoVQA:41727.jpeg
+InfoVQA:35337.jpeg
+InfoVQA:41587.jpeg
+InfoVQA:45134.jpeg
+InfoVQA:35540.jpeg
+InfoVQA:35329.jpeg
+InfoVQA:35380.jpeg
+InfoVQA:41124.jpeg
+InfoVQA:41650.jpeg
+processed=29 output=data/parsed/InfoVQA_first100_qrels_upstage.jsonl
+==> Upstage parse ChartQA first 100 qrels -> data/parsed/ChartQA_first100_qrels_upstage.jsonl
+target_docids_from_qrels=60
+ChartQA:3960.png
+ChartQA:13750.png
+ChartQA:939.png
+ChartQA:4554.png
+ChartQA:OECD_DEATHS_FROM_CANCER_COL_CRI_SVN_000015.png
+ChartQA:4444.png
+ChartQA:12316.png
+ChartQA:13543.png
+ChartQA:16008.png
+ChartQA:7812.png
+ChartQA:15017697005003.png
+ChartQA:40414580016324.png
+ChartQA:69203350003800.png
+ChartQA:78465227007926.png
+ChartQA:15979830001410.png
+ChartQA:26767847002300.png
+ChartQA:39071385004003.png
+ChartQA:67940673002511.png
+ChartQA:72161631006508.png
+ChartQA:74801584018932.png
+ChartQA:3641.png
+ChartQA:4353.png
+ChartQA:5983.png
+ChartQA:8520.png
+ChartQA:9581.png
+ChartQA:9987.png
+ChartQA:93336229007592.png
+ChartQA:two_col_62141.png
+ChartQA:two_col_62148.png
+ChartQA:two_col_82108.png
+ChartQA:two_col_82496.png
+ChartQA:two_col_82565.png
+ChartQA:two_col_101214.png
+ChartQA:two_col_102054.png
+ChartQA:two_col_104528.png
+ChartQA:two_col_104683.png
+ChartQA:two_col_3017.png
+ChartQA:two_col_2536.png
+ChartQA:two_col_4228.png
+ChartQA:two_col_4340.png
+ChartQA:two_col_21800.png
+ChartQA:two_col_24236.png
+ChartQA:two_col_60182.png
+ChartQA:two_col_60414.png
+ChartQA:two_col_60664.png
+ChartQA:multi_col_1189.png
+ChartQA:multi_col_970.png
+ChartQA:multi_col_20328.png
+ChartQA:multi_col_20350.png
+ChartQA:multi_col_20387.png
+ChartQA:multi_col_20416.png
+ChartQA:multi_col_40633.png
+ChartQA:multi_col_40666.png
+ChartQA:multi_col_60979.png
+ChartQA:multi_col_80088.png
+ChartQA:two_col_101095.png
+ChartQA:two_col_4223.png
+ChartQA:two_col_101945.png
+ChartQA:multi_col_60653.png
+ChartQA:multi_col_60971.png
+processed=60 output=data/parsed/ChartQA_first100_qrels_upstage.jsonl
+==> Upstage parse MP-DocVQA first 100 qrels -> data/parsed/MP-DocVQA_first100_qrels_upstage.jsonl
+Generating train split:   0%|          | 0/741 [00:00<?, ? examples/s]Generating train split:  13%|█▎        | 100/741 [00:00<00:02, 250.51 examples/s]Generating train split:  27%|██▋       | 200/741 [00:00<00:01, 440.43 examples/s]Generating train split:  67%|██████▋   | 500/741 [00:00<00:00, 915.18 examples/s]Generating train split: 100%|██████████| 741/741 [00:00<00:00, 950.71 examples/s]
+target_docids_from_qrels=62
+MP-DocVQA:txpp0227_p9.jpg
+MP-DocVQA:snbx0223_p43.jpg
+MP-DocVQA:psyn0081_p29.jpg
+MP-DocVQA:snbx0223_p3.jpg
+MP-DocVQA:hldg0227_p6.jpg
+MP-DocVQA:flpp0227_p15.jpg
+MP-DocVQA:kqch0227_p2.jpg
+MP-DocVQA:snbx0223_p8.jpg
+MP-DocVQA:snbx0223_p14.jpg
+MP-DocVQA:xjvw0217_p1.jpg
+MP-DocVQA:fqvw0217_p33.jpg
+MP-DocVQA:jjvg0227_p7.jpg
+MP-DocVQA:snbx0223_p20.jpg
+MP-DocVQA:khxj0037_p3.jpg
+MP-DocVQA:txpp0227_p8.jpg
+MP-DocVQA:xkbv0228_p2.jpg
+MP-DocVQA:nrcj0037_p8.jpg
+MP-DocVQA:hyhk0037_p4.jpg
+MP-DocVQA:lycj0037_p5.jpg
+MP-DocVQA:xpcf0004_p1.jpg
+MP-DocVQA:sncj0037_p2.jpg
+MP-DocVQA:nnhk0228_p0.jpg
+MP-DocVQA:hjxj0037_p1.jpg
+MP-DocVQA:phxj0037_p0.jpg
+MP-DocVQA:mybv0228_p12.jpg
+MP-DocVQA:ynbx0223_p14.jpg
+MP-DocVQA:khbw0217_p1.jpg
+MP-DocVQA:rnbx0223_p203.jpg
+MP-DocVQA:rzbj0037_p2.jpg
+MP-DocVQA:rgcw0217_p6.jpg
+MP-DocVQA:sfmb0228_p78.jpg
+MP-DocVQA:mxxj0037_p1.jpg
+MP-DocVQA:hnvw0217_p7.jpg
+MP-DocVQA:zzfv0228_p2.jpg
+MP-DocVQA:khxj0037_p0.jpg
+MP-DocVQA:fxxj0037_p3.jpg
+MP-DocVQA:xqvw0217_p1.jpg
+MP-DocVQA:mtyj0226_p14.jpg
+MP-DocVQA:rgcw0217_p1.jpg
+MP-DocVQA:yhpj0226_p1.jpg
+MP-DocVQA:lkvw0217_p1.jpg
+MP-DocVQA:hhpj0226_p0.jpg
+MP-DocVQA:fyvw0217_p34.jpg
+MP-DocVQA:kmwn0226_p17.jpg
+MP-DocVQA:zkww0217_p1.jpg
+MP-DocVQA:gfhd0082_p8.jpg
+MP-DocVQA:kfdw0217_p0.jpg
+MP-DocVQA:yrvw0217_p54.jpg
+MP-DocVQA:lgpj0226_p0.jpg
+MP-DocVQA:kfpj0226_p1.jpg
+MP-DocVQA:qjgn0226_p193.jpg
+MP-DocVQA:hjpj0226_p2.jpg
+MP-DocVQA:mfpj0226_p0.jpg
+MP-DocVQA:gjpj0226_p5.jpg
+MP-DocVQA:mfnf0004_p0.jpg
+MP-DocVQA:xhfg0227_p40.jpg
+MP-DocVQA:lnbl0226_p8.jpg
+MP-DocVQA:npvw0217_p4.jpg
+MP-DocVQA:zyjf0226_p1.jpg
+MP-DocVQA:gyjf0226_p0.jpg
+MP-DocVQA:hkyh0078_p0.jpg
+MP-DocVQA:hjcw0217_p9.jpg
+processed=62 output=data/parsed/MP-DocVQA_first100_qrels_upstage.jsonl
+==> Upstage parse SlideVQA first 100 qrels -> data/parsed/SlideVQA_first100_qrels_upstage.jsonl
+Generating train split:   0%|          | 0/1284 [00:00<?, ? examples/s]Generating train split:  31%|███       | 400/1284 [00:00<00:00, 2928.89 examples/s]Generating train split: 100%|██████████| 1284/1284 [00:00<00:00, 5887.02 examples/s]Generating train split: 100%|██████████| 1284/1284 [00:00<00:00, 5372.61 examples/s]
+target_docids_from_qrels=97
+SlideVQA:2012-02-20fy11roadshow-120221022442-phpapp02_95__feb-20-2012-nestl-2011-fullyear-roadshow-presentation-7-1024.jpg
+SlideVQA:2012-02-20fy11roadshow-120221022442-phpapp02_95__feb-20-2012-nestl-2011-fullyear-roadshow-presentation-12-1024.jpg
+SlideVQA:2012-02-20fy11roadshow-120221022442-phpapp02_95__feb-20-2012-nestl-2011-fullyear-roadshow-presentation-13-1024.jpg
+SlideVQA:2012-02-20fy11roadshow-120221022442-phpapp02_95__feb-20-2012-nestl-2011-fullyear-roadshow-presentation-1-1024.jpg
+SlideVQA:8eeomnwqsmdmin6levsv-signature-2693c633d5e2c6d5cfd1372a7aa1d1a8df13f59c942a848ca9497686d609bddd-poli-150601151510-lva1-app6892_95__mobile-awareness-iaa-school-april-15-7-1024.jpg
+SlideVQA:a-151012171903-lva1-app6891_95__a-guide-to-indepth-investor-pitches-by-elevate-ventures-17-1024.jpg
+SlideVQA:advertisingpsychologyfinal-090705155755-phpapp02_95__advertising-psychology-17-1024.jpg
+SlideVQA:acuteappendicitis-110202065502-phpapp02_95__acute-appendicitis-15-1024.jpg
+SlideVQA:acuteappendicitis-110202065502-phpapp02_95__acute-appendicitis-3-1024.jpg
+SlideVQA:agileenterprise-reinventingorgs-150402022438-conversion-gate01_95__agile-enterprise-reinventing-organizations-5-1024.jpg
+SlideVQA:agileenterprise-reinventingorgs-150402022438-conversion-gate01_95__agile-enterprise-reinventing-organizations-14-1024.jpg
+SlideVQA:2014periorbitalandupperfaceamimodulebnl01332014x-140707165029-phpapp02_95__training-for-periorbital-and-upper-face-treatment-with-botox-and-juvederm-15-1024.jpg
+SlideVQA:8apr2015gdfsession4-150408094801-conversion-gate01_95__april-08th-2015-forum-on-generic-drugs-promise-of-regulatory-science-33-4-1024.jpg
+SlideVQA:8apr2015gdfsession4-150408094801-conversion-gate01_95__april-08th-2015-forum-on-generic-drugs-promise-of-regulatory-science-33-6-1024.jpg
+SlideVQA:5benefitsofanonprofittheoryofchange-160229202540_95__5-benefits-of-a-nonprofit-theory-of-change-9-1024.jpg
+SlideVQA:5benefitsofanonprofittheoryofchange-160229202540_95__5-benefits-of-a-nonprofit-theory-of-change-6-1024.jpg
+SlideVQA:2014globaldigitalsociallandscape-140803004322-phpapp02_95__2014-digital-landscape-overview-by-wearesocialsg-8-1024.jpg
+SlideVQA:2014-11-14-inriaprovappt-141112043127-conversion-gate02_95__a-behavioral-interpretation-of-resilience-and-antifragility-1-1024.jpg
+SlideVQA:20140706whatcanfundraiserslearnfromrappers-140707171243-phpapp02_95__what-fundraisers-can-learn-from-rappers-19-1024.jpg
+SlideVQA:20140706whatcanfundraiserslearnfromrappers-140707171243-phpapp02_95__what-fundraisers-can-learn-from-rappers-17-1024.jpg
+SlideVQA:2013alapurchasing-130214144910-phpapp02_95__purchasing-ebooks-for-your-library-6-1024.jpg
+SlideVQA:19-amines-wade7th-140409034223-phpapp02_95__19-amines-wade-7th-2-1024.jpg
+SlideVQA:afabric-manufacturing-150314104020-conversion-gate01_95__fabric-manufacturing-weaving-preparation-6-1024.jpg
+SlideVQA:afabric-manufacturing-150314104020-conversion-gate01_95__fabric-manufacturing-weaving-preparation-8-1024.jpg
+SlideVQA:141121organicwayforward-141123090600-conversion-gate02_95__organic-way-forward-7-1024.jpg
+SlideVQA:141121organicwayforward-141123090600-conversion-gate02_95__organic-way-forward-6-1024.jpg
+SlideVQA:chinatourismreport-100310054348-phpapp01_95__china-tourism-report-3-1024.jpg
+SlideVQA:chinatourismreport-100310054348-phpapp01_95__china-tourism-report-2-1024.jpg
+SlideVQA:bearing1-151117114834-lva1-app6892_95__bearing-description-about-basic-types-failure-causes-5-1024.jpg
+SlideVQA:bearing1-151117114834-lva1-app6892_95__bearing-description-about-basic-types-failure-causes-2-1024.jpg
+SlideVQA:autoreport-cs6-140415111854-phpapp02_95__auto-report-cs6-8-1024.jpg
+SlideVQA:bologna1-151118100554-lva1-app6892_95__principles-and-practice-of-open-science-7-1024.jpg
+SlideVQA:chapter-3-seawater-160218031855_95__chapter-3-seawater-11-1024.jpg
+SlideVQA:chapter-3-seawater-160218031855_95__chapter-3-seawater-16-1024.jpg
+SlideVQA:chapter-3-seawater-160218031855_95__chapter-3-seawater-8-1024.jpg
+SlideVQA:chapter-3-seawater-160218031855_95__chapter-3-seawater-19-1024.jpg
+SlideVQA:chapter-3-seawater-160218031855_95__chapter-3-seawater-12-1024.jpg
+SlideVQA:ch16-150313050025-conversion-gate01_95__chapter-16-creating-highperformance-work-systems-11-1024.jpg
+SlideVQA:ch16-150313050025-conversion-gate01_95__chapter-16-creating-highperformance-work-systems-7-1024.jpg
+SlideVQA:ch16-150313050025-conversion-gate01_95__chapter-16-creating-highperformance-work-systems-17-1024.jpg
+SlideVQA:antibiotics-141109111447-conversion-gate02_95__antibiotics-6-1024.jpg
+SlideVQA:antibiotics-141109111447-conversion-gate02_95__antibiotics-2-1024.jpg
+SlideVQA:antibiotics-141109111447-conversion-gate02_95__antibiotics-13-1024.jpg
+SlideVQA:antibiotics-141109111447-conversion-gate02_95__antibiotics-20-1024.jpg
+SlideVQA:consultselling-150818132925-lva1-app6892_95__consultative-selling-workshop-8-1024.jpg
+SlideVQA:amitpresentation-141220101151-conversion-gate01_95__keynote-presentation-mobile-app-lifecycle-and-ecosystem-9-1024.jpg
+SlideVQA:bookofdaniel-090827093753-phpapp01_95__the-book-of-daniel-5-1024.jpg
+SlideVQA:bookofdaniel-090827093753-phpapp01_95__the-book-of-daniel-16-1024.jpg
+SlideVQA:businesseppt-140818105213-phpapp01_95__business-environment-featuresmeaningimportanceobjectives-porters-model-14-1024.jpg
+SlideVQA:aynbrandt3workshopsocialmediaprimer-1219840114878232-9_95__ayn-brand-t3-workshop-social-media-web-20-primer-13-1024.jpg
+SlideVQA:cleanhydrocarbonsrenewableelectrificationsolarenergyinsouthernalberta-160323184734_95__clean-hydrocarbons-renewable-electrification-solar-energy-potential-in-southern-alberta-1-1024.jpg
+SlideVQA:cleanhydrocarbonsrenewableelectrificationsolarenergyinsouthernalberta-160323184734_95__clean-hydrocarbons-renewable-electrification-solar-energy-potential-in-southern-alberta-11-1024.jpg
+SlideVQA:alternativestotheimpulse-responsemodel-131125154606-phpapp02_95__alternatives-to-the-impulse-response-model-1-1024.jpg
+SlideVQA:asiasshoppingsafarifinalwebinardeckforparticipants-141105212832-conversion-gate01_95__asias-shopping-safari-6-1024.jpg
+SlideVQA:b2b-social-testing-lopez-141009140744-conversion-gate02_95__kick-your-social-strategy-into-overdrive-the-ins-outs-of-testing-social-13-1024.jpg
+SlideVQA:autonomouscar-140901094343-phpapp02_95__autonomous-car-9-1024.jpg
+SlideVQA:americalooksto2024keyfindings-140701054257-phpapp01_95__america-looks-to-2024-the-atlanticaspen-institute-survey-key-findings-8-1024.jpg
+SlideVQA:americalooksto2024keyfindings-140701054257-phpapp01_95__america-looks-to-2024-the-atlanticaspen-institute-survey-key-findings-9-1024.jpg
+SlideVQA:biosensorsinfoodindustry-presentation-150607065755-lva1-app6891_95__biosensors-in-food-industry-presentation-by-sonika-singh-niftem-mtech-first-year-5-1024.jpg
+SlideVQA:biosensorsinfoodindustry-presentation-150607065755-lva1-app6891_95__biosensors-in-food-industry-presentation-by-sonika-singh-niftem-mtech-first-year-9-1024.jpg
+SlideVQA:biosensorsinfoodindustry-presentation-150607065755-lva1-app6891_95__biosensors-in-food-industry-presentation-by-sonika-singh-niftem-mtech-first-year-18-1024.jpg
+SlideVQA:biosensorsinfoodindustry-presentation-150607065755-lva1-app6891_95__biosensors-in-food-industry-presentation-by-sonika-singh-niftem-mtech-first-year-10-1024.jpg
+SlideVQA:astudyoncustomerpreferebceandsatisfactiontowardsbajajbikes-150814133516-lva1-app6891_95__a-study-on-customer-preferebce-and-satisfaction-towards-bajaj-bikes-4-1024.jpg
+SlideVQA:astudyoncustomerpreferebceandsatisfactiontowardsbajajbikes-150814133516-lva1-app6891_95__a-study-on-customer-preferebce-and-satisfaction-towards-bajaj-bikes-12-1024.jpg
+SlideVQA:astudyoncustomerpreferebceandsatisfactiontowardsbajajbikes-150814133516-lva1-app6891_95__a-study-on-customer-preferebce-and-satisfaction-towards-bajaj-bikes-18-1024.jpg
+SlideVQA:b3m5kaeqm2w8n4bwcesw-140602121350-phpapp02_95__gcse-physics-revision-module-1-6-1024.jpg
+SlideVQA:b3m5kaeqm2w8n4bwcesw-140602121350-phpapp02_95__gcse-physics-revision-module-1-10-1024.jpg
+SlideVQA:b3m5kaeqm2w8n4bwcesw-140602121350-phpapp02_95__gcse-physics-revision-module-1-16-1024.jpg
+SlideVQA:cavarunsethi-ifrstrainings-accountingforserviceconcessionarrangements-ifric12-2015lii-150912122837-lva1-app6891_95__ca-varun-sethi-ifrs-trainings-ifric-12-accounting-for-service-concession-arrangements-2015-3-1024.jpg
+SlideVQA:biscuitandcookies-150315074901-conversion-gate01_95__biscuit-and-cookies-1-1024.jpg
+SlideVQA:biscuitandcookies-150315074901-conversion-gate01_95__biscuit-and-cookies-5-1024.jpg
+SlideVQA:biscuitandcookies-150315074901-conversion-gate01_95__biscuit-and-cookies-6-1024.jpg
+SlideVQA:citizenscience-practiceandpolicy-huji-151214131928_95__citizen-science-theory-practice-policy-workshop-8-1024.jpg
+SlideVQA:applicationandadvancesofpolymers-141224015235-conversion-gate02_95__application-and-advances-of-polymers-17-1024.jpg
+SlideVQA:beerindustryfinalslides-110814110012-phpapp01_95__beer-industry-1-1024.jpg
+SlideVQA:beerindustryfinalslides-110814110012-phpapp01_95__beer-industry-2-1024.jpg
+SlideVQA:ce22-1213274533884412-8_95__how-to-build-vibrant-communities-8-1024.jpg
+SlideVQA:businesssystempresentation-150211162506-conversion-gate02_95__rodan-fields-business-presentation-2015-8-1024.jpg
+SlideVQA:architecture-150102195159-conversion-gate01_95__openstack-architecture-12-1024.jpg
+SlideVQA:architecture-150102195159-conversion-gate01_95__openstack-architecture-13-1024.jpg
+SlideVQA:connectedcarsecurity-150902031020-lva1-app6892_95__connected-car-security-3-1024.jpg
+SlideVQA:connectedcarsecurity-150902031020-lva1-app6892_95__connected-car-security-13-1024.jpg
+SlideVQA:cboppsinstaffingwebinarslideshare10-151013182434-lva1-app6891_95__staffing-trends-you-need-to-know-when-planning-for-2016-5-1024.jpg
+SlideVQA:brandmanagement-itchotels-150823162717-lva1-app6892_95__brand-management-itc-hotels-12-1024.jpg
+SlideVQA:chinajoy-sns-v3-090724053148-phpapp02_95__lessons-learned-from-sns-games-at-popcap-2-1024.jpg
+SlideVQA:basicsofphitsmeasurementslideshare-140909024224-phpapp01_95__ph-its-measurement-1-1024.jpg
+SlideVQA:basicsofphitsmeasurementslideshare-140909024224-phpapp01_95__ph-its-measurement-2-1024.jpg
+SlideVQA:basicsofphitsmeasurementslideshare-140909024224-phpapp01_95__ph-its-measurement-3-1024.jpg
+SlideVQA:basicsofphitsmeasurementslideshare-140909024224-phpapp01_95__ph-its-measurement-7-1024.jpg
+SlideVQA:basicsofphitsmeasurementslideshare-140909024224-phpapp01_95__ph-its-measurement-4-1024.jpg
+SlideVQA:blueoceanstrategy-100403005918-phpapp02_95__blue-ocean-strategy-summary-and-examples-13-1024.jpg
+SlideVQA:b2bproductsalesforstartupsbylucboillyv0-160406160814_95__b2b-product-sales-101-for-startups-support-deck-9-1024.jpg
+SlideVQA:b2bproductsalesforstartupsbylucboillyv0-160406160814_95__b2b-product-sales-101-for-startups-support-deck-15-1024.jpg
+SlideVQA:chapter8-geneticscompatibilitymode-141214140247-conversion-gate02_95__chapter-8-genetics-compatibility-mode-5-1024.jpg
+SlideVQA:chapter8-geneticscompatibilitymode-141214140247-conversion-gate02_95__chapter-8-genetics-compatibility-mode-4-1024.jpg
+SlideVQA:aviewoffruitcultureinafghanistan-141025192131-conversion-gate02_95__a-view-of-fruit-culture-in-afghanistan-5-1024.jpg
+SlideVQA:allyouwantedtoknowaboutanalyticsine-commerce-amazonebayflipkart-150207221032-conversion-gate01_95__all-you-wanted-to-know-about-analytics-in-e-commerce-amazon-ebay-flipkart-7-1024.jpg
+processed=97 output=data/parsed/SlideVQA_first100_qrels_upstage.jsonl
+==> /home/chaemin/projects/AI algorithm study/.venv/bin/python benchmark/v12_on_visrag.py --dataset InfoVQA --cache-dir /tmp/hf_cache --oracle --topk 1 --limit 100 --mode image_only --generator-backend qwen2vl7b_bnb4 --max-new-tokens 32 --output results/v12_on_visrag/today/InfoVQA_image_only_top1_first100.json
+Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]Loading checkpoint shards:  20%|██        | 1/5 [00:04<00:18,  4.67s/it]Loading checkpoint shards:  40%|████      | 2/5 [00:09<00:14,  4.85s/it]Loading checkpoint shards:  60%|██████    | 3/5 [00:13<00:09,  4.61s/it]Loading checkpoint shards:  80%|████████  | 4/5 [00:18<00:04,  4.55s/it]Loading checkpoint shards: 100%|██████████| 5/5 [00:19<00:00,  3.14s/it]Loading checkpoint shards: 100%|██████████| 5/5 [00:19<00:00,  3.81s/it]
+/home/chaemin/projects/AI algorithm study/.venv/lib/python3.11/site-packages/transformers/generation/configuration_utils.py:631: UserWarning: `do_sample` is set to `False`. However, `temperature` is set to `0.01` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `temperature`.
+  warnings.warn(
+/home/chaemin/projects/AI algorithm study/.venv/lib/python3.11/site-packages/transformers/generation/configuration_utils.py:636: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.001` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+/home/chaemin/projects/AI algorithm study/.venv/lib/python3.11/site-packages/transformers/generation/configuration_utils.py:653: UserWarning: `do_sample` is set to `False`. However, `top_k` is set to `1` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_k`.
+  warnings.warn(

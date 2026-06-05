@@ -1,0 +1,32 @@
+{
+  "summary": {
+    "total": 1,
+    "correct": 0,
+    "accuracy": 0.0
+  },
+  "rows": [
+    {
+      "dataset": "InfoVQA",
+      "qid": "36966.jpeg-1",
+      "query": "Which social media site was invented in 2002?",
+      "answer": [
+        "friendster"
+      ],
+      "docids": [
+        "36966.jpeg"
+      ],
+      "scores": [
+        1.0
+      ],
+      "topk": 1,
+      "method": "parsed_text_only",
+      "generator_backend": "qwen2vl7b_awq",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+      "retrieval_source": "oracle_qrels",
+      "ocr_context_available": false,
+      "parsed_docids": [],
+      "n_images": 0,
+      "prediction": "DRY_RUN"
+    }
+  ]
+}

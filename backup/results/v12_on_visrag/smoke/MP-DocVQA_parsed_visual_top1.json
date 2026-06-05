@@ -1,0 +1,33 @@
+{
+  "summary": {
+    "total": 1,
+    "correct": 0,
+    "accuracy": 0.0
+  },
+  "rows": [
+    {
+      "dataset": "MP-DocVQA",
+      "qid": "txpp0227_p9.jpg-1",
+      "query": "Who is ‘presiding’ TRRF GENERAL SESSION (PART 1)?",
+      "answer": [
+        "lee a. waller",
+        "TRRF Vice President"
+      ],
+      "docids": [
+        "txpp0227_p9.jpg"
+      ],
+      "scores": [
+        1.0
+      ],
+      "topk": 1,
+      "method": "parsed_visual",
+      "generator_backend": "qwen2vl7b_awq",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+      "retrieval_source": "oracle_qrels",
+      "ocr_context_available": false,
+      "parsed_docids": [],
+      "n_images": 0,
+      "prediction": "DRY_RUN"
+    }
+  ]
+}

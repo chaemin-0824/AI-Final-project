@@ -471,7 +471,7 @@ e046222  Switch default generator to Qwen2-VL-7B + bitsandbytes NF4
 </ul>
 
 <h2>부록 C. 본 보고서가 다루지 않는 v12 bridge 구성요소</h2>
-<p>참고: <code>v12_port/</code> 디렉토리에는 교량 점검 보고서 도메인 전용 v12 구성요소들(질문 분류기, 챕터 추론, 손상 이력 보강 등)이 이식되어 있다. 본 보고서의 비교 대상인 <em>v12-general</em>은 이 도메인 종속 구성요소를 제거하고 "파싱 텍스트와 이미지를 동시에 VLM에 입력한다"는 일반 원리만을 남긴 변형이다. VisRAG 공개 벤치마크에는 교량 도메인 컴포넌트를 사용하지 않는다. 자세한 설계 근거는 <code>docs/domain_free_v12_experiment_design.md</code>에 있다.</p>
+<p>참고: <code>backup/v12_port/</code> 디렉토리(제출 외 보관)에는 교량 점검 보고서 도메인 전용 v12 구성요소들(질문 분류기, 챕터 추론, 손상 이력 보강 등)이 이식되어 있다. 본 보고서의 비교 대상인 <em>v12-general</em>은 이 도메인 종속 구성요소를 제거하고 "파싱 텍스트와 이미지를 동시에 VLM에 입력한다"는 일반 원리만을 남긴 변형이다. VisRAG 공개 벤치마크에는 교량 도메인 컴포넌트를 사용하지 않으며, 본 제출의 어떤 결과도 <code>v12_port</code> 모듈에 의존하지 않는다. 자세한 설계 근거는 <code>docs/domain_free_v12_experiment_design.md</code>에 있고, backup 폴더의 인덱스는 <code>backup/README.md</code>에 있다.</p>
 
 </body>
 </html>

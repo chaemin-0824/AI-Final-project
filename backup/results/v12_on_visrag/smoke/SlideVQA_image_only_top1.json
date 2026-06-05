@@ -1,0 +1,30 @@
+{
+  "summary": {
+    "total": 1,
+    "correct": 0,
+    "accuracy": 0.0
+  },
+  "rows": [
+    {
+      "dataset": "SlideVQA",
+      "qid": "2012-02-20fy11roadshow-120221022442-phpapp02_95__feb-20-2012-nestl-2011-fullyear-roadshow-presentation-7-1024.jpgtcy62012-02-20fy11roadshow-120221022442-phpapp02_95__feb-20-2012-nestl-2011-fullyear-roadshow-presentation-13-1024.jpgquery_number_1",
+      "query": "In which year did the company that divested Eismann in 2004 achieve higher Organic Growth, 2003 or 2004?",
+      "answer": "2003",
+      "docids": [
+        "2012-02-20fy11roadshow-120221022442-phpapp02_95__feb-20-2012-nestl-2011-fullyear-roadshow-presentation-7-1024.jpg"
+      ],
+      "scores": [
+        1.0
+      ],
+      "topk": 1,
+      "method": "image_only",
+      "generator_backend": "qwen2vl7b_awq",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+      "retrieval_source": "oracle_qrels",
+      "ocr_context_available": false,
+      "parsed_docids": [],
+      "n_images": 0,
+      "prediction": "DRY_RUN"
+    }
+  ]
+}

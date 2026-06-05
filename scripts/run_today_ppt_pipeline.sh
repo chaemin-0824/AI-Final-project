@@ -45,19 +45,22 @@ if [[ "$SAMPLE_LIMIT" != "0" ]]; then
   LIMIT_FLAG=(--limit "$SAMPLE_LIMIT")
 fi
 
-if [[ -z "${UPSTAGE_API_KEY:-}" ]]; then
-  echo "UPSTAGE_API_KEY is required. export UPSTAGE_API_KEY=... and rerun." >&2
-  exit 1
-fi
-
 START_TS=$(date +%s)
 
 # ---------------- Stage 1: Upstage parse (gold pages of first N queries) ----------------
+# UPSTAGE_API_KEY is only required when a parse cache is missing. If all four
+# first100 caches are present (e.g., on a fresh clone of the submitted bundle),
+# Stages 2 and 3 can run without any API key.
 for DATASET in "${DATASETS[@]}"; do
   PARSE_CACHE="${PARSED_DIR}/${DATASET}_first${SAMPLE_LIMIT}_qrels_upstage.jsonl"
   if [[ -s "$PARSE_CACHE" ]]; then
     echo "==> parse cache exists: $PARSE_CACHE  (skip)"
     continue
+  fi
+  if [[ -z "${UPSTAGE_API_KEY:-}" ]]; then
+    echo "UPSTAGE_API_KEY required to parse $DATASET (no cache at $PARSE_CACHE)." >&2
+    echo "Either export UPSTAGE_API_KEY=... or restore the cached JSONL." >&2
+    exit 1
   fi
   echo "==> Upstage parse $DATASET first $SAMPLE_LIMIT qrels -> $PARSE_CACHE"
   "$PYTHON" scripts/parse_visrag_with_upstage.py \

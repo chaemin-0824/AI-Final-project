@@ -10,8 +10,10 @@ __pycache__/
 /tmp_hf_cache/
 data/parsed/*_upstage.jsonl
 !data/parsed/.gitkeep
-!data/parsed/ChartQA_sample.jsonl
-!data/parsed/ChartQA_pilot_qrels.jsonl
+# Whitelist the final first-100-query parse caches used by run_today_ppt_pipeline.sh.
+# These ~3.7 MB of JSONL guarantee a fresh clone can re-generate the PPT table
+# without re-calling the Upstage API.
+!data/parsed/*_first100_qrels_upstage.jsonl
 
 # Results: generated artifacts can be very large; keep the directory but track only summaries.
 results/visrag_retrieval/*

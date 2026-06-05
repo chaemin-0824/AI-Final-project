@@ -26,8 +26,7 @@
 
 ```text
 /home/chaemin/projects/AI algorithm study/
-├── visrag/                         # openbmb/visrag shallow clone
-├── v12_port/                       # paper_visual_rag v12 관련 모듈 이식본
+├── visrag/                         # openbmb/visrag shallow clone (gitignored, 별도 clone 필요)
 ├── benchmark/
 │   ├── metrics.py                  # relaxed exact match / retrieval metrics
 │   ├── parse_cache.py              # Upstage parse cache schema/helpers
@@ -35,7 +34,6 @@
 │   ├── v12_on_visrag.py            # domain-free generation: image_only/parsed_text_only/parsed_visual
 │   ├── compare_results.py          # VisRAG/v12 결과 집계
 │   └── ppt_table_exporter.py       # PPT slide-10 양식의 결과 표 markdown/csv/json
-├── scripts/smoke_test_ppt_pipeline.sh  # 의존성 없는 dry-run 전체 파이프라인 점검
 ├── configs/visrag_paper_benchmark.json
 ├── scripts/
 │   ├── parse_visrag_with_upstage.py
@@ -45,7 +43,8 @@
 │   ├── prepare_visrag_datasets.py
 │   ├── run_visrag_retrieval.sh
 │   ├── run_visrag_generation.sh
-│   └── run_v12_bridge.py
+│   └── run_today_ppt_pipeline.sh   # 최종 파이프라인 (제출 재현용)
+├── backup/                         # 제출 외 보관 자료 (smoke, dry-run, v12_port, bridge runner 등)
 └── results/
 ```
 
@@ -121,19 +120,25 @@ python benchmark/v12_on_visrag.py --dataset ChartQA --oracle --topk 1 --limit 2 
 python benchmark/v12_on_visrag.py --dataset ChartQA --oracle --topk 1 --limit 2 --mode parsed_visual --generator-backend minicpmv26 --parse-cache data/parsed/ChartQA_sample.jsonl --dry-run
 ```
 
-### 5) 이식된 v12 bridge 파이프라인 확인 (VisRAG 비교와는 분리된 도메인 실험)
+### 5) 이식된 v12 bridge 파이프라인 (VisRAG 비교와는 분리된 도메인 실험, backup 보관)
+
+bridge-v12 파이프라인과 그 진입점 스크립트(`run_v12_bridge.py`, `v12_port/` 모듈)는 교량 점검 보고서 도메인 전용이며 VisRAG 데이터셋 비교와 무관하다. 본 제출의 어떤 결과도 이 코드에 의존하지 않으므로 `backup/scripts/run_v12_bridge.py` 와 `backup/v12_port/`로 옮겨 보관한다.
+
+복원해서 실행하려면 (별도 도메인 실험용):
 
 ```bash
+# (1) 원래 위치로 복원
+mv backup/v12_port v12_port
+mv backup/scripts/run_v12_bridge.py scripts/
+
+# (2) dry-run 검증
 python scripts/run_v12_bridge.py --bridge 대안천교 --question-ids Q01 Q02 --dry-run
-```
 
-> ⚠️ bridge-v12 파이프라인은 교량 점검 보고서 도메인용이며 **VisRAG 논문 비교와 무관**하다. 원본 `paper_visual_rag`가 Gemini API를 사용하도록 작성돼 있어서 실제 실행도 Gemini가 필요하다. VisRAG 데이터셋 비교(`benchmark/v12_on_visrag.py`)에는 절대 Gemini를 쓰지 않는다 — paper-aligned 비교는 MiniCPM-V 2.6 또는 GPT-4o만 허용.
->
-> 현재 `/home/chaemin/projects/paper_visual_rag/data/{교량}/upstage_v10_chunks.json`은 존재하지만, `v10_embeddings.npy`는 없으므로 첫 실제 실행 시 Gemini 임베딩을 새로 생성해 저장한다.
-
-```bash
+# (3) 실제 실행 (Gemini API 필요)
 python scripts/run_v12_bridge.py --bridge 대안천교 --question-ids Q01 Q02
 ```
+
+> ⚠️ VisRAG 데이터셋 비교(`benchmark/v12_on_visrag.py`)에는 절대 Gemini를 쓰지 않는다 — paper-aligned 비교는 Qwen2-VL-7B / MiniCPM-V 2.6 / GPT-4o만 허용.
 
 ### 6) 결과 비교 (간단 JSON 집계)
 
@@ -174,13 +179,15 @@ python benchmark/ppt_table_exporter.py \
   --baseline-method visrag_official
 ```
 
-### 8) 의존성 없는 smoke 점검
+### 8) 의존성 없는 smoke 점검 (backup 보관)
+
+API/GPU 호출 없이 4 dataset × 3 mode × dry-run을 돌리고 PPT 양식 표까지 만들어 본다. 본 제출 재현 경로에 필수가 아니므로 `backup/scripts/`에 보관한다.
 
 ```bash
-SMOKE_LIMIT=2 bash scripts/smoke_test_ppt_pipeline.sh
+SMOKE_LIMIT=2 bash backup/scripts/smoke_test_ppt_pipeline.sh
 ```
 
-API/GPU 호출 없이 4 dataset × 3 mode × dry-run을 돌리고 PPT 양식 표까지 만들어 본다. 모든 cell이 0.0000으로 출력되면 정상(prediction=DRY_RUN).
+모든 cell이 0.0000으로 출력되면 정상(prediction=DRY_RUN).
 
 ## 비교 설계 원칙
 
