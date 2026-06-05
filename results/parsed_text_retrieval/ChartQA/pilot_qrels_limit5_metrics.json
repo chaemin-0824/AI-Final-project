@@ -1,0 +1,8 @@
+{
+  "dataset": "ChartQA",
+  "trec": "results/parsed_text_retrieval/ChartQA/pilot_qrels_limit5.trec",
+  "k": 5,
+  "num_queries": 63,
+  "MRR@5": 0.07936507936507936,
+  "Recall@5": 0.07936507936507936
+}

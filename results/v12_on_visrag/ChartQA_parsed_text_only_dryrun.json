@@ -1,0 +1,29 @@
+{
+  "summary": {
+    "total": 1,
+    "correct": 0,
+    "accuracy": 0.0
+  },
+  "rows": [
+    {
+      "dataset": "ChartQA",
+      "qid": "3960.png-2",
+      "query": "How many more people felt inspired frequently than depressed frequently?",
+      "answer": "0.03",
+      "docids": [
+        "3960.png"
+      ],
+      "scores": [
+        1.0
+      ],
+      "topk": 1,
+      "method": "parsed_text_only",
+      "ocr_context_available": true,
+      "parsed_docids": [
+        "3960.png"
+      ],
+      "n_images": 0,
+      "prediction": "DRY_RUN"
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+Method,InfoVQA,ChartQA,DocVQA,SlideVQA,macro_acc,delta_vs_baseline_pp
+Baseline (순수 VisRAG, v12_on_visrag image_only),0.000000,0.000000,0.000000,0.000000,0.000000,
+Parsed-Text Only (ablation),0.000000,0.000000,0.000000,0.000000,0.000000,0.0000
+Parsed-Visual RAG (v12-general),0.000000,0.000000,0.000000,0.000000,0.000000,0.0000

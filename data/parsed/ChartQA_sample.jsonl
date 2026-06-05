@@ -1,0 +1,2 @@
+{"dataset":"ChartQA","corpus_id":"3960.png","text":"What is the value in the chart? value sales revenue","tables_markdown":["| item | value |\n| sales | 10 |"],"table_descriptions":["sales value table"],"parse_status":"ok","error":"","raw_upstage":{}}
+{"dataset":"ChartQA","corpus_id":"other.png","text":"unrelated bridge crack text","tables_markdown":[],"table_descriptions":[],"parse_status":"ok","error":"","raw_upstage":{}}

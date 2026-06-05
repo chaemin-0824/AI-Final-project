@@ -1,0 +1,13 @@
+{
+  "metric": "VisRAG paper generation Accuracy with relaxed exact match (5% numeric tolerance)",
+  "visrag": [],
+  "v12": [
+    {
+      "path": "results/v12_on_visrag/ChartQA_dryrun.json",
+      "rows": 1,
+      "total": 1,
+      "correct": 0,
+      "accuracy": 0.0
+    }
+  ]
+}

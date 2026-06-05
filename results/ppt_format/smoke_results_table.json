@@ -1,0 +1,153 @@
+{
+  "layout_source": "docs/VisRAG Multi Page Compression.pptx slide 10",
+  "datasets_display": [
+    "InfoVQA",
+    "ChartQA",
+    "DocVQA",
+    "SlideVQA"
+  ],
+  "datasets_official": [
+    "InfoVQA",
+    "ChartQA",
+    "MP-DocVQA",
+    "SlideVQA"
+  ],
+  "baseline_method_key": "image_only",
+  "baseline_label": "Baseline (순수 VisRAG, v12_on_visrag image_only)",
+  "rows": [
+    {
+      "method_key": "image_only",
+      "method_label": "Baseline (순수 VisRAG, v12_on_visrag image_only)",
+      "by_dataset": {
+        "InfoVQA": 0.0,
+        "ChartQA": 0.0,
+        "DocVQA": 0.0,
+        "SlideVQA": 0.0
+      },
+      "macro_accuracy": 0.0,
+      "delta_vs_baseline_pp": null
+    },
+    {
+      "method_key": "parsed_text_only",
+      "method_label": "Parsed-Text Only (ablation)",
+      "by_dataset": {
+        "InfoVQA": 0.0,
+        "ChartQA": 0.0,
+        "DocVQA": 0.0,
+        "SlideVQA": 0.0
+      },
+      "macro_accuracy": 0.0,
+      "delta_vs_baseline_pp": 0.0
+    },
+    {
+      "method_key": "parsed_visual",
+      "method_label": "Parsed-Visual RAG (v12-general)",
+      "by_dataset": {
+        "InfoVQA": 0.0,
+        "ChartQA": 0.0,
+        "DocVQA": 0.0,
+        "SlideVQA": 0.0
+      },
+      "macro_accuracy": 0.0,
+      "delta_vs_baseline_pp": 0.0
+    }
+  ],
+  "source_entries": [
+    {
+      "dataset": "InfoVQA",
+      "method_key": "image_only",
+      "accuracy": 0.0,
+      "source_path": "results/v12_on_visrag/smoke/InfoVQA_image_only_top1.json",
+      "total": 2,
+      "correct": 0
+    },
+    {
+      "dataset": "InfoVQA",
+      "method_key": "parsed_text_only",
+      "accuracy": 0.0,
+      "source_path": "results/v12_on_visrag/smoke/InfoVQA_parsed_text_only_top1.json",
+      "total": 2,
+      "correct": 0
+    },
+    {
+      "dataset": "InfoVQA",
+      "method_key": "parsed_visual",
+      "accuracy": 0.0,
+      "source_path": "results/v12_on_visrag/smoke/InfoVQA_parsed_visual_top1.json",
+      "total": 2,
+      "correct": 0
+    },
+    {
+      "dataset": "ChartQA",
+      "method_key": "image_only",
+      "accuracy": 0.0,
+      "source_path": "results/v12_on_visrag/smoke/ChartQA_image_only_top1.json",
+      "total": 2,
+      "correct": 0
+    },
+    {
+      "dataset": "ChartQA",
+      "method_key": "parsed_text_only",
+      "accuracy": 0.0,
+      "source_path": "results/v12_on_visrag/smoke/ChartQA_parsed_text_only_top1.json",
+      "total": 2,
+      "correct": 0
+    },
+    {
+      "dataset": "ChartQA",
+      "method_key": "parsed_visual",
+      "accuracy": 0.0,
+      "source_path": "results/v12_on_visrag/smoke/ChartQA_parsed_visual_top1.json",
+      "total": 2,
+      "correct": 0
+    },
+    {
+      "dataset": "MP-DocVQA",
+      "method_key": "image_only",
+      "accuracy": 0.0,
+      "source_path": "results/v12_on_visrag/smoke/MP-DocVQA_image_only_top1.json",
+      "total": 2,
+      "correct": 0
+    },
+    {
+      "dataset": "MP-DocVQA",
+      "method_key": "parsed_text_only",
+      "accuracy": 0.0,
+      "source_path": "results/v12_on_visrag/smoke/MP-DocVQA_parsed_text_only_top1.json",
+      "total": 2,
+      "correct": 0
+    },
+    {
+      "dataset": "MP-DocVQA",
+      "method_key": "parsed_visual",
+      "accuracy": 0.0,
+      "source_path": "results/v12_on_visrag/smoke/MP-DocVQA_parsed_visual_top1.json",
+      "total": 2,
+      "correct": 0
+    },
+    {
+      "dataset": "SlideVQA",
+      "method_key": "image_only",
+      "accuracy": 0.0,
+      "source_path": "results/v12_on_visrag/smoke/SlideVQA_image_only_top1.json",
+      "total": 2,
+      "correct": 0
+    },
+    {
+      "dataset": "SlideVQA",
+      "method_key": "parsed_text_only",
+      "accuracy": 0.0,
+      "source_path": "results/v12_on_visrag/smoke/SlideVQA_parsed_text_only_top1.json",
+      "total": 2,
+      "correct": 0
+    },
+    {
+      "dataset": "SlideVQA",
+      "method_key": "parsed_visual",
+      "accuracy": 0.0,
+      "source_path": "results/v12_on_visrag/smoke/SlideVQA_parsed_visual_top1.json",
+      "total": 2,
+      "correct": 0
+    }
+  ]
+}

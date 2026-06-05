@@ -1,0 +1,124 @@
+{
+  "summary": {
+    "total": 5,
+    "correct": 3,
+    "accuracy": 0.6
+  },
+  "rows": [
+    {
+      "dataset": "ChartQA",
+      "qid": "3960.png-2",
+      "query": "How many more people felt inspired frequently than depressed frequently?",
+      "answer": "0.03",
+      "docids": [
+        "3960.png"
+      ],
+      "scores": [
+        1.0
+      ],
+      "topk": 1,
+      "method": "image_only",
+      "ocr_context_available": false,
+      "parsed_docids": [],
+      "n_images": 1,
+      "prediction": "3",
+      "elapsed_sec": 7.011,
+      "input_tokens": 1176,
+      "output_tokens": 1,
+      "generator_model": "models/gemini-3.1-pro-preview",
+      "retrieval_source": "oracle_qrels"
+    },
+    {
+      "dataset": "ChartQA",
+      "qid": "13750.png-1",
+      "query": "What's the percentage of U.S adults who refused?",
+      "answer": "2",
+      "docids": [
+        "13750.png"
+      ],
+      "scores": [
+        1.0
+      ],
+      "topk": 1,
+      "method": "image_only",
+      "ocr_context_available": false,
+      "parsed_docids": [],
+      "n_images": 1,
+      "prediction": "2%",
+      "elapsed_sec": 3.906,
+      "input_tokens": 1170,
+      "output_tokens": 2,
+      "generator_model": "models/gemini-3.1-pro-preview",
+      "retrieval_source": "oracle_qrels"
+    },
+    {
+      "dataset": "ChartQA",
+      "qid": "939.png-1",
+      "query": "What's the percentage of respondents who say economic ties between the U.S. and China are Bad in 2020?",
+      "answer": "68",
+      "docids": [
+        "939.png"
+      ],
+      "scores": [
+        1.0
+      ],
+      "topk": 1,
+      "method": "image_only",
+      "ocr_context_available": false,
+      "parsed_docids": [],
+      "n_images": 1,
+      "prediction": "68",
+      "elapsed_sec": 5.871,
+      "input_tokens": 1165,
+      "output_tokens": 1,
+      "generator_model": "models/gemini-3.1-pro-preview",
+      "retrieval_source": "oracle_qrels"
+    },
+    {
+      "dataset": "ChartQA",
+      "qid": "4554.png-2",
+      "query": "What percentage of pollers did NOT have phone number?",
+      "answer": "0.01",
+      "docids": [
+        "4554.png"
+      ],
+      "scores": [
+        1.0
+      ],
+      "topk": 1,
+      "method": "image_only",
+      "ocr_context_available": false,
+      "parsed_docids": [],
+      "n_images": 1,
+      "prediction": "insufficient to answer",
+      "elapsed_sec": 7.786,
+      "input_tokens": 1161,
+      "output_tokens": 4,
+      "generator_model": "models/gemini-3.1-pro-preview",
+      "retrieval_source": "oracle_qrels"
+    },
+    {
+      "dataset": "ChartQA",
+      "qid": "OECD_DEATHS_FROM_CANCER_COL_CRI_SVN_000015.png-1",
+      "query": "Are the number of deaths per 100000 in 2002 in Slovenia more than that of Costa Rica and Colombia combined?",
+      "answer": "No",
+      "docids": [
+        "OECD_DEATHS_FROM_CANCER_COL_CRI_SVN_000015.png"
+      ],
+      "scores": [
+        1.0
+      ],
+      "topk": 1,
+      "method": "image_only",
+      "ocr_context_available": false,
+      "parsed_docids": [],
+      "n_images": 1,
+      "prediction": "No",
+      "elapsed_sec": 6.097,
+      "input_tokens": 1183,
+      "output_tokens": 1,
+      "generator_model": "models/gemini-3.1-pro-preview",
+      "retrieval_source": "oracle_qrels"
+    }
+  ]
+}

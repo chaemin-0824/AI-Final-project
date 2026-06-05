@@ -1,0 +1,31 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.venv/
+.env
+
+# HF / parse caches and intermediate data
+/tmp_hf_cache/
+data/parsed/*_upstage.jsonl
+!data/parsed/.gitkeep
+!data/parsed/ChartQA_sample.jsonl
+!data/parsed/ChartQA_pilot_qrels.jsonl
+
+# Results: generated artifacts can be very large; keep the directory but track only summaries.
+results/visrag_retrieval/*
+results/visrag_generation/*
+results/v12_on_visrag/smoke/
+!results/.gitkeep
+!results/comparison_summary_dryrun.json
+!results/domain_free_v12_summary_dryrun.json
+
+# Vendored repos / large blobs
+# visrag is just a shallow clone of openbmb/visrag - keep it out of our git history.
+visrag/
+
+# Editor
+.idea/
+.vscode/
+.DS_Store

@@ -1,0 +1,20 @@
+# Lightweight dependencies for the comparison harness.
+# Install full VisRAG dependencies separately when running model inference/GPU retrieval:
+#   pip install -r visrag/requirements.txt && pip install -e visrag && (cd visrag/timm_modified && pip install -e .)
+
+datasets>=2.18
+Pillow>=10.1
+numpy>=1.26
+scipy>=1.13
+openpyxl>=3.1
+pandas>=2.2
+google-generativeai>=0.7
+python-dotenv>=1.0
+langchain-core>=0.2
+langchain-community>=0.2
+rank_bm25>=0.2.2
+PyMuPDF>=1.24
+
+# Required by v12_port (paper_visual_rag-derived modules) at runtime
+pdf2image>=1.17
+scikit-learn>=1.5

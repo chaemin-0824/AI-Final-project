@@ -1,0 +1,49 @@
+[
+  {
+    "dataset": "ChartQA",
+    "repo": "openbmb/VisRAG-Ret-Test-ChartQA",
+    "splits": {
+      "queries": {
+        "num_rows": 63,
+        "columns": [
+          "query-id",
+          "query",
+          "answer",
+          "options",
+          "is_numerical"
+        ],
+        "sample_keys": [
+          "query-id",
+          "query",
+          "answer",
+          "options",
+          "is_numerical"
+        ]
+      },
+      "corpus": {
+        "num_rows": 500,
+        "columns": [
+          "corpus-id",
+          "image"
+        ],
+        "sample_keys": [
+          "corpus-id",
+          "image"
+        ]
+      },
+      "qrels": {
+        "num_rows": 63,
+        "columns": [
+          "query-id",
+          "corpus-id",
+          "score"
+        ],
+        "sample_keys": [
+          "query-id",
+          "corpus-id",
+          "score"
+        ]
+      }
+    }
+  }
+]

@@ -1,0 +1,50 @@
+{
+  "metric": "VisRAG paper generation Accuracy with relaxed exact match (5% numeric tolerance)",
+  "visrag": [],
+  "v12": [
+    {
+      "path": "results/v12_on_visrag/ChartQA_pilot_image_only_top1_limit5.json",
+      "system": "v12-general",
+      "dataset": "ChartQA",
+      "method": "image_only",
+      "topk": 1,
+      "rows": 5,
+      "total": 5,
+      "correct": 3,
+      "accuracy": 0.6
+    },
+    {
+      "path": "results/v12_on_visrag/ChartQA_pilot_parsed_text_only_top1_limit5.json",
+      "system": "v12-general",
+      "dataset": "ChartQA",
+      "method": "parsed_text_only",
+      "topk": 1,
+      "rows": 5,
+      "total": 5,
+      "correct": 2,
+      "accuracy": 0.4
+    },
+    {
+      "path": "results/v12_on_visrag/ChartQA_pilot_parsed_visual_top1_limit5.json",
+      "system": "v12-general",
+      "dataset": "ChartQA",
+      "method": "parsed_visual",
+      "topk": 1,
+      "rows": 5,
+      "total": 5,
+      "correct": 3,
+      "accuracy": 0.6
+    }
+  ],
+  "v12_averages": {
+    "macro_by_method": {
+      "image_only": 0.6,
+      "parsed_text_only": 0.4,
+      "parsed_visual": 0.6
+    },
+    "macro_by_dataset": {
+      "ChartQA": 0.5333333333333333
+    },
+    "overall_macro_accuracy": 0.5333333333333333
+  }
+}

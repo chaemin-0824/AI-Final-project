@@ -1,0 +1,90 @@
+{
+  "paper": {
+    "arxiv_id": "2410.10594",
+    "title": "VisRAG: Vision-based Retrieval-augmented Generation on Multi-modality Documents",
+    "source": "https://arxiv.org/abs/2410.10594"
+  },
+  "datasets_all_paper": [
+    "ArxivQA",
+    "ChartQA",
+    "MP-DocVQA",
+    "InfoVQA",
+    "PlotQA",
+    "SlideVQA"
+  ],
+  "datasets_ppt_subset": [
+    "InfoVQA",
+    "ChartQA",
+    "MP-DocVQA",
+    "SlideVQA"
+  ],
+  "ppt_label_for_mp_docvqa": "DocVQA",
+  "huggingface_dataset_template": "openbmb/VisRAG-Ret-Test-{dataset}",
+  "retrieval": {
+    "official_metrics": ["MRR@10", "Recall@10"],
+    "default_max_q_len": 512,
+    "default_max_p_len": 2048,
+    "default_pooling": "wmean",
+    "default_attention": "causal",
+    "default_model": "openbmb/VisRAG-Ret",
+    "official_script": "visrag/visrag_scripts/eval_retriever/eval.sh"
+  },
+  "generation": {
+    "official_metric": "Accuracy",
+    "numeric_relaxed_exact_match_tolerance": 0.05,
+    "official_task_types": ["text", "page_concatenation", "weighted_selection", "multi_image"],
+    "official_script": "visrag/visrag_scripts/generate/generate.py",
+    "paper_generators": [
+      "MiniCPM",
+      "GPT-4o",
+      "MiniCPM-V 2.0",
+      "MiniCPM-V 2.6"
+    ],
+    "recommended_fair_comparison_generator": {
+      "model_name": "MiniCPMV2.6",
+      "model_name_or_path": "openbmb/MiniCPM-V-2_6",
+      "reason": "MiniCPM-V 2.6 is a paper-used multi-image VLM, so it can evaluate image_only and parsed_visual without changing the answer generator."
+    }
+  },
+  "ppt_report_layout": {
+    "source": "docs/VisRAG Multi Page Compression.pptx slide 10",
+    "method_table_columns": [
+      "Method",
+      "InfoVQA",
+      "ChartQA",
+      "DocVQA",
+      "SlideVQA",
+      "평균 Δ vs Baseline"
+    ],
+    "baseline_label": "Baseline (순수 VisRAG)",
+    "baseline_method_id": "image_only",
+    "our_method_label": "Parsed-Visual RAG (v12-general)",
+    "our_method_id": "parsed_visual",
+    "ablation_text_only_label": "Parsed-Text Only (ablation)",
+    "ablation_text_only_method_id": "parsed_text_only",
+    "generator_table_columns": [
+      "Generator Model",
+      "ChartQA",
+      "DocVQA",
+      "InfoVQA",
+      "SlideVQA",
+      "평균 Δ vs Baseline"
+    ]
+  },
+  "proposed_domain_free_method": {
+    "name": "Parsed-Visual RAG",
+    "alias": "v12-general",
+    "removed_from_bridge_v12": [
+      "bridge question taxonomy",
+      "target chapter inference",
+      "bridge history/damage supplementation",
+      "bridge-specific prompts"
+    ],
+    "kept_general_principle": "Upstage parse page images into text/table evidence, retrieve with a normal text RAG index, then pass both parsed evidence and original page images to a VLM."
+  },
+  "comparison_policy": {
+    "recommended_generation_isolation": "Use oracle or the same retrieved TREC run when isolating generation methodology.",
+    "recommended_full_pipeline": "Report VisRAG visual retrieval and Parsed-Visual text retrieval separately, then report generation accuracy at top-k=1,2,3.",
+    "fairness_rule": "Do not use bridge-specific chapter/category logic on VisRAG paper datasets."
+  }
+}
