@@ -38,7 +38,7 @@ for DATASET in "${DATASETS[@]}"; do
          --topk "$SMOKE_TOPK"
          --limit "$SMOKE_LIMIT"
          --mode "$MODE"
-         --generator-backend minicpmv26
+         --generator-backend qwen2vl7b_bnb4
          --output "$OUT"
          --dry-run)
     if [[ "$MODE" != "image_only" ]]; then

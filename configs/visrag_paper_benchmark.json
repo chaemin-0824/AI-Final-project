@@ -46,6 +46,19 @@
       "reason": "MiniCPM-V 2.6 is a paper-used multi-image VLM, so it can evaluate image_only and parsed_visual without changing the answer generator."
     }
   },
+  "teammate_ppt_aligned_generator": {
+    "primary": {
+      "backend": "qwen2vl7b_bnb4",
+      "model_name_or_path": "Qwen/Qwen2-VL-7B-Instruct",
+      "quantisation": "bitsandbytes NF4 (4-bit, on-the-fly)",
+      "reason": "NF4 weights fit ~5-6 GB VRAM, runs on an 8 GB RTX 4060. Matches the teammate's PPT baseline (Qwen2-VL-7B) so our image_only row should reproduce InfoVQA 0.7835 / ChartQA 0.6941 / DocVQA 0.9303 / SlideVQA 0.7458 within quantisation noise. AutoAWQ was tried first but its triton kernel is incompatible with torch>=2.4."
+    },
+    "full_precision": {
+      "backend": "qwen2vl7b",
+      "model_name_or_path": "Qwen/Qwen2-VL-7B-Instruct",
+      "reason": "bf16 weights ~14 GB, requires a larger GPU (A10/L40/A100). Identical conditions to the teammate when no quantisation is allowed."
+    }
+  },
   "ppt_report_layout": {
     "source": "docs/VisRAG Multi Page Compression.pptx slide 10",
     "method_table_columns": [

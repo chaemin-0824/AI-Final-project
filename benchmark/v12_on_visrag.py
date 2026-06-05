@@ -19,19 +19,27 @@ from benchmark.metrics import accuracy, write_json  # noqa: E402
 from benchmark.parse_cache import cache_key, evidence_text, load_parse_cache  # noqa: E402
 
 MODES = ("image_only", "parsed_text_only", "parsed_visual")
-# Paper-aligned generators only: VisRAG paper (arXiv:2410.10594) uses MiniCPM-V 2.6
-# as the main multi-image VLM and GPT-4o as the API fallback. No other backends.
-GENERATOR_BACKENDS = ("minicpmv26", "gpt4o")
+# Generators chosen to match docs/VisRAG Multi Page Compression.pptx slide 10 baseline.
+#   - qwen2vl7b: teammate-aligned baseline (Qwen2-VL-7B-Instruct, bf16). Default model_id.
+#   - qwen2vl7b_bnb4: same weights loaded with bitsandbytes 4-bit (~5-6 GB VRAM).
+#                     We dropped AWQ because AutoAWQ's triton kernel breaks on torch>=2.4.
+#   - minicpmv26: VisRAG paper-aligned alternative.
+#   - gpt4o: paper API fallback (no local GPU).
+GENERATOR_BACKENDS = ("qwen2vl7b", "qwen2vl7b_bnb4", "minicpmv26", "gpt4o")
+DEFAULT_BACKEND = "qwen2vl7b_bnb4"
 _MODEL_CACHE: dict[tuple[str, str], tuple[Any, Any]] = {}
 
 
 def default_model_for_backend(backend: str) -> str:
     """답변 생성 백엔드별 기본 모델 이름을 돌려준다.
 
-    backend는 MiniCPM-V 2.6 또는 GPT-4o 중 하나이며, 반환값은 실제 호출에
-    사용할 모델 경로/이름이다. 예: default_model_for_backend("minicpmv26").
+    backend는 qwen2vl7b / qwen2vl7b_bnb4 / minicpmv26 / gpt4o 중 하나이며,
+    반환값은 실제 호출에 사용할 모델 경로/이름이다.
+    예: default_model_for_backend("qwen2vl7b_bnb4").
     """
     defaults = {
+        "qwen2vl7b": "Qwen/Qwen2-VL-7B-Instruct",
+        "qwen2vl7b_bnb4": "Qwen/Qwen2-VL-7B-Instruct",  # base weights, quantised on load
         "minicpmv26": "openbmb/MiniCPM-V-2_6",
         "gpt4o": "gpt-4o",
     }
@@ -185,12 +193,99 @@ def call_gpt4o(query: str, images: list[Image.Image], parsed_context: str, model
     }
 
 
+def build_qwen2vl_messages(prompt: str, images: list[Image.Image]) -> list[dict[str, Any]]:
+    """Qwen2-VL chat 메시지 포맷.
+
+    Qwen2-VL은 OpenAI-style multipart content를 사용한다: 이미지마다
+    `{"type": "image", "image": <PIL.Image>}`, 텍스트는
+    `{"type": "text", "text": ...}`. images가 비어 있으면 텍스트만.
+    """
+    parts: list[dict[str, Any]] = []
+    for img in images:
+        parts.append({"type": "image", "image": img})
+    parts.append({"type": "text", "text": prompt})
+    return [{"role": "user", "content": parts}]
+
+
+def call_qwen2vl(query: str, images: list[Image.Image], parsed_context: str, model_name: str, mode: str, max_new_tokens: int, use_bnb4: bool) -> dict[str, Any]:
+    """Qwen2-VL-7B-Instruct로 답변을 생성한다.
+
+    use_bnb4=True면 bitsandbytes 4-bit NF4 quantisation으로 8 GB-class GPU에서도
+    동작하도록 한다. bf16은 ~14 GB, NF4는 ~5-6 GB.
+    """
+    try:
+        import torch
+        from transformers import AutoProcessor, BitsAndBytesConfig, Qwen2VLForConditionalGeneration
+    except ImportError as exc:
+        raise RuntimeError(
+            "Qwen2-VL 실행에는 torch와 transformers>=4.45가 필요합니다. "
+            "pip install 'transformers>=4.51,<4.52' 'qwen-vl-utils' 'accelerate' && "
+            "(4-bit 사용 시) pip install bitsandbytes"
+        ) from exc
+    try:
+        from qwen_vl_utils import process_vision_info
+    except ImportError as exc:
+        raise RuntimeError(
+            "Qwen2-VL은 qwen-vl-utils가 필요합니다. pip install qwen-vl-utils"
+        ) from exc
+
+    cache_key_model = ("qwen2vl7b_bnb4" if use_bnb4 else "qwen2vl7b", model_name)
+    if cache_key_model in _MODEL_CACHE:
+        model, processor = _MODEL_CACHE[cache_key_model]
+    else:
+        kwargs: dict[str, Any] = {"trust_remote_code": True}
+        if use_bnb4:
+            kwargs["quantization_config"] = BitsAndBytesConfig(
+                load_in_4bit=True,
+                bnb_4bit_compute_dtype=torch.float16,
+                bnb_4bit_quant_type="nf4",
+                bnb_4bit_use_double_quant=True,
+            )
+            kwargs["torch_dtype"] = torch.float16
+        else:
+            kwargs["torch_dtype"] = torch.bfloat16 if torch.cuda.is_available() else torch.float32
+        if torch.cuda.is_available():
+            kwargs["device_map"] = "auto"
+        model = Qwen2VLForConditionalGeneration.from_pretrained(model_name, **kwargs).eval()
+        processor = AutoProcessor.from_pretrained(model_name, trust_remote_code=True, use_fast=True)
+        _MODEL_CACHE[cache_key_model] = (model, processor)
+
+    prompt = build_prompt(query, parsed_context, mode)
+    msgs = build_qwen2vl_messages(prompt, images if mode in {"image_only", "parsed_visual"} else [])
+    text = processor.apply_chat_template(msgs, tokenize=False, add_generation_prompt=True)
+    image_inputs, video_inputs = process_vision_info(msgs)
+    inputs = processor(
+        text=[text],
+        images=image_inputs,
+        videos=video_inputs,
+        padding=True,
+        return_tensors="pt",
+    )
+    if torch.cuda.is_available():
+        inputs = inputs.to("cuda")
+    start = time.time()
+    with torch.no_grad():
+        generated = model.generate(**inputs, max_new_tokens=max_new_tokens, do_sample=False)
+    trimmed = [out[len(inp):] for inp, out in zip(inputs.input_ids, generated)]
+    out_text = processor.batch_decode(trimmed, skip_special_tokens=True, clean_up_tokenization_spaces=False)[0]
+    in_tokens = int(inputs.input_ids.numel())
+    out_tokens = int(sum(t.numel() for t in trimmed))
+    return {
+        "prediction": out_text.strip(),
+        "elapsed_sec": round(time.time() - start, 3),
+        "input_tokens": in_tokens,
+        "output_tokens": out_tokens,
+    }
+
+
 def call_generator(backend: str, query: str, images: list[Image.Image], parsed_context: str, model_name: str, mode: str, max_new_tokens: int) -> dict[str, Any]:
     """선택된 생성기 백엔드로 답변 생성을 위임한다.
 
-    backend는 minicpmv26 또는 gpt4o 중 하나(논문 사용 모델만). 나머지 입력은 같은 질문·같은 증거.
-    예: call_generator("minicpmv26", ...).
+    backend는 qwen2vl7b / qwen2vl7b_bnb4 / minicpmv26 / gpt4o 중 하나.
+    나머지 입력은 같은 질문·같은 증거. 예: call_generator("qwen2vl7b_bnb4", ...).
     """
+    if backend in {"qwen2vl7b", "qwen2vl7b_bnb4"}:
+        return call_qwen2vl(query, images, parsed_context, model_name, mode, max_new_tokens, use_bnb4=(backend == "qwen2vl7b_bnb4"))
     if backend == "minicpmv26":
         return call_minicpmv26(query, images, parsed_context, model_name, mode, max_new_tokens)
     if backend == "gpt4o":
@@ -225,7 +320,8 @@ def main() -> None:
     parser.add_argument("--topk", type=int, default=1)
     parser.add_argument("--limit", type=int, default=None)
     parser.add_argument("--mode", choices=MODES, default="parsed_visual")
-    parser.add_argument("--generator-backend", choices=GENERATOR_BACKENDS, default="minicpmv26")
+    parser.add_argument("--generator-backend", choices=GENERATOR_BACKENDS, default=DEFAULT_BACKEND,
+                        help=f"Default: {DEFAULT_BACKEND} (teammate PPT baseline aligned).")
     parser.add_argument("--parse-cache", default=None)
     parser.add_argument("--model", default=None)
     parser.add_argument("--max-new-tokens", type=int, default=20)

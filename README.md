@@ -12,7 +12,7 @@ Method | InfoVQA | ChartQA | DocVQA | SlideVQA | 평균 Δ vs Baseline
 
 - `DocVQA` in the PPT == `MP-DocVQA` from `openbmb/VisRAG-Ret-Test-MP-DocVQA`.
 - Default dataset subset is therefore `InfoVQA, ChartQA, MP-DocVQA, SlideVQA` (4 of the 6 VisRAG paper datasets).
-- Generator is fixed to `openbmb/MiniCPM-V-2_6` for the paper-aligned comparison.
+- Generator default is **`Qwen/Qwen2-VL-7B-Instruct` loaded with bitsandbytes 4-bit (NF4)** — same family as the teammate PPT baseline (Qwen2-VL-7B), fits ~5-6 GB VRAM. Paper-aligned MiniCPM-V 2.6 and GPT-4o remain available via `--generator-backend minicpmv26 | gpt4o`.
 
 ## Quick start
 
@@ -45,10 +45,13 @@ python scripts/evaluate_retrieval.py \
   --output results/parsed_text_retrieval/ChartQA/metrics.json
 
 # 4) v12-general generation in image_only / parsed_text_only / parsed_visual modes:
+#    Default backend is Qwen2-VL-7B-Instruct + bitsandbytes NF4 (fits 8 GB GPU, matches teammate PPT baseline).
 DATASETS=InfoVQA,ChartQA,MP-DocVQA,SlideVQA \
-GENERATOR_BACKEND=minicpmv26 \
-MODEL=openbmb/MiniCPM-V-2_6 \
 bash scripts/run_domain_free_v12_experiment.sh
+
+# To switch to paper-aligned MiniCPM-V 2.6 or GPT-4o:
+# GENERATOR_BACKEND=minicpmv26 MODEL=openbmb/MiniCPM-V-2_6 bash scripts/run_domain_free_v12_experiment.sh
+# GENERATOR_BACKEND=gpt4o      MODEL=gpt-4o                 bash scripts/run_domain_free_v12_experiment.sh
 
 # 5) Render the PPT-format result table:
 python benchmark/ppt_table_exporter.py \
