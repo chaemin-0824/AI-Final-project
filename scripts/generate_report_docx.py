@@ -227,9 +227,23 @@ def add_bulleted_list(doc, items) -> None:
                         mono=kw.get("mono", False))
 
 
+def clear_cell_shading(cell) -> None:
+    """Force-clear any background fill on a table cell so the Word built-in
+    table style (which may shade headers/banding) does not show up."""
+    tcPr = cell._tc.get_or_add_tcPr()
+    for existing in tcPr.findall(qn("w:shd")):
+        tcPr.remove(existing)
+    shd = OxmlElement("w:shd")
+    shd.set(qn("w:val"), "clear")
+    shd.set(qn("w:color"), "auto")
+    shd.set(qn("w:fill"), "FFFFFF")
+    tcPr.append(shd)
+
+
 def style_cell(cell, *, header=False, align_right=False, align_center=False,
                size_pt=TABLE_PT) -> None:
     cell.vertical_alignment = WD_ALIGN_VERTICAL.CENTER
+    clear_cell_shading(cell)
     for paragraph in cell.paragraphs:
         paragraph.paragraph_format.space_after = Pt(0)
         paragraph.paragraph_format.space_before = Pt(0)
@@ -246,7 +260,8 @@ def add_table(doc, header, rows, *, numeric_cols=None, caption_number=None,
     numeric_cols = set(numeric_cols or [])
     table = doc.add_table(rows=1 + len(rows), cols=len(header))
     table.alignment = WD_TABLE_ALIGNMENT.CENTER
-    table.style = "Light Grid Accent 1" if False else "Light Grid"
+    # "Table Grid" has only black cell borders, no header/banding shading.
+    table.style = "Table Grid"
     hdr_cells = table.rows[0].cells
     for i, text in enumerate(header):
         hdr_cells[i].text = text
