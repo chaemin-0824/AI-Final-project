@@ -32,3 +32,6 @@ visrag/
 .vscode/
 .DS_Store
 run_today*.log
+
+# Build artefacts (regenerable via `zip -@ ...` from tracked files)
+visrag_v12_general_submit_*.zip
