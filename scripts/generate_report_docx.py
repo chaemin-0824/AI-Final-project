@@ -240,24 +240,26 @@ def clear_cell_shading(cell) -> None:
     tcPr.append(shd)
 
 
-def style_cell(cell, *, header=False, align_right=False, align_center=False,
-               size_pt=TABLE_PT) -> None:
+def style_cell(cell, *, header=False, size_pt=TABLE_PT) -> None:
+    """All table cells: vertical center + horizontal center.
+
+    The user requirement is that every cell inside every table is centered;
+    we no longer carry numeric-vs-text alignment switches.
+    """
     cell.vertical_alignment = WD_ALIGN_VERTICAL.CENTER
     clear_cell_shading(cell)
     for paragraph in cell.paragraphs:
         paragraph.paragraph_format.space_after = Pt(0)
         paragraph.paragraph_format.space_before = Pt(0)
-        if align_right:
-            paragraph.alignment = WD_ALIGN_PARAGRAPH.RIGHT
-        elif align_center:
-            paragraph.alignment = WD_ALIGN_PARAGRAPH.CENTER
+        paragraph.alignment = WD_ALIGN_PARAGRAPH.CENTER
         for run in paragraph.runs:
             set_run_style(run, size_pt=size_pt, bold=header)
 
 
 def add_table(doc, header, rows, *, numeric_cols=None, caption_number=None,
               caption=None) -> None:
-    numeric_cols = set(numeric_cols or [])
+    # numeric_cols is accepted but ignored — every cell is centered per spec.
+    del numeric_cols
     table = doc.add_table(rows=1 + len(rows), cols=len(header))
     table.alignment = WD_TABLE_ALIGNMENT.CENTER
     # "Table Grid" has only black cell borders, no header/banding shading.
@@ -265,14 +267,12 @@ def add_table(doc, header, rows, *, numeric_cols=None, caption_number=None,
     hdr_cells = table.rows[0].cells
     for i, text in enumerate(header):
         hdr_cells[i].text = text
-        style_cell(hdr_cells[i], header=True,
-                   align_right=(i in numeric_cols),
-                   align_center=(i not in numeric_cols))
+        style_cell(hdr_cells[i], header=True)
     for r_idx, row in enumerate(rows, start=1):
         for c_idx, val in enumerate(row):
             cell = table.rows[r_idx].cells[c_idx]
             cell.text = val
-            style_cell(cell, align_right=(c_idx in numeric_cols))
+            style_cell(cell)
     if caption:
         p = doc.add_paragraph()
         p.alignment = WD_ALIGN_PARAGRAPH.CENTER
@@ -303,7 +303,7 @@ def configure_page(doc) -> None:
     h_p = header.paragraphs[0] if header.paragraphs else header.add_paragraph()
     h_p.alignment = WD_ALIGN_PARAGRAPH.RIGHT
     h_p.paragraph_format.space_after = Pt(0)
-    add_run(h_p, "Parsed-Visual RAG (v12-general) vs. VisRAG",
+    add_run(h_p, "Parsed-Visual RAG (PV-RAG) vs. VisRAG",
             size_pt=HEADER_PT, italic=True)
     bottom_border(h_p, size="4")
 
@@ -353,7 +353,7 @@ def add_title_block(doc) -> None:
     p = doc.add_paragraph()
     p.alignment = WD_ALIGN_PARAGRAPH.CENTER
     p.paragraph_format.space_after = Pt(4)
-    add_run(p, "Parsed-Visual RAG (v12-general) 대 VisRAG", size_pt=TITLE_PT, bold=True)
+    add_run(p, "Parsed-Visual RAG (PV-RAG) 대 VisRAG", size_pt=TITLE_PT, bold=True)
 
     p = doc.add_paragraph()
     p.alignment = WD_ALIGN_PARAGRAPH.CENTER
@@ -390,18 +390,18 @@ def add_abstract(doc) -> None:
     body.paragraph_format.line_spacing_rule = WD_LINE_SPACING.MULTIPLE
     text = (
         "본 보고서는 OpenBMB가 제안한 시각 기반 검색-증강 생성 프레임워크 VisRAG[1]의 공개 평가 "
-        "벤치마크 위에서, 시각 전용 입력을 사용하는 baseline과 본 연구가 제안하는 domain-free 변형 "
-        "Parsed-Visual RAG(이하 v12-general)을 비교한다. v12-general은 페이지 이미지를 Upstage "
+        "벤치마크 위에서, 시각 전용 입력을 사용하는 baseline과 본 연구가 제안하는 도메인 비종속 "
+        "변형 Parsed-Visual RAG(이하 PV-RAG)을 비교한다. PV-RAG는 페이지 이미지를 Upstage "
         "Document Parse[5]로 텍스트·표 형태로 변환하여 동일한 시각 언어 모델(Vision-Language "
         "Model, VLM)에 원본 이미지와 함께 입력으로 제공하는 방법이다. 실험은 단일 RTX 4060(8 GB "
         "VRAM) 환경에서 수행되었고, 생성기는 Qwen2-VL-7B-Instruct[3]를 bitsandbytes NF4 4-bit "
         "양자화[4]로 적재하였다. 4개 데이터셋(InfoVQA, ChartQA, MP-DocVQA, SlideVQA)에 대해 각 첫 "
         "100개 질의로 oracle 검색을 사용함으로써 생성 단계의 효과만을 격리하였다. 그 결과 "
-        "v12-general은 시각 전용 baseline 대비 macro 정확도 기준 +36.32%p(0.229 → 0.592)의 "
-        "향상을 보였으며, 페이지 레이아웃이 답변에 기여하는 MP-DocVQA에서는 파싱 텍스트 단독 "
-        "ablation 대비 +4.0%p의 추가 이득이 관찰되었다. 본 보고서는 각 방법론의 구조, 파라미터 "
-        "설정, 코드 설계, 논문과의 일치 및 차이, 그리고 단일 GPU 제약 하에서의 생성기·검색·표본 "
-        "설계 결정의 정당성을 학술적 관점에서 정리한다."
+        "PV-RAG는 시각 전용 baseline 대비 macro 정확도 기준 +36.32%p(0.229 → 0.592)의 향상을 "
+        "보였으며, 페이지 레이아웃이 답변에 기여하는 MP-DocVQA에서는 파싱 텍스트 단독 ablation "
+        "대비 +4.0%p의 추가 이득이 관찰되었다. 본 보고서는 각 방법론의 구조, 파라미터 설정, 코드 "
+        "설계, 논문과의 일치 및 차이, 그리고 단일 GPU 제약 하에서의 생성기·검색·표본 설계 결정의 "
+        "정당성을 학술적 관점에서 정리한다."
     )
     add_run(body, text, size_pt=ABSTRACT_PT)
 
@@ -437,10 +437,10 @@ def section_1_intro(doc) -> None:
     )
     add_para(
         doc,
-        "반면 본 연구진이 선행 연구로 개발한 v12 계열 아키텍처는 동일한 페이지 이미지에 Upstage "
-        "Document Parse[5]를 적용하여 텍스트·표를 명시적으로 추출하고, 이를 원본 이미지와 함께 "
-        "시각 언어 모델 입력으로 결합한다. 두 접근은 “파싱에 의한 명시적 텍스트 증거가 시각 전용 "
-        "입력 대비 답변 품질을 개선하는가”라는 가설에 대해 상반된 입장을 취한다.",
+        "반면 본 연구진이 선행 연구로 개발한 도메인 특화 RAG 시스템은 동일한 페이지 이미지에 "
+        "Upstage Document Parse[5]를 적용하여 텍스트·표를 명시적으로 추출하고, 이를 원본 "
+        "이미지와 함께 시각 언어 모델 입력으로 결합한다. 두 접근은 “파싱에 의한 명시적 텍스트 "
+        "증거가 시각 전용 입력 대비 답변 품질을 개선하는가”라는 가설에 대해 상반된 입장을 취한다.",
     )
     add_para(
         doc,
@@ -463,7 +463,7 @@ def section_1_intro(doc) -> None:
         [
             "VisRAG 공식 평가 벤치마크(4개 데이터셋) 위에서, 동일 생성기·동일 oracle 페이지 "
             "조건의 generation-only ablation을 통해 evidence 형식의 효과를 정량적으로 측정하였다.",
-            "Parsed-Visual RAG (v12-general)이 시각 전용 baseline 대비 macro 정확도 기준 "
+            "Parsed-Visual RAG(PV-RAG)이 시각 전용 baseline 대비 macro 정확도 기준 "
             "+36.32%p의 일관된 향상을 달성함을 보였으며, MP-DocVQA에서 파싱 텍스트 단독 ablation "
             "대비 +4.0%p의 상보적 이득을 관찰하였다.",
             "단일 8 GB GPU 제약 하에서의 4-bit 양자화 추론과 이미지 해상도 캡 적용이 모드 간 "
@@ -559,13 +559,13 @@ def section_4_methodologies(doc) -> None:
         "충분히 보존하는가를 검증하는 통제군이다. 본 모드가 image_only를 크게 상회하면 "
         "파싱의 정보 보존이 충분함을 시사한다.",
     )
-    add_heading(doc, "4.3 parsed_visual — Parsed-Visual RAG (v12-general)", level=2)
+    add_heading(doc, "4.3 parsed_visual — Parsed-Visual RAG (PV-RAG)", level=2)
     add_para(
         doc,
         "페이지 이미지와 파싱 텍스트·표를 함께 VLM에 입력한다. 본 방법의 가설은 "
         "“파싱은 정확한 라벨·수치를 명시적으로 제공하고 이미지는 레이아웃·시각적 강조를 "
         "보존하므로, 두 증거가 상보적이라면 결합이 단독 사용보다 우월하다”는 것이다. 이 "
-        "모드가 본 보고서가 검증하는 v12-general 방법론이다.",
+        "모드가 본 보고서가 검증하는 PV-RAG 방법론이다.",
     )
 
 
@@ -879,7 +879,7 @@ def section_9_results(doc) -> None:
         rows=[
             ["Baseline (순수 VisRAG, image_only)", "0.2000", "0.3651", "0.1700", "0.1800", "0.2288", "—"],
             ["Parsed-Text Only (ablation)", "0.5400", "0.5238", "0.7600", "0.5200", "0.5860", "+35.72%p"],
-            ["Parsed-Visual RAG (v12-general, ours)", "0.5400", "0.5079", "0.8000", "0.5200", "0.5920", "+36.32%p"],
+            ["Parsed-Visual RAG (PV-RAG, ours)", "0.5400", "0.5079", "0.8000", "0.5200", "0.5920", "+36.32%p"],
         ],
         numeric_cols=[1, 2, 3, 4, 5, 6],
         caption_number=8,
@@ -917,7 +917,7 @@ def section_9_results(doc) -> None:
 
 def section_10_discussion(doc) -> None:
     add_heading(doc, "10. 논의")
-    add_heading(doc, "10.1 v12-general의 효과", level=2)
+    add_heading(doc, "10.1 PV-RAG의 효과", level=2)
     add_para(
         doc,
         "모든 4개 데이터셋에서 parsed_visual은 시각 전용 baseline을 큰 폭으로 상회한다. macro "
@@ -932,7 +932,7 @@ def section_10_discussion(doc) -> None:
         "MP-DocVQA에서는 parsed_visual이 parsed_text_only를 명확히 상회한다(0.800 vs. 0.760, "
         "+4.0%p). MP-DocVQA는 다중 페이지 문서에서 표·문단·필드 등 레이아웃 정보가 답에 "
         "기여하는 데이터셋이다. 파싱 텍스트만으로는 “어느 표의 어느 행” 수준의 위치 정보가 일부 "
-        "손실되며, 원본 이미지가 이 손실을 보완하는 것으로 해석된다. 본 결과는 v12-general이 "
+        "손실되며, 원본 이미지가 이 손실을 보완하는 것으로 해석된다. 본 결과는 PV-RAG가 "
         "OCR-only 시스템 대비 추가 가치를 제공할 수 있음을 시사하는 가장 직접적인 증거이다.",
     )
     add_heading(doc, "10.3 ChartQA에서의 역방향", level=2)
@@ -1122,15 +1122,17 @@ def appendices(doc) -> None:
         ],
     )
 
-    add_heading(doc, "부록 C. v12 bridge 도메인 구성요소(범위 외)")
+    add_heading(doc, "부록 C. 교량 점검 도메인 RAG 구성요소(범위 외)")
     add_para(
         doc,
-        "본 보고서가 다루는 v12-general은 백업 폴더 backup/v12_port/ 의 도메인 종속 v12 구성"
-        "요소—교량 점검 보고서에 특화된 질문 분류기, 챕터 추론, 손상 이력 보강 등—를 제거하고 "
-        "‘파싱 텍스트와 이미지를 동시에 VLM에 입력한다’는 일반 원리만을 남긴 변형이다. VisRAG "
-        "공개 벤치마크에는 교량 도메인 컴포넌트가 사용되지 않으며, 본 제출의 어떤 결과도 "
-        "v12_port 모듈에 의존하지 않는다. 자세한 설계 근거는 backup/docs/"
-        "domain_free_v12_experiment_design.md에, backup 폴더의 인덱스는 backup/README.md에 있다.",
+        "본 보고서가 다루는 PV-RAG는 백업 폴더 backup/v12_port/ 에 보관된 도메인 특화 RAG "
+        "선행 시스템—교량 점검 보고서에 특화된 질문 분류기, 챕터 추론, 손상 이력 보강 등의 "
+        "구성요소—를 제거하고 “파싱 텍스트와 이미지를 동시에 VLM에 입력한다”는 일반 원리만을 "
+        "남긴 변형이다. VisRAG 공개 벤치마크에는 교량 도메인 컴포넌트가 사용되지 않으며, 본 "
+        "제출의 어떤 결과도 backup/v12_port 모듈에 의존하지 않는다. 도메인 특화 컴포넌트를 "
+        "제거한 일반화 설계 근거는 backup/docs/domain_free_v12_experiment_design.md에, "
+        "backup 폴더의 인덱스는 backup/README.md에 있다(코드·파일명은 선행 프로젝트의 내부 "
+        "버전 표기 v12를 그대로 사용한다).",
     )
 
 
