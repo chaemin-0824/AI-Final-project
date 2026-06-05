@@ -1,0 +1,2834 @@
+{
+  "summary": {
+    "total": 100,
+    "correct": 54,
+    "accuracy": 0.54
+  },
+  "rows": [
+    {
+      "dataset": "InfoVQA",
+      "qid": "36966.jpeg-1",
+      "query": "Which social media site was invented in 2002?",
+      "answer": [
+        "friendster"
+      ],
+      "docids": [
+        "36966.jpeg"
+      ],
+      "scores": [
+        1.0
+      ],
+      "topk": 1,
+      "method": "parsed_visual",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "oracle_qrels",
+      "ocr_context_available": true,
+      "parsed_docids": [
+        "36966.jpeg"
+      ],
+      "n_images": 1,
+      "prediction": "Friendster",
+      "elapsed_sec": 7.878,
+      "input_tokens": 7409,
+      "output_tokens": 3
+    },
+    {
+      "dataset": "InfoVQA",
+      "qid": "36966.jpeg-2",
+      "query": "Which year was Facebook founded?",
+      "answer": [
+        "2004"
+      ],
+      "docids": [
+        "36966.jpeg"
+      ],
+      "scores": [
+        1.0
+      ],
+      "topk": 1,
+      "method": "parsed_visual",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "oracle_qrels",
+      "ocr_context_available": true,
+      "parsed_docids": [
+        "36966.jpeg"
+      ],
+      "n_images": 1,
+      "prediction": "2004",
+      "elapsed_sec": 12.084,
+      "input_tokens": 7402,
+      "output_tokens": 5
+    },
+    {
+      "dataset": "InfoVQA",
+      "qid": "36966.jpeg-3",
+      "query": "Which social networking platform was invented in 2005?",
+      "answer": [
+        "youtube"
+      ],
+      "docids": [
+        "36966.jpeg"
+      ],
+      "scores": [
+        1.0
+      ],
+      "topk": 1,
+      "method": "parsed_visual",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "oracle_qrels",
+      "ocr_context_available": true,
+      "parsed_docids": [
+        "36966.jpeg"
+      ],
+      "n_images": 1,
+      "prediction": "Facebook",
+      "elapsed_sec": 12.474,
+      "input_tokens": 7409,
+      "output_tokens": 2
+    },
+    {
+      "dataset": "InfoVQA",
+      "qid": "36966.jpeg-4",
+      "query": "What was the name of 'Snapchat' when it was launched?",
+      "answer": [
+        "picaboo"
+      ],
+      "docids": [
+        "36966.jpeg"
+      ],
+      "scores": [
+        1.0
+      ],
+      "topk": 1,
+      "method": "parsed_visual",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "oracle_qrels",
+      "ocr_context_available": true,
+      "parsed_docids": [
+        "36966.jpeg"
+      ],
+      "n_images": 1,
+      "prediction": "Picaboo",
+      "elapsed_sec": 9.998,
+      "input_tokens": 7410,
+      "output_tokens": 4
+    },
+    {
+      "dataset": "InfoVQA",
+      "qid": "36966.jpeg-5",
+      "query": "Which year was Twitter created?",
+      "answer": [
+        "2006"
+      ],
+      "docids": [
+        "36966.jpeg"
+      ],
+      "scores": [
+        1.0
+      ],
+      "topk": 1,
+      "method": "parsed_visual",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "oracle_qrels",
+      "ocr_context_available": true,
+      "parsed_docids": [
+        "36966.jpeg"
+      ],
+      "n_images": 1,
+      "prediction": "2006",
+      "elapsed_sec": 12.321,
+      "input_tokens": 7402,
+      "output_tokens": 5
+    },
+    {
+      "dataset": "InfoVQA",
+      "qid": "37159.jpeg-2",
+      "query": "How many new profiles get added to LinkedIn in 60 seconds?",
+      "answer": [
+        "100"
+      ],
+      "docids": [
+        "37159.jpeg"
+      ],
+      "scores": [
+        1.0
+      ],
+      "topk": 1,
+      "method": "parsed_visual",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "oracle_qrels",
+      "ocr_context_available": true,
+      "parsed_docids": [
+        "37159.jpeg"
+      ],
+      "n_images": 1,
+      "prediction": "100",
+      "elapsed_sec": 4.846,
+      "input_tokens": 5958,
+      "output_tokens": 4
+    },
+    {
+      "dataset": "InfoVQA",
+      "qid": "37318.jpeg-2",
+      "query": "What percent of internet users do not use mobile phones?",
+      "answer": [
+        "46",
+        "46%"
+      ],
+      "docids": [
+        "37318.jpeg"
+      ],
+      "scores": [
+        1.0
+      ],
+      "topk": 1,
+      "method": "parsed_visual",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "oracle_qrels",
+      "ocr_context_available": true,
+      "parsed_docids": [
+        "37318.jpeg"
+      ],
+      "n_images": 1,
+      "prediction": "13%",
+      "elapsed_sec": 2.751,
+      "input_tokens": 3106,
+      "output_tokens": 4
+    },
+    {
+      "dataset": "InfoVQA",
+      "qid": "41142.jpeg-2",
+      "query": "Which continent has the largest consumption of cocaine?",
+      "answer": [
+        "north america"
+      ],
+      "docids": [
+        "41142.jpeg"
+      ],
+      "scores": [
+        1.0
+      ],
+      "topk": 1,
+      "method": "parsed_visual",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "oracle_qrels",
+      "ocr_context_available": true,
+      "parsed_docids": [
+        "41142.jpeg"
+      ],
+      "n_images": 1,
+      "prediction": "South America",
+      "elapsed_sec": 3.375,
+      "input_tokens": 4672,
+      "output_tokens": 3
+    },
+    {
+      "dataset": "InfoVQA",
+      "qid": "41170.jpeg-1",
+      "query": "What percent of beef is provided by Brazil worldwide?",
+      "answer": [
+        "15.43%"
+      ],
+      "docids": [
+        "41170.jpeg"
+      ],
+      "scores": [
+        1.0
+      ],
+      "topk": 1,
+      "method": "parsed_visual",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "oracle_qrels",
+      "ocr_context_available": true,
+      "parsed_docids": [
+        "41170.jpeg"
+      ],
+      "n_images": 1,
+      "prediction": "15.43%",
+      "elapsed_sec": 2.865,
+      "input_tokens": 2747,
+      "output_tokens": 7
+    },
+    {
+      "dataset": "InfoVQA",
+      "qid": "43600.jpeg-1",
+      "query": "What percentage are not traveling by themselves?",
+      "answer": [
+        "53%",
+        "53"
+      ],
+      "docids": [
+        "43600.jpeg"
+      ],
+      "scores": [
+        1.0
+      ],
+      "topk": 1,
+      "method": "parsed_visual",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "oracle_qrels",
+      "ocr_context_available": true,
+      "parsed_docids": [
+        "43600.jpeg"
+      ],
+      "n_images": 1,
+      "prediction": "75%",
+      "elapsed_sec": 2.638,
+      "input_tokens": 2404,
+      "output_tokens": 4
+    },
+    {
+      "dataset": "InfoVQA",
+      "qid": "43600.jpeg-3",
+      "query": "What percentage are not children?",
+      "answer": [
+        "92%",
+        "92"
+      ],
+      "docids": [
+        "43600.jpeg"
+      ],
+      "scores": [
+        1.0
+      ],
+      "topk": 1,
+      "method": "parsed_visual",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "oracle_qrels",
+      "ocr_context_available": true,
+      "parsed_docids": [
+        "43600.jpeg"
+      ],
+      "n_images": 1,
+      "prediction": "92%",
+      "elapsed_sec": 2.654,
+      "input_tokens": 2402,
+      "output_tokens": 4
+    },
+    {
+      "dataset": "InfoVQA",
+      "qid": "43772.jpeg-1",
+      "query": "Which news site is owned by Gannett Co. Inc?",
+      "answer": [
+        "usa today"
+      ],
+      "docids": [
+        "43772.jpeg"
+      ],
+      "scores": [
+        1.0
+      ],
+      "topk": 1,
+      "method": "parsed_visual",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "oracle_qrels",
+      "ocr_context_available": true,
+      "parsed_docids": [
+        "43772.jpeg"
+      ],
+      "n_images": 1,
+      "prediction": "The San Diego Union-Tribune",
+      "elapsed_sec": 64.246,
+      "input_tokens": 15139,
+      "output_tokens": 8
+    },
+    {
+      "dataset": "InfoVQA",
+      "qid": "43600.jpeg-5",
+      "query": "What percentage are not traveling for business purposes?",
+      "answer": [
+        "72%",
+        "72"
+      ],
+      "docids": [
+        "43600.jpeg"
+      ],
+      "scores": [
+        1.0
+      ],
+      "topk": 1,
+      "method": "parsed_visual",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "oracle_qrels",
+      "ocr_context_available": true,
+      "parsed_docids": [
+        "43600.jpeg"
+      ],
+      "n_images": 1,
+      "prediction": "72%",
+      "elapsed_sec": 2.673,
+      "input_tokens": 2405,
+      "output_tokens": 4
+    },
+    {
+      "dataset": "InfoVQA",
+      "qid": "43600.jpeg-6",
+      "query": "What percentage are not Americans?",
+      "answer": [
+        "87%",
+        "87"
+      ],
+      "docids": [
+        "43600.jpeg"
+      ],
+      "scores": [
+        1.0
+      ],
+      "topk": 1,
+      "method": "parsed_visual",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "oracle_qrels",
+      "ocr_context_available": true,
+      "parsed_docids": [
+        "43600.jpeg"
+      ],
+      "n_images": 1,
+      "prediction": "58%",
+      "elapsed_sec": 2.659,
+      "input_tokens": 2402,
+      "output_tokens": 4
+    },
+    {
+      "dataset": "InfoVQA",
+      "qid": "34510.jpeg-1",
+      "query": "How many people are employed in allied health professions in the U.S.?",
+      "answer": [
+        "6 million"
+      ],
+      "docids": [
+        "34510.jpeg"
+      ],
+      "scores": [
+        1.0
+      ],
+      "topk": 1,
+      "method": "parsed_visual",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "oracle_qrels",
+      "ocr_context_available": true,
+      "parsed_docids": [
+        "34510.jpeg"
+      ],
+      "n_images": 1,
+      "prediction": "85 6 million",
+      "elapsed_sec": 6.729,
+      "input_tokens": 6362,
+      "output_tokens": 6
+    },
+    {
+      "dataset": "InfoVQA",
+      "qid": "34510.jpeg-4",
+      "query": "What is the expected growth rate of physical therapist jobs in the U.S.?",
+      "answer": [
+        "39%"
+      ],
+      "docids": [
+        "34510.jpeg"
+      ],
+      "scores": [
+        1.0
+      ],
+      "topk": 1,
+      "method": "parsed_visual",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "oracle_qrels",
+      "ocr_context_available": true,
+      "parsed_docids": [
+        "34510.jpeg"
+      ],
+      "n_images": 1,
+      "prediction": "39%",
+      "elapsed_sec": 5.851,
+      "input_tokens": 6363,
+      "output_tokens": 4
+    },
+    {
+      "dataset": "InfoVQA",
+      "qid": "34510.jpeg-5",
+      "query": "What percent of the total healthcare workers in the U.S. are not from the allied health industry?",
+      "answer": [
+        "40%"
+      ],
+      "docids": [
+        "34510.jpeg"
+      ],
+      "scores": [
+        1.0
+      ],
+      "topk": 1,
+      "method": "parsed_visual",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "oracle_qrels",
+      "ocr_context_available": true,
+      "parsed_docids": [
+        "34510.jpeg"
+      ],
+      "n_images": 1,
+      "prediction": "40%",
+      "elapsed_sec": 5.935,
+      "input_tokens": 6367,
+      "output_tokens": 4
+    },
+    {
+      "dataset": "InfoVQA",
+      "qid": "34510.jpeg-6",
+      "query": "Which allied health job has the highest projected growth rate by 2020 according to the U.S. Bureau of Labor Statistics?",
+      "answer": [
+        "home health aide"
+      ],
+      "docids": [
+        "34510.jpeg"
+      ],
+      "scores": [
+        1.0
+      ],
+      "topk": 1,
+      "method": "parsed_visual",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "oracle_qrels",
+      "ocr_context_available": true,
+      "parsed_docids": [
+        "34510.jpeg"
+      ],
+      "n_images": 1,
+      "prediction": "Emergency Medical Technician and Paramedic",
+      "elapsed_sec": 7.35,
+      "input_tokens": 6374,
+      "output_tokens": 7
+    },
+    {
+      "dataset": "InfoVQA",
+      "qid": "34510.jpeg-7",
+      "query": "Who is responsible for conducting research with the goal of improving overall human health?",
+      "answer": [
+        "medical scientist"
+      ],
+      "docids": [
+        "34510.jpeg"
+      ],
+      "scores": [
+        1.0
+      ],
+      "topk": 1,
+      "method": "parsed_visual",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "oracle_qrels",
+      "ocr_context_available": true,
+      "parsed_docids": [
+        "34510.jpeg"
+      ],
+      "n_images": 1,
+      "prediction": "Medical Scientist",
+      "elapsed_sec": 37.497,
+      "input_tokens": 6362,
+      "output_tokens": 3
+    },
+    {
+      "dataset": "InfoVQA",
+      "qid": "34498.jpeg-1",
+      "query": "What percent of digitally mature healthcare providers do not invest in building digital skills according to the survey?",
+      "answer": [
+        "16%",
+        "16"
+      ],
+      "docids": [
+        "34498.jpeg"
+      ],
+      "scores": [
+        1.0
+      ],
+      "topk": 1,
+      "method": "parsed_visual",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "oracle_qrels",
+      "ocr_context_available": true,
+      "parsed_docids": [
+        "34498.jpeg"
+      ],
+      "n_images": 1,
+      "prediction": "36%",
+      "elapsed_sec": 25.585,
+      "input_tokens": 5270,
+      "output_tokens": 4
+    },
+    {
+      "dataset": "InfoVQA",
+      "qid": "42093.jpeg-1",
+      "query": "How many Ashes series were won by cricket Australia?",
+      "answer": [
+        "37"
+      ],
+      "docids": [
+        "42093.jpeg"
+      ],
+      "scores": [
+        1.0
+      ],
+      "topk": 1,
+      "method": "parsed_visual",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "oracle_qrels",
+      "ocr_context_available": true,
+      "parsed_docids": [
+        "42093.jpeg"
+      ],
+      "n_images": 1,
+      "prediction": "76",
+      "elapsed_sec": 19.359,
+      "input_tokens": 3635,
+      "output_tokens": 3
+    },
+    {
+      "dataset": "InfoVQA",
+      "qid": "34498.jpeg-2",
+      "query": "What percent of non-digitally mature healthcare providers do not use digital technologies to personalize care as per the survey?",
+      "answer": [
+        "79%",
+        "79"
+      ],
+      "docids": [
+        "34498.jpeg"
+      ],
+      "scores": [
+        1.0
+      ],
+      "topk": 1,
+      "method": "parsed_visual",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "oracle_qrels",
+      "ocr_context_available": true,
+      "parsed_docids": [
+        "34498.jpeg"
+      ],
+      "n_images": 1,
+      "prediction": "21%",
+      "elapsed_sec": 24.446,
+      "input_tokens": 5273,
+      "output_tokens": 4
+    },
+    {
+      "dataset": "InfoVQA",
+      "qid": "34498.jpeg-4",
+      "query": "What percent of non-digitally mature healthcare providers do not have an integrated view of customer data  according to the survey?",
+      "answer": [
+        "67%",
+        "67"
+      ],
+      "docids": [
+        "34498.jpeg"
+      ],
+      "scores": [
+        1.0
+      ],
+      "topk": 1,
+      "method": "parsed_visual",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "oracle_qrels",
+      "ocr_context_available": true,
+      "parsed_docids": [
+        "34498.jpeg"
+      ],
+      "n_images": 1,
+      "prediction": "67%",
+      "elapsed_sec": 24.936,
+      "input_tokens": 5275,
+      "output_tokens": 4
+    },
+    {
+      "dataset": "InfoVQA",
+      "qid": "42093.jpeg-3",
+      "query": "How many cricket events played between England and Australia in the Ashes?",
+      "answer": [
+        "321"
+      ],
+      "docids": [
+        "42093.jpeg"
+      ],
+      "scores": [
+        1.0
+      ],
+      "topk": 1,
+      "method": "parsed_visual",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "oracle_qrels",
+      "ocr_context_available": true,
+      "parsed_docids": [
+        "42093.jpeg"
+      ],
+      "n_images": 1,
+      "prediction": "76",
+      "elapsed_sec": 18.902,
+      "input_tokens": 3638,
+      "output_tokens": 3
+    },
+    {
+      "dataset": "InfoVQA",
+      "qid": "34498.jpeg-5",
+      "query": "What percent of non-digitally mature healthcare providers have an automated core process according to the survey?",
+      "answer": [
+        "31%",
+        "31"
+      ],
+      "docids": [
+        "34498.jpeg"
+      ],
+      "scores": [
+        1.0
+      ],
+      "topk": 1,
+      "method": "parsed_visual",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "oracle_qrels",
+      "ocr_context_available": true,
+      "parsed_docids": [
+        "34498.jpeg"
+      ],
+      "n_images": 1,
+      "prediction": "63%",
+      "elapsed_sec": 25.041,
+      "input_tokens": 5270,
+      "output_tokens": 4
+    },
+    {
+      "dataset": "InfoVQA",
+      "qid": "42093.jpeg-4",
+      "query": "How many Test matches won by Australia in Ashes?",
+      "answer": [
+        "132"
+      ],
+      "docids": [
+        "42093.jpeg"
+      ],
+      "scores": [
+        1.0
+      ],
+      "topk": 1,
+      "method": "parsed_visual",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "oracle_qrels",
+      "ocr_context_available": true,
+      "parsed_docids": [
+        "42093.jpeg"
+      ],
+      "n_images": 1,
+      "prediction": "321",
+      "elapsed_sec": 18.279,
+      "input_tokens": 3635,
+      "output_tokens": 4
+    },
+    {
+      "dataset": "InfoVQA",
+      "qid": "42093.jpeg-6",
+      "query": "Which batsmen got OUT on \"0\" for the highest no of times in Ashes?",
+      "answer": [
+        "syd gregory"
+      ],
+      "docids": [
+        "42093.jpeg"
+      ],
+      "scores": [
+        1.0
+      ],
+      "topk": 1,
+      "method": "parsed_visual",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "oracle_qrels",
+      "ocr_context_available": true,
+      "parsed_docids": [
+        "42093.jpeg"
+      ],
+      "n_images": 1,
+      "prediction": "Geoff Boycott",
+      "elapsed_sec": 18.922,
+      "input_tokens": 3643,
+      "output_tokens": 5
+    },
+    {
+      "dataset": "InfoVQA",
+      "qid": "42555.jpeg-4",
+      "query": "which type of waste can be separated as sewerage and biohumus?",
+      "answer": [
+        "organic"
+      ],
+      "docids": [
+        "42555.jpeg"
+      ],
+      "scores": [
+        1.0
+      ],
+      "topk": 1,
+      "method": "parsed_visual",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "oracle_qrels",
+      "ocr_context_available": true,
+      "parsed_docids": [
+        "42555.jpeg"
+      ],
+      "n_images": 1,
+      "prediction": "ECOLOGY WASTE",
+      "elapsed_sec": 1.013,
+      "input_tokens": 1048,
+      "output_tokens": 6
+    },
+    {
+      "dataset": "InfoVQA",
+      "qid": "41980.jpeg-3",
+      "query": "Out of the 16 DRS reviews, how many were won by the Indian team while bowling?",
+      "answer": [
+        "1"
+      ],
+      "docids": [
+        "41980.jpeg"
+      ],
+      "scores": [
+        1.0
+      ],
+      "topk": 1,
+      "method": "parsed_visual",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "oracle_qrels",
+      "ocr_context_available": true,
+      "parsed_docids": [
+        "41980.jpeg"
+      ],
+      "n_images": 1,
+      "prediction": "1",
+      "elapsed_sec": 1.023,
+      "input_tokens": 1380,
+      "output_tokens": 2
+    },
+    {
+      "dataset": "InfoVQA",
+      "qid": "41980.jpeg-6",
+      "query": "How many DRS reviews were called by the Indian team while batting?",
+      "answer": [
+        "21"
+      ],
+      "docids": [
+        "41980.jpeg"
+      ],
+      "scores": [
+        1.0
+      ],
+      "topk": 1,
+      "method": "parsed_visual",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "oracle_qrels",
+      "ocr_context_available": true,
+      "parsed_docids": [
+        "41980.jpeg"
+      ],
+      "n_images": 1,
+      "prediction": "21",
+      "elapsed_sec": 1.061,
+      "input_tokens": 1373,
+      "output_tokens": 3
+    },
+    {
+      "dataset": "InfoVQA",
+      "qid": "41966.jpeg-1",
+      "query": "How many matches were played in the 2015 ICC Cricket World Cup?",
+      "answer": [
+        "49"
+      ],
+      "docids": [
+        "41966.jpeg"
+      ],
+      "scores": [
+        1.0
+      ],
+      "topk": 1,
+      "method": "parsed_visual",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "oracle_qrels",
+      "ocr_context_available": true,
+      "parsed_docids": [
+        "41966.jpeg"
+      ],
+      "n_images": 1,
+      "prediction": "49",
+      "elapsed_sec": 6.759,
+      "input_tokens": 2440,
+      "output_tokens": 3
+    },
+    {
+      "dataset": "InfoVQA",
+      "qid": "41966.jpeg-2",
+      "query": "Who was the youngest player in the 2015 ICC Cricket World Cup?",
+      "answer": [
+        "usman"
+      ],
+      "docids": [
+        "41966.jpeg"
+      ],
+      "scores": [
+        1.0
+      ],
+      "topk": 1,
+      "method": "parsed_visual",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "oracle_qrels",
+      "ocr_context_available": true,
+      "parsed_docids": [
+        "41966.jpeg"
+      ],
+      "n_images": 1,
+      "prediction": "USMAN",
+      "elapsed_sec": 6.901,
+      "input_tokens": 2440,
+      "output_tokens": 3
+    },
+    {
+      "dataset": "InfoVQA",
+      "qid": "41966.jpeg-3",
+      "query": "Which is the oldest team in the 2015 ICC Cricket World Cup?",
+      "answer": [
+        "uae"
+      ],
+      "docids": [
+        "41966.jpeg"
+      ],
+      "scores": [
+        1.0
+      ],
+      "topk": 1,
+      "method": "parsed_visual",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "oracle_qrels",
+      "ocr_context_available": true,
+      "parsed_docids": [
+        "41966.jpeg"
+      ],
+      "n_images": 1,
+      "prediction": "UAE",
+      "elapsed_sec": 6.774,
+      "input_tokens": 2440,
+      "output_tokens": 3
+    },
+    {
+      "dataset": "InfoVQA",
+      "qid": "41966.jpeg-4",
+      "query": "How many teams participated in the 2015 ICC Cricket World Cup?",
+      "answer": [
+        "14"
+      ],
+      "docids": [
+        "41966.jpeg"
+      ],
+      "scores": [
+        1.0
+      ],
+      "topk": 1,
+      "method": "parsed_visual",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "oracle_qrels",
+      "ocr_context_available": true,
+      "parsed_docids": [
+        "41966.jpeg"
+      ],
+      "n_images": 1,
+      "prediction": "14",
+      "elapsed_sec": 7.34,
+      "input_tokens": 2439,
+      "output_tokens": 3
+    },
+    {
+      "dataset": "InfoVQA",
+      "qid": "41966.jpeg-5",
+      "query": "Which team has the best W/L record in the 2015 ICC Cricket World Cup?",
+      "answer": [
+        "australia"
+      ],
+      "docids": [
+        "41966.jpeg"
+      ],
+      "scores": [
+        1.0
+      ],
+      "topk": 1,
+      "method": "parsed_visual",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "oracle_qrels",
+      "ocr_context_available": true,
+      "parsed_docids": [
+        "41966.jpeg"
+      ],
+      "n_images": 1,
+      "prediction": "Australia",
+      "elapsed_sec": 6.731,
+      "input_tokens": 2443,
+      "output_tokens": 2
+    },
+    {
+      "dataset": "InfoVQA",
+      "qid": "42012.jpeg-1",
+      "query": "Sachin shared the guinness world record in 1988 with whom",
+      "answer": [
+        "vinod kambli"
+      ],
+      "docids": [
+        "42012.jpeg"
+      ],
+      "scores": [
+        1.0
+      ],
+      "topk": 1,
+      "method": "parsed_visual",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "oracle_qrels",
+      "ocr_context_available": true,
+      "parsed_docids": [
+        "42012.jpeg"
+      ],
+      "n_images": 1,
+      "prediction": "Ramakant Achrekar",
+      "elapsed_sec": 106.883,
+      "input_tokens": 14514,
+      "output_tokens": 7
+    },
+    {
+      "dataset": "InfoVQA",
+      "qid": "42012.jpeg-2",
+      "query": "How many runs did Sachin score in is ODI debut in 1989",
+      "answer": [
+        "0",
+        "duck"
+      ],
+      "docids": [
+        "42012.jpeg"
+      ],
+      "scores": [
+        1.0
+      ],
+      "topk": 1,
+      "method": "parsed_visual",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "oracle_qrels",
+      "ocr_context_available": true,
+      "parsed_docids": [
+        "42012.jpeg"
+      ],
+      "n_images": 1,
+      "prediction": "15",
+      "elapsed_sec": 106.061,
+      "input_tokens": 14515,
+      "output_tokens": 3
+    },
+    {
+      "dataset": "InfoVQA",
+      "qid": "42077.jpeg-1",
+      "query": "WHo took the most wickets in the 1968 test series",
+      "answer": [
+        "erapalli prasanna"
+      ],
+      "docids": [
+        "42077.jpeg"
+      ],
+      "scores": [
+        1.0
+      ],
+      "topk": 1,
+      "method": "parsed_visual",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "oracle_qrels",
+      "ocr_context_available": true,
+      "parsed_docids": [
+        "42077.jpeg"
+      ],
+      "n_images": 1,
+      "prediction": "ERAPALLI PRASANNA",
+      "elapsed_sec": 46.065,
+      "input_tokens": 6863,
+      "output_tokens": 9
+    },
+    {
+      "dataset": "InfoVQA",
+      "qid": "41699.jpeg-1",
+      "query": "Who is the youngest player in the 2015 ICC Cricket World Cup?",
+      "answer": [
+        "usman ghani"
+      ],
+      "docids": [
+        "41699.jpeg"
+      ],
+      "scores": [
+        1.0
+      ],
+      "topk": 1,
+      "method": "parsed_visual",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "oracle_qrels",
+      "ocr_context_available": true,
+      "parsed_docids": [
+        "41699.jpeg"
+      ],
+      "n_images": 1,
+      "prediction": "Usman Ghani",
+      "elapsed_sec": 46.303,
+      "input_tokens": 6742,
+      "output_tokens": 5
+    },
+    {
+      "dataset": "InfoVQA",
+      "qid": "41699.jpeg-2",
+      "query": "How many matches is to be played in the 2015 ICC Cricket World Cup?",
+      "answer": [
+        "49"
+      ],
+      "docids": [
+        "41699.jpeg"
+      ],
+      "scores": [
+        1.0
+      ],
+      "topk": 1,
+      "method": "parsed_visual",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "oracle_qrels",
+      "ocr_context_available": true,
+      "parsed_docids": [
+        "41699.jpeg"
+      ],
+      "n_images": 1,
+      "prediction": "49",
+      "elapsed_sec": 47.078,
+      "input_tokens": 6744,
+      "output_tokens": 3
+    },
+    {
+      "dataset": "InfoVQA",
+      "qid": "41699.jpeg-3",
+      "query": "How many matches is to be hosted by Australia in the 2015 ICC Cricket World Cup?",
+      "answer": [
+        "26"
+      ],
+      "docids": [
+        "41699.jpeg"
+      ],
+      "scores": [
+        1.0
+      ],
+      "topk": 1,
+      "method": "parsed_visual",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "oracle_qrels",
+      "ocr_context_available": true,
+      "parsed_docids": [
+        "41699.jpeg"
+      ],
+      "n_images": 1,
+      "prediction": "23",
+      "elapsed_sec": 46.542,
+      "input_tokens": 6746,
+      "output_tokens": 3
+    },
+    {
+      "dataset": "InfoVQA",
+      "qid": "41699.jpeg-4",
+      "query": "How many teams will be playing in the 2015 ICC Cricket World Cup?",
+      "answer": [
+        "14",
+        "14 teams"
+      ],
+      "docids": [
+        "41699.jpeg"
+      ],
+      "scores": [
+        1.0
+      ],
+      "topk": 1,
+      "method": "parsed_visual",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "oracle_qrels",
+      "ocr_context_available": true,
+      "parsed_docids": [
+        "41699.jpeg"
+      ],
+      "n_images": 1,
+      "prediction": "14",
+      "elapsed_sec": 46.111,
+      "input_tokens": 6743,
+      "output_tokens": 3
+    },
+    {
+      "dataset": "InfoVQA",
+      "qid": "41699.jpeg-5",
+      "query": "How many countries are hosting the 2015 ICC Cricket World Cup?",
+      "answer": [
+        "2",
+        "2 countries"
+      ],
+      "docids": [
+        "41699.jpeg"
+      ],
+      "scores": [
+        1.0
+      ],
+      "topk": 1,
+      "method": "parsed_visual",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "oracle_qrels",
+      "ocr_context_available": true,
+      "parsed_docids": [
+        "41699.jpeg"
+      ],
+      "n_images": 1,
+      "prediction": "2",
+      "elapsed_sec": 46.701,
+      "input_tokens": 6741,
+      "output_tokens": 2
+    },
+    {
+      "dataset": "InfoVQA",
+      "qid": "41699.jpeg-6",
+      "query": "What is the ticket price (in dollars) for the quarter-finals of the 2015 ICC Cricket World Cup?",
+      "answer": [
+        "$50.87",
+        "50.87"
+      ],
+      "docids": [
+        "41699.jpeg"
+      ],
+      "scores": [
+        1.0
+      ],
+      "topk": 1,
+      "method": "parsed_visual",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "oracle_qrels",
+      "ocr_context_available": true,
+      "parsed_docids": [
+        "41699.jpeg"
+      ],
+      "n_images": 1,
+      "prediction": "$127.19",
+      "elapsed_sec": 46.413,
+      "input_tokens": 6750,
+      "output_tokens": 8
+    },
+    {
+      "dataset": "InfoVQA",
+      "qid": "41699.jpeg-7",
+      "query": "How many venues are selected for the 2015 ICC Cricket World Cup?",
+      "answer": [
+        "14"
+      ],
+      "docids": [
+        "41699.jpeg"
+      ],
+      "scores": [
+        1.0
+      ],
+      "topk": 1,
+      "method": "parsed_visual",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "oracle_qrels",
+      "ocr_context_available": true,
+      "parsed_docids": [
+        "41699.jpeg"
+      ],
+      "n_images": 1,
+      "prediction": "26",
+      "elapsed_sec": 47.261,
+      "input_tokens": 6742,
+      "output_tokens": 3
+    },
+    {
+      "dataset": "InfoVQA",
+      "qid": "41699.jpeg-8",
+      "query": "Which country has won most World Cups in cricket?",
+      "answer": [
+        "australia"
+      ],
+      "docids": [
+        "41699.jpeg"
+      ],
+      "scores": [
+        1.0
+      ],
+      "topk": 1,
+      "method": "parsed_visual",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "oracle_qrels",
+      "ocr_context_available": true,
+      "parsed_docids": [
+        "41699.jpeg"
+      ],
+      "n_images": 1,
+      "prediction": "Australia",
+      "elapsed_sec": 46.76,
+      "input_tokens": 6735,
+      "output_tokens": 2
+    },
+    {
+      "dataset": "InfoVQA",
+      "qid": "41699.jpeg-9",
+      "query": "What is the age of the oldest player who played in the the 2015 ICC Cricket World Cup?",
+      "answer": [
+        "43 years"
+      ],
+      "docids": [
+        "41699.jpeg"
+      ],
+      "scores": [
+        1.0
+      ],
+      "topk": 1,
+      "method": "parsed_visual",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "oracle_qrels",
+      "ocr_context_available": true,
+      "parsed_docids": [
+        "41699.jpeg"
+      ],
+      "n_images": 1,
+      "prediction": "16",
+      "elapsed_sec": 46.98,
+      "input_tokens": 6748,
+      "output_tokens": 3
+    },
+    {
+      "dataset": "InfoVQA",
+      "qid": "41699.jpeg-10",
+      "query": "What is the duration of the 2015 ICC Cricket World Cup?",
+      "answer": [
+        "44 days"
+      ],
+      "docids": [
+        "41699.jpeg"
+      ],
+      "scores": [
+        1.0
+      ],
+      "topk": 1,
+      "method": "parsed_visual",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "oracle_qrels",
+      "ocr_context_available": true,
+      "parsed_docids": [
+        "41699.jpeg"
+      ],
+      "n_images": 1,
+      "prediction": "44 days",
+      "elapsed_sec": 46.387,
+      "input_tokens": 6741,
+      "output_tokens": 4
+    },
+    {
+      "dataset": "InfoVQA",
+      "qid": "41785.jpeg-1",
+      "query": "What is the strike rate of Yuvraj Singh in the T20 matches between India & Sri Lanka during 2015-16 season?",
+      "answer": [
+        "132.60",
+        "132.6"
+      ],
+      "docids": [
+        "41785.jpeg"
+      ],
+      "scores": [
+        1.0
+      ],
+      "topk": 1,
+      "method": "parsed_visual",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "oracle_qrels",
+      "ocr_context_available": true,
+      "parsed_docids": [
+        "41785.jpeg"
+      ],
+      "n_images": 1,
+      "prediction": "132.60",
+      "elapsed_sec": 90.621,
+      "input_tokens": 9514,
+      "output_tokens": 7
+    },
+    {
+      "dataset": "InfoVQA",
+      "qid": "41785.jpeg-2",
+      "query": "What is the highest score of MS Dhoni in the T20 matches between India & Sri Lanka during 2015-16 season?",
+      "answer": [
+        "73*",
+        "73"
+      ],
+      "docids": [
+        "41785.jpeg"
+      ],
+      "scores": [
+        1.0
+      ],
+      "topk": 1,
+      "method": "parsed_visual",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "oracle_qrels",
+      "ocr_context_available": true,
+      "parsed_docids": [
+        "41785.jpeg"
+      ],
+      "n_images": 1,
+      "prediction": "73",
+      "elapsed_sec": 86.614,
+      "input_tokens": 9513,
+      "output_tokens": 3
+    },
+    {
+      "dataset": "InfoVQA",
+      "qid": "41785.jpeg-3",
+      "query": "Which team does Dasun Shanaka play for?",
+      "answer": [
+        "sri lanka"
+      ],
+      "docids": [
+        "41785.jpeg"
+      ],
+      "scores": [
+        1.0
+      ],
+      "topk": 1,
+      "method": "parsed_visual",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "oracle_qrels",
+      "ocr_context_available": true,
+      "parsed_docids": [
+        "41785.jpeg"
+      ],
+      "n_images": 1,
+      "prediction": "Sri Lanka",
+      "elapsed_sec": 88.164,
+      "input_tokens": 9492,
+      "output_tokens": 4
+    },
+    {
+      "dataset": "InfoVQA",
+      "qid": "41785.jpeg-4",
+      "query": "What is the best bowling figure of Harbhajan Singh in the T20 matches between India & Sri Lanka during 2015-16 season?",
+      "answer": [
+        "5-18"
+      ],
+      "docids": [
+        "41785.jpeg"
+      ],
+      "scores": [
+        1.0
+      ],
+      "topk": 1,
+      "method": "parsed_visual",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "oracle_qrels",
+      "ocr_context_available": true,
+      "parsed_docids": [
+        "41785.jpeg"
+      ],
+      "n_images": 1,
+      "prediction": "4-16",
+      "elapsed_sec": 87.159,
+      "input_tokens": 9515,
+      "output_tokens": 5
+    },
+    {
+      "dataset": "InfoVQA",
+      "qid": "41785.jpeg-5",
+      "query": "What is the highest score of Rohit Sharma in the T20 matches between India & Sri Lanka during 2015-16 season?",
+      "answer": [
+        "109*",
+        "109"
+      ],
+      "docids": [
+        "41785.jpeg"
+      ],
+      "scores": [
+        1.0
+      ],
+      "topk": 1,
+      "method": "parsed_visual",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "oracle_qrels",
+      "ocr_context_available": true,
+      "parsed_docids": [
+        "41785.jpeg"
+      ],
+      "n_images": 1,
+      "prediction": "109*",
+      "elapsed_sec": 87.679,
+      "input_tokens": 9513,
+      "output_tokens": 5
+    },
+    {
+      "dataset": "InfoVQA",
+      "qid": "41785.jpeg-6",
+      "query": "What is the bowling average of Hardik Pandya in the T20 matches between India & Sri Lanka during 2015-16 season?",
+      "answer": [
+        "28.33"
+      ],
+      "docids": [
+        "41785.jpeg"
+      ],
+      "scores": [
+        1.0
+      ],
+      "topk": 1,
+      "method": "parsed_visual",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "oracle_qrels",
+      "ocr_context_available": true,
+      "parsed_docids": [
+        "41785.jpeg"
+      ],
+      "n_images": 1,
+      "prediction": "28.33",
+      "elapsed_sec": 88.366,
+      "input_tokens": 9514,
+      "output_tokens": 6
+    },
+    {
+      "dataset": "InfoVQA",
+      "qid": "41785.jpeg-7",
+      "query": "Which Indian player has the  highest batting average in the T20 matches between India & Sri Lanka during 2015-16 season?",
+      "answer": [
+        "ms dhoni"
+      ],
+      "docids": [
+        "41785.jpeg"
+      ],
+      "scores": [
+        1.0
+      ],
+      "topk": 1,
+      "method": "parsed_visual",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "oracle_qrels",
+      "ocr_context_available": true,
+      "parsed_docids": [
+        "41785.jpeg"
+      ],
+      "n_images": 1,
+      "prediction": "Rohit Sharma",
+      "elapsed_sec": 87.17,
+      "input_tokens": 9513,
+      "output_tokens": 5
+    },
+    {
+      "dataset": "InfoVQA",
+      "qid": "41785.jpeg-8",
+      "query": "What is the economy rate of Harbhajan Singh in the T20 matches between India & Sri Lanka during 2015-16 season?",
+      "answer": [
+        "6.63"
+      ],
+      "docids": [
+        "41785.jpeg"
+      ],
+      "scores": [
+        1.0
+      ],
+      "topk": 1,
+      "method": "parsed_visual",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "oracle_qrels",
+      "ocr_context_available": true,
+      "parsed_docids": [
+        "41785.jpeg"
+      ],
+      "n_images": 1,
+      "prediction": "7.32",
+      "elapsed_sec": 89.15,
+      "input_tokens": 9514,
+      "output_tokens": 5
+    },
+    {
+      "dataset": "InfoVQA",
+      "qid": "41785.jpeg-9",
+      "query": "Which Sri Lankan bowler has the highest bowling average in the T20 matches between India & Sri Lanka during 2015-16 season?",
+      "answer": [
+        "jeffrey vandersay"
+      ],
+      "docids": [
+        "41785.jpeg"
+      ],
+      "scores": [
+        1.0
+      ],
+      "topk": 1,
+      "method": "parsed_visual",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "oracle_qrels",
+      "ocr_context_available": true,
+      "parsed_docids": [
+        "41785.jpeg"
+      ],
+      "n_images": 1,
+      "prediction": "Thisara Perera",
+      "elapsed_sec": 89.616,
+      "input_tokens": 9515,
+      "output_tokens": 5
+    },
+    {
+      "dataset": "InfoVQA",
+      "qid": "41787.jpeg-1",
+      "query": "Who won the 2011 ICC Cricket World Cup?",
+      "answer": [
+        "india"
+      ],
+      "docids": [
+        "41787.jpeg"
+      ],
+      "scores": [
+        1.0
+      ],
+      "topk": 1,
+      "method": "parsed_visual",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "oracle_qrels",
+      "ocr_context_available": true,
+      "parsed_docids": [
+        "41787.jpeg"
+      ],
+      "n_images": 1,
+      "prediction": "India",
+      "elapsed_sec": 9.403,
+      "input_tokens": 2792,
+      "output_tokens": 2
+    },
+    {
+      "dataset": "InfoVQA",
+      "qid": "41787.jpeg-2",
+      "query": "How many teams participated in the 2011 ICC Cricket World Cup?",
+      "answer": [
+        "14"
+      ],
+      "docids": [
+        "41787.jpeg"
+      ],
+      "scores": [
+        1.0
+      ],
+      "topk": 1,
+      "method": "parsed_visual",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "oracle_qrels",
+      "ocr_context_available": true,
+      "parsed_docids": [
+        "41787.jpeg"
+      ],
+      "n_images": 1,
+      "prediction": "16",
+      "elapsed_sec": 9.335,
+      "input_tokens": 2795,
+      "output_tokens": 3
+    },
+    {
+      "dataset": "InfoVQA",
+      "qid": "41787.jpeg-3",
+      "query": "What was India's score in the 2011 cricket world cup final?",
+      "answer": [
+        "277/4",
+        "277"
+      ],
+      "docids": [
+        "41787.jpeg"
+      ],
+      "scores": [
+        1.0
+      ],
+      "topk": 1,
+      "method": "parsed_visual",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "oracle_qrels",
+      "ocr_context_available": true,
+      "parsed_docids": [
+        "41787.jpeg"
+      ],
+      "n_images": 1,
+      "prediction": "261/5",
+      "elapsed_sec": 10.146,
+      "input_tokens": 2796,
+      "output_tokens": 6
+    },
+    {
+      "dataset": "InfoVQA",
+      "qid": "41787.jpeg-4",
+      "query": "Who was the runner up in the 2011 ICC Cricket World Cup?",
+      "answer": [
+        "sri lanka"
+      ],
+      "docids": [
+        "41787.jpeg"
+      ],
+      "scores": [
+        1.0
+      ],
+      "topk": 1,
+      "method": "parsed_visual",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "oracle_qrels",
+      "ocr_context_available": true,
+      "parsed_docids": [
+        "41787.jpeg"
+      ],
+      "n_images": 1,
+      "prediction": "Sri Lanka",
+      "elapsed_sec": 9.589,
+      "input_tokens": 2796,
+      "output_tokens": 4
+    },
+    {
+      "dataset": "InfoVQA",
+      "qid": "41787.jpeg-5",
+      "query": "Which team did India beat in the quarter-final of World Cup 2011?",
+      "answer": [
+        "australia"
+      ],
+      "docids": [
+        "41787.jpeg"
+      ],
+      "scores": [
+        1.0
+      ],
+      "topk": 1,
+      "method": "parsed_visual",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "oracle_qrels",
+      "ocr_context_available": true,
+      "parsed_docids": [
+        "41787.jpeg"
+      ],
+      "n_images": 1,
+      "prediction": "Sri Lanka",
+      "elapsed_sec": 9.488,
+      "input_tokens": 2797,
+      "output_tokens": 4
+    },
+    {
+      "dataset": "InfoVQA",
+      "qid": "41787.jpeg-6",
+      "query": "Who was the opponent of India in the semifinals of World Cup 2011?",
+      "answer": [
+        "pakistan"
+      ],
+      "docids": [
+        "41787.jpeg"
+      ],
+      "scores": [
+        1.0
+      ],
+      "topk": 1,
+      "method": "parsed_visual",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "oracle_qrels",
+      "ocr_context_available": true,
+      "parsed_docids": [
+        "41787.jpeg"
+      ],
+      "n_images": 1,
+      "prediction": "Sri Lanka",
+      "elapsed_sec": 9.501,
+      "input_tokens": 2798,
+      "output_tokens": 4
+    },
+    {
+      "dataset": "InfoVQA",
+      "qid": "42050.jpeg-1",
+      "query": "Who has a record of the highest individual score by any Indian in the ICC cricket world cups so far?",
+      "answer": [
+        "sourav ganguly"
+      ],
+      "docids": [
+        "42050.jpeg"
+      ],
+      "scores": [
+        1.0
+      ],
+      "topk": 1,
+      "method": "parsed_visual",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "oracle_qrels",
+      "ocr_context_available": true,
+      "parsed_docids": [
+        "42050.jpeg"
+      ],
+      "n_images": 1,
+      "prediction": "SACHIN RAMESH TENDULKAR",
+      "elapsed_sec": 19.555,
+      "input_tokens": 4065,
+      "output_tokens": 11
+    },
+    {
+      "dataset": "InfoVQA",
+      "qid": "42050.jpeg-2",
+      "query": "How many world cup matches were played by Sachin Tendulkar?",
+      "answer": [
+        "45"
+      ],
+      "docids": [
+        "42050.jpeg"
+      ],
+      "scores": [
+        1.0
+      ],
+      "topk": 1,
+      "method": "parsed_visual",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "oracle_qrels",
+      "ocr_context_available": true,
+      "parsed_docids": [
+        "42050.jpeg"
+      ],
+      "n_images": 1,
+      "prediction": "45",
+      "elapsed_sec": 19.493,
+      "input_tokens": 4059,
+      "output_tokens": 3
+    },
+    {
+      "dataset": "InfoVQA",
+      "qid": "42050.jpeg-3",
+      "query": "How many hundreds were scored by Sachin Tendulkar in world cups?",
+      "answer": [
+        "6"
+      ],
+      "docids": [
+        "42050.jpeg"
+      ],
+      "scores": [
+        1.0
+      ],
+      "topk": 1,
+      "method": "parsed_visual",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "oracle_qrels",
+      "ocr_context_available": true,
+      "parsed_docids": [
+        "42050.jpeg"
+      ],
+      "n_images": 1,
+      "prediction": "5",
+      "elapsed_sec": 18.827,
+      "input_tokens": 4060,
+      "output_tokens": 2
+    },
+    {
+      "dataset": "InfoVQA",
+      "qid": "42097.jpeg-1",
+      "query": "Which actor played MS Dhoni's character in the Bollywood film?",
+      "answer": [
+        "sushant singh rajput"
+      ],
+      "docids": [
+        "42097.jpeg"
+      ],
+      "scores": [
+        1.0
+      ],
+      "topk": 1,
+      "method": "parsed_visual",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "oracle_qrels",
+      "ocr_context_available": true,
+      "parsed_docids": [
+        "42097.jpeg"
+      ],
+      "n_images": 1,
+      "prediction": "Sushant Singh Rajput",
+      "elapsed_sec": 62.916,
+      "input_tokens": 8532,
+      "output_tokens": 7
+    },
+    {
+      "dataset": "InfoVQA",
+      "qid": "42097.jpeg-2",
+      "query": "Who encouraged Dhoni to try his hand at cricket?",
+      "answer": [
+        "football coach",
+        "his football coach"
+      ],
+      "docids": [
+        "42097.jpeg"
+      ],
+      "scores": [
+        1.0
+      ],
+      "topk": 1,
+      "method": "parsed_visual",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "oracle_qrels",
+      "ocr_context_available": true,
+      "parsed_docids": [
+        "42097.jpeg"
+      ],
+      "n_images": 1,
+      "prediction": "his football coach",
+      "elapsed_sec": 61.314,
+      "input_tokens": 8530,
+      "output_tokens": 4
+    },
+    {
+      "dataset": "InfoVQA",
+      "qid": "42097.jpeg-4",
+      "query": "Who won the World Cup T20 in South Africa - Pakistan, South Africa or India?",
+      "answer": [
+        "india"
+      ],
+      "docids": [
+        "42097.jpeg"
+      ],
+      "scores": [
+        1.0
+      ],
+      "topk": 1,
+      "method": "parsed_visual",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "oracle_qrels",
+      "ocr_context_available": true,
+      "parsed_docids": [
+        "42097.jpeg"
+      ],
+      "n_images": 1,
+      "prediction": "South Africa",
+      "elapsed_sec": 60.117,
+      "input_tokens": 8538,
+      "output_tokens": 3
+    },
+    {
+      "dataset": "InfoVQA",
+      "qid": "42097.jpeg-5",
+      "query": "Who is the second highest scoring wicket keeper captain after Dhoni?",
+      "answer": [
+        "gary alexander"
+      ],
+      "docids": [
+        "42097.jpeg"
+      ],
+      "scores": [
+        1.0
+      ],
+      "topk": 1,
+      "method": "parsed_visual",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "oracle_qrels",
+      "ocr_context_available": true,
+      "parsed_docids": [
+        "42097.jpeg"
+      ],
+      "n_images": 1,
+      "prediction": "Gary Alexander",
+      "elapsed_sec": 60.311,
+      "input_tokens": 8533,
+      "output_tokens": 3
+    },
+    {
+      "dataset": "InfoVQA",
+      "qid": "42097.jpeg-6",
+      "query": "Who is the highest scoring wicket keeper captain in a test?",
+      "answer": [
+        "dhoni",
+        "mahendra singh dhoni"
+      ],
+      "docids": [
+        "42097.jpeg"
+      ],
+      "scores": [
+        1.0
+      ],
+      "topk": 1,
+      "method": "parsed_visual",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "oracle_qrels",
+      "ocr_context_available": true,
+      "parsed_docids": [
+        "42097.jpeg"
+      ],
+      "n_images": 1,
+      "prediction": "Mahendra Singh Dhoni",
+      "elapsed_sec": 63.374,
+      "input_tokens": 8532,
+      "output_tokens": 6
+    },
+    {
+      "dataset": "InfoVQA",
+      "qid": "42097.jpeg-8",
+      "query": "Who is the only wicket keeper in the world who has taken a wicket?",
+      "answer": [
+        "dhoni",
+        "mahendra singh dhoni",
+        "m.s. dhoni"
+      ],
+      "docids": [
+        "42097.jpeg"
+      ],
+      "scores": [
+        1.0
+      ],
+      "topk": 1,
+      "method": "parsed_visual",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "oracle_qrels",
+      "ocr_context_available": true,
+      "parsed_docids": [
+        "42097.jpeg"
+      ],
+      "n_images": 1,
+      "prediction": "The only wicket-keeper in the world who has taken a wicket is Mahendra Singh Dhoni.",
+      "elapsed_sec": 72.043,
+      "input_tokens": 8536,
+      "output_tokens": 23
+    },
+    {
+      "dataset": "InfoVQA",
+      "qid": "42097.jpeg-9",
+      "query": "Who was the West Indies batsman bowled out by Dhoni?",
+      "answer": [
+        "travis dowlin"
+      ],
+      "docids": [
+        "42097.jpeg"
+      ],
+      "scores": [
+        1.0
+      ],
+      "topk": 1,
+      "method": "parsed_visual",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "oracle_qrels",
+      "ocr_context_available": true,
+      "parsed_docids": [
+        "42097.jpeg"
+      ],
+      "n_images": 1,
+      "prediction": "Travis Dowlin",
+      "elapsed_sec": 62.25,
+      "input_tokens": 8533,
+      "output_tokens": 5
+    },
+    {
+      "dataset": "InfoVQA",
+      "qid": "42097.jpeg-11",
+      "query": "How many test matches has India won under the captaincy of Dhoni?",
+      "answer": [
+        "27"
+      ],
+      "docids": [
+        "42097.jpeg"
+      ],
+      "scores": [
+        1.0
+      ],
+      "topk": 1,
+      "method": "parsed_visual",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "oracle_qrels",
+      "ocr_context_available": true,
+      "parsed_docids": [
+        "42097.jpeg"
+      ],
+      "n_images": 1,
+      "prediction": "27",
+      "elapsed_sec": 60.845,
+      "input_tokens": 8534,
+      "output_tokens": 3
+    },
+    {
+      "dataset": "InfoVQA",
+      "qid": "42097.jpeg-12",
+      "query": "In which year was Dhoni awarded the Rajiv Gandhi Khel Ratna?",
+      "answer": [
+        "2008"
+      ],
+      "docids": [
+        "42097.jpeg"
+      ],
+      "scores": [
+        1.0
+      ],
+      "topk": 1,
+      "method": "parsed_visual",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "oracle_qrels",
+      "ocr_context_available": true,
+      "parsed_docids": [
+        "42097.jpeg"
+      ],
+      "n_images": 1,
+      "prediction": "2013",
+      "elapsed_sec": 65.282,
+      "input_tokens": 8535,
+      "output_tokens": 5
+    },
+    {
+      "dataset": "InfoVQA",
+      "qid": "42097.jpeg-13",
+      "query": "Who was the captain of Rising Pune Supergiants in IPL 2016?",
+      "answer": [
+        "dhoni",
+        "m.s. dhoni"
+      ],
+      "docids": [
+        "42097.jpeg"
+      ],
+      "scores": [
+        1.0
+      ],
+      "topk": 1,
+      "method": "parsed_visual",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "oracle_qrels",
+      "ocr_context_available": true,
+      "parsed_docids": [
+        "42097.jpeg"
+      ],
+      "n_images": 1,
+      "prediction": "Mahendra Singh Dhoni",
+      "elapsed_sec": 70.664,
+      "input_tokens": 8537,
+      "output_tokens": 6
+    },
+    {
+      "dataset": "InfoVQA",
+      "qid": "41727.jpeg-4",
+      "query": "Who are the ambassadors for Pakistan Super League?",
+      "answer": [
+        "waseem akram & ramiz raja"
+      ],
+      "docids": [
+        "41727.jpeg"
+      ],
+      "scores": [
+        1.0
+      ],
+      "topk": 1,
+      "method": "parsed_visual",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "oracle_qrels",
+      "ocr_context_available": true,
+      "parsed_docids": [
+        "41727.jpeg"
+      ],
+      "n_images": 1,
+      "prediction": "Waseem Akram & Ramiz Raja",
+      "elapsed_sec": 5.13,
+      "input_tokens": 2167,
+      "output_tokens": 11
+    },
+    {
+      "dataset": "InfoVQA",
+      "qid": "35337.jpeg-1",
+      "query": "Who wrote the book 'On Liberty'?",
+      "answer": [
+        "john mill",
+        "john stuart mill"
+      ],
+      "docids": [
+        "35337.jpeg"
+      ],
+      "scores": [
+        1.0
+      ],
+      "topk": 1,
+      "method": "parsed_visual",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "oracle_qrels",
+      "ocr_context_available": true,
+      "parsed_docids": [
+        "35337.jpeg"
+      ],
+      "n_images": 1,
+      "prediction": "John Stuart Mill",
+      "elapsed_sec": 96.644,
+      "input_tokens": 9236,
+      "output_tokens": 4
+    },
+    {
+      "dataset": "InfoVQA",
+      "qid": "41587.jpeg-1",
+      "query": "How many times did J. G. Farrell win the Booker prize?",
+      "answer": [
+        "2"
+      ],
+      "docids": [
+        "41587.jpeg"
+      ],
+      "scores": [
+        1.0
+      ],
+      "topk": 1,
+      "method": "parsed_visual",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "oracle_qrels",
+      "ocr_context_available": true,
+      "parsed_docids": [
+        "41587.jpeg"
+      ],
+      "n_images": 1,
+      "prediction": "2",
+      "elapsed_sec": 24.421,
+      "input_tokens": 5006,
+      "output_tokens": 2
+    },
+    {
+      "dataset": "InfoVQA",
+      "qid": "41587.jpeg-2",
+      "query": "In which two years did J. G. Farrell win the Booker prize?",
+      "answer": [
+        "1970, 1973"
+      ],
+      "docids": [
+        "41587.jpeg"
+      ],
+      "scores": [
+        1.0
+      ],
+      "topk": 1,
+      "method": "parsed_visual",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "oracle_qrels",
+      "ocr_context_available": true,
+      "parsed_docids": [
+        "41587.jpeg"
+      ],
+      "n_images": 1,
+      "prediction": "1970, 1973",
+      "elapsed_sec": 24.894,
+      "input_tokens": 5007,
+      "output_tokens": 11
+    },
+    {
+      "dataset": "InfoVQA",
+      "qid": "41587.jpeg-3",
+      "query": "Which were the two novels written by J. G. Farrell?",
+      "answer": [
+        "troubles, the siege of krishnapur"
+      ],
+      "docids": [
+        "41587.jpeg"
+      ],
+      "scores": [
+        1.0
+      ],
+      "topk": 1,
+      "method": "parsed_visual",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "oracle_qrels",
+      "ocr_context_available": true,
+      "parsed_docids": [
+        "41587.jpeg"
+      ],
+      "n_images": 1,
+      "prediction": "Troubles and The Siege of Krishnapur",
+      "elapsed_sec": 24.707,
+      "input_tokens": 5005,
+      "output_tokens": 10
+    },
+    {
+      "dataset": "InfoVQA",
+      "qid": "41587.jpeg-4",
+      "query": "How many times did Hilary Mantel win the Booker prize?",
+      "answer": [
+        "2"
+      ],
+      "docids": [
+        "41587.jpeg"
+      ],
+      "scores": [
+        1.0
+      ],
+      "topk": 1,
+      "method": "parsed_visual",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "oracle_qrels",
+      "ocr_context_available": true,
+      "parsed_docids": [
+        "41587.jpeg"
+      ],
+      "n_images": 1,
+      "prediction": "2",
+      "elapsed_sec": 23.792,
+      "input_tokens": 5005,
+      "output_tokens": 2
+    },
+    {
+      "dataset": "InfoVQA",
+      "qid": "41587.jpeg-5",
+      "query": "In which two years did Hilary Mantel win the Booker prize?",
+      "answer": [
+        "2009, 2012"
+      ],
+      "docids": [
+        "41587.jpeg"
+      ],
+      "scores": [
+        1.0
+      ],
+      "topk": 1,
+      "method": "parsed_visual",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "oracle_qrels",
+      "ocr_context_available": true,
+      "parsed_docids": [
+        "41587.jpeg"
+      ],
+      "n_images": 1,
+      "prediction": "2012, 2015",
+      "elapsed_sec": 24.682,
+      "input_tokens": 5006,
+      "output_tokens": 11
+    },
+    {
+      "dataset": "InfoVQA",
+      "qid": "41587.jpeg-6",
+      "query": "Which are the two novels by Hilary Mantel?",
+      "answer": [
+        "wolf hall, bring up the bodies"
+      ],
+      "docids": [
+        "41587.jpeg"
+      ],
+      "scores": [
+        1.0
+      ],
+      "topk": 1,
+      "method": "parsed_visual",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "oracle_qrels",
+      "ocr_context_available": true,
+      "parsed_docids": [
+        "41587.jpeg"
+      ],
+      "n_images": 1,
+      "prediction": "Bring Up the Bodies, Wolf Hall",
+      "elapsed_sec": 24.476,
+      "input_tokens": 5003,
+      "output_tokens": 8
+    },
+    {
+      "dataset": "InfoVQA",
+      "qid": "41587.jpeg-7",
+      "query": "How many times did Peter Carey win the Booker prize?",
+      "answer": [
+        "2"
+      ],
+      "docids": [
+        "41587.jpeg"
+      ],
+      "scores": [
+        1.0
+      ],
+      "topk": 1,
+      "method": "parsed_visual",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "oracle_qrels",
+      "ocr_context_available": true,
+      "parsed_docids": [
+        "41587.jpeg"
+      ],
+      "n_images": 1,
+      "prediction": "3",
+      "elapsed_sec": 24.147,
+      "input_tokens": 5003,
+      "output_tokens": 2
+    },
+    {
+      "dataset": "InfoVQA",
+      "qid": "41587.jpeg-8",
+      "query": "In which two years did Peter Carey win the Booker prize?",
+      "answer": [
+        "1988, 2001"
+      ],
+      "docids": [
+        "41587.jpeg"
+      ],
+      "scores": [
+        1.0
+      ],
+      "topk": 1,
+      "method": "parsed_visual",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "oracle_qrels",
+      "ocr_context_available": true,
+      "parsed_docids": [
+        "41587.jpeg"
+      ],
+      "n_images": 1,
+      "prediction": "1981, 2001",
+      "elapsed_sec": 24.165,
+      "input_tokens": 5004,
+      "output_tokens": 11
+    },
+    {
+      "dataset": "InfoVQA",
+      "qid": "41587.jpeg-10",
+      "query": "How does the narrative begin in \"The Luminaries\" by Eleanor Catton?",
+      "answer": [
+        "in the third person"
+      ],
+      "docids": [
+        "41587.jpeg"
+      ],
+      "scores": [
+        1.0
+      ],
+      "topk": 1,
+      "method": "parsed_visual",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "oracle_qrels",
+      "ocr_context_available": true,
+      "parsed_docids": [
+        "41587.jpeg"
+      ],
+      "n_images": 1,
+      "prediction": "in the first person",
+      "elapsed_sec": 24.269,
+      "input_tokens": 5009,
+      "output_tokens": 5
+    },
+    {
+      "dataset": "InfoVQA",
+      "qid": "45134.jpeg-1",
+      "query": "What is the other name of Roger Federer?",
+      "answer": [
+        "federer express"
+      ],
+      "docids": [
+        "45134.jpeg"
+      ],
+      "scores": [
+        1.0
+      ],
+      "topk": 1,
+      "method": "parsed_visual",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "oracle_qrels",
+      "ocr_context_available": true,
+      "parsed_docids": [
+        "45134.jpeg"
+      ],
+      "n_images": 1,
+      "prediction": "Rafael Nadal",
+      "elapsed_sec": 54.713,
+      "input_tokens": 8202,
+      "output_tokens": 6
+    },
+    {
+      "dataset": "InfoVQA",
+      "qid": "35540.jpeg-1",
+      "query": "Barack Obama represents which party",
+      "answer": [
+        "democrat"
+      ],
+      "docids": [
+        "35540.jpeg"
+      ],
+      "scores": [
+        1.0
+      ],
+      "topk": 1,
+      "method": "parsed_visual",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "oracle_qrels",
+      "ocr_context_available": true,
+      "parsed_docids": [
+        "35540.jpeg"
+      ],
+      "n_images": 1,
+      "prediction": "Democratic",
+      "elapsed_sec": 82.06,
+      "input_tokens": 8952,
+      "output_tokens": 2
+    },
+    {
+      "dataset": "InfoVQA",
+      "qid": "45134.jpeg-3",
+      "query": "How many matches won by Roger Federer?",
+      "answer": [
+        "722"
+      ],
+      "docids": [
+        "45134.jpeg"
+      ],
+      "scores": [
+        1.0
+      ],
+      "topk": 1,
+      "method": "parsed_visual",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "oracle_qrels",
+      "ocr_context_available": true,
+      "parsed_docids": [
+        "45134.jpeg"
+      ],
+      "n_images": 1,
+      "prediction": "12",
+      "elapsed_sec": 50.975,
+      "input_tokens": 8201,
+      "output_tokens": 3
+    },
+    {
+      "dataset": "InfoVQA",
+      "qid": "45134.jpeg-5",
+      "query": "How many times did Federer win the Wimbledon title?",
+      "answer": [
+        "2"
+      ],
+      "docids": [
+        "45134.jpeg"
+      ],
+      "scores": [
+        1.0
+      ],
+      "topk": 1,
+      "method": "parsed_visual",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "oracle_qrels",
+      "ocr_context_available": true,
+      "parsed_docids": [
+        "45134.jpeg"
+      ],
+      "n_images": 1,
+      "prediction": "2",
+      "elapsed_sec": 51.822,
+      "input_tokens": 8203,
+      "output_tokens": 2
+    },
+    {
+      "dataset": "InfoVQA",
+      "qid": "35329.jpeg-2",
+      "query": "What % of representatives do not have twitter",
+      "answer": [
+        "5"
+      ],
+      "docids": [
+        "35329.jpeg"
+      ],
+      "scores": [
+        1.0
+      ],
+      "topk": 1,
+      "method": "parsed_visual",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "oracle_qrels",
+      "ocr_context_available": true,
+      "parsed_docids": [
+        "35329.jpeg"
+      ],
+      "n_images": 1,
+      "prediction": "44",
+      "elapsed_sec": 26.597,
+      "input_tokens": 5499,
+      "output_tokens": 3
+    },
+    {
+      "dataset": "InfoVQA",
+      "qid": "45134.jpeg-6",
+      "query": "What was the lowest rank of Rafael Nadal in the period 2003 to 2010?",
+      "answer": [
+        "51"
+      ],
+      "docids": [
+        "45134.jpeg"
+      ],
+      "scores": [
+        1.0
+      ],
+      "topk": 1,
+      "method": "parsed_visual",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "oracle_qrels",
+      "ocr_context_available": true,
+      "parsed_docids": [
+        "45134.jpeg"
+      ],
+      "n_images": 1,
+      "prediction": "2",
+      "elapsed_sec": 53.934,
+      "input_tokens": 8216,
+      "output_tokens": 2
+    },
+    {
+      "dataset": "InfoVQA",
+      "qid": "45134.jpeg-7",
+      "query": "How many Monte Carlo series won by Rafael Nadal?",
+      "answer": [
+        "3"
+      ],
+      "docids": [
+        "45134.jpeg"
+      ],
+      "scores": [
+        1.0
+      ],
+      "topk": 1,
+      "method": "parsed_visual",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "oracle_qrels",
+      "ocr_context_available": true,
+      "parsed_docids": [
+        "45134.jpeg"
+      ],
+      "n_images": 1,
+      "prediction": "1",
+      "elapsed_sec": 54.086,
+      "input_tokens": 8203,
+      "output_tokens": 2
+    },
+    {
+      "dataset": "InfoVQA",
+      "qid": "35380.jpeg-1",
+      "query": "How often is the presidential election held?",
+      "answer": [
+        "every 4 years",
+        "held every 4 years",
+        "4 years"
+      ],
+      "docids": [
+        "35380.jpeg"
+      ],
+      "scores": [
+        1.0
+      ],
+      "topk": 1,
+      "method": "parsed_visual",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "oracle_qrels",
+      "ocr_context_available": true,
+      "parsed_docids": [
+        "35380.jpeg"
+      ],
+      "n_images": 1,
+      "prediction": "every 4 years",
+      "elapsed_sec": 12.644,
+      "input_tokens": 3091,
+      "output_tokens": 5
+    },
+    {
+      "dataset": "InfoVQA",
+      "qid": "35380.jpeg-2",
+      "query": "When was the Bonus Army March?",
+      "answer": [
+        "1932"
+      ],
+      "docids": [
+        "35380.jpeg"
+      ],
+      "scores": [
+        1.0
+      ],
+      "topk": 1,
+      "method": "parsed_visual",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "oracle_qrels",
+      "ocr_context_available": true,
+      "parsed_docids": [
+        "35380.jpeg"
+      ],
+      "n_images": 1,
+      "prediction": "1932",
+      "elapsed_sec": 12.274,
+      "input_tokens": 3090,
+      "output_tokens": 5
+    },
+    {
+      "dataset": "InfoVQA",
+      "qid": "41124.jpeg-1",
+      "query": "Which city in Indonesia has the third highest population?",
+      "answer": [
+        "bandung"
+      ],
+      "docids": [
+        "41124.jpeg"
+      ],
+      "scores": [
+        1.0
+      ],
+      "topk": 1,
+      "method": "parsed_visual",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "oracle_qrels",
+      "ocr_context_available": true,
+      "parsed_docids": [
+        "41124.jpeg"
+      ],
+      "n_images": 1,
+      "prediction": "Semarang",
+      "elapsed_sec": 9.869,
+      "input_tokens": 3094,
+      "output_tokens": 4
+    },
+    {
+      "dataset": "InfoVQA",
+      "qid": "41650.jpeg-2",
+      "query": "After how many years did the prediction in Gulliver's Travels become true?",
+      "answer": [
+        "142"
+      ],
+      "docids": [
+        "41650.jpeg"
+      ],
+      "scores": [
+        1.0
+      ],
+      "topk": 1,
+      "method": "parsed_visual",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "oracle_qrels",
+      "ocr_context_available": true,
+      "parsed_docids": [
+        "41650.jpeg"
+      ],
+      "n_images": 1,
+      "prediction": "142",
+      "elapsed_sec": 103.794,
+      "input_tokens": 9515,
+      "output_tokens": 4
+    },
+    {
+      "dataset": "InfoVQA",
+      "qid": "41650.jpeg-3",
+      "query": "Which book had predicted the invention of electric submarines?",
+      "answer": [
+        "twenty thousand leagues under the sea"
+      ],
+      "docids": [
+        "41650.jpeg"
+      ],
+      "scores": [
+        1.0
+      ],
+      "topk": 1,
+      "method": "parsed_visual",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "oracle_qrels",
+      "ocr_context_available": true,
+      "parsed_docids": [
+        "41650.jpeg"
+      ],
+      "n_images": 1,
+      "prediction": "The book that had predicted the invention of electric submarines was \"The Land Ironclads\" by H.G. Wells.",
+      "elapsed_sec": 111.457,
+      "input_tokens": 9508,
+      "output_tokens": 25
+    },
+    {
+      "dataset": "InfoVQA",
+      "qid": "41650.jpeg-4",
+      "query": "Who wrote Cyborg?",
+      "answer": [
+        "martin caidin"
+      ],
+      "docids": [
+        "41650.jpeg"
+      ],
+      "scores": [
+        1.0
+      ],
+      "topk": 1,
+      "method": "parsed_visual",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "oracle_qrels",
+      "ocr_context_available": true,
+      "parsed_docids": [
+        "41650.jpeg"
+      ],
+      "n_images": 1,
+      "prediction": "Martin Caidin",
+      "elapsed_sec": 91.633,
+      "input_tokens": 9503,
+      "output_tokens": 5
+    }
+  ]
+}

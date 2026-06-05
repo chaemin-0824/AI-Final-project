@@ -30,7 +30,11 @@ SAMPLE_LIMIT="${SAMPLE_LIMIT:-100}"
 TOPK="${TOPK:-1}"
 GENERATOR_BACKEND="${GENERATOR_BACKEND:-qwen2vl7b_bnb4}"
 CACHE_DIR="${HF_CACHE_DIR:-/tmp/hf_cache}"
-DATASETS=(InfoVQA ChartQA MP-DocVQA SlideVQA)
+# Order: smallest images first so we catch issues early without burning hours.
+# ChartQA: ~800x600 charts. MP-DocVQA/SlideVQA: full pages, ~1024x1320.
+# InfoVQA: infographics up to 1024x6000+; the processor's max_pixels cap
+# applied in benchmark/v12_on_visrag.py keeps these tractable on 8 GB GPU.
+DATASETS=(ChartQA MP-DocVQA SlideVQA InfoVQA)
 PARSED_DIR="data/parsed"
 OUT_DIR="results/v12_on_visrag/today"
 PPT_DIR="results/ppt_format"

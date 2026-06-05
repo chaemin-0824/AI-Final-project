@@ -1,0 +1,2609 @@
+{
+  "summary": {
+    "total": 100,
+    "correct": 52,
+    "accuracy": 0.52
+  },
+  "rows": [
+    {
+      "dataset": "SlideVQA",
+      "qid": "2012-02-20fy11roadshow-120221022442-phpapp02_95__feb-20-2012-nestl-2011-fullyear-roadshow-presentation-7-1024.jpgtcy62012-02-20fy11roadshow-120221022442-phpapp02_95__feb-20-2012-nestl-2011-fullyear-roadshow-presentation-13-1024.jpgquery_number_1",
+      "query": "In which year did the company that divested Eismann in 2004 achieve higher Organic Growth, 2003 or 2004?",
+      "answer": "2003",
+      "docids": [
+        "2012-02-20fy11roadshow-120221022442-phpapp02_95__feb-20-2012-nestl-2011-fullyear-roadshow-presentation-7-1024.jpg"
+      ],
+      "scores": [
+        1.0
+      ],
+      "topk": 1,
+      "method": "parsed_text_only",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "oracle_qrels",
+      "ocr_context_available": true,
+      "parsed_docids": [
+        "2012-02-20fy11roadshow-120221022442-phpapp02_95__feb-20-2012-nestl-2011-fullyear-roadshow-presentation-7-1024.jpg"
+      ],
+      "n_images": 0,
+      "prediction": "2003",
+      "elapsed_sec": 1.343,
+      "input_tokens": 1133,
+      "output_tokens": 5
+    },
+    {
+      "dataset": "SlideVQA",
+      "qid": "2012-02-20fy11roadshow-120221022442-phpapp02_95__feb-20-2012-nestl-2011-fullyear-roadshow-presentation-12-1024.jpgquery_number_1",
+      "query": "What is the name of the brand which Nestlé acquired in 2000?",
+      "answer": "PowerBar",
+      "docids": [
+        "2012-02-20fy11roadshow-120221022442-phpapp02_95__feb-20-2012-nestl-2011-fullyear-roadshow-presentation-12-1024.jpg"
+      ],
+      "scores": [
+        1.0
+      ],
+      "topk": 1,
+      "method": "parsed_text_only",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "oracle_qrels",
+      "ocr_context_available": true,
+      "parsed_docids": [
+        "2012-02-20fy11roadshow-120221022442-phpapp02_95__feb-20-2012-nestl-2011-fullyear-roadshow-presentation-12-1024.jpg"
+      ],
+      "n_images": 0,
+      "prediction": "Vinlu",
+      "elapsed_sec": 0.585,
+      "input_tokens": 800,
+      "output_tokens": 3
+    },
+    {
+      "dataset": "SlideVQA",
+      "qid": "2012-02-20fy11roadshow-120221022442-phpapp02_95__feb-20-2012-nestl-2011-fullyear-roadshow-presentation-7-1024.jpgquery_number_2",
+      "query": "What is the percentage of Nestlé's 10-year annual average of the real internal growth?",
+      "answer": "3.6",
+      "docids": [
+        "2012-02-20fy11roadshow-120221022442-phpapp02_95__feb-20-2012-nestl-2011-fullyear-roadshow-presentation-7-1024.jpg"
+      ],
+      "scores": [
+        1.0
+      ],
+      "topk": 1,
+      "method": "parsed_text_only",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "oracle_qrels",
+      "ocr_context_available": true,
+      "parsed_docids": [
+        "2012-02-20fy11roadshow-120221022442-phpapp02_95__feb-20-2012-nestl-2011-fullyear-roadshow-presentation-7-1024.jpg"
+      ],
+      "n_images": 0,
+      "prediction": "3.6%",
+      "elapsed_sec": 0.783,
+      "input_tokens": 1118,
+      "output_tokens": 5
+    },
+    {
+      "dataset": "SlideVQA",
+      "qid": "2012-02-20fy11roadshow-120221022442-phpapp02_95__feb-20-2012-nestl-2011-fullyear-roadshow-presentation-1-1024.jpgtcy62012-02-20fy11roadshow-120221022442-phpapp02_95__feb-20-2012-nestl-2011-fullyear-roadshow-presentation-7-1024.jpgquery_number_1",
+      "query": "What is the percentage of the 10-year annual average of the Real Internal Growth for the company which has the tagline \"Good Food, Good Life\"?",
+      "answer": "3.6",
+      "docids": [
+        "2012-02-20fy11roadshow-120221022442-phpapp02_95__feb-20-2012-nestl-2011-fullyear-roadshow-presentation-1-1024.jpg"
+      ],
+      "scores": [
+        1.0
+      ],
+      "topk": 1,
+      "method": "parsed_text_only",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "oracle_qrels",
+      "ocr_context_available": true,
+      "parsed_docids": [
+        "2012-02-20fy11roadshow-120221022442-phpapp02_95__feb-20-2012-nestl-2011-fullyear-roadshow-presentation-1-1024.jpg"
+      ],
+      "n_images": 0,
+      "prediction": "insufficient to answer",
+      "elapsed_sec": 0.464,
+      "input_tokens": 438,
+      "output_tokens": 5
+    },
+    {
+      "dataset": "SlideVQA",
+      "qid": "8eeomnwqsmdmin6levsv-signature-2693c633d5e2c6d5cfd1372a7aa1d1a8df13f59c942a848ca9497686d609bddd-poli-150601151510-lva1-app6892_95__mobile-awareness-iaa-school-april-15-7-1024.jpgquery_number_1",
+      "query": "What is the total percentage of 4G users with the 1 - 500 MB plan and the 501 MB - 1 GB plan in the UK?",
+      "answer": "53",
+      "docids": [
+        "8eeomnwqsmdmin6levsv-signature-2693c633d5e2c6d5cfd1372a7aa1d1a8df13f59c942a848ca9497686d609bddd-poli-150601151510-lva1-app6892_95__mobile-awareness-iaa-school-april-15-7-1024.jpg"
+      ],
+      "scores": [
+        1.0
+      ],
+      "topk": 1,
+      "method": "parsed_text_only",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "oracle_qrels",
+      "ocr_context_available": true,
+      "parsed_docids": [
+        "8eeomnwqsmdmin6levsv-signature-2693c633d5e2c6d5cfd1372a7aa1d1a8df13f59c942a848ca9497686d609bddd-poli-150601151510-lva1-app6892_95__mobile-awareness-iaa-school-april-15-7-1024.jpg"
+      ],
+      "n_images": 0,
+      "prediction": "33%",
+      "elapsed_sec": 1.15,
+      "input_tokens": 1811,
+      "output_tokens": 4
+    },
+    {
+      "dataset": "SlideVQA",
+      "qid": "a-151012171903-lva1-app6891_95__a-guide-to-indepth-investor-pitches-by-elevate-ventures-17-1024.jpgquery_number_1",
+      "query": "What is the abbreviation for Sales Qualified Leads?",
+      "answer": "SQL",
+      "docids": [
+        "a-151012171903-lva1-app6891_95__a-guide-to-indepth-investor-pitches-by-elevate-ventures-17-1024.jpg"
+      ],
+      "scores": [
+        1.0
+      ],
+      "topk": 1,
+      "method": "parsed_text_only",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "oracle_qrels",
+      "ocr_context_available": true,
+      "parsed_docids": [
+        "a-151012171903-lva1-app6891_95__a-guide-to-indepth-investor-pitches-by-elevate-ventures-17-1024.jpg"
+      ],
+      "n_images": 0,
+      "prediction": "SQL",
+      "elapsed_sec": 0.503,
+      "input_tokens": 751,
+      "output_tokens": 2
+    },
+    {
+      "dataset": "SlideVQA",
+      "qid": "advertisingpsychologyfinal-090705155755-phpapp02_95__advertising-psychology-17-1024.jpgquery_number_1",
+      "query": "What are listed as the examples of Social characteristics in A framework of psychological meaning?",
+      "answer": "gender, social class, marital status, occupation",
+      "docids": [
+        "advertisingpsychologyfinal-090705155755-phpapp02_95__advertising-psychology-17-1024.jpg"
+      ],
+      "scores": [
+        1.0
+      ],
+      "topk": 1,
+      "method": "parsed_text_only",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "oracle_qrels",
+      "ocr_context_available": true,
+      "parsed_docids": [
+        "advertisingpsychologyfinal-090705155755-phpapp02_95__advertising-psychology-17-1024.jpg"
+      ],
+      "n_images": 0,
+      "prediction": "gender, TV ad Psychological, social class, billboard meaning marital status, image ad occupation",
+      "elapsed_sec": 1.03,
+      "input_tokens": 563,
+      "output_tokens": 18
+    },
+    {
+      "dataset": "SlideVQA",
+      "qid": "acuteappendicitis-110202065502-phpapp02_95__acute-appendicitis-3-1024.jpgtcy6acuteappendicitis-110202065502-phpapp02_95__acute-appendicitis-15-1024.jpgquery_number_1",
+      "query": "Which part of the organ, the Inflammation of which is called Appendicitis, shows the Signs/symptoms of Diarrhoea and crampy pain?",
+      "answer": "Retro/paraileal",
+      "docids": [
+        "acuteappendicitis-110202065502-phpapp02_95__acute-appendicitis-3-1024.jpg"
+      ],
+      "scores": [
+        1.0
+      ],
+      "topk": 1,
+      "method": "parsed_text_only",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "oracle_qrels",
+      "ocr_context_available": true,
+      "parsed_docids": [
+        "acuteappendicitis-110202065502-phpapp02_95__acute-appendicitis-3-1024.jpg"
+      ],
+      "n_images": 0,
+      "prediction": "Appendix",
+      "elapsed_sec": 0.399,
+      "input_tokens": 457,
+      "output_tokens": 3
+    },
+    {
+      "dataset": "SlideVQA",
+      "qid": "agileenterprise-reinventingorgs-150402022438-conversion-gate01_95__agile-enterprise-reinventing-organizations-5-1024.jpgquery_number_1",
+      "query": "What is the percentage of the respondents who answer General resistance to change is the BARRIER to further AGILE ADOPTION?",
+      "answer": "42",
+      "docids": [
+        "agileenterprise-reinventingorgs-150402022438-conversion-gate01_95__agile-enterprise-reinventing-organizations-5-1024.jpg"
+      ],
+      "scores": [
+        1.0
+      ],
+      "topk": 1,
+      "method": "parsed_text_only",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "oracle_qrels",
+      "ocr_context_available": true,
+      "parsed_docids": [
+        "agileenterprise-reinventingorgs-150402022438-conversion-gate01_95__agile-enterprise-reinventing-organizations-5-1024.jpg"
+      ],
+      "n_images": 0,
+      "prediction": "42%",
+      "elapsed_sec": 0.544,
+      "input_tokens": 695,
+      "output_tokens": 4
+    },
+    {
+      "dataset": "SlideVQA",
+      "qid": "agileenterprise-reinventingorgs-150402022438-conversion-gate01_95__agile-enterprise-reinventing-organizations-14-1024.jpgquery_number_1",
+      "query": "Who is the author of the book titled \"Reinventing organizations\"?",
+      "answer": "FREDERIC LALOUX",
+      "docids": [
+        "agileenterprise-reinventingorgs-150402022438-conversion-gate01_95__agile-enterprise-reinventing-organizations-14-1024.jpg"
+      ],
+      "scores": [
+        1.0
+      ],
+      "topk": 1,
+      "method": "parsed_text_only",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "oracle_qrels",
+      "ocr_context_available": true,
+      "parsed_docids": [
+        "agileenterprise-reinventingorgs-150402022438-conversion-gate01_95__agile-enterprise-reinventing-organizations-14-1024.jpg"
+      ],
+      "n_images": 0,
+      "prediction": "Jenny Wade, Ph.D.",
+      "elapsed_sec": 0.656,
+      "input_tokens": 554,
+      "output_tokens": 8
+    },
+    {
+      "dataset": "SlideVQA",
+      "qid": "agileenterprise-reinventingorgs-150402022438-conversion-gate01_95__agile-enterprise-reinventing-organizations-5-1024.jpgquery_number_2",
+      "query": "Which is answered as the BARRIER to further AGILE ADOPTION by more respondents, Management support or Project complexity?",
+      "answer": "Management support",
+      "docids": [
+        "agileenterprise-reinventingorgs-150402022438-conversion-gate01_95__agile-enterprise-reinventing-organizations-5-1024.jpg"
+      ],
+      "scores": [
+        1.0
+      ],
+      "topk": 1,
+      "method": "parsed_text_only",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "oracle_qrels",
+      "ocr_context_available": true,
+      "parsed_docids": [
+        "agileenterprise-reinventingorgs-150402022438-conversion-gate01_95__agile-enterprise-reinventing-organizations-5-1024.jpg"
+      ],
+      "n_images": 0,
+      "prediction": "Management support",
+      "elapsed_sec": 0.51,
+      "input_tokens": 694,
+      "output_tokens": 3
+    },
+    {
+      "dataset": "SlideVQA",
+      "qid": "2014periorbitalandupperfaceamimodulebnl01332014x-140707165029-phpapp02_95__training-for-periorbital-and-upper-face-treatment-with-botox-and-juvederm-15-1024.jpgquery_number_1",
+      "query": "Who is the first author of \"Gray's Anatomy Fortieth Edition\"?",
+      "answer": "Standring S",
+      "docids": [
+        "2014periorbitalandupperfaceamimodulebnl01332014x-140707165029-phpapp02_95__training-for-periorbital-and-upper-face-treatment-with-botox-and-juvederm-15-1024.jpg"
+      ],
+      "scores": [
+        1.0
+      ],
+      "topk": 1,
+      "method": "parsed_text_only",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "oracle_qrels",
+      "ocr_context_available": true,
+      "parsed_docids": [
+        "2014periorbitalandupperfaceamimodulebnl01332014x-140707165029-phpapp02_95__training-for-periorbital-and-upper-face-treatment-with-botox-and-juvederm-15-1024.jpg"
+      ],
+      "n_images": 0,
+      "prediction": "Standring S",
+      "elapsed_sec": 0.568,
+      "input_tokens": 711,
+      "output_tokens": 4
+    },
+    {
+      "dataset": "SlideVQA",
+      "qid": "2014periorbitalandupperfaceamimodulebnl01332014x-140707165029-phpapp02_95__training-for-periorbital-and-upper-face-treatment-with-botox-and-juvederm-15-1024.jpgquery_number_2",
+      "query": "What is the name of the company that publishes \"Gray's Anatomy Fortieth Edition\"?",
+      "answer": "Elsevier",
+      "docids": [
+        "2014periorbitalandupperfaceamimodulebnl01332014x-140707165029-phpapp02_95__training-for-periorbital-and-upper-face-treatment-with-botox-and-juvederm-15-1024.jpg"
+      ],
+      "scores": [
+        1.0
+      ],
+      "topk": 1,
+      "method": "parsed_text_only",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "oracle_qrels",
+      "ocr_context_available": true,
+      "parsed_docids": [
+        "2014periorbitalandupperfaceamimodulebnl01332014x-140707165029-phpapp02_95__training-for-periorbital-and-upper-face-treatment-with-botox-and-juvederm-15-1024.jpg"
+      ],
+      "n_images": 0,
+      "prediction": "Elsevier",
+      "elapsed_sec": 1.202,
+      "input_tokens": 714,
+      "output_tokens": 3
+    },
+    {
+      "dataset": "SlideVQA",
+      "qid": "8apr2015gdfsession4-150408094801-conversion-gate01_95__april-08th-2015-forum-on-generic-drugs-promise-of-regulatory-science-33-4-1024.jpgtcy68apr2015gdfsession4-150408094801-conversion-gate01_95__april-08th-2015-forum-on-generic-drugs-promise-of-regulatory-science-33-6-1024.jpgquery_number_1",
+      "query": "How many points are listed to explain that a drug which has three Great Challenges such as Therapeutic Equivalency is the same as brand name drug?",
+      "answer": "7",
+      "docids": [
+        "8apr2015gdfsession4-150408094801-conversion-gate01_95__april-08th-2015-forum-on-generic-drugs-promise-of-regulatory-science-33-4-1024.jpg"
+      ],
+      "scores": [
+        1.0
+      ],
+      "topk": 1,
+      "method": "parsed_text_only",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "oracle_qrels",
+      "ocr_context_available": true,
+      "parsed_docids": [
+        "8apr2015gdfsession4-150408094801-conversion-gate01_95__april-08th-2015-forum-on-generic-drugs-promise-of-regulatory-science-33-4-1024.jpg"
+      ],
+      "n_images": 0,
+      "prediction": "3",
+      "elapsed_sec": 0.345,
+      "input_tokens": 399,
+      "output_tokens": 2
+    },
+    {
+      "dataset": "SlideVQA",
+      "qid": "5benefitsofanonprofittheoryofchange-160229202540_95__5-benefits-of-a-nonprofit-theory-of-change-6-1024.jpgtcy65benefitsofanonprofittheoryofchange-160229202540_95__5-benefits-of-a-nonprofit-theory-of-change-9-1024.jpgquery_number_1",
+      "query": "How many steps are there in the theory which answers 5 key questions leading to sustainable community change?",
+      "answer": "5",
+      "docids": [
+        "5benefitsofanonprofittheoryofchange-160229202540_95__5-benefits-of-a-nonprofit-theory-of-change-6-1024.jpg"
+      ],
+      "scores": [
+        1.0
+      ],
+      "topk": 1,
+      "method": "parsed_text_only",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "oracle_qrels",
+      "ocr_context_available": true,
+      "parsed_docids": [
+        "5benefitsofanonprofittheoryofchange-160229202540_95__5-benefits-of-a-nonprofit-theory-of-change-6-1024.jpg"
+      ],
+      "n_images": 0,
+      "prediction": "5",
+      "elapsed_sec": 0.43,
+      "input_tokens": 592,
+      "output_tokens": 2
+    },
+    {
+      "dataset": "SlideVQA",
+      "qid": "2014globaldigitalsociallandscape-140803004322-phpapp02_95__2014-digital-landscape-overview-by-wearesocialsg-8-1024.jpgquery_number_1",
+      "query": "What is the WORLD AVERAGE INTERNET PENETRATION rate as a percent?",
+      "answer": "35",
+      "docids": [
+        "2014globaldigitalsociallandscape-140803004322-phpapp02_95__2014-digital-landscape-overview-by-wearesocialsg-8-1024.jpg"
+      ],
+      "scores": [
+        1.0
+      ],
+      "topk": 1,
+      "method": "parsed_text_only",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "oracle_qrels",
+      "ocr_context_available": true,
+      "parsed_docids": [
+        "2014globaldigitalsociallandscape-140803004322-phpapp02_95__2014-digital-landscape-overview-by-wearesocialsg-8-1024.jpg"
+      ],
+      "n_images": 0,
+      "prediction": "35%",
+      "elapsed_sec": 0.632,
+      "input_tokens": 811,
+      "output_tokens": 4
+    },
+    {
+      "dataset": "SlideVQA",
+      "qid": "2014-11-14-inriaprovappt-141112043127-conversion-gate02_95__a-behavioral-interpretation-of-resilience-and-antifragility-1-1024.jpgquery_number_1",
+      "query": "What are Vincenzo De Florio's affiliations?",
+      "answer": "MOSAIC, Universiteit Antwerpen, iMinds",
+      "docids": [
+        "2014-11-14-inriaprovappt-141112043127-conversion-gate02_95__a-behavioral-interpretation-of-resilience-and-antifragility-1-1024.jpg"
+      ],
+      "scores": [
+        1.0
+      ],
+      "topk": 1,
+      "method": "parsed_text_only",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "oracle_qrels",
+      "ocr_context_available": true,
+      "parsed_docids": [
+        "2014-11-14-inriaprovappt-141112043127-conversion-gate02_95__a-behavioral-interpretation-of-resilience-and-antifragility-1-1024.jpg"
+      ],
+      "n_images": 0,
+      "prediction": "MOSAIC, iMinds, Universiteit Antwerpen",
+      "elapsed_sec": 0.913,
+      "input_tokens": 542,
+      "output_tokens": 15
+    },
+    {
+      "dataset": "SlideVQA",
+      "qid": "20140706whatcanfundraiserslearnfromrappers-140707171243-phpapp02_95__what-fundraisers-can-learn-from-rappers-19-1024.jpgquery_number_1",
+      "query": "What is DiABETES UK's slogan?",
+      "answer": "CARE, CONNECT, CAMPAIGN",
+      "docids": [
+        "20140706whatcanfundraiserslearnfromrappers-140707171243-phpapp02_95__what-fundraisers-can-learn-from-rappers-19-1024.jpg"
+      ],
+      "scores": [
+        1.0
+      ],
+      "topk": 1,
+      "method": "parsed_text_only",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "oracle_qrels",
+      "ocr_context_available": true,
+      "parsed_docids": [
+        "20140706whatcanfundraiserslearnfromrappers-140707171243-phpapp02_95__what-fundraisers-can-learn-from-rappers-19-1024.jpg"
+      ],
+      "n_images": 0,
+      "prediction": "CARE. CONNECT. CAMPAIGN.",
+      "elapsed_sec": 0.796,
+      "input_tokens": 751,
+      "output_tokens": 10
+    },
+    {
+      "dataset": "SlideVQA",
+      "qid": "20140706whatcanfundraiserslearnfromrappers-140707171243-phpapp02_95__what-fundraisers-can-learn-from-rappers-17-1024.jpgquery_number_1",
+      "query": "What are the six parts of CONCERN'S COLLABORATION MODEL?",
+      "answer": "Policy & campaigns, Individual Giving, Creative Agency, Donor Care, Media Partner, Comms.",
+      "docids": [
+        "20140706whatcanfundraiserslearnfromrappers-140707171243-phpapp02_95__what-fundraisers-can-learn-from-rappers-17-1024.jpg"
+      ],
+      "scores": [
+        1.0
+      ],
+      "topk": 1,
+      "method": "parsed_text_only",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "oracle_qrels",
+      "ocr_context_available": true,
+      "parsed_docids": [
+        "20140706whatcanfundraiserslearnfromrappers-140707171243-phpapp02_95__what-fundraisers-can-learn-from-rappers-17-1024.jpg"
+      ],
+      "n_images": 0,
+      "prediction": "Individual Giving, Policy & campaigns, Creative Agency, Donor Care, Media Partner, Comms.",
+      "elapsed_sec": 1.203,
+      "input_tokens": 699,
+      "output_tokens": 21
+    },
+    {
+      "dataset": "SlideVQA",
+      "qid": "2013alapurchasing-130214144910-phpapp02_95__purchasing-ebooks-for-your-library-6-1024.jpgquery_number_2",
+      "query": "Did eBook Penetration in School libraries increase or decrease from 2011 to 2012?",
+      "answer": "Decrease",
+      "docids": [
+        "2013alapurchasing-130214144910-phpapp02_95__purchasing-ebooks-for-your-library-6-1024.jpg"
+      ],
+      "scores": [
+        1.0
+      ],
+      "topk": 1,
+      "method": "parsed_text_only",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "oracle_qrels",
+      "ocr_context_available": true,
+      "parsed_docids": [
+        "2013alapurchasing-130214144910-phpapp02_95__purchasing-ebooks-for-your-library-6-1024.jpg"
+      ],
+      "n_images": 0,
+      "prediction": "increase",
+      "elapsed_sec": 0.371,
+      "input_tokens": 451,
+      "output_tokens": 2
+    },
+    {
+      "dataset": "SlideVQA",
+      "qid": "19-amines-wade7th-140409034223-phpapp02_95__19-amines-wade-7th-2-1024.jpgquery_number_1",
+      "query": "What are four examples of addictive drugs that are Biologically Active Amines?",
+      "answer": "cocaine in coca leaves, nicotine in tobacco, mescaline in peyote cactus, morphine in opium poppies",
+      "docids": [
+        "19-amines-wade7th-140409034223-phpapp02_95__19-amines-wade-7th-2-1024.jpg"
+      ],
+      "scores": [
+        1.0
+      ],
+      "topk": 1,
+      "method": "parsed_text_only",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "oracle_qrels",
+      "ocr_context_available": true,
+      "parsed_docids": [
+        "19-amines-wade7th-140409034223-phpapp02_95__19-amines-wade-7th-2-1024.jpg"
+      ],
+      "n_images": 0,
+      "prediction": "coca leaves, tobacco, peyote cactus, opium poppies",
+      "elapsed_sec": 1.014,
+      "input_tokens": 589,
+      "output_tokens": 17
+    },
+    {
+      "dataset": "SlideVQA",
+      "qid": "afabric-manufacturing-150314104020-conversion-gate01_95__fabric-manufacturing-weaving-preparation-6-1024.jpgquery_number_1",
+      "query": "What are the three types of Fabric manufacturing technology?",
+      "answer": "Weaving, Knitting, Non-Woven",
+      "docids": [
+        "afabric-manufacturing-150314104020-conversion-gate01_95__fabric-manufacturing-weaving-preparation-6-1024.jpg"
+      ],
+      "scores": [
+        1.0
+      ],
+      "topk": 1,
+      "method": "parsed_text_only",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "oracle_qrels",
+      "ocr_context_available": true,
+      "parsed_docids": [
+        "afabric-manufacturing-150314104020-conversion-gate01_95__fabric-manufacturing-weaving-preparation-6-1024.jpg"
+      ],
+      "n_images": 0,
+      "prediction": "Weaving, Knitting, Non-Woven",
+      "elapsed_sec": 0.614,
+      "input_tokens": 362,
+      "output_tokens": 10
+    },
+    {
+      "dataset": "SlideVQA",
+      "qid": "afabric-manufacturing-150314104020-conversion-gate01_95__fabric-manufacturing-weaving-preparation-6-1024.jpgtcy6afabric-manufacturing-150314104020-conversion-gate01_95__fabric-manufacturing-weaving-preparation-8-1024.jpgquery_number_1",
+      "query": "What are the three types of manufacturing technology for a manufactured assembly of fibres or yarns that has substantial surface area in relation to its thickness and sufficient cohesion to give the assembly useful mechanical strength?",
+      "answer": "Weaving, Knitting, Non-Woven",
+      "docids": [
+        "afabric-manufacturing-150314104020-conversion-gate01_95__fabric-manufacturing-weaving-preparation-6-1024.jpg"
+      ],
+      "scores": [
+        1.0
+      ],
+      "topk": 1,
+      "method": "parsed_text_only",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "oracle_qrels",
+      "ocr_context_available": true,
+      "parsed_docids": [
+        "afabric-manufacturing-150314104020-conversion-gate01_95__fabric-manufacturing-weaving-preparation-6-1024.jpg"
+      ],
+      "n_images": 0,
+      "prediction": "Weaving, knitting, non-woven",
+      "elapsed_sec": 0.62,
+      "input_tokens": 391,
+      "output_tokens": 9
+    },
+    {
+      "dataset": "SlideVQA",
+      "qid": "141121organicwayforward-141123090600-conversion-gate02_95__organic-way-forward-7-1024.jpgquery_number_1",
+      "query": "Sahaja Aharam links farmers to whom?",
+      "answer": "consumers",
+      "docids": [
+        "141121organicwayforward-141123090600-conversion-gate02_95__organic-way-forward-7-1024.jpg"
+      ],
+      "scores": [
+        1.0
+      ],
+      "topk": 1,
+      "method": "parsed_text_only",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "oracle_qrels",
+      "ocr_context_available": true,
+      "parsed_docids": [
+        "141121organicwayforward-141123090600-conversion-gate02_95__organic-way-forward-7-1024.jpg"
+      ],
+      "n_images": 0,
+      "prediction": "consumers",
+      "elapsed_sec": 0.587,
+      "input_tokens": 817,
+      "output_tokens": 3
+    },
+    {
+      "dataset": "SlideVQA",
+      "qid": "141121organicwayforward-141123090600-conversion-gate02_95__organic-way-forward-6-1024.jpgtcy6141121organicwayforward-141123090600-conversion-gate02_95__organic-way-forward-7-1024.jpgquery_number_1",
+      "query": "The F2C initiative to create a meeting ground for nature-friendly consumers and farmers links farmers to whom?",
+      "answer": "consumers",
+      "docids": [
+        "141121organicwayforward-141123090600-conversion-gate02_95__organic-way-forward-6-1024.jpg"
+      ],
+      "scores": [
+        1.0
+      ],
+      "topk": 1,
+      "method": "parsed_text_only",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "oracle_qrels",
+      "ocr_context_available": true,
+      "parsed_docids": [
+        "141121organicwayforward-141123090600-conversion-gate02_95__organic-way-forward-6-1024.jpg"
+      ],
+      "n_images": 0,
+      "prediction": "consumers",
+      "elapsed_sec": 0.506,
+      "input_tokens": 655,
+      "output_tokens": 3
+    },
+    {
+      "dataset": "SlideVQA",
+      "qid": "chinatourismreport-100310054348-phpapp01_95__china-tourism-report-3-1024.jpgquery_number_1",
+      "query": "How many major languages are there in the People's Republic of China?",
+      "answer": "8",
+      "docids": [
+        "chinatourismreport-100310054348-phpapp01_95__china-tourism-report-3-1024.jpg"
+      ],
+      "scores": [
+        1.0
+      ],
+      "topk": 1,
+      "method": "parsed_text_only",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "oracle_qrels",
+      "ocr_context_available": true,
+      "parsed_docids": [
+        "chinatourismreport-100310054348-phpapp01_95__china-tourism-report-3-1024.jpg"
+      ],
+      "n_images": 0,
+      "prediction": "7",
+      "elapsed_sec": 0.669,
+      "input_tokens": 1095,
+      "output_tokens": 2
+    },
+    {
+      "dataset": "SlideVQA",
+      "qid": "chinatourismreport-100310054348-phpapp01_95__china-tourism-report-2-1024.jpgtcy6chinatourismreport-100310054348-phpapp01_95__china-tourism-report-3-1024.jpgquery_number_1",
+      "query": "How many major languages are there in the country that has control over mainland China and the largely self-governing territories of Hong Kong (since 1997) and Macau (since 1999)?",
+      "answer": "8",
+      "docids": [
+        "chinatourismreport-100310054348-phpapp01_95__china-tourism-report-2-1024.jpg"
+      ],
+      "scores": [
+        1.0
+      ],
+      "topk": 1,
+      "method": "parsed_text_only",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "oracle_qrels",
+      "ocr_context_available": true,
+      "parsed_docids": [
+        "chinatourismreport-100310054348-phpapp01_95__china-tourism-report-2-1024.jpg"
+      ],
+      "n_images": 0,
+      "prediction": "2",
+      "elapsed_sec": 0.48,
+      "input_tokens": 650,
+      "output_tokens": 2
+    },
+    {
+      "dataset": "SlideVQA",
+      "qid": "bearing1-151117114834-lva1-app6892_95__bearing-description-about-basic-types-failure-causes-2-1024.jpgtcy6bearing1-151117114834-lva1-app6892_95__bearing-description-about-basic-types-failure-causes-5-1024.jpgquery_number_1",
+      "query": "What are two types of a device to permit constrained relative motion between two parts, typically rotation or linear movement?",
+      "answer": "ANTIFRICTION, FRICTION",
+      "docids": [
+        "bearing1-151117114834-lva1-app6892_95__bearing-description-about-basic-types-failure-causes-2-1024.jpg"
+      ],
+      "scores": [
+        1.0
+      ],
+      "topk": 1,
+      "method": "parsed_text_only",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "oracle_qrels",
+      "ocr_context_available": true,
+      "parsed_docids": [
+        "bearing1-151117114834-lva1-app6892_95__bearing-description-about-basic-types-failure-causes-2-1024.jpg"
+      ],
+      "n_images": 0,
+      "prediction": "Bearings",
+      "elapsed_sec": 0.336,
+      "input_tokens": 320,
+      "output_tokens": 3
+    },
+    {
+      "dataset": "SlideVQA",
+      "qid": "autoreport-cs6-140415111854-phpapp02_95__auto-report-cs6-8-1024.jpgquery_number_1",
+      "query": "What percentage of vehicle buyers include 3 or less brands in their consideration list?",
+      "answer": "82",
+      "docids": [
+        "autoreport-cs6-140415111854-phpapp02_95__auto-report-cs6-8-1024.jpg"
+      ],
+      "scores": [
+        1.0
+      ],
+      "topk": 1,
+      "method": "parsed_text_only",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "oracle_qrels",
+      "ocr_context_available": true,
+      "parsed_docids": [
+        "autoreport-cs6-140415111854-phpapp02_95__auto-report-cs6-8-1024.jpg"
+      ],
+      "n_images": 0,
+      "prediction": "82%",
+      "elapsed_sec": 0.959,
+      "input_tokens": 1499,
+      "output_tokens": 4
+    },
+    {
+      "dataset": "SlideVQA",
+      "qid": "bologna1-151118100554-lva1-app6892_95__principles-and-practice-of-open-science-7-1024.jpgquery_number_1",
+      "query": "The Unilever Centre for Molecular Science Informatics is affiliated with which university?",
+      "answer": "University of Cambridge",
+      "docids": [
+        "bologna1-151118100554-lva1-app6892_95__principles-and-practice-of-open-science-7-1024.jpg"
+      ],
+      "scores": [
+        1.0
+      ],
+      "topk": 1,
+      "method": "parsed_text_only",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "oracle_qrels",
+      "ocr_context_available": true,
+      "parsed_docids": [
+        "bologna1-151118100554-lva1-app6892_95__principles-and-practice-of-open-science-7-1024.jpg"
+      ],
+      "n_images": 0,
+      "prediction": "University of Cambridge",
+      "elapsed_sec": 0.751,
+      "input_tokens": 1045,
+      "output_tokens": 4
+    },
+    {
+      "dataset": "SlideVQA",
+      "qid": "chapter-3-seawater-160218031855_95__chapter-3-seawater-11-1024.jpgquery_number_1",
+      "query": "What changes a gas into a solid?",
+      "answer": "frost formation",
+      "docids": [
+        "chapter-3-seawater-160218031855_95__chapter-3-seawater-11-1024.jpg"
+      ],
+      "scores": [
+        1.0
+      ],
+      "topk": 1,
+      "method": "parsed_text_only",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "oracle_qrels",
+      "ocr_context_available": true,
+      "parsed_docids": [
+        "chapter-3-seawater-160218031855_95__chapter-3-seawater-11-1024.jpg"
+      ],
+      "n_images": 0,
+      "prediction": "Sublimation",
+      "elapsed_sec": 0.379,
+      "input_tokens": 321,
+      "output_tokens": 4
+    },
+    {
+      "dataset": "SlideVQA",
+      "qid": "chapter-3-seawater-160218031855_95__chapter-3-seawater-8-1024.jpgtcy6chapter-3-seawater-160218031855_95__chapter-3-seawater-16-1024.jpgquery_number_1",
+      "query": "What is the process by which the breaking of hydrogen bonds allows water to change from the liquid phase into the gaseous phase which has reached equilibrium with the liquid surface said to have done?",
+      "answer": "reached saturation",
+      "docids": [
+        "chapter-3-seawater-160218031855_95__chapter-3-seawater-8-1024.jpg"
+      ],
+      "scores": [
+        1.0
+      ],
+      "topk": 1,
+      "method": "parsed_text_only",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "oracle_qrels",
+      "ocr_context_available": true,
+      "parsed_docids": [
+        "chapter-3-seawater-160218031855_95__chapter-3-seawater-8-1024.jpg"
+      ],
+      "n_images": 0,
+      "prediction": "Evaporation",
+      "elapsed_sec": 0.341,
+      "input_tokens": 359,
+      "output_tokens": 3
+    },
+    {
+      "dataset": "SlideVQA",
+      "qid": "chapter-3-seawater-160218031855_95__chapter-3-seawater-19-1024.jpgquery_number_1",
+      "query": "What is another name for salty water?",
+      "answer": "Salt solution",
+      "docids": [
+        "chapter-3-seawater-160218031855_95__chapter-3-seawater-19-1024.jpg"
+      ],
+      "scores": [
+        1.0
+      ],
+      "topk": 1,
+      "method": "parsed_text_only",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "oracle_qrels",
+      "ocr_context_available": true,
+      "parsed_docids": [
+        "chapter-3-seawater-160218031855_95__chapter-3-seawater-19-1024.jpg"
+      ],
+      "n_images": 0,
+      "prediction": "Seawater",
+      "elapsed_sec": 0.39,
+      "input_tokens": 379,
+      "output_tokens": 4
+    },
+    {
+      "dataset": "SlideVQA",
+      "qid": "chapter-3-seawater-160218031855_95__chapter-3-seawater-12-1024.jpgtcy6chapter-3-seawater-160218031855_95__chapter-3-seawater-19-1024.jpgquery_number_1",
+      "query": "What is another name for the only known substance that is less dense as a solid than it is as a liquid combined with salt?",
+      "answer": "Salt solution",
+      "docids": [
+        "chapter-3-seawater-160218031855_95__chapter-3-seawater-12-1024.jpg"
+      ],
+      "scores": [
+        1.0
+      ],
+      "topk": 1,
+      "method": "parsed_text_only",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "oracle_qrels",
+      "ocr_context_available": true,
+      "parsed_docids": [
+        "chapter-3-seawater-160218031855_95__chapter-3-seawater-12-1024.jpg"
+      ],
+      "n_images": 0,
+      "prediction": "insufficient to answer",
+      "elapsed_sec": 0.421,
+      "input_tokens": 339,
+      "output_tokens": 5
+    },
+    {
+      "dataset": "SlideVQA",
+      "qid": "ch16-150313050025-conversion-gate01_95__chapter-16-creating-highperformance-work-systems-7-1024.jpgtcy6ch16-150313050025-conversion-gate01_95__chapter-16-creating-highperformance-work-systems-11-1024.jpgquery_number_1",
+      "query": "Which two characteristics involve a shift away from the mentality of command and control toward one more focused on employee commitment, Knowledge Development, Performance-Reward Linkage, and Egalitarianism?",
+      "answer": "Gainsharing, Profit sharing",
+      "docids": [
+        "ch16-150313050025-conversion-gate01_95__chapter-16-creating-highperformance-work-systems-7-1024.jpg"
+      ],
+      "scores": [
+        1.0
+      ],
+      "topk": 1,
+      "method": "parsed_text_only",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "oracle_qrels",
+      "ocr_context_available": true,
+      "parsed_docids": [
+        "ch16-150313050025-conversion-gate01_95__chapter-16-creating-highperformance-work-systems-7-1024.jpg"
+      ],
+      "n_images": 0,
+      "prediction": "Knowledge Development, Performance-Reward Linkage",
+      "elapsed_sec": 0.628,
+      "input_tokens": 437,
+      "output_tokens": 9
+    },
+    {
+      "dataset": "SlideVQA",
+      "qid": "ch16-150313050025-conversion-gate01_95__chapter-16-creating-highperformance-work-systems-17-1024.jpgquery_number_1",
+      "query": "What are four HR Deliverables?",
+      "answer": "Employment stability, Team-based behaviors, Strategy-focused behaviors, High-talent staffing level",
+      "docids": [
+        "ch16-150313050025-conversion-gate01_95__chapter-16-creating-highperformance-work-systems-17-1024.jpg"
+      ],
+      "scores": [
+        1.0
+      ],
+      "topk": 1,
+      "method": "parsed_text_only",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "oracle_qrels",
+      "ocr_context_available": true,
+      "parsed_docids": [
+        "ch16-150313050025-conversion-gate01_95__chapter-16-creating-highperformance-work-systems-17-1024.jpg"
+      ],
+      "n_images": 0,
+      "prediction": "Employment stability, Team-based behaviors, Strategy-focused behaviors, High-talent staffing level",
+      "elapsed_sec": 1.459,
+      "input_tokens": 1297,
+      "output_tokens": 18
+    },
+    {
+      "dataset": "SlideVQA",
+      "qid": "antibiotics-141109111447-conversion-gate02_95__antibiotics-6-1024.jpgquery_number_1",
+      "query": "What is a cell membrane disruption drug?",
+      "answer": "Polymyxin B",
+      "docids": [
+        "antibiotics-141109111447-conversion-gate02_95__antibiotics-6-1024.jpg"
+      ],
+      "scores": [
+        1.0
+      ],
+      "topk": 1,
+      "method": "parsed_text_only",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "oracle_qrels",
+      "ocr_context_available": true,
+      "parsed_docids": [
+        "antibiotics-141109111447-conversion-gate02_95__antibiotics-6-1024.jpg"
+      ],
+      "n_images": 0,
+      "prediction": "Polymyxin B",
+      "elapsed_sec": 1.588,
+      "input_tokens": 2431,
+      "output_tokens": 6
+    },
+    {
+      "dataset": "SlideVQA",
+      "qid": "antibiotics-141109111447-conversion-gate02_95__antibiotics-6-1024.jpgquery_number_2",
+      "query": "What type of drug is Penicillin?",
+      "answer": "Cell Wall Synthesis Inhibition",
+      "docids": [
+        "antibiotics-141109111447-conversion-gate02_95__antibiotics-6-1024.jpg"
+      ],
+      "scores": [
+        1.0
+      ],
+      "topk": 1,
+      "method": "parsed_text_only",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "oracle_qrels",
+      "ocr_context_available": true,
+      "parsed_docids": [
+        "antibiotics-141109111447-conversion-gate02_95__antibiotics-6-1024.jpg"
+      ],
+      "n_images": 0,
+      "prediction": "Cell Wall Synthesis Inhibition",
+      "elapsed_sec": 1.567,
+      "input_tokens": 2432,
+      "output_tokens": 7
+    },
+    {
+      "dataset": "SlideVQA",
+      "qid": "antibiotics-141109111447-conversion-gate02_95__antibiotics-2-1024.jpgtcy6antibiotics-141109111447-conversion-gate02_95__antibiotics-6-1024.jpgquery_number_1",
+      "query": "What type of drug is the one discovered in 1928 by Alexander Flemming?",
+      "answer": "Cell Wall Synthesis Inhibition",
+      "docids": [
+        "antibiotics-141109111447-conversion-gate02_95__antibiotics-2-1024.jpg"
+      ],
+      "scores": [
+        1.0
+      ],
+      "topk": 1,
+      "method": "parsed_text_only",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "oracle_qrels",
+      "ocr_context_available": true,
+      "parsed_docids": [
+        "antibiotics-141109111447-conversion-gate02_95__antibiotics-2-1024.jpg"
+      ],
+      "n_images": 0,
+      "prediction": "Penicillin",
+      "elapsed_sec": 0.547,
+      "input_tokens": 684,
+      "output_tokens": 4
+    },
+    {
+      "dataset": "SlideVQA",
+      "qid": "antibiotics-141109111447-conversion-gate02_95__antibiotics-13-1024.jpgquery_number_2",
+      "query": "What substances are involved in the feeding of substrates?",
+      "answer": "carbon source, nitrogen source, phenylacetic acid",
+      "docids": [
+        "antibiotics-141109111447-conversion-gate02_95__antibiotics-13-1024.jpg"
+      ],
+      "scores": [
+        1.0
+      ],
+      "topk": 1,
+      "method": "parsed_text_only",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "oracle_qrels",
+      "ocr_context_available": true,
+      "parsed_docids": [
+        "antibiotics-141109111447-conversion-gate02_95__antibiotics-13-1024.jpg"
+      ],
+      "n_images": 0,
+      "prediction": "carbon source, nitrogen source, phenylacetic acid",
+      "elapsed_sec": 0.738,
+      "input_tokens": 401,
+      "output_tokens": 12
+    },
+    {
+      "dataset": "SlideVQA",
+      "qid": "antibiotics-141109111447-conversion-gate02_95__antibiotics-20-1024.jpgquery_number_1",
+      "query": "In the Carpet Model, what occurs directly before cell death?",
+      "answer": "Micelles formation",
+      "docids": [
+        "antibiotics-141109111447-conversion-gate02_95__antibiotics-20-1024.jpg"
+      ],
+      "scores": [
+        1.0
+      ],
+      "topk": 1,
+      "method": "parsed_text_only",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "oracle_qrels",
+      "ocr_context_available": true,
+      "parsed_docids": [
+        "antibiotics-141109111447-conversion-gate02_95__antibiotics-20-1024.jpg"
+      ],
+      "n_images": 0,
+      "prediction": "Micelles formation",
+      "elapsed_sec": 0.419,
+      "input_tokens": 434,
+      "output_tokens": 4
+    },
+    {
+      "dataset": "SlideVQA",
+      "qid": "consultselling-150818132925-lva1-app6892_95__consultative-selling-workshop-8-1024.jpgquery_number_1",
+      "query": "What are two types of loop learning?",
+      "answer": "Single, Double",
+      "docids": [
+        "consultselling-150818132925-lva1-app6892_95__consultative-selling-workshop-8-1024.jpg"
+      ],
+      "scores": [
+        1.0
+      ],
+      "topk": 1,
+      "method": "parsed_text_only",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "oracle_qrels",
+      "ocr_context_available": true,
+      "parsed_docids": [
+        "consultselling-150818132925-lva1-app6892_95__consultative-selling-workshop-8-1024.jpg"
+      ],
+      "n_images": 0,
+      "prediction": "Single Loop Learning and Double Loop Learning",
+      "elapsed_sec": 0.536,
+      "input_tokens": 371,
+      "output_tokens": 8
+    },
+    {
+      "dataset": "SlideVQA",
+      "qid": "amitpresentation-141220101151-conversion-gate01_95__keynote-presentation-mobile-app-lifecycle-and-ecosystem-9-1024.jpgquery_number_1",
+      "query": "What percentage of the most popular Apple App Store categories did Utilities account for in September 2014?",
+      "answer": "5",
+      "docids": [
+        "amitpresentation-141220101151-conversion-gate01_95__keynote-presentation-mobile-app-lifecycle-and-ecosystem-9-1024.jpg"
+      ],
+      "scores": [
+        1.0
+      ],
+      "topk": 1,
+      "method": "parsed_text_only",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "oracle_qrels",
+      "ocr_context_available": true,
+      "parsed_docids": [
+        "amitpresentation-141220101151-conversion-gate01_95__keynote-presentation-mobile-app-lifecycle-and-ecosystem-9-1024.jpg"
+      ],
+      "n_images": 0,
+      "prediction": "5%",
+      "elapsed_sec": 0.452,
+      "input_tokens": 521,
+      "output_tokens": 3
+    },
+    {
+      "dataset": "SlideVQA",
+      "qid": "bookofdaniel-090827093753-phpapp01_95__the-book-of-daniel-5-1024.jpgquery_number_1",
+      "query": "What is the Babylonian Name of Mishael?",
+      "answer": "Meshach",
+      "docids": [
+        "bookofdaniel-090827093753-phpapp01_95__the-book-of-daniel-5-1024.jpg"
+      ],
+      "scores": [
+        1.0
+      ],
+      "topk": 1,
+      "method": "parsed_text_only",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "oracle_qrels",
+      "ocr_context_available": true,
+      "parsed_docids": [
+        "bookofdaniel-090827093753-phpapp01_95__the-book-of-daniel-5-1024.jpg"
+      ],
+      "n_images": 0,
+      "prediction": "Meshach",
+      "elapsed_sec": 0.467,
+      "input_tokens": 617,
+      "output_tokens": 3
+    },
+    {
+      "dataset": "SlideVQA",
+      "qid": "bookofdaniel-090827093753-phpapp01_95__the-book-of-daniel-5-1024.jpgtcy6bookofdaniel-090827093753-phpapp01_95__the-book-of-daniel-16-1024.jpgquery_number_1",
+      "query": "What is the name of Mishael in the language of the empire of Nebuchadnezzar?",
+      "answer": "Meshach",
+      "docids": [
+        "bookofdaniel-090827093753-phpapp01_95__the-book-of-daniel-5-1024.jpg"
+      ],
+      "scores": [
+        1.0
+      ],
+      "topk": 1,
+      "method": "parsed_text_only",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "oracle_qrels",
+      "ocr_context_available": true,
+      "parsed_docids": [
+        "bookofdaniel-090827093753-phpapp01_95__the-book-of-daniel-5-1024.jpg"
+      ],
+      "n_images": 0,
+      "prediction": "Meshach",
+      "elapsed_sec": 0.47,
+      "input_tokens": 628,
+      "output_tokens": 3
+    },
+    {
+      "dataset": "SlideVQA",
+      "qid": "businesseppt-140818105213-phpapp01_95__business-environment-featuresmeaningimportanceobjectives-porters-model-14-1024.jpgquery_number_1",
+      "query": "Who said \"Failure is the opportunity to begin again more intelligently\"?",
+      "answer": "Henry Ford",
+      "docids": [
+        "businesseppt-140818105213-phpapp01_95__business-environment-featuresmeaningimportanceobjectives-porters-model-14-1024.jpg"
+      ],
+      "scores": [
+        1.0
+      ],
+      "topk": 1,
+      "method": "parsed_text_only",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "oracle_qrels",
+      "ocr_context_available": true,
+      "parsed_docids": [
+        "businesseppt-140818105213-phpapp01_95__business-environment-featuresmeaningimportanceobjectives-porters-model-14-1024.jpg"
+      ],
+      "n_images": 0,
+      "prediction": "Henry Ford",
+      "elapsed_sec": 0.383,
+      "input_tokens": 439,
+      "output_tokens": 3
+    },
+    {
+      "dataset": "SlideVQA",
+      "qid": "aynbrandt3workshopsocialmediaprimer-1219840114878232-9_95__ayn-brand-t3-workshop-social-media-web-20-primer-13-1024.jpgquery_number_1",
+      "query": "Approximately what percent of Gen Y are Inactives?",
+      "answer": "20",
+      "docids": [
+        "aynbrandt3workshopsocialmediaprimer-1219840114878232-9_95__ayn-brand-t3-workshop-social-media-web-20-primer-13-1024.jpg"
+      ],
+      "scores": [
+        1.0
+      ],
+      "topk": 1,
+      "method": "parsed_text_only",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "oracle_qrels",
+      "ocr_context_available": true,
+      "parsed_docids": [
+        "aynbrandt3workshopsocialmediaprimer-1219840114878232-9_95__ayn-brand-t3-workshop-social-media-web-20-primer-13-1024.jpg"
+      ],
+      "n_images": 0,
+      "prediction": "30%",
+      "elapsed_sec": 0.564,
+      "input_tokens": 723,
+      "output_tokens": 4
+    },
+    {
+      "dataset": "SlideVQA",
+      "qid": "cleanhydrocarbonsrenewableelectrificationsolarenergyinsouthernalberta-160323184734_95__clean-hydrocarbons-renewable-electrification-solar-energy-potential-in-southern-alberta-1-1024.jpgquery_number_1",
+      "query": "Who is the author of the presentation Clean Hydrocarbons & Renewable Electrification?",
+      "answer": "Krzysztof Palka",
+      "docids": [
+        "cleanhydrocarbonsrenewableelectrificationsolarenergyinsouthernalberta-160323184734_95__clean-hydrocarbons-renewable-electrification-solar-energy-potential-in-southern-alberta-1-1024.jpg"
+      ],
+      "scores": [
+        1.0
+      ],
+      "topk": 1,
+      "method": "parsed_text_only",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "oracle_qrels",
+      "ocr_context_available": true,
+      "parsed_docids": [
+        "cleanhydrocarbonsrenewableelectrificationsolarenergyinsouthernalberta-160323184734_95__clean-hydrocarbons-renewable-electrification-solar-energy-potential-in-southern-alberta-1-1024.jpg"
+      ],
+      "n_images": 0,
+      "prediction": "Krzysztof (Kris) Palka",
+      "elapsed_sec": 0.714,
+      "input_tokens": 311,
+      "output_tokens": 13
+    },
+    {
+      "dataset": "SlideVQA",
+      "qid": "cleanhydrocarbonsrenewableelectrificationsolarenergyinsouthernalberta-160323184734_95__clean-hydrocarbons-renewable-electrification-solar-energy-potential-in-southern-alberta-11-1024.jpgquery_number_1",
+      "query": "What component comes between solar panels and a power distribution panel?",
+      "answer": "Inverter",
+      "docids": [
+        "cleanhydrocarbonsrenewableelectrificationsolarenergyinsouthernalberta-160323184734_95__clean-hydrocarbons-renewable-electrification-solar-energy-potential-in-southern-alberta-11-1024.jpg"
+      ],
+      "scores": [
+        1.0
+      ],
+      "topk": 1,
+      "method": "parsed_text_only",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "oracle_qrels",
+      "ocr_context_available": true,
+      "parsed_docids": [
+        "cleanhydrocarbonsrenewableelectrificationsolarenergyinsouthernalberta-160323184734_95__clean-hydrocarbons-renewable-electrification-solar-energy-potential-in-southern-alberta-11-1024.jpg"
+      ],
+      "n_images": 0,
+      "prediction": "Inverter",
+      "elapsed_sec": 0.324,
+      "input_tokens": 293,
+      "output_tokens": 3
+    },
+    {
+      "dataset": "SlideVQA",
+      "qid": "alternativestotheimpulse-responsemodel-131125154606-phpapp02_95__alternatives-to-the-impulse-response-model-1-1024.jpgquery_number_1",
+      "query": "What university is the Mallinckrodt Institute of Radiology affiliated with?",
+      "answer": "Washington University",
+      "docids": [
+        "alternativestotheimpulse-responsemodel-131125154606-phpapp02_95__alternatives-to-the-impulse-response-model-1-1024.jpg"
+      ],
+      "scores": [
+        1.0
+      ],
+      "topk": 1,
+      "method": "parsed_text_only",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "oracle_qrels",
+      "ocr_context_available": true,
+      "parsed_docids": [
+        "alternativestotheimpulse-responsemodel-131125154606-phpapp02_95__alternatives-to-the-impulse-response-model-1-1024.jpg"
+      ],
+      "n_images": 0,
+      "prediction": "Washington University in St. Louis",
+      "elapsed_sec": 0.546,
+      "input_tokens": 452,
+      "output_tokens": 7
+    },
+    {
+      "dataset": "SlideVQA",
+      "qid": "asiasshoppingsafarifinalwebinardeckforparticipants-141105212832-conversion-gate01_95__asias-shopping-safari-6-1024.jpgquery_number_1",
+      "query": "Smart pricing is an example of what?",
+      "answer": "Smart strategies",
+      "docids": [
+        "asiasshoppingsafarifinalwebinardeckforparticipants-141105212832-conversion-gate01_95__asias-shopping-safari-6-1024.jpg"
+      ],
+      "scores": [
+        1.0
+      ],
+      "topk": 1,
+      "method": "parsed_text_only",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "oracle_qrels",
+      "ocr_context_available": true,
+      "parsed_docids": [
+        "asiasshoppingsafarifinalwebinardeckforparticipants-141105212832-conversion-gate01_95__asias-shopping-safari-6-1024.jpg"
+      ],
+      "n_images": 0,
+      "prediction": "Smart strategy",
+      "elapsed_sec": 0.581,
+      "input_tokens": 834,
+      "output_tokens": 3
+    },
+    {
+      "dataset": "SlideVQA",
+      "qid": "b2b-social-testing-lopez-141009140744-conversion-gate02_95__kick-your-social-strategy-into-overdrive-the-ins-outs-of-testing-social-13-1024.jpgquery_number_1",
+      "query": "On which day did the most Facebook fans of Moz see their posts?",
+      "answer": "THU",
+      "docids": [
+        "b2b-social-testing-lopez-141009140744-conversion-gate02_95__kick-your-social-strategy-into-overdrive-the-ins-outs-of-testing-social-13-1024.jpg"
+      ],
+      "scores": [
+        1.0
+      ],
+      "topk": 1,
+      "method": "parsed_text_only",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "oracle_qrels",
+      "ocr_context_available": true,
+      "parsed_docids": [
+        "b2b-social-testing-lopez-141009140744-conversion-gate02_95__kick-your-social-strategy-into-overdrive-the-ins-outs-of-testing-social-13-1024.jpg"
+      ],
+      "n_images": 0,
+      "prediction": "SUN",
+      "elapsed_sec": 0.649,
+      "input_tokens": 965,
+      "output_tokens": 3
+    },
+    {
+      "dataset": "SlideVQA",
+      "qid": "autonomouscar-140901094343-phpapp02_95__autonomous-car-9-1024.jpgquery_number_1",
+      "query": "How many people are enjoying the game in the car depicted in the ad \"Driverless Car of the Future\"?",
+      "answer": "4",
+      "docids": [
+        "autonomouscar-140901094343-phpapp02_95__autonomous-car-9-1024.jpg"
+      ],
+      "scores": [
+        1.0
+      ],
+      "topk": 1,
+      "method": "parsed_text_only",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "oracle_qrels",
+      "ocr_context_available": true,
+      "parsed_docids": [
+        "autonomouscar-140901094343-phpapp02_95__autonomous-car-9-1024.jpg"
+      ],
+      "n_images": 0,
+      "prediction": "0",
+      "elapsed_sec": 0.356,
+      "input_tokens": 453,
+      "output_tokens": 2
+    },
+    {
+      "dataset": "SlideVQA",
+      "qid": "americalooksto2024keyfindings-140701054257-phpapp01_95__america-looks-to-2024-the-atlanticaspen-institute-survey-key-findings-8-1024.jpgquery_number_1",
+      "query": "The percentage of total respondents who say they are more likely to get ahead will drop how many percentage points between 10 years ago and in 10 years?",
+      "answer": "31",
+      "docids": [
+        "americalooksto2024keyfindings-140701054257-phpapp01_95__america-looks-to-2024-the-atlanticaspen-institute-survey-key-findings-8-1024.jpg"
+      ],
+      "scores": [
+        1.0
+      ],
+      "topk": 1,
+      "method": "parsed_text_only",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "oracle_qrels",
+      "ocr_context_available": true,
+      "parsed_docids": [
+        "americalooksto2024keyfindings-140701054257-phpapp01_95__america-looks-to-2024-the-atlanticaspen-institute-survey-key-findings-8-1024.jpg"
+      ],
+      "n_images": 0,
+      "prediction": "11",
+      "elapsed_sec": 0.663,
+      "input_tokens": 1006,
+      "output_tokens": 3
+    },
+    {
+      "dataset": "SlideVQA",
+      "qid": "americalooksto2024keyfindings-140701054257-phpapp01_95__america-looks-to-2024-the-atlanticaspen-institute-survey-key-findings-8-1024.jpgtcy6americalooksto2024keyfindings-140701054257-phpapp01_95__america-looks-to-2024-the-atlanticaspen-institute-survey-key-findings-9-1024.jpgquery_number_1",
+      "query": "The percentage of total respondents which includes 49% of Hispanics will drop how many percentage points between 10 years ago and in 10 years?",
+      "answer": "31",
+      "docids": [
+        "americalooksto2024keyfindings-140701054257-phpapp01_95__america-looks-to-2024-the-atlanticaspen-institute-survey-key-findings-8-1024.jpg"
+      ],
+      "scores": [
+        1.0
+      ],
+      "topk": 1,
+      "method": "parsed_text_only",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "oracle_qrels",
+      "ocr_context_available": true,
+      "parsed_docids": [
+        "americalooksto2024keyfindings-140701054257-phpapp01_95__america-looks-to-2024-the-atlanticaspen-institute-survey-key-findings-8-1024.jpg"
+      ],
+      "n_images": 0,
+      "prediction": "10",
+      "elapsed_sec": 0.646,
+      "input_tokens": 1005,
+      "output_tokens": 3
+    },
+    {
+      "dataset": "SlideVQA",
+      "qid": "americalooksto2024keyfindings-140701054257-phpapp01_95__america-looks-to-2024-the-atlanticaspen-institute-survey-key-findings-8-1024.jpgquery_number_2",
+      "query": "Did more respondents say they are more or less likely to get ahead in 10 years?",
+      "answer": "Less",
+      "docids": [
+        "americalooksto2024keyfindings-140701054257-phpapp01_95__america-looks-to-2024-the-atlanticaspen-institute-survey-key-findings-8-1024.jpg"
+      ],
+      "scores": [
+        1.0
+      ],
+      "topk": 1,
+      "method": "parsed_text_only",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "oracle_qrels",
+      "ocr_context_available": true,
+      "parsed_docids": [
+        "americalooksto2024keyfindings-140701054257-phpapp01_95__america-looks-to-2024-the-atlanticaspen-institute-survey-key-findings-8-1024.jpg"
+      ],
+      "n_images": 0,
+      "prediction": "less likely to get ahead",
+      "elapsed_sec": 0.765,
+      "input_tokens": 992,
+      "output_tokens": 6
+    },
+    {
+      "dataset": "SlideVQA",
+      "qid": "biosensorsinfoodindustry-presentation-150607065755-lva1-app6891_95__biosensors-in-food-industry-presentation-by-sonika-singh-niftem-mtech-first-year-5-1024.jpgquery_number_1",
+      "query": "What are the biosensor element called nanowire arrays an example of?",
+      "answer": "Transducers",
+      "docids": [
+        "biosensorsinfoodindustry-presentation-150607065755-lva1-app6891_95__biosensors-in-food-industry-presentation-by-sonika-singh-niftem-mtech-first-year-5-1024.jpg"
+      ],
+      "scores": [
+        1.0
+      ],
+      "topk": 1,
+      "method": "parsed_text_only",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "oracle_qrels",
+      "ocr_context_available": true,
+      "parsed_docids": [
+        "biosensorsinfoodindustry-presentation-150607065755-lva1-app6891_95__biosensors-in-food-industry-presentation-by-sonika-singh-niftem-mtech-first-year-5-1024.jpg"
+      ],
+      "n_images": 0,
+      "prediction": "Nanoparticles",
+      "elapsed_sec": 0.475,
+      "input_tokens": 486,
+      "output_tokens": 5
+    },
+    {
+      "dataset": "SlideVQA",
+      "qid": "biosensorsinfoodindustry-presentation-150607065755-lva1-app6891_95__biosensors-in-food-industry-presentation-by-sonika-singh-niftem-mtech-first-year-5-1024.jpgquery_number_2",
+      "query": "What are three parts of a biosensor's electronic system?",
+      "answer": "Signal Amplifier, Signal Processor, Display",
+      "docids": [
+        "biosensorsinfoodindustry-presentation-150607065755-lva1-app6891_95__biosensors-in-food-industry-presentation-by-sonika-singh-niftem-mtech-first-year-5-1024.jpg"
+      ],
+      "scores": [
+        1.0
+      ],
+      "topk": 1,
+      "method": "parsed_text_only",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "oracle_qrels",
+      "ocr_context_available": true,
+      "parsed_docids": [
+        "biosensorsinfoodindustry-presentation-150607065755-lva1-app6891_95__biosensors-in-food-industry-presentation-by-sonika-singh-niftem-mtech-first-year-5-1024.jpg"
+      ],
+      "n_images": 0,
+      "prediction": "Three parts of a biosensor's electronic system are:\n\n1. Amplifier\n2. Signal Processor\n3. Display",
+      "elapsed_sec": 1.244,
+      "input_tokens": 483,
+      "output_tokens": 25
+    },
+    {
+      "dataset": "SlideVQA",
+      "qid": "biosensorsinfoodindustry-presentation-150607065755-lva1-app6891_95__biosensors-in-food-industry-presentation-by-sonika-singh-niftem-mtech-first-year-9-1024.jpgquery_number_1",
+      "query": "What do nanotech membranes block?",
+      "answer": "moisture outflow, oxygen inflow",
+      "docids": [
+        "biosensorsinfoodindustry-presentation-150607065755-lva1-app6891_95__biosensors-in-food-industry-presentation-by-sonika-singh-niftem-mtech-first-year-9-1024.jpg"
+      ],
+      "scores": [
+        1.0
+      ],
+      "topk": 1,
+      "method": "parsed_text_only",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "oracle_qrels",
+      "ocr_context_available": true,
+      "parsed_docids": [
+        "biosensorsinfoodindustry-presentation-150607065755-lva1-app6891_95__biosensors-in-food-industry-presentation-by-sonika-singh-niftem-mtech-first-year-9-1024.jpg"
+      ],
+      "n_images": 0,
+      "prediction": "moisture",
+      "elapsed_sec": 0.415,
+      "input_tokens": 419,
+      "output_tokens": 4
+    },
+    {
+      "dataset": "SlideVQA",
+      "qid": "biosensorsinfoodindustry-presentation-150607065755-lva1-app6891_95__biosensors-in-food-industry-presentation-by-sonika-singh-niftem-mtech-first-year-9-1024.jpgtcy6biosensorsinfoodindustry-presentation-150607065755-lva1-app6891_95__biosensors-in-food-industry-presentation-by-sonika-singh-niftem-mtech-first-year-18-1024.jpgquery_number_1",
+      "query": "What do membranes which offer 3 distinct advantages to food packaging block?",
+      "answer": "moisture outflow, oxygen inflow",
+      "docids": [
+        "biosensorsinfoodindustry-presentation-150607065755-lva1-app6891_95__biosensors-in-food-industry-presentation-by-sonika-singh-niftem-mtech-first-year-9-1024.jpg"
+      ],
+      "scores": [
+        1.0
+      ],
+      "topk": 1,
+      "method": "parsed_text_only",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "oracle_qrels",
+      "ocr_context_available": true,
+      "parsed_docids": [
+        "biosensorsinfoodindustry-presentation-150607065755-lva1-app6891_95__biosensors-in-food-industry-presentation-by-sonika-singh-niftem-mtech-first-year-9-1024.jpg"
+      ],
+      "n_images": 0,
+      "prediction": "moisture",
+      "elapsed_sec": 0.418,
+      "input_tokens": 426,
+      "output_tokens": 4
+    },
+    {
+      "dataset": "SlideVQA",
+      "qid": "biosensorsinfoodindustry-presentation-150607065755-lva1-app6891_95__biosensors-in-food-industry-presentation-by-sonika-singh-niftem-mtech-first-year-10-1024.jpgquery_number_1",
+      "query": "How many activities are involved in Biosensor Prototyping?",
+      "answer": "7",
+      "docids": [
+        "biosensorsinfoodindustry-presentation-150607065755-lva1-app6891_95__biosensors-in-food-industry-presentation-by-sonika-singh-niftem-mtech-first-year-10-1024.jpg"
+      ],
+      "scores": [
+        1.0
+      ],
+      "topk": 1,
+      "method": "parsed_text_only",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "oracle_qrels",
+      "ocr_context_available": true,
+      "parsed_docids": [
+        "biosensorsinfoodindustry-presentation-150607065755-lva1-app6891_95__biosensors-in-food-industry-presentation-by-sonika-singh-niftem-mtech-first-year-10-1024.jpg"
+      ],
+      "n_images": 0,
+      "prediction": "5",
+      "elapsed_sec": 0.305,
+      "input_tokens": 345,
+      "output_tokens": 2
+    },
+    {
+      "dataset": "SlideVQA",
+      "qid": "astudyoncustomerpreferebceandsatisfactiontowardsbajajbikes-150814133516-lva1-app6891_95__a-study-on-customer-preferebce-and-satisfaction-towards-bajaj-bikes-12-1024.jpgquery_number_1",
+      "query": "When was BAJAJ MOTORCYCLES established?",
+      "answer": "November 29, 1945",
+      "docids": [
+        "astudyoncustomerpreferebceandsatisfactiontowardsbajajbikes-150814133516-lva1-app6891_95__a-study-on-customer-preferebce-and-satisfaction-towards-bajaj-bikes-12-1024.jpg"
+      ],
+      "scores": [
+        1.0
+      ],
+      "topk": 1,
+      "method": "parsed_text_only",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "oracle_qrels",
+      "ocr_context_available": true,
+      "parsed_docids": [
+        "astudyoncustomerpreferebceandsatisfactiontowardsbajajbikes-150814133516-lva1-app6891_95__a-study-on-customer-preferebce-and-satisfaction-towards-bajaj-bikes-12-1024.jpg"
+      ],
+      "n_images": 0,
+      "prediction": "November 29, 1945",
+      "elapsed_sec": 0.812,
+      "input_tokens": 689,
+      "output_tokens": 11
+    },
+    {
+      "dataset": "SlideVQA",
+      "qid": "astudyoncustomerpreferebceandsatisfactiontowardsbajajbikes-150814133516-lva1-app6891_95__a-study-on-customer-preferebce-and-satisfaction-towards-bajaj-bikes-18-1024.jpgquery_number_1",
+      "query": "Who investigated satisfaction on two-wheelers in 2014?",
+      "answer": "Mrs. G. Mahalakshami",
+      "docids": [
+        "astudyoncustomerpreferebceandsatisfactiontowardsbajajbikes-150814133516-lva1-app6891_95__a-study-on-customer-preferebce-and-satisfaction-towards-bajaj-bikes-18-1024.jpg"
+      ],
+      "scores": [
+        1.0
+      ],
+      "topk": 1,
+      "method": "parsed_text_only",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "oracle_qrels",
+      "ocr_context_available": true,
+      "parsed_docids": [
+        "astudyoncustomerpreferebceandsatisfactiontowardsbajajbikes-150814133516-lva1-app6891_95__a-study-on-customer-preferebce-and-satisfaction-towards-bajaj-bikes-18-1024.jpg"
+      ],
+      "n_images": 0,
+      "prediction": "Mrs. G.",
+      "elapsed_sec": 0.62,
+      "input_tokens": 706,
+      "output_tokens": 5
+    },
+    {
+      "dataset": "SlideVQA",
+      "qid": "astudyoncustomerpreferebceandsatisfactiontowardsbajajbikes-150814133516-lva1-app6891_95__a-study-on-customer-preferebce-and-satisfaction-towards-bajaj-bikes-4-1024.jpgtcy6astudyoncustomerpreferebceandsatisfactiontowardsbajajbikes-150814133516-lva1-app6891_95__a-study-on-customer-preferebce-and-satisfaction-towards-bajaj-bikes-18-1024.jpgquery_number_1",
+      "query": "Who investigated satisfaction in 2014 on the industry which grew by 3.3% in 2013 to reach a value of $61.5 billion?",
+      "answer": "Mrs. G. Mahalakshami",
+      "docids": [
+        "astudyoncustomerpreferebceandsatisfactiontowardsbajajbikes-150814133516-lva1-app6891_95__a-study-on-customer-preferebce-and-satisfaction-towards-bajaj-bikes-4-1024.jpg"
+      ],
+      "scores": [
+        1.0
+      ],
+      "topk": 1,
+      "method": "parsed_text_only",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "oracle_qrels",
+      "ocr_context_available": true,
+      "parsed_docids": [
+        "astudyoncustomerpreferebceandsatisfactiontowardsbajajbikes-150814133516-lva1-app6891_95__a-study-on-customer-preferebce-and-satisfaction-towards-bajaj-bikes-4-1024.jpg"
+      ],
+      "n_images": 0,
+      "prediction": "insufficient to answer",
+      "elapsed_sec": 0.532,
+      "input_tokens": 562,
+      "output_tokens": 5
+    },
+    {
+      "dataset": "SlideVQA",
+      "qid": "b3m5kaeqm2w8n4bwcesw-140602121350-phpapp02_95__gcse-physics-revision-module-1-6-1024.jpgquery_number_1",
+      "query": "Does warm air rise or fall?",
+      "answer": "Rise",
+      "docids": [
+        "b3m5kaeqm2w8n4bwcesw-140602121350-phpapp02_95__gcse-physics-revision-module-1-6-1024.jpg"
+      ],
+      "scores": [
+        1.0
+      ],
+      "topk": 1,
+      "method": "parsed_text_only",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "oracle_qrels",
+      "ocr_context_available": true,
+      "parsed_docids": [
+        "b3m5kaeqm2w8n4bwcesw-140602121350-phpapp02_95__gcse-physics-revision-module-1-6-1024.jpg"
+      ],
+      "n_images": 0,
+      "prediction": "Warm air rises",
+      "elapsed_sec": 0.677,
+      "input_tokens": 898,
+      "output_tokens": 4
+    },
+    {
+      "dataset": "SlideVQA",
+      "qid": "b3m5kaeqm2w8n4bwcesw-140602121350-phpapp02_95__gcse-physics-revision-module-1-10-1024.jpgquery_number_1",
+      "query": "Which has a longer wavelength, gamma ray or radio?",
+      "answer": "radio",
+      "docids": [
+        "b3m5kaeqm2w8n4bwcesw-140602121350-phpapp02_95__gcse-physics-revision-module-1-10-1024.jpg"
+      ],
+      "scores": [
+        1.0
+      ],
+      "topk": 1,
+      "method": "parsed_text_only",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "oracle_qrels",
+      "ocr_context_available": true,
+      "parsed_docids": [
+        "b3m5kaeqm2w8n4bwcesw-140602121350-phpapp02_95__gcse-physics-revision-module-1-10-1024.jpg"
+      ],
+      "n_images": 0,
+      "prediction": "Gamma ray",
+      "elapsed_sec": 0.534,
+      "input_tokens": 721,
+      "output_tokens": 3
+    },
+    {
+      "dataset": "SlideVQA",
+      "qid": "b3m5kaeqm2w8n4bwcesw-140602121350-phpapp02_95__gcse-physics-revision-module-1-16-1024.jpgquery_number_1",
+      "query": "What is poor radio reception caused by overlapping waves called?",
+      "answer": "Interference",
+      "docids": [
+        "b3m5kaeqm2w8n4bwcesw-140602121350-phpapp02_95__gcse-physics-revision-module-1-16-1024.jpg"
+      ],
+      "scores": [
+        1.0
+      ],
+      "topk": 1,
+      "method": "parsed_text_only",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "oracle_qrels",
+      "ocr_context_available": true,
+      "parsed_docids": [
+        "b3m5kaeqm2w8n4bwcesw-140602121350-phpapp02_95__gcse-physics-revision-module-1-16-1024.jpg"
+      ],
+      "n_images": 0,
+      "prediction": "Interference",
+      "elapsed_sec": 0.607,
+      "input_tokens": 840,
+      "output_tokens": 3
+    },
+    {
+      "dataset": "SlideVQA",
+      "qid": "cavarunsethi-ifrstrainings-accountingforserviceconcessionarrangements-ifric12-2015lii-150912122837-lva1-app6891_95__ca-varun-sethi-ifrs-trainings-ifric-12-accounting-for-service-concession-arrangements-2015-3-1024.jpgquery_number_1",
+      "query": "What does EPC stand for?",
+      "answer": "Engineering, procurement, Construction",
+      "docids": [
+        "cavarunsethi-ifrstrainings-accountingforserviceconcessionarrangements-ifric12-2015lii-150912122837-lva1-app6891_95__ca-varun-sethi-ifrs-trainings-ifric-12-accounting-for-service-concession-arrangements-2015-3-1024.jpg"
+      ],
+      "scores": [
+        1.0
+      ],
+      "topk": 1,
+      "method": "parsed_text_only",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "oracle_qrels",
+      "ocr_context_available": true,
+      "parsed_docids": [
+        "cavarunsethi-ifrstrainings-accountingforserviceconcessionarrangements-ifric12-2015lii-150912122837-lva1-app6891_95__ca-varun-sethi-ifrs-trainings-ifric-12-accounting-for-service-concession-arrangements-2015-3-1024.jpg"
+      ],
+      "n_images": 0,
+      "prediction": "EPC stands for Engineering, procurement, Construction.",
+      "elapsed_sec": 1.032,
+      "input_tokens": 1055,
+      "output_tokens": 11
+    },
+    {
+      "dataset": "SlideVQA",
+      "qid": "biscuitandcookies-150315074901-conversion-gate01_95__biscuit-and-cookies-1-1024.jpgquery_number_1",
+      "query": "What is the abbreviation for the Government of India's Ministry of Food Processing Industries?",
+      "answer": "MOFPI",
+      "docids": [
+        "biscuitandcookies-150315074901-conversion-gate01_95__biscuit-and-cookies-1-1024.jpg"
+      ],
+      "scores": [
+        1.0
+      ],
+      "topk": 1,
+      "method": "parsed_text_only",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "oracle_qrels",
+      "ocr_context_available": true,
+      "parsed_docids": [
+        "biscuitandcookies-150315074901-conversion-gate01_95__biscuit-and-cookies-1-1024.jpg"
+      ],
+      "n_images": 0,
+      "prediction": "M F P |",
+      "elapsed_sec": 0.471,
+      "input_tokens": 488,
+      "output_tokens": 5
+    },
+    {
+      "dataset": "SlideVQA",
+      "qid": "biscuitandcookies-150315074901-conversion-gate01_95__biscuit-and-cookies-5-1024.jpgquery_number_2",
+      "query": "What are Krack Jack and Monaco examples of?",
+      "answer": "Crackers",
+      "docids": [
+        "biscuitandcookies-150315074901-conversion-gate01_95__biscuit-and-cookies-5-1024.jpg"
+      ],
+      "scores": [
+        1.0
+      ],
+      "topk": 1,
+      "method": "parsed_text_only",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "oracle_qrels",
+      "ocr_context_available": true,
+      "parsed_docids": [
+        "biscuitandcookies-150315074901-conversion-gate01_95__biscuit-and-cookies-5-1024.jpg"
+      ],
+      "n_images": 0,
+      "prediction": "Biscuit Crackers",
+      "elapsed_sec": 0.441,
+      "input_tokens": 313,
+      "output_tokens": 6
+    },
+    {
+      "dataset": "SlideVQA",
+      "qid": "biscuitandcookies-150315074901-conversion-gate01_95__biscuit-and-cookies-6-1024.jpgquery_number_1",
+      "query": "What are three methods of shaping biscuits?",
+      "answer": "Embossed cutting, Rotary mounding, Rotary cutting",
+      "docids": [
+        "biscuitandcookies-150315074901-conversion-gate01_95__biscuit-and-cookies-6-1024.jpg"
+      ],
+      "scores": [
+        1.0
+      ],
+      "topk": 1,
+      "method": "parsed_text_only",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "oracle_qrels",
+      "ocr_context_available": true,
+      "parsed_docids": [
+        "biscuitandcookies-150315074901-conversion-gate01_95__biscuit-and-cookies-6-1024.jpg"
+      ],
+      "n_images": 0,
+      "prediction": "Embossed cutting, rotary mounding, rotary cutting",
+      "elapsed_sec": 0.745,
+      "input_tokens": 463,
+      "output_tokens": 12
+    },
+    {
+      "dataset": "SlideVQA",
+      "qid": "citizenscience-practiceandpolicy-huji-151214131928_95__citizen-science-theory-practice-policy-workshop-8-1024.jpgquery_number_1",
+      "query": "When was Mary Anning alive?",
+      "answer": "1799-1847",
+      "docids": [
+        "citizenscience-practiceandpolicy-huji-151214131928_95__citizen-science-theory-practice-policy-workshop-8-1024.jpg"
+      ],
+      "scores": [
+        1.0
+      ],
+      "topk": 1,
+      "method": "parsed_text_only",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "oracle_qrels",
+      "ocr_context_available": true,
+      "parsed_docids": [
+        "citizenscience-practiceandpolicy-huji-151214131928_95__citizen-science-theory-practice-policy-workshop-8-1024.jpg"
+      ],
+      "n_images": 0,
+      "prediction": "1799-1847",
+      "elapsed_sec": 0.661,
+      "input_tokens": 473,
+      "output_tokens": 10
+    },
+    {
+      "dataset": "SlideVQA",
+      "qid": "applicationandadvancesofpolymers-141224015235-conversion-gate02_95__application-and-advances-of-polymers-17-1024.jpgquery_number_1",
+      "query": "What is the trade name for the substance with the chemical name of polypropylene?",
+      "answer": "Herculon",
+      "docids": [
+        "applicationandadvancesofpolymers-141224015235-conversion-gate02_95__application-and-advances-of-polymers-17-1024.jpg"
+      ],
+      "scores": [
+        1.0
+      ],
+      "topk": 1,
+      "method": "parsed_text_only",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "oracle_qrels",
+      "ocr_context_available": true,
+      "parsed_docids": [
+        "applicationandadvancesofpolymers-141224015235-conversion-gate02_95__application-and-advances-of-polymers-17-1024.jpg"
+      ],
+      "n_images": 0,
+      "prediction": "Herculon",
+      "elapsed_sec": 0.457,
+      "input_tokens": 450,
+      "output_tokens": 4
+    },
+    {
+      "dataset": "SlideVQA",
+      "qid": "applicationandadvancesofpolymers-141224015235-conversion-gate02_95__application-and-advances-of-polymers-17-1024.jpgquery_number_2",
+      "query": "What is the chemical name for Teflon?",
+      "answer": "poly(tetrafluoroethylene)",
+      "docids": [
+        "applicationandadvancesofpolymers-141224015235-conversion-gate02_95__application-and-advances-of-polymers-17-1024.jpg"
+      ],
+      "scores": [
+        1.0
+      ],
+      "topk": 1,
+      "method": "parsed_text_only",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "oracle_qrels",
+      "ocr_context_available": true,
+      "parsed_docids": [
+        "applicationandadvancesofpolymers-141224015235-conversion-gate02_95__application-and-advances-of-polymers-17-1024.jpg"
+      ],
+      "n_images": 0,
+      "prediction": "poly(tetrafluoroethylene)",
+      "elapsed_sec": 0.667,
+      "input_tokens": 443,
+      "output_tokens": 9
+    },
+    {
+      "dataset": "SlideVQA",
+      "qid": "beerindustryfinalslides-110814110012-phpapp01_95__beer-industry-1-1024.jpgquery_number_1",
+      "query": "Who said \"Beer is living proof that God loves us and wants us to be happy\"?",
+      "answer": "Benjamin Franklin",
+      "docids": [
+        "beerindustryfinalslides-110814110012-phpapp01_95__beer-industry-1-1024.jpg"
+      ],
+      "scores": [
+        1.0
+      ],
+      "topk": 1,
+      "method": "parsed_text_only",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "oracle_qrels",
+      "ocr_context_available": true,
+      "parsed_docids": [
+        "beerindustryfinalslides-110814110012-phpapp01_95__beer-industry-1-1024.jpg"
+      ],
+      "n_images": 0,
+      "prediction": "Benjamin Franklin",
+      "elapsed_sec": 0.39,
+      "input_tokens": 331,
+      "output_tokens": 4
+    },
+    {
+      "dataset": "SlideVQA",
+      "qid": "beerindustryfinalslides-110814110012-phpapp01_95__beer-industry-2-1024.jpgquery_number_1",
+      "query": "Who invented the straw?",
+      "answer": "Sumerians",
+      "docids": [
+        "beerindustryfinalslides-110814110012-phpapp01_95__beer-industry-2-1024.jpg"
+      ],
+      "scores": [
+        1.0
+      ],
+      "topk": 1,
+      "method": "parsed_text_only",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "oracle_qrels",
+      "ocr_context_available": true,
+      "parsed_docids": [
+        "beerindustryfinalslides-110814110012-phpapp01_95__beer-industry-2-1024.jpg"
+      ],
+      "n_images": 0,
+      "prediction": "insufficient to answer",
+      "elapsed_sec": 0.665,
+      "input_tokens": 798,
+      "output_tokens": 5
+    },
+    {
+      "dataset": "SlideVQA",
+      "qid": "beerindustryfinalslides-110814110012-phpapp01_95__beer-industry-2-1024.jpgquery_number_2",
+      "query": "When was The Epic of Gilgamesh written?",
+      "answer": "c. 1,300 - 1,000 BC",
+      "docids": [
+        "beerindustryfinalslides-110814110012-phpapp01_95__beer-industry-2-1024.jpg"
+      ],
+      "scores": [
+        1.0
+      ],
+      "topk": 1,
+      "method": "parsed_text_only",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "oracle_qrels",
+      "ocr_context_available": true,
+      "parsed_docids": [
+        "beerindustryfinalslides-110814110012-phpapp01_95__beer-industry-2-1024.jpg"
+      ],
+      "n_images": 0,
+      "prediction": "insufficient to answer",
+      "elapsed_sec": 0.672,
+      "input_tokens": 803,
+      "output_tokens": 5
+    },
+    {
+      "dataset": "SlideVQA",
+      "qid": "ce22-1213274533884412-8_95__how-to-build-vibrant-communities-8-1024.jpgquery_number_1",
+      "query": "What is Sir Tim Berners-Lee's position?",
+      "answer": "Director of W3C",
+      "docids": [
+        "ce22-1213274533884412-8_95__how-to-build-vibrant-communities-8-1024.jpg"
+      ],
+      "scores": [
+        1.0
+      ],
+      "topk": 1,
+      "method": "parsed_text_only",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "oracle_qrels",
+      "ocr_context_available": true,
+      "parsed_docids": [
+        "ce22-1213274533884412-8_95__how-to-build-vibrant-communities-8-1024.jpg"
+      ],
+      "n_images": 0,
+      "prediction": "Director of W3C",
+      "elapsed_sec": 0.465,
+      "input_tokens": 368,
+      "output_tokens": 6
+    },
+    {
+      "dataset": "SlideVQA",
+      "qid": "businesssystempresentation-150211162506-conversion-gate02_95__rodan-fields-business-presentation-2015-8-1024.jpgquery_number_1",
+      "query": "After 8 weeks of use with the Redefine regimen, what percentage of participants experienced an improvement with fine lines?",
+      "answer": "55",
+      "docids": [
+        "businesssystempresentation-150211162506-conversion-gate02_95__rodan-fields-business-presentation-2015-8-1024.jpg"
+      ],
+      "scores": [
+        1.0
+      ],
+      "topk": 1,
+      "method": "parsed_text_only",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "oracle_qrels",
+      "ocr_context_available": true,
+      "parsed_docids": [
+        "businesssystempresentation-150211162506-conversion-gate02_95__rodan-fields-business-presentation-2015-8-1024.jpg"
+      ],
+      "n_images": 0,
+      "prediction": "80%",
+      "elapsed_sec": 1.379,
+      "input_tokens": 2244,
+      "output_tokens": 4
+    },
+    {
+      "dataset": "SlideVQA",
+      "qid": "architecture-150102195159-conversion-gate01_95__openstack-architecture-12-1024.jpgtcy6architecture-150102195159-conversion-gate01_95__openstack-architecture-13-1024.jpgquery_number_1",
+      "query": "What contains the registry which has a network-accessible address, usually described by URL, from where you access an OpenStack service?",
+      "answer": "Catalog Backend",
+      "docids": [
+        "architecture-150102195159-conversion-gate01_95__openstack-architecture-12-1024.jpg"
+      ],
+      "scores": [
+        1.0
+      ],
+      "topk": 1,
+      "method": "parsed_text_only",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "oracle_qrels",
+      "ocr_context_available": true,
+      "parsed_docids": [
+        "architecture-150102195159-conversion-gate01_95__openstack-architecture-12-1024.jpg"
+      ],
+      "n_images": 0,
+      "prediction": "Keystone",
+      "elapsed_sec": 0.472,
+      "input_tokens": 607,
+      "output_tokens": 3
+    },
+    {
+      "dataset": "SlideVQA",
+      "qid": "connectedcarsecurity-150902031020-lva1-app6892_95__connected-car-security-3-1024.jpgquery_number_1",
+      "query": "What was the catchphrase for the film Speed?",
+      "answer": "GET READY FOR RUSH HOUR",
+      "docids": [
+        "connectedcarsecurity-150902031020-lva1-app6892_95__connected-car-security-3-1024.jpg"
+      ],
+      "scores": [
+        1.0
+      ],
+      "topk": 1,
+      "method": "parsed_text_only",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "oracle_qrels",
+      "ocr_context_available": true,
+      "parsed_docids": [
+        "connectedcarsecurity-150902031020-lva1-app6892_95__connected-car-security-3-1024.jpg"
+      ],
+      "n_images": 0,
+      "prediction": "\"Before Matrix there was Speed\"",
+      "elapsed_sec": 0.716,
+      "input_tokens": 666,
+      "output_tokens": 8
+    },
+    {
+      "dataset": "SlideVQA",
+      "qid": "connectedcarsecurity-150902031020-lva1-app6892_95__connected-car-security-13-1024.jpgquery_number_1",
+      "query": "What is FlexRay's data rate in Mbps?",
+      "answer": "10",
+      "docids": [
+        "connectedcarsecurity-150902031020-lva1-app6892_95__connected-car-security-13-1024.jpg"
+      ],
+      "scores": [
+        1.0
+      ],
+      "topk": 1,
+      "method": "parsed_text_only",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "oracle_qrels",
+      "ocr_context_available": true,
+      "parsed_docids": [
+        "connectedcarsecurity-150902031020-lva1-app6892_95__connected-car-security-13-1024.jpg"
+      ],
+      "n_images": 0,
+      "prediction": "10",
+      "elapsed_sec": 0.788,
+      "input_tokens": 1236,
+      "output_tokens": 3
+    },
+    {
+      "dataset": "SlideVQA",
+      "qid": "cboppsinstaffingwebinarslideshare10-151013182434-lva1-app6891_95__staffing-trends-you-need-to-know-when-planning-for-2016-5-1024.jpgquery_number_1",
+      "query": "What is the formula for NPS?",
+      "answer": "% Promoters - % Detractors",
+      "docids": [
+        "cboppsinstaffingwebinarslideshare10-151013182434-lva1-app6891_95__staffing-trends-you-need-to-know-when-planning-for-2016-5-1024.jpg"
+      ],
+      "scores": [
+        1.0
+      ],
+      "topk": 1,
+      "method": "parsed_text_only",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "oracle_qrels",
+      "ocr_context_available": true,
+      "parsed_docids": [
+        "cboppsinstaffingwebinarslideshare10-151013182434-lva1-app6891_95__staffing-trends-you-need-to-know-when-planning-for-2016-5-1024.jpg"
+      ],
+      "n_images": 0,
+      "prediction": "The formula for NPS is calculated as the percentage of Promoters minus the percentage of Detractors.",
+      "elapsed_sec": 1.455,
+      "input_tokens": 1055,
+      "output_tokens": 22
+    },
+    {
+      "dataset": "SlideVQA",
+      "qid": "brandmanagement-itchotels-150823162717-lva1-app6892_95__brand-management-itc-hotels-12-1024.jpgquery_number_1",
+      "query": "What is CLUB ITC's slogan?",
+      "answer": "ENRICHING REWARDING EXPERIENCES",
+      "docids": [
+        "brandmanagement-itchotels-150823162717-lva1-app6892_95__brand-management-itc-hotels-12-1024.jpg"
+      ],
+      "scores": [
+        1.0
+      ],
+      "topk": 1,
+      "method": "parsed_text_only",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "oracle_qrels",
+      "ocr_context_available": true,
+      "parsed_docids": [
+        "brandmanagement-itchotels-150823162717-lva1-app6892_95__brand-management-itc-hotels-12-1024.jpg"
+      ],
+      "n_images": 0,
+      "prediction": "CLUB ITC's slogan is \"ENRICHING REWARDING EXPERIENCES\".",
+      "elapsed_sec": 2.122,
+      "input_tokens": 761,
+      "output_tokens": 20
+    },
+    {
+      "dataset": "SlideVQA",
+      "qid": "brandmanagement-itchotels-150823162717-lva1-app6892_95__brand-management-itc-hotels-12-1024.jpgquery_number_2",
+      "query": "ITC offers one night stay free for spending how many Rs. in its properties?",
+      "answer": "60,000",
+      "docids": [
+        "brandmanagement-itchotels-150823162717-lva1-app6892_95__brand-management-itc-hotels-12-1024.jpg"
+      ],
+      "scores": [
+        1.0
+      ],
+      "topk": 1,
+      "method": "parsed_text_only",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "oracle_qrels",
+      "ocr_context_available": true,
+      "parsed_docids": [
+        "brandmanagement-itchotels-150823162717-lva1-app6892_95__brand-management-itc-hotels-12-1024.jpg"
+      ],
+      "n_images": 0,
+      "prediction": "60,000",
+      "elapsed_sec": 0.738,
+      "input_tokens": 770,
+      "output_tokens": 7
+    },
+    {
+      "dataset": "SlideVQA",
+      "qid": "chinajoy-sns-v3-090724053148-phpapp02_95__lessons-learned-from-sns-games-at-popcap-2-1024.jpgquery_number_1",
+      "query": "In what year was Playdom established?",
+      "answer": "2008",
+      "docids": [
+        "chinajoy-sns-v3-090724053148-phpapp02_95__lessons-learned-from-sns-games-at-popcap-2-1024.jpg"
+      ],
+      "scores": [
+        1.0
+      ],
+      "topk": 1,
+      "method": "parsed_text_only",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "oracle_qrels",
+      "ocr_context_available": true,
+      "parsed_docids": [
+        "chinajoy-sns-v3-090724053148-phpapp02_95__lessons-learned-from-sns-games-at-popcap-2-1024.jpg"
+      ],
+      "n_images": 0,
+      "prediction": "2007",
+      "elapsed_sec": 0.432,
+      "input_tokens": 307,
+      "output_tokens": 5
+    },
+    {
+      "dataset": "SlideVQA",
+      "qid": "basicsofphitsmeasurementslideshare-140909024224-phpapp01_95__ph-its-measurement-1-1024.jpgquery_number_1",
+      "query": "Who wrote the presentation entitled \"pH & Its Measurement\"?",
+      "answer": "Dr Prasenjit Mitra",
+      "docids": [
+        "basicsofphitsmeasurementslideshare-140909024224-phpapp01_95__ph-its-measurement-1-1024.jpg"
+      ],
+      "scores": [
+        1.0
+      ],
+      "topk": 1,
+      "method": "parsed_text_only",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "oracle_qrels",
+      "ocr_context_available": true,
+      "parsed_docids": [
+        "basicsofphitsmeasurementslideshare-140909024224-phpapp01_95__ph-its-measurement-1-1024.jpg"
+      ],
+      "n_images": 0,
+      "prediction": "Dr Prasenjit Mitra",
+      "elapsed_sec": 0.537,
+      "input_tokens": 296,
+      "output_tokens": 8
+    },
+    {
+      "dataset": "SlideVQA",
+      "qid": "basicsofphitsmeasurementslideshare-140909024224-phpapp01_95__ph-its-measurement-2-1024.jpgquery_number_1",
+      "query": "What determines acidity or alkalinity?",
+      "answer": "Number of Hydrogen ions",
+      "docids": [
+        "basicsofphitsmeasurementslideshare-140909024224-phpapp01_95__ph-its-measurement-2-1024.jpg"
+      ],
+      "scores": [
+        1.0
+      ],
+      "topk": 1,
+      "method": "parsed_text_only",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "oracle_qrels",
+      "ocr_context_available": true,
+      "parsed_docids": [
+        "basicsofphitsmeasurementslideshare-140909024224-phpapp01_95__ph-its-measurement-2-1024.jpg"
+      ],
+      "n_images": 0,
+      "prediction": "Number of Hydrogen ions (H+)",
+      "elapsed_sec": 0.816,
+      "input_tokens": 892,
+      "output_tokens": 9
+    },
+    {
+      "dataset": "SlideVQA",
+      "qid": "basicsofphitsmeasurementslideshare-140909024224-phpapp01_95__ph-its-measurement-2-1024.jpgquery_number_2",
+      "query": "On the pH scale, what is the lowest score an alkaline can have?",
+      "answer": "7",
+      "docids": [
+        "basicsofphitsmeasurementslideshare-140909024224-phpapp01_95__ph-its-measurement-2-1024.jpg"
+      ],
+      "scores": [
+        1.0
+      ],
+      "topk": 1,
+      "method": "parsed_text_only",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "oracle_qrels",
+      "ocr_context_available": true,
+      "parsed_docids": [
+        "basicsofphitsmeasurementslideshare-140909024224-phpapp01_95__ph-its-measurement-2-1024.jpg"
+      ],
+      "n_images": 0,
+      "prediction": "7",
+      "elapsed_sec": 0.604,
+      "input_tokens": 901,
+      "output_tokens": 2
+    },
+    {
+      "dataset": "SlideVQA",
+      "qid": "basicsofphitsmeasurementslideshare-140909024224-phpapp01_95__ph-its-measurement-2-1024.jpgtcy6basicsofphitsmeasurementslideshare-140909024224-phpapp01_95__ph-its-measurement-3-1024.jpgquery_number_1",
+      "query": "On the scale indicated by Litmus paper, what is the lowest score an alkaline can have?",
+      "answer": "7",
+      "docids": [
+        "basicsofphitsmeasurementslideshare-140909024224-phpapp01_95__ph-its-measurement-2-1024.jpg"
+      ],
+      "scores": [
+        1.0
+      ],
+      "topk": 1,
+      "method": "parsed_text_only",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "oracle_qrels",
+      "ocr_context_available": true,
+      "parsed_docids": [
+        "basicsofphitsmeasurementslideshare-140909024224-phpapp01_95__ph-its-measurement-2-1024.jpg"
+      ],
+      "n_images": 0,
+      "prediction": "7",
+      "elapsed_sec": 0.608,
+      "input_tokens": 905,
+      "output_tokens": 2
+    },
+    {
+      "dataset": "SlideVQA",
+      "qid": "basicsofphitsmeasurementslideshare-140909024224-phpapp01_95__ph-its-measurement-7-1024.jpgquery_number_1",
+      "query": "What are the components of a glass electrode pH meter?",
+      "answer": "Membrane, Inner Buffer, Lead-off Element, Shield",
+      "docids": [
+        "basicsofphitsmeasurementslideshare-140909024224-phpapp01_95__ph-its-measurement-7-1024.jpg"
+      ],
+      "scores": [
+        1.0
+      ],
+      "topk": 1,
+      "method": "parsed_text_only",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "oracle_qrels",
+      "ocr_context_available": true,
+      "parsed_docids": [
+        "basicsofphitsmeasurementslideshare-140909024224-phpapp01_95__ph-its-measurement-7-1024.jpg"
+      ],
+      "n_images": 0,
+      "prediction": "The components of a glass electrode pH meter are:\n\n1. Lead-off\n2. Inner Buffer\n3. Membrane Element\n4. Shield\n5.",
+      "elapsed_sec": 1.457,
+      "input_tokens": 309,
+      "output_tokens": 32
+    },
+    {
+      "dataset": "SlideVQA",
+      "qid": "basicsofphitsmeasurementslideshare-140909024224-phpapp01_95__ph-its-measurement-4-1024.jpgtcy6basicsofphitsmeasurementslideshare-140909024224-phpapp01_95__ph-its-measurement-7-1024.jpgquery_number_1",
+      "query": "What are the components of a glass electrode in the device made by Arnold Orville Beckman?",
+      "answer": "Membrane, Inner Buffer, Lead-off Element, Shield",
+      "docids": [
+        "basicsofphitsmeasurementslideshare-140909024224-phpapp01_95__ph-its-measurement-4-1024.jpg"
+      ],
+      "scores": [
+        1.0
+      ],
+      "topk": 1,
+      "method": "parsed_text_only",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "oracle_qrels",
+      "ocr_context_available": true,
+      "parsed_docids": [
+        "basicsofphitsmeasurementslideshare-140909024224-phpapp01_95__ph-its-measurement-4-1024.jpg"
+      ],
+      "n_images": 0,
+      "prediction": "insufficient to answer",
+      "elapsed_sec": 0.42,
+      "input_tokens": 368,
+      "output_tokens": 5
+    },
+    {
+      "dataset": "SlideVQA",
+      "qid": "blueoceanstrategy-100403005918-phpapp02_95__blue-ocean-strategy-summary-and-examples-13-1024.jpgquery_number_1",
+      "query": "Nintendo created a Blue Ocean for Nintendo Wii by doing what?",
+      "answer": "reducing the complexity, add the ease of use and fun",
+      "docids": [
+        "blueoceanstrategy-100403005918-phpapp02_95__blue-ocean-strategy-summary-and-examples-13-1024.jpg"
+      ],
+      "scores": [
+        1.0
+      ],
+      "topk": 1,
+      "method": "parsed_text_only",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "oracle_qrels",
+      "ocr_context_available": true,
+      "parsed_docids": [
+        "blueoceanstrategy-100403005918-phpapp02_95__blue-ocean-strategy-summary-and-examples-13-1024.jpg"
+      ],
+      "n_images": 0,
+      "prediction": "reducing the complexity, adding the ease of use and fun",
+      "elapsed_sec": 0.83,
+      "input_tokens": 407,
+      "output_tokens": 14
+    },
+    {
+      "dataset": "SlideVQA",
+      "qid": "b2bproductsalesforstartupsbylucboillyv0-160406160814_95__b2b-product-sales-101-for-startups-support-deck-9-1024.jpgquery_number_1",
+      "query": "Value management helps your company move to a process based on what?",
+      "answer": "customer value",
+      "docids": [
+        "b2bproductsalesforstartupsbylucboillyv0-160406160814_95__b2b-product-sales-101-for-startups-support-deck-9-1024.jpg"
+      ],
+      "scores": [
+        1.0
+      ],
+      "topk": 1,
+      "method": "parsed_text_only",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "oracle_qrels",
+      "ocr_context_available": true,
+      "parsed_docids": [
+        "b2bproductsalesforstartupsbylucboillyv0-160406160814_95__b2b-product-sales-101-for-startups-support-deck-9-1024.jpg"
+      ],
+      "n_images": 0,
+      "prediction": "customervalue",
+      "elapsed_sec": 0.442,
+      "input_tokens": 472,
+      "output_tokens": 4
+    },
+    {
+      "dataset": "SlideVQA",
+      "qid": "b2bproductsalesforstartupsbylucboillyv0-160406160814_95__b2b-product-sales-101-for-startups-support-deck-15-1024.jpgquery_number_2",
+      "query": "What do buyers say when there is weak resonance?",
+      "answer": "\"I don't need\"",
+      "docids": [
+        "b2bproductsalesforstartupsbylucboillyv0-160406160814_95__b2b-product-sales-101-for-startups-support-deck-15-1024.jpg"
+      ],
+      "scores": [
+        1.0
+      ],
+      "topk": 1,
+      "method": "parsed_text_only",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "oracle_qrels",
+      "ocr_context_available": true,
+      "parsed_docids": [
+        "b2bproductsalesforstartupsbylucboillyv0-160406160814_95__b2b-product-sales-101-for-startups-support-deck-15-1024.jpg"
+      ],
+      "n_images": 0,
+      "prediction": "\"I don't need\"",
+      "elapsed_sec": 0.519,
+      "input_tokens": 489,
+      "output_tokens": 6
+    },
+    {
+      "dataset": "SlideVQA",
+      "qid": "chapter8-geneticscompatibilitymode-141214140247-conversion-gate02_95__chapter-8-genetics-compatibility-mode-5-1024.jpgquery_number_1",
+      "query": "What are two components of a prokaryotic chromosome?",
+      "answer": "Plasma membrane, Cell wall",
+      "docids": [
+        "chapter8-geneticscompatibilitymode-141214140247-conversion-gate02_95__chapter-8-genetics-compatibility-mode-5-1024.jpg"
+      ],
+      "scores": [
+        1.0
+      ],
+      "topk": 1,
+      "method": "parsed_text_only",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "oracle_qrels",
+      "ocr_context_available": true,
+      "parsed_docids": [
+        "chapter8-geneticscompatibilitymode-141214140247-conversion-gate02_95__chapter-8-genetics-compatibility-mode-5-1024.jpg"
+      ],
+      "n_images": 0,
+      "prediction": "insufficient to answer",
+      "elapsed_sec": 0.418,
+      "input_tokens": 348,
+      "output_tokens": 5
+    },
+    {
+      "dataset": "SlideVQA",
+      "qid": "chapter8-geneticscompatibilitymode-141214140247-conversion-gate02_95__chapter-8-genetics-compatibility-mode-4-1024.jpgtcy6chapter8-geneticscompatibilitymode-141214140247-conversion-gate02_95__chapter-8-genetics-compatibility-mode-5-1024.jpgquery_number_1",
+      "query": "What are two components of a chromosome belonging to a cell which reproduces by binary fission?",
+      "answer": "Plasma membrane, Cell wall",
+      "docids": [
+        "chapter8-geneticscompatibilitymode-141214140247-conversion-gate02_95__chapter-8-genetics-compatibility-mode-4-1024.jpg"
+      ],
+      "scores": [
+        1.0
+      ],
+      "topk": 1,
+      "method": "parsed_text_only",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "oracle_qrels",
+      "ocr_context_available": true,
+      "parsed_docids": [
+        "chapter8-geneticscompatibilitymode-141214140247-conversion-gate02_95__chapter-8-genetics-compatibility-mode-4-1024.jpg"
+      ],
+      "n_images": 0,
+      "prediction": "insufficient to answer",
+      "elapsed_sec": 0.525,
+      "input_tokens": 524,
+      "output_tokens": 5
+    },
+    {
+      "dataset": "SlideVQA",
+      "qid": "aviewoffruitcultureinafghanistan-141025192131-conversion-gate02_95__a-view-of-fruit-culture-in-afghanistan-5-1024.jpgquery_number_1",
+      "query": "Baloch belongs to which ethnolinguistic group in Afghanistan?",
+      "answer": "Iranian",
+      "docids": [
+        "aviewoffruitcultureinafghanistan-141025192131-conversion-gate02_95__a-view-of-fruit-culture-in-afghanistan-5-1024.jpg"
+      ],
+      "scores": [
+        1.0
+      ],
+      "topk": 1,
+      "method": "parsed_text_only",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "oracle_qrels",
+      "ocr_context_available": true,
+      "parsed_docids": [
+        "aviewoffruitcultureinafghanistan-141025192131-conversion-gate02_95__a-view-of-fruit-culture-in-afghanistan-5-1024.jpg"
+      ],
+      "n_images": 0,
+      "prediction": "Iranian Turkic",
+      "elapsed_sec": 0.667,
+      "input_tokens": 798,
+      "output_tokens": 5
+    },
+    {
+      "dataset": "SlideVQA",
+      "qid": "aviewoffruitcultureinafghanistan-141025192131-conversion-gate02_95__a-view-of-fruit-culture-in-afghanistan-5-1024.jpgquery_number_2",
+      "query": "What are three examples of Turkic ethnolinguistic groups in Afghanistan?",
+      "answer": "Kirghiz, Turkmen, Uzbek",
+      "docids": [
+        "aviewoffruitcultureinafghanistan-141025192131-conversion-gate02_95__a-view-of-fruit-culture-in-afghanistan-5-1024.jpg"
+      ],
+      "scores": [
+        1.0
+      ],
+      "topk": 1,
+      "method": "parsed_text_only",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "oracle_qrels",
+      "ocr_context_available": true,
+      "parsed_docids": [
+        "aviewoffruitcultureinafghanistan-141025192131-conversion-gate02_95__a-view-of-fruit-culture-in-afghanistan-5-1024.jpg"
+      ],
+      "n_images": 0,
+      "prediction": "Baloch, Kirghiz, Brahui",
+      "elapsed_sec": 0.865,
+      "input_tokens": 800,
+      "output_tokens": 10
+    },
+    {
+      "dataset": "SlideVQA",
+      "qid": "allyouwantedtoknowaboutanalyticsine-commerce-amazonebayflipkart-150207221032-conversion-gate01_95__all-you-wanted-to-know-about-analytics-in-e-commerce-amazon-ebay-flipkart-7-1024.jpgquery_number_1",
+      "query": "Which tool measures the effectiveness of a marketing program?",
+      "answer": "Google Analytics",
+      "docids": [
+        "allyouwantedtoknowaboutanalyticsine-commerce-amazonebayflipkart-150207221032-conversion-gate01_95__all-you-wanted-to-know-about-analytics-in-e-commerce-amazon-ebay-flipkart-7-1024.jpg"
+      ],
+      "scores": [
+        1.0
+      ],
+      "topk": 1,
+      "method": "parsed_text_only",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "oracle_qrels",
+      "ocr_context_available": true,
+      "parsed_docids": [
+        "allyouwantedtoknowaboutanalyticsine-commerce-amazonebayflipkart-150207221032-conversion-gate01_95__all-you-wanted-to-know-about-analytics-in-e-commerce-amazon-ebay-flipkart-7-1024.jpg"
+      ],
+      "n_images": 0,
+      "prediction": "Google Analytics",
+      "elapsed_sec": 0.732,
+      "input_tokens": 1057,
+      "output_tokens": 3
+    }
+  ]
+}

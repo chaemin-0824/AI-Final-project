@@ -248,6 +248,21 @@ def call_qwen2vl(query: str, images: list[Image.Image], parsed_context: str, mod
             kwargs["device_map"] = "auto"
         model = Qwen2VLForConditionalGeneration.from_pretrained(model_name, **kwargs).eval()
         processor = AutoProcessor.from_pretrained(model_name, trust_remote_code=True, use_fast=True)
+        # Cap image patches so InfoVQA-style tall infographics don't generate 20k+
+        # vision tokens. 1024×1280 ≈ 1.3M pixels ≈ ~1700 tokens after 28×28 patching.
+        # Env override: QWEN_MAX_PIXELS / QWEN_MIN_PIXELS in case a future dataset
+        # needs more resolution.
+        max_pixels = int(os.environ.get("QWEN_MAX_PIXELS", str(1280 * 1024)))
+        min_pixels = int(os.environ.get("QWEN_MIN_PIXELS", str(256 * 256)))
+        if hasattr(processor, "image_processor"):
+            processor.image_processor.max_pixels = max_pixels
+            processor.image_processor.min_pixels = min_pixels
+        # Drop sampling-only knobs from the generation_config so do_sample=False
+        # doesn't trigger noisy warnings on every call.
+        if hasattr(model, "generation_config") and model.generation_config is not None:
+            for k in ("temperature", "top_p", "top_k"):
+                if hasattr(model.generation_config, k):
+                    setattr(model.generation_config, k, None)
         _MODEL_CACHE[cache_key_model] = (model, processor)
 
     prompt = build_prompt(query, parsed_context, mode)

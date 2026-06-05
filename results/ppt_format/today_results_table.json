@@ -1,0 +1,153 @@
+{
+  "layout_source": "docs/VisRAG Multi Page Compression.pptx slide 10",
+  "datasets_display": [
+    "InfoVQA",
+    "ChartQA",
+    "DocVQA",
+    "SlideVQA"
+  ],
+  "datasets_official": [
+    "InfoVQA",
+    "ChartQA",
+    "MP-DocVQA",
+    "SlideVQA"
+  ],
+  "baseline_method_key": "image_only",
+  "baseline_label": "Baseline (순수 VisRAG, v12_on_visrag image_only)",
+  "rows": [
+    {
+      "method_key": "image_only",
+      "method_label": "Baseline (순수 VisRAG, v12_on_visrag image_only)",
+      "by_dataset": {
+        "InfoVQA": 0.2,
+        "ChartQA": 0.36507936507936506,
+        "DocVQA": 0.17,
+        "SlideVQA": 0.18
+      },
+      "macro_accuracy": 0.22876984126984126,
+      "delta_vs_baseline_pp": null
+    },
+    {
+      "method_key": "parsed_text_only",
+      "method_label": "Parsed-Text Only (ablation)",
+      "by_dataset": {
+        "InfoVQA": 0.54,
+        "ChartQA": 0.5238095238095238,
+        "DocVQA": 0.76,
+        "SlideVQA": 0.52
+      },
+      "macro_accuracy": 0.585952380952381,
+      "delta_vs_baseline_pp": 35.718253968253975
+    },
+    {
+      "method_key": "parsed_visual",
+      "method_label": "Parsed-Visual RAG (v12-general)",
+      "by_dataset": {
+        "InfoVQA": 0.54,
+        "ChartQA": 0.5079365079365079,
+        "DocVQA": 0.8,
+        "SlideVQA": 0.52
+      },
+      "macro_accuracy": 0.5919841269841271,
+      "delta_vs_baseline_pp": 36.321428571428584
+    }
+  ],
+  "source_entries": [
+    {
+      "dataset": "ChartQA",
+      "method_key": "image_only",
+      "accuracy": 0.36507936507936506,
+      "source_path": "results/v12_on_visrag/today/ChartQA_image_only_top1_first100.json",
+      "total": 63,
+      "correct": 23
+    },
+    {
+      "dataset": "ChartQA",
+      "method_key": "parsed_text_only",
+      "accuracy": 0.5238095238095238,
+      "source_path": "results/v12_on_visrag/today/ChartQA_parsed_text_only_top1_first100.json",
+      "total": 63,
+      "correct": 33
+    },
+    {
+      "dataset": "ChartQA",
+      "method_key": "parsed_visual",
+      "accuracy": 0.5079365079365079,
+      "source_path": "results/v12_on_visrag/today/ChartQA_parsed_visual_top1_first100.json",
+      "total": 63,
+      "correct": 32
+    },
+    {
+      "dataset": "MP-DocVQA",
+      "method_key": "image_only",
+      "accuracy": 0.17,
+      "source_path": "results/v12_on_visrag/today/MP-DocVQA_image_only_top1_first100.json",
+      "total": 100,
+      "correct": 17
+    },
+    {
+      "dataset": "MP-DocVQA",
+      "method_key": "parsed_text_only",
+      "accuracy": 0.76,
+      "source_path": "results/v12_on_visrag/today/MP-DocVQA_parsed_text_only_top1_first100.json",
+      "total": 100,
+      "correct": 76
+    },
+    {
+      "dataset": "MP-DocVQA",
+      "method_key": "parsed_visual",
+      "accuracy": 0.8,
+      "source_path": "results/v12_on_visrag/today/MP-DocVQA_parsed_visual_top1_first100.json",
+      "total": 100,
+      "correct": 80
+    },
+    {
+      "dataset": "SlideVQA",
+      "method_key": "image_only",
+      "accuracy": 0.18,
+      "source_path": "results/v12_on_visrag/today/SlideVQA_image_only_top1_first100.json",
+      "total": 100,
+      "correct": 18
+    },
+    {
+      "dataset": "SlideVQA",
+      "method_key": "parsed_text_only",
+      "accuracy": 0.52,
+      "source_path": "results/v12_on_visrag/today/SlideVQA_parsed_text_only_top1_first100.json",
+      "total": 100,
+      "correct": 52
+    },
+    {
+      "dataset": "SlideVQA",
+      "method_key": "parsed_visual",
+      "accuracy": 0.52,
+      "source_path": "results/v12_on_visrag/today/SlideVQA_parsed_visual_top1_first100.json",
+      "total": 100,
+      "correct": 52
+    },
+    {
+      "dataset": "InfoVQA",
+      "method_key": "image_only",
+      "accuracy": 0.2,
+      "source_path": "results/v12_on_visrag/today/InfoVQA_image_only_top1_first100.json",
+      "total": 100,
+      "correct": 20
+    },
+    {
+      "dataset": "InfoVQA",
+      "method_key": "parsed_text_only",
+      "accuracy": 0.54,
+      "source_path": "results/v12_on_visrag/today/InfoVQA_parsed_text_only_top1_first100.json",
+      "total": 100,
+      "correct": 54
+    },
+    {
+      "dataset": "InfoVQA",
+      "method_key": "parsed_visual",
+      "accuracy": 0.54,
+      "source_path": "results/v12_on_visrag/today/InfoVQA_parsed_visual_top1_first100.json",
+      "total": 100,
+      "correct": 54
+    }
+  ]
+}

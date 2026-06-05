@@ -29,3 +29,4 @@ visrag/
 .idea/
 .vscode/
 .DS_Store
+run_today*.log
