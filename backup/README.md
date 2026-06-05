@@ -27,6 +27,29 @@ VisRAG 비교와는 별개 도메인 실험(교량 점검 보고서 QA)의 v12 �
 - `run_today.log` — 최종 today 파이프라인 실행 로그 (~150 KB)
 - `run_today.log.first_try.failed` — 첫 시도(InfoVQA stuck) 로그
 
+### 6. 계획/설계 문서 (`docs/`)
+
+본 보고서의 결과 산출 과정을 정리한 설계/계획 문서. 최종 HTML 보고서(`../docs/report_v12_general_vs_visrag.html`)가 모든 핵심 내용을 포함하므로 제출 단독 재현에는 불필요.
+
+- `domain_free_v12_experiment_design.md` — v12-general 변형의 설계 근거
+- `experiment_contract_one_corpus_one_generator.md` — 동일 corpus·동일 generator 실험 계약
+- `paper_aligned_vlm_and_inputs.md` — generator 선택 근거
+- `visrag_v12_benchmark.md` — 단계별 실행 절차
+- `plans/domain_free_v12_implementation_plan.md` — 구현 작업 분해
+
+### 7. Unit tests (`tests/`)
+
+라이브러리 모듈의 contract 검증용 pytest 16개. 본 제출의 핵심 결과(`results/ppt_format/today_results_table.*`) 재현에 불필요하지만, 코드 정확성 검증을 원할 경우 복원해서 실행 가능:
+
+```bash
+cp -r backup/tests .
+.venv/bin/python -m pytest tests/ -q   # 16 passed
+```
+
+### 8. v12_requirements.txt
+
+`backup/v12_port/` 모듈의 의존성 모음. submit 파이프라인 재현에는 `../requirements-benchmark.txt`만 필요하므로 이 파일도 backup으로 보관.
+
 ## 본 폴더 내용에 의존하지 않음을 보장하는 방법
 
 ```bash
