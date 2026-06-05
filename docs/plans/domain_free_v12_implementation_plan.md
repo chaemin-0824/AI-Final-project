@@ -6,7 +6,7 @@
 
 **Architecture:** The pipeline has four independent stages: parse corpus images with Upstage and cache outputs; build a text retrieval index from parsed text/tables; generate answers using retrieved original images plus parsed evidence; evaluate retrieval and generation with VisRAG paper metrics.
 
-**Tech Stack:** Python, HuggingFace `datasets`, Upstage Document Parse API, BM25 (`rank_bm25`), optional dense embeddings, Gemini/OpenAI-compatible VLM, JSONL cache, TREC run format.
+**Tech Stack:** Python, HuggingFace `datasets`, Upstage Document Parse API, BM25 (`rank_bm25`), optional dense embeddings, paper-aligned VLM (MiniCPM-V 2.6 primary, GPT-4o fallback), JSONL cache, TREC run format.
 
 ---
 

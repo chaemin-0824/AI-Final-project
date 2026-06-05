@@ -58,7 +58,7 @@
       "method_key": "image_only",
       "accuracy": 0.0,
       "source_path": "results/v12_on_visrag/smoke/InfoVQA_image_only_top1.json",
-      "total": 2,
+      "total": 1,
       "correct": 0
     },
     {
@@ -66,7 +66,7 @@
       "method_key": "parsed_text_only",
       "accuracy": 0.0,
       "source_path": "results/v12_on_visrag/smoke/InfoVQA_parsed_text_only_top1.json",
-      "total": 2,
+      "total": 1,
       "correct": 0
     },
     {
@@ -74,7 +74,7 @@
       "method_key": "parsed_visual",
       "accuracy": 0.0,
       "source_path": "results/v12_on_visrag/smoke/InfoVQA_parsed_visual_top1.json",
-      "total": 2,
+      "total": 1,
       "correct": 0
     },
     {
@@ -82,7 +82,7 @@
       "method_key": "image_only",
       "accuracy": 0.0,
       "source_path": "results/v12_on_visrag/smoke/ChartQA_image_only_top1.json",
-      "total": 2,
+      "total": 1,
       "correct": 0
     },
     {
@@ -90,7 +90,7 @@
       "method_key": "parsed_text_only",
       "accuracy": 0.0,
       "source_path": "results/v12_on_visrag/smoke/ChartQA_parsed_text_only_top1.json",
-      "total": 2,
+      "total": 1,
       "correct": 0
     },
     {
@@ -98,7 +98,7 @@
       "method_key": "parsed_visual",
       "accuracy": 0.0,
       "source_path": "results/v12_on_visrag/smoke/ChartQA_parsed_visual_top1.json",
-      "total": 2,
+      "total": 1,
       "correct": 0
     },
     {
@@ -106,7 +106,7 @@
       "method_key": "image_only",
       "accuracy": 0.0,
       "source_path": "results/v12_on_visrag/smoke/MP-DocVQA_image_only_top1.json",
-      "total": 2,
+      "total": 1,
       "correct": 0
     },
     {
@@ -114,7 +114,7 @@
       "method_key": "parsed_text_only",
       "accuracy": 0.0,
       "source_path": "results/v12_on_visrag/smoke/MP-DocVQA_parsed_text_only_top1.json",
-      "total": 2,
+      "total": 1,
       "correct": 0
     },
     {
@@ -122,7 +122,7 @@
       "method_key": "parsed_visual",
       "accuracy": 0.0,
       "source_path": "results/v12_on_visrag/smoke/MP-DocVQA_parsed_visual_top1.json",
-      "total": 2,
+      "total": 1,
       "correct": 0
     },
     {
@@ -130,7 +130,7 @@
       "method_key": "image_only",
       "accuracy": 0.0,
       "source_path": "results/v12_on_visrag/smoke/SlideVQA_image_only_top1.json",
-      "total": 2,
+      "total": 1,
       "correct": 0
     },
     {
@@ -138,7 +138,7 @@
       "method_key": "parsed_text_only",
       "accuracy": 0.0,
       "source_path": "results/v12_on_visrag/smoke/SlideVQA_parsed_text_only_top1.json",
-      "total": 2,
+      "total": 1,
       "correct": 0
     },
     {
@@ -146,7 +146,7 @@
       "method_key": "parsed_visual",
       "accuracy": 0.0,
       "source_path": "results/v12_on_visrag/smoke/SlideVQA_parsed_visual_top1.json",
-      "total": 2,
+      "total": 1,
       "correct": 0
     }
   ]

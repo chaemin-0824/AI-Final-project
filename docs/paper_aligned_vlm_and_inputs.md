@@ -100,10 +100,10 @@ query-id
 
 ## How we should adjust our experiment
 
-Replace Gemini with paper-aligned generator:
+Paper-aligned generators only (any other VLM produces non-comparable numbers):
 
 1. Primary: MiniCPM-V 2.6 (`openbmb/MiniCPM-V-2_6`) if GPU allows.
-2. Fallback: GPT-4o if local GPU is not enough.
+2. Fallback: GPT-4o if local GPU is not enough. This is the only acceptable API alternative — GPT-4o is used in the VisRAG paper too. Do NOT use Gemini, Claude, or any other VLM for benchmark numbers.
 
 Keep these fixed across methods:
 

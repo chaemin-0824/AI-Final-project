@@ -121,13 +121,15 @@ python benchmark/v12_on_visrag.py --dataset ChartQA --oracle --topk 1 --limit 2 
 python benchmark/v12_on_visrag.py --dataset ChartQA --oracle --topk 1 --limit 2 --mode parsed_visual --generator-backend minicpmv26 --parse-cache data/parsed/ChartQA_sample.jsonl --dry-run
 ```
 
-### 5) 이식된 v12 bridge 파이프라인 확인
+### 5) 이식된 v12 bridge 파이프라인 확인 (VisRAG 비교와는 분리된 도메인 실험)
 
 ```bash
 python scripts/run_v12_bridge.py --bridge 대안천교 --question-ids Q01 Q02 --dry-run
 ```
 
-실제 실행은 Gemini API와 기존 PDF/청크 캐시가 필요하다. 현재 `/home/chaemin/projects/paper_visual_rag/data/{교량}/upstage_v10_chunks.json`은 존재하지만, `v10_embeddings.npy`는 없으므로 첫 실제 실행 시 Gemini 임베딩을 새로 생성해 저장한다.
+> ⚠️ bridge-v12 파이프라인은 교량 점검 보고서 도메인용이며 **VisRAG 논문 비교와 무관**하다. 원본 `paper_visual_rag`가 Gemini API를 사용하도록 작성돼 있어서 실제 실행도 Gemini가 필요하다. VisRAG 데이터셋 비교(`benchmark/v12_on_visrag.py`)에는 절대 Gemini를 쓰지 않는다 — paper-aligned 비교는 MiniCPM-V 2.6 또는 GPT-4o만 허용.
+>
+> 현재 `/home/chaemin/projects/paper_visual_rag/data/{교량}/upstage_v10_chunks.json`은 존재하지만, `v10_embeddings.npy`는 없으므로 첫 실제 실행 시 Gemini 임베딩을 새로 생성해 저장한다.
 
 ```bash
 python scripts/run_v12_bridge.py --bridge 대안천교 --question-ids Q01 Q02

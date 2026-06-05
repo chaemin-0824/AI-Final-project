@@ -19,20 +19,21 @@ from benchmark.metrics import accuracy, write_json  # noqa: E402
 from benchmark.parse_cache import cache_key, evidence_text, load_parse_cache  # noqa: E402
 
 MODES = ("image_only", "parsed_text_only", "parsed_visual")
-GENERATOR_BACKENDS = ("minicpmv26", "gpt4o", "gemini")
+# Paper-aligned generators only: VisRAG paper (arXiv:2410.10594) uses MiniCPM-V 2.6
+# as the main multi-image VLM and GPT-4o as the API fallback. No other backends.
+GENERATOR_BACKENDS = ("minicpmv26", "gpt4o")
 _MODEL_CACHE: dict[tuple[str, str], tuple[Any, Any]] = {}
 
 
 def default_model_for_backend(backend: str) -> str:
     """답변 생성 백엔드별 기본 모델 이름을 돌려준다.
 
-    backend는 MiniCPM-V 2.6, GPT-4o, Gemini 중 하나이며, 반환값은 실제 호출에
+    backend는 MiniCPM-V 2.6 또는 GPT-4o 중 하나이며, 반환값은 실제 호출에
     사용할 모델 경로/이름이다. 예: default_model_for_backend("minicpmv26").
     """
     defaults = {
         "minicpmv26": "openbmb/MiniCPM-V-2_6",
         "gpt4o": "gpt-4o",
-        "gemini": "models/gemini-3.1-pro-preview",
     }
     return defaults[backend]
 
@@ -119,7 +120,7 @@ def call_minicpmv26(query: str, images: list[Image.Image], parsed_context: str, 
     except ImportError as exc:
         raise RuntimeError(
             "MiniCPM-V 2.6 실행에는 torch와 transformers가 필요합니다. "
-            "VisRAG 전체 의존성을 설치하거나 --generator-backend gpt4o/gemini를 사용하세요."
+            "VisRAG 전체 의존성을 설치하거나 --generator-backend gpt4o(논문 fallback)를 사용하세요."
         ) from exc
 
     cache_key_model = ("minicpmv26", model_name)
@@ -184,41 +185,16 @@ def call_gpt4o(query: str, images: list[Image.Image], parsed_context: str, model
     }
 
 
-def call_gemini(query: str, images: list[Image.Image], parsed_context: str, model_name: str, mode: str, max_new_tokens: int) -> dict[str, Any]:
-    import google.generativeai as genai
-
-    api_key = os.environ.get("GOOGLE_API_KEY")
-    if not api_key:
-        raise RuntimeError("GOOGLE_API_KEY is required for v12_on_visrag generation")
-    genai.configure(api_key=api_key)
-    model = genai.GenerativeModel(model_name)
-    parts: list[Any] = []
-    if mode in {"image_only", "parsed_visual"}:
-        parts.extend(pil_to_part(img) for img in images)
-    parts.append(build_prompt(query, parsed_context, mode))
-    start = time.time()
-    resp = model.generate_content(parts, generation_config={"max_output_tokens": max_new_tokens})
-    usage = getattr(resp, "usage_metadata", None)
-    return {
-        "prediction": getattr(resp, "text", "") or "",
-        "elapsed_sec": round(time.time() - start, 3),
-        "input_tokens": getattr(usage, "prompt_token_count", 0) if usage else 0,
-        "output_tokens": getattr(usage, "candidates_token_count", 0) if usage else 0,
-    }
-
-
 def call_generator(backend: str, query: str, images: list[Image.Image], parsed_context: str, model_name: str, mode: str, max_new_tokens: int) -> dict[str, Any]:
     """선택된 생성기 백엔드로 답변 생성을 위임한다.
 
-    backend는 minicpmv26/gpt4o/gemini 중 하나이고, 나머지 입력은 같은 질문·같은 증거를
-    의미한다. 예: call_generator("minicpmv26", ...).
+    backend는 minicpmv26 또는 gpt4o 중 하나(논문 사용 모델만). 나머지 입력은 같은 질문·같은 증거.
+    예: call_generator("minicpmv26", ...).
     """
     if backend == "minicpmv26":
         return call_minicpmv26(query, images, parsed_context, model_name, mode, max_new_tokens)
     if backend == "gpt4o":
         return call_gpt4o(query, images, parsed_context, model_name, mode, max_new_tokens)
-    if backend == "gemini":
-        return call_gemini(query, images, parsed_context, model_name, mode, max_new_tokens)
     raise ValueError(f"Unsupported generator backend: {backend}")
 
 

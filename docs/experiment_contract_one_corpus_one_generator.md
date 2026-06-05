@@ -37,4 +37,4 @@ MODEL=openbmb/MiniCPM-V-2_6 \
 bash scripts/run_domain_free_v12_experiment.sh
 ```
 
-If the machine has no GPU or MiniCPM dependencies are missing, use `--dry-run` for pipeline validation only. GPT-4o/Gemini may be used for debugging, but paper-aligned results should be generated with MiniCPM-V 2.6.
+If the machine has no GPU or MiniCPM dependencies are missing, use `--dry-run` for pipeline validation only. The only paper-aligned alternative generator is `--generator-backend gpt4o` (also used in the VisRAG paper). Other VLMs (Gemini, Claude, etc.) MUST NOT be used for benchmark numbers — they were never in the VisRAG paper, so results would not be comparable.
