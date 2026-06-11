@@ -1,0 +1,155 @@
+=== prompt-test run start: 2026-06-11 17:14:42 KST ===
+limit=100
+=== [17:14:42] InfoVQA / qwen_ocr_text_image / tf457 ===
+  "correct": 71,
+  "accuracy": 0.71
+}
+wrote /home/chaemin/projects/AI algorithm study/results/prompt_test/InfoVQA_qwen_ocr_text_image_tf457.json
+=== [17:27:07] ChartQA / qwen_ocr_text_image / tf457 ===
+  "correct": 44,
+  "accuracy": 0.6984126984126984
+}
+wrote /home/chaemin/projects/AI algorithm study/results/prompt_test/ChartQA_qwen_ocr_text_image_tf457.json
+=== [17:32:52] MP-DocVQA / qwen_ocr_text_image / tf457 ===
+  "correct": 86,
+  "accuracy": 0.86
+}
+wrote /home/chaemin/projects/AI algorithm study/results/prompt_test/MP-DocVQA_qwen_ocr_text_image_tf457.json
+=== [17:52:59] SlideVQA / qwen_ocr_text_image / tf457 ===
+  "correct": 63,
+  "accuracy": 0.63
+}
+wrote /home/chaemin/projects/AI algorithm study/results/prompt_test/SlideVQA_qwen_ocr_text_image_tf457.json
+=== [18:03:05] InfoVQA / qwen_ocr_text_image / image_first ===
+  "correct": 73,
+  "accuracy": 0.73
+}
+wrote /home/chaemin/projects/AI algorithm study/results/prompt_test/InfoVQA_qwen_ocr_text_image_image_first.json
+=== [18:07:09] ChartQA / qwen_ocr_text_image / image_first ===
+  "correct": 44,
+  "accuracy": 0.6984126984126984
+}
+wrote /home/chaemin/projects/AI algorithm study/results/prompt_test/ChartQA_qwen_ocr_text_image_image_first.json
+=== [18:08:29] MP-DocVQA / qwen_ocr_text_image / image_first ===
+  "correct": 89,
+  "accuracy": 0.89
+}
+wrote /home/chaemin/projects/AI algorithm study/results/prompt_test/MP-DocVQA_qwen_ocr_text_image_image_first.json
+=== [18:12:49] SlideVQA / qwen_ocr_text_image / image_first ===
+  "correct": 62,
+  "accuracy": 0.62
+}
+wrote /home/chaemin/projects/AI algorithm study/results/prompt_test/SlideVQA_qwen_ocr_text_image_image_first.json
+=== [18:15:32] InfoVQA / upstage_text_image / image_first ===
+  "correct": 69,
+  "accuracy": 0.69
+}
+wrote /home/chaemin/projects/AI algorithm study/results/prompt_test/InfoVQA_upstage_text_image_image_first.json
+=== [19:10:41] ChartQA / upstage_text_image / image_first ===
+  "correct": 45,
+  "accuracy": 0.7142857142857143
+}
+wrote /home/chaemin/projects/AI algorithm study/results/prompt_test/ChartQA_upstage_text_image_image_first.json
+=== [19:12:25] MP-DocVQA / upstage_text_image / image_first ===
+  "correct": 88,
+  "accuracy": 0.88
+}
+wrote /home/chaemin/projects/AI algorithm study/results/prompt_test/MP-DocVQA_upstage_text_image_image_first.json
+=== [19:17:54] SlideVQA / upstage_text_image / image_first ===
+  "correct": 60,
+  "accuracy": 0.6
+}
+wrote /home/chaemin/projects/AI algorithm study/results/prompt_test/SlideVQA_upstage_text_image_image_first.json
+=== all prompt-test runs done: 2026-06-11 19:21:06 KST ===
+# Prompt-bias hypothesis test (Image+Text cells)
+
+Generator: Qwen2-VL-7B-Instruct (NF4 4-bit) | Metric: Relaxed Exact Match
+Samples: Chaemin first100 (oracle qrels, topk=1) | DocVQA == MP-DocVQA
+Hardware: local RTX 4060 8GB. tf457 numbers below for context (different GPU).
+
+| Method | Prompt | InfoVQA | ChartQA | MP-DocVQA | SlideVQA | Macro | Δ vs row 1 |
+|---|---|---:|---:|---:|---:|---:|---:|
+| Image+Text (Upstage) | tf457 (baseline, from prior parsed_visual run) | 0.5400 | 0.5079 | 0.8000 | 0.5200 | 0.5920 | — (baseline) |
+| Image+Text (Upstage) | image_first | 0.6900 | 0.7143 | 0.8800 | 0.6000 | 0.7211 | +12.91%p |
+| Image+Text (Qwen OCR) | tf457 (local reproduction) | 0.7100 | 0.6984 | 0.8600 | 0.6300 | 0.7246 | +13.26%p |
+| Image+Text (Qwen OCR) | image_first | 0.7300 | 0.6984 | 0.8900 | 0.6200 | 0.7346 | +14.26%p |
+
+## tf457 reference (different hardware, copied verbatim)
+
+| Method | Prompt | InfoVQA | ChartQA | MP-DocVQA | SlideVQA |
+|---|---|---:|---:|---:|---:|
+| Image+Text (Qwen OCR) | tf457 | 0.7300 | 0.6667 | 0.8200 | 0.5800 |
+| Image+Text (Upstage)  | tf457 | 0.5400 | 0.5079 | 0.8000 | 0.5200 |
+
+wrote /home/chaemin/projects/AI algorithm study/results/prompt_test/table.md
+=== prompt-test run start: 2026-06-11 19:53:28 KST ===
+limit=100
+[skip] InfoVQA/qwen_ocr_text_image/tf457 (exists)
+[skip] ChartQA/qwen_ocr_text_image/tf457 (exists)
+[skip] MP-DocVQA/qwen_ocr_text_image/tf457 (exists)
+[skip] SlideVQA/qwen_ocr_text_image/tf457 (exists)
+[skip] InfoVQA/qwen_ocr_text_image/image_first (exists)
+[skip] ChartQA/qwen_ocr_text_image/image_first (exists)
+[skip] MP-DocVQA/qwen_ocr_text_image/image_first (exists)
+[skip] SlideVQA/qwen_ocr_text_image/image_first (exists)
+[skip] InfoVQA/upstage_text_image/image_first (exists)
+[skip] ChartQA/upstage_text_image/image_first (exists)
+[skip] MP-DocVQA/upstage_text_image/image_first (exists)
+[skip] SlideVQA/upstage_text_image/image_first (exists)
+=== [19:53:28] InfoVQA / upstage_text_image / tf457 ===
+=== prompt-test run start: 2026-06-11 20:02:08 KST ===
+limit=100
+[skip] InfoVQA/qwen_ocr_text_image/tf457 (exists)
+[skip] ChartQA/qwen_ocr_text_image/tf457 (exists)
+[skip] MP-DocVQA/qwen_ocr_text_image/tf457 (exists)
+[skip] SlideVQA/qwen_ocr_text_image/tf457 (exists)
+[skip] InfoVQA/qwen_ocr_text_image/image_first (exists)
+[skip] ChartQA/qwen_ocr_text_image/image_first (exists)
+[skip] MP-DocVQA/qwen_ocr_text_image/image_first (exists)
+[skip] SlideVQA/qwen_ocr_text_image/image_first (exists)
+[skip] InfoVQA/upstage_text_image/image_first (exists)
+[skip] ChartQA/upstage_text_image/image_first (exists)
+[skip] MP-DocVQA/upstage_text_image/image_first (exists)
+[skip] SlideVQA/upstage_text_image/image_first (exists)
+=== [20:02:08] InfoVQA / upstage_text_image / tf457 ===
+  "correct": 68,
+  "accuracy": 0.68
+}
+wrote /home/chaemin/projects/AI algorithm study/results/prompt_test/InfoVQA_upstage_text_image_tf457.json
+=== [21:00:37] ChartQA / upstage_text_image / tf457 ===
+  "correct": 45,
+  "accuracy": 0.7142857142857143
+}
+wrote /home/chaemin/projects/AI algorithm study/results/prompt_test/ChartQA_upstage_text_image_tf457.json
+=== [21:02:56] MP-DocVQA / upstage_text_image / tf457 ===
+  "correct": 86,
+  "accuracy": 0.86
+}
+wrote /home/chaemin/projects/AI algorithm study/results/prompt_test/MP-DocVQA_upstage_text_image_tf457.json
+=== [21:08:32] SlideVQA / upstage_text_image / tf457 ===
+  "correct": 57,
+  "accuracy": 0.57
+}
+wrote /home/chaemin/projects/AI algorithm study/results/prompt_test/SlideVQA_upstage_text_image_tf457.json
+=== all prompt-test runs done: 2026-06-11 21:11:42 KST ===
+# Prompt-bias hypothesis test (Image+Text cells)
+
+Generator: Qwen2-VL-7B-Instruct (NF4 4-bit) | Metric: Relaxed Exact Match
+Samples: Chaemin first100 (oracle qrels, topk=1) | DocVQA == MP-DocVQA
+Hardware: local RTX 4060 8GB. tf457 numbers below for context (different GPU).
+
+| Method | Prompt | InfoVQA | ChartQA | MP-DocVQA | SlideVQA | Macro | Δ vs row 1 |
+|---|---|---:|---:|---:|---:|---:|---:|
+| Image+Text (Upstage) | tf457 (baseline, from prior parsed_visual run) | 0.5400 | 0.5079 | 0.8000 | 0.5200 | 0.5920 | — (baseline) |
+| Image+Text (Upstage) | image_first | 0.6900 | 0.7143 | 0.8800 | 0.6000 | 0.7211 | +12.91%p |
+| Image+Text (Qwen OCR) | tf457 (local reproduction) | 0.7100 | 0.6984 | 0.8600 | 0.6300 | 0.7246 | +13.26%p |
+| Image+Text (Qwen OCR) | image_first | 0.7300 | 0.6984 | 0.8900 | 0.6200 | 0.7346 | +14.26%p |
+
+## tf457 reference (different hardware, copied verbatim)
+
+| Method | Prompt | InfoVQA | ChartQA | MP-DocVQA | SlideVQA |
+|---|---|---:|---:|---:|---:|
+| Image+Text (Qwen OCR) | tf457 | 0.7300 | 0.6667 | 0.8200 | 0.5800 |
+| Image+Text (Upstage)  | tf457 | 0.5400 | 0.5079 | 0.8000 | 0.5200 |
+
+wrote /home/chaemin/projects/AI algorithm study/results/prompt_test/table.md

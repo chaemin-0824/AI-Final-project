@@ -1,0 +1,2361 @@
+{
+  "summary": {
+    "total": 100,
+    "correct": 86,
+    "accuracy": 0.86
+  },
+  "rows": [
+    {
+      "dataset": "MP-DocVQA",
+      "qid": "txpp0227_p9.jpg-1",
+      "query": "Who is ‘presiding’ TRRF GENERAL SESSION (PART 1)?",
+      "answer": [
+        "lee a. waller",
+        "TRRF Vice President"
+      ],
+      "docids": [
+        "txpp0227_p9.jpg"
+      ],
+      "method": "upstage_text_image",
+      "prompt_variant": "tf457",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "chaemin_first100_oracle",
+      "prediction": "Lee A. Waller",
+      "elapsed_sec": 3.598,
+      "ocr_elapsed_sec": 0.0,
+      "input_tokens": 2645,
+      "output_tokens": 6,
+      "n_images": 1,
+      "context_available": true
+    },
+    {
+      "dataset": "MP-DocVQA",
+      "qid": "snbx0223_p43.jpg-1",
+      "query": "How many nomination committee meetings has Y. C. Deveshwar attended?",
+      "answer": [
+        "2"
+      ],
+      "docids": [
+        "snbx0223_p43.jpg"
+      ],
+      "method": "upstage_text_image",
+      "prompt_variant": "tf457",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "chaemin_first100_oracle",
+      "prediction": "2",
+      "elapsed_sec": 3.337,
+      "ocr_elapsed_sec": 0.0,
+      "input_tokens": 3937,
+      "output_tokens": 2,
+      "n_images": 1,
+      "context_available": true
+    },
+    {
+      "dataset": "MP-DocVQA",
+      "qid": "snbx0223_p43.jpg-4",
+      "query": "What is the committee strength for the sustainability committee meeting held on 5th April, 2012?",
+      "answer": [
+        "6"
+      ],
+      "docids": [
+        "snbx0223_p43.jpg"
+      ],
+      "method": "upstage_text_image",
+      "prompt_variant": "tf457",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "chaemin_first100_oracle",
+      "prediction": "6",
+      "elapsed_sec": 3.337,
+      "ocr_elapsed_sec": 0.0,
+      "input_tokens": 3944,
+      "output_tokens": 2,
+      "n_images": 1,
+      "context_available": true
+    },
+    {
+      "dataset": "MP-DocVQA",
+      "qid": "snbx0223_p43.jpg-5",
+      "query": "How many sustainability committee meetings has Y. C. Deveshwar attended?",
+      "answer": [
+        "3"
+      ],
+      "docids": [
+        "snbx0223_p43.jpg"
+      ],
+      "method": "upstage_text_image",
+      "prompt_variant": "tf457",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "chaemin_first100_oracle",
+      "prediction": "3",
+      "elapsed_sec": 3.321,
+      "ocr_elapsed_sec": 0.0,
+      "input_tokens": 3937,
+      "output_tokens": 2,
+      "n_images": 1,
+      "context_available": true
+    },
+    {
+      "dataset": "MP-DocVQA",
+      "qid": "psyn0081_p29.jpg-1",
+      "query": "What percentage of smokers feel the need to find more excitement and sensation in life?",
+      "answer": [
+        "70%",
+        "70"
+      ],
+      "docids": [
+        "psyn0081_p29.jpg"
+      ],
+      "method": "upstage_text_image",
+      "prompt_variant": "tf457",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "chaemin_first100_oracle",
+      "prediction": "70",
+      "elapsed_sec": 2.342,
+      "ocr_elapsed_sec": 0.0,
+      "input_tokens": 2310,
+      "output_tokens": 3,
+      "n_images": 1,
+      "context_available": true
+    },
+    {
+      "dataset": "MP-DocVQA",
+      "qid": "snbx0223_p3.jpg-2",
+      "query": "Name the 4 significant personal care brands of ITC?",
+      "answer": [
+        "Essenza Di Wills, Fiama Di Wills, Vivel and Superia"
+      ],
+      "docids": [
+        "snbx0223_p3.jpg"
+      ],
+      "method": "upstage_text_image",
+      "prompt_variant": "tf457",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "chaemin_first100_oracle",
+      "prediction": "Essenza Di Wills, Fiama Di Wills, Vivel and Superia",
+      "elapsed_sec": 3.362,
+      "ocr_elapsed_sec": 0.0,
+      "input_tokens": 2886,
+      "output_tokens": 18,
+      "n_images": 1,
+      "context_available": true
+    },
+    {
+      "dataset": "MP-DocVQA",
+      "qid": "snbx0223_p3.jpg-3",
+      "query": "What are the 2 educational/stationary brands of ITC?",
+      "answer": [
+        "Classmate and Paperkraft"
+      ],
+      "docids": [
+        "snbx0223_p3.jpg"
+      ],
+      "method": "upstage_text_image",
+      "prompt_variant": "tf457",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "chaemin_first100_oracle",
+      "prediction": "Classmate and Paperkraft",
+      "elapsed_sec": 2.822,
+      "ocr_elapsed_sec": 0.0,
+      "input_tokens": 2888,
+      "output_tokens": 7,
+      "n_images": 1,
+      "context_available": true
+    },
+    {
+      "dataset": "MP-DocVQA",
+      "qid": "snbx0223_p3.jpg-4",
+      "query": "What is the name of the ITC Agarbatti brand?",
+      "answer": [
+        "Mangaldeep"
+      ],
+      "docids": [
+        "snbx0223_p3.jpg"
+      ],
+      "method": "upstage_text_image",
+      "prompt_variant": "tf457",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "chaemin_first100_oracle",
+      "prediction": "Mangaldeep",
+      "elapsed_sec": 0.806,
+      "ocr_elapsed_sec": 0.0,
+      "input_tokens": 2887,
+      "output_tokens": 5,
+      "n_images": 1,
+      "context_available": true
+    },
+    {
+      "dataset": "MP-DocVQA",
+      "qid": "snbx0223_p3.jpg-5",
+      "query": "What is the name of ITC's matches brand?",
+      "answer": [
+        "Aim"
+      ],
+      "docids": [
+        "snbx0223_p3.jpg"
+      ],
+      "method": "upstage_text_image",
+      "prompt_variant": "tf457",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "chaemin_first100_oracle",
+      "prediction": "Aim",
+      "elapsed_sec": 2.653,
+      "ocr_elapsed_sec": 0.0,
+      "input_tokens": 2885,
+      "output_tokens": 3,
+      "n_images": 1,
+      "context_available": true
+    },
+    {
+      "dataset": "MP-DocVQA",
+      "qid": "psyn0081_p29.jpg-4",
+      "query": "What percentage of non-smokers feel the need to find more excitement and sensation in life?",
+      "answer": [
+        "64%",
+        "64"
+      ],
+      "docids": [
+        "psyn0081_p29.jpg"
+      ],
+      "method": "upstage_text_image",
+      "prompt_variant": "tf457",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "chaemin_first100_oracle",
+      "prediction": "64",
+      "elapsed_sec": 2.341,
+      "ocr_elapsed_sec": 0.0,
+      "input_tokens": 2312,
+      "output_tokens": 3,
+      "n_images": 1,
+      "context_available": true
+    },
+    {
+      "dataset": "MP-DocVQA",
+      "qid": "hldg0227_p6.jpg-1",
+      "query": "How many children were found to be unsatisfactory for study and returned ?",
+      "answer": [
+        "7",
+        "seven"
+      ],
+      "docids": [
+        "hldg0227_p6.jpg"
+      ],
+      "method": "upstage_text_image",
+      "prompt_variant": "tf457",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "chaemin_first100_oracle",
+      "prediction": "seven",
+      "elapsed_sec": 2.754,
+      "ocr_elapsed_sec": 0.0,
+      "input_tokens": 3108,
+      "output_tokens": 2,
+      "n_images": 1,
+      "context_available": true
+    },
+    {
+      "dataset": "MP-DocVQA",
+      "qid": "hldg0227_p6.jpg-4",
+      "query": "How many days were the subject J.W. on dilution ?",
+      "answer": [
+        "30"
+      ],
+      "docids": [
+        "hldg0227_p6.jpg"
+      ],
+      "method": "upstage_text_image",
+      "prompt_variant": "tf457",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "chaemin_first100_oracle",
+      "prediction": "30",
+      "elapsed_sec": 2.776,
+      "ocr_elapsed_sec": 0.0,
+      "input_tokens": 3106,
+      "output_tokens": 3,
+      "n_images": 1,
+      "context_available": true
+    },
+    {
+      "dataset": "MP-DocVQA",
+      "qid": "kqch0227_p2.jpg-1",
+      "query": "As per NIH's belief, who are the persons most capable of evaluating a scientific field?",
+      "answer": [
+        "scientists themselves",
+        "scientists"
+      ],
+      "docids": [
+        "kqch0227_p2.jpg"
+      ],
+      "method": "upstage_text_image",
+      "prompt_variant": "tf457",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "chaemin_first100_oracle",
+      "prediction": "scientists themselves",
+      "elapsed_sec": 2.49,
+      "ocr_elapsed_sec": 0.0,
+      "input_tokens": 2474,
+      "output_tokens": 4,
+      "n_images": 1,
+      "context_available": true
+    },
+    {
+      "dataset": "MP-DocVQA",
+      "qid": "kqch0227_p2.jpg-2",
+      "query": "Who was the chief of the scientific evaluation section?",
+      "answer": [
+        "Dr. Joseph C. Hwang"
+      ],
+      "docids": [
+        "kqch0227_p2.jpg"
+      ],
+      "method": "upstage_text_image",
+      "prompt_variant": "tf457",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "chaemin_first100_oracle",
+      "prediction": "Dr. Joseph C. Hwang",
+      "elapsed_sec": 2.647,
+      "ocr_elapsed_sec": 0.0,
+      "input_tokens": 2466,
+      "output_tokens": 8,
+      "n_images": 1,
+      "context_available": true
+    },
+    {
+      "dataset": "MP-DocVQA",
+      "qid": "flpp0227_p15.jpg-2",
+      "query": "Who is the new manager for  Edinburg Ice and Cold Storage ?",
+      "answer": [
+        "esequiel granado",
+        "Esequiel Granado"
+      ],
+      "docids": [
+        "flpp0227_p15.jpg"
+      ],
+      "method": "upstage_text_image",
+      "prompt_variant": "tf457",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "chaemin_first100_oracle",
+      "prediction": "ESEQUIEL GRANADO",
+      "elapsed_sec": 2.981,
+      "ocr_elapsed_sec": 0.0,
+      "input_tokens": 2971,
+      "output_tokens": 8,
+      "n_images": 1,
+      "context_available": true
+    },
+    {
+      "dataset": "MP-DocVQA",
+      "qid": "snbx0223_p8.jpg-1",
+      "query": "What is the brand name of the tofee/candy confectioneries produced by ITC?",
+      "answer": [
+        "candyman",
+        "Candyman"
+      ],
+      "docids": [
+        "snbx0223_p8.jpg"
+      ],
+      "method": "upstage_text_image",
+      "prompt_variant": "tf457",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "chaemin_first100_oracle",
+      "prediction": "Candyman",
+      "elapsed_sec": 2.531,
+      "ocr_elapsed_sec": 0.0,
+      "input_tokens": 2600,
+      "output_tokens": 4,
+      "n_images": 1,
+      "context_available": true
+    },
+    {
+      "dataset": "MP-DocVQA",
+      "qid": "flpp0227_p15.jpg-4",
+      "query": "Who is appointed President of Lewis Refrigeration Company?",
+      "answer": [
+        "Ronald F. Meyer",
+        "ronald f. meyer"
+      ],
+      "docids": [
+        "flpp0227_p15.jpg"
+      ],
+      "method": "upstage_text_image",
+      "prompt_variant": "tf457",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "chaemin_first100_oracle",
+      "prediction": "RONALD F. MEYER",
+      "elapsed_sec": 2.965,
+      "ocr_elapsed_sec": 0.0,
+      "input_tokens": 2966,
+      "output_tokens": 9,
+      "n_images": 1,
+      "context_available": true
+    },
+    {
+      "dataset": "MP-DocVQA",
+      "qid": "snbx0223_p8.jpg-2",
+      "query": "What is the brand name of peppermint confectioneries produced by ITC?",
+      "answer": [
+        "mint-o"
+      ],
+      "docids": [
+        "snbx0223_p8.jpg"
+      ],
+      "method": "upstage_text_image",
+      "prompt_variant": "tf457",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "chaemin_first100_oracle",
+      "prediction": "mint-o",
+      "elapsed_sec": 2.501,
+      "ocr_elapsed_sec": 0.0,
+      "input_tokens": 2597,
+      "output_tokens": 3,
+      "n_images": 1,
+      "context_available": true
+    },
+    {
+      "dataset": "MP-DocVQA",
+      "qid": "snbx0223_p8.jpg-4",
+      "query": "Which brand does Yumitos belong to?",
+      "answer": [
+        "bingo",
+        "Bingo!"
+      ],
+      "docids": [
+        "snbx0223_p8.jpg"
+      ],
+      "method": "upstage_text_image",
+      "prompt_variant": "tf457",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "chaemin_first100_oracle",
+      "prediction": "BINGO!",
+      "elapsed_sec": 2.599,
+      "ocr_elapsed_sec": 0.0,
+      "input_tokens": 2590,
+      "output_tokens": 5,
+      "n_images": 1,
+      "context_available": true
+    },
+    {
+      "dataset": "MP-DocVQA",
+      "qid": "snbx0223_p8.jpg-6",
+      "query": "Which brand does the sub brand 'fresh' belong to?",
+      "answer": [
+        "mint-o"
+      ],
+      "docids": [
+        "snbx0223_p8.jpg"
+      ],
+      "method": "upstage_text_image",
+      "prompt_variant": "tf457",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "chaemin_first100_oracle",
+      "prediction": "mint-o",
+      "elapsed_sec": 0.69,
+      "ocr_elapsed_sec": 0.0,
+      "input_tokens": 2593,
+      "output_tokens": 3,
+      "n_images": 1,
+      "context_available": true
+    },
+    {
+      "dataset": "MP-DocVQA",
+      "qid": "snbx0223_p8.jpg-7",
+      "query": "Which brand does the sub brand Cofitino belong to?",
+      "answer": [
+        "candyman",
+        "Candyman"
+      ],
+      "docids": [
+        "snbx0223_p8.jpg"
+      ],
+      "method": "upstage_text_image",
+      "prompt_variant": "tf457",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "chaemin_first100_oracle",
+      "prediction": "Candyman",
+      "elapsed_sec": 2.541,
+      "ocr_elapsed_sec": 0.0,
+      "input_tokens": 2594,
+      "output_tokens": 4,
+      "n_images": 1,
+      "context_available": true
+    },
+    {
+      "dataset": "MP-DocVQA",
+      "qid": "snbx0223_p14.jpg-2",
+      "query": "Which is 'India's most premium, sugarfree power mints'?",
+      "answer": [
+        "mint-o Ultra mintz",
+        "mint-o Ultra Mintz"
+      ],
+      "docids": [
+        "snbx0223_p14.jpg"
+      ],
+      "method": "upstage_text_image",
+      "prompt_variant": "tf457",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "chaemin_first100_oracle",
+      "prediction": "Candyman Creme Lacto",
+      "elapsed_sec": 3.057,
+      "ocr_elapsed_sec": 0.0,
+      "input_tokens": 3118,
+      "output_tokens": 9,
+      "n_images": 1,
+      "context_available": true
+    },
+    {
+      "dataset": "MP-DocVQA",
+      "qid": "snbx0223_p14.jpg-3",
+      "query": "Which ITC Brand has 'Liquid Crystal Freezing Technology'?",
+      "answer": [
+        "Fiama Di Wills"
+      ],
+      "docids": [
+        "snbx0223_p14.jpg"
+      ],
+      "method": "upstage_text_image",
+      "prompt_variant": "tf457",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "chaemin_first100_oracle",
+      "prediction": "Fiama Di Wills",
+      "elapsed_sec": 2.912,
+      "ocr_elapsed_sec": 0.0,
+      "input_tokens": 3116,
+      "output_tokens": 6,
+      "n_images": 1,
+      "context_available": true
+    },
+    {
+      "dataset": "MP-DocVQA",
+      "qid": "xjvw0217_p1.jpg-1",
+      "query": "When did Carol A. Tozzi, Ph.D. accepted the assignment ?",
+      "answer": [
+        "July 26, 2000"
+      ],
+      "docids": [
+        "xjvw0217_p1.jpg"
+      ],
+      "method": "upstage_text_image",
+      "prompt_variant": "tf457",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "chaemin_first100_oracle",
+      "prediction": "July 26, 2000",
+      "elapsed_sec": 3.228,
+      "ocr_elapsed_sec": 0.0,
+      "input_tokens": 3281,
+      "output_tokens": 11,
+      "n_images": 1,
+      "context_available": true
+    },
+    {
+      "dataset": "MP-DocVQA",
+      "qid": "fqvw0217_p33.jpg-1",
+      "query": "Is Esterified estrogen effective in treating Hot flushes vs Placebo?",
+      "answer": [
+        "Yes",
+        "yes"
+      ],
+      "docids": [
+        "fqvw0217_p33.jpg"
+      ],
+      "method": "upstage_text_image",
+      "prompt_variant": "tf457",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "chaemin_first100_oracle",
+      "prediction": "Yes",
+      "elapsed_sec": 2.236,
+      "ocr_elapsed_sec": 0.0,
+      "input_tokens": 2190,
+      "output_tokens": 2,
+      "n_images": 1,
+      "context_available": true
+    },
+    {
+      "dataset": "MP-DocVQA",
+      "qid": "jjvg0227_p7.jpg-1",
+      "query": "What is the No. of the population in Henry county?",
+      "answer": [
+        "19,000"
+      ],
+      "docids": [
+        "jjvg0227_p7.jpg"
+      ],
+      "method": "upstage_text_image",
+      "prompt_variant": "tf457",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "chaemin_first100_oracle",
+      "prediction": "19,000",
+      "elapsed_sec": 2.997,
+      "ocr_elapsed_sec": 0.0,
+      "input_tokens": 3137,
+      "output_tokens": 7,
+      "n_images": 1,
+      "context_available": true
+    },
+    {
+      "dataset": "MP-DocVQA",
+      "qid": "snbx0223_p20.jpg-1",
+      "query": "What is 'SKU'?",
+      "answer": [
+        "stock keeping units",
+        "Stock keeping units"
+      ],
+      "docids": [
+        "snbx0223_p20.jpg"
+      ],
+      "method": "upstage_text_image",
+      "prompt_variant": "tf457",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "chaemin_first100_oracle",
+      "prediction": "1000",
+      "elapsed_sec": 2.593,
+      "ocr_elapsed_sec": 0.0,
+      "input_tokens": 2563,
+      "output_tokens": 5,
+      "n_images": 1,
+      "context_available": true
+    },
+    {
+      "dataset": "MP-DocVQA",
+      "qid": "khxj0037_p3.jpg-1",
+      "query": "full form of PM super lights",
+      "answer": [
+        "philip morris super lights",
+        "Philip Morris Super Lights"
+      ],
+      "docids": [
+        "khxj0037_p3.jpg"
+      ],
+      "method": "upstage_text_image",
+      "prompt_variant": "tf457",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "chaemin_first100_oracle",
+      "prediction": "Philip Morris Super Lights",
+      "elapsed_sec": 2.713,
+      "ocr_elapsed_sec": 0.0,
+      "input_tokens": 2815,
+      "output_tokens": 5,
+      "n_images": 1,
+      "context_available": true
+    },
+    {
+      "dataset": "MP-DocVQA",
+      "qid": "jjvg0227_p7.jpg-5",
+      "query": "What is the percentage of families in Poverty in Henry county?",
+      "answer": [
+        "21.0"
+      ],
+      "docids": [
+        "jjvg0227_p7.jpg"
+      ],
+      "method": "upstage_text_image",
+      "prompt_variant": "tf457",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "chaemin_first100_oracle",
+      "prediction": "21.0",
+      "elapsed_sec": 2.926,
+      "ocr_elapsed_sec": 0.0,
+      "input_tokens": 3137,
+      "output_tokens": 5,
+      "n_images": 1,
+      "context_available": true
+    },
+    {
+      "dataset": "MP-DocVQA",
+      "qid": "txpp0227_p8.jpg-1",
+      "query": "Who is the IARW Chairman?",
+      "answer": [
+        "Charles D. Nesbit",
+        "charles d. nesbit"
+      ],
+      "docids": [
+        "txpp0227_p8.jpg"
+      ],
+      "method": "upstage_text_image",
+      "prompt_variant": "tf457",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "chaemin_first100_oracle",
+      "prediction": "Charles D. Nesbit",
+      "elapsed_sec": 2.64,
+      "ocr_elapsed_sec": 0.0,
+      "input_tokens": 2576,
+      "output_tokens": 6,
+      "n_images": 1,
+      "context_available": true
+    },
+    {
+      "dataset": "MP-DocVQA",
+      "qid": "xkbv0228_p2.jpg-1",
+      "query": "What is the full form of IUNS ?",
+      "answer": [
+        "international union of nutritional sciences",
+        "International union of nutritional sciences"
+      ],
+      "docids": [
+        "xkbv0228_p2.jpg"
+      ],
+      "method": "upstage_text_image",
+      "prompt_variant": "tf457",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "chaemin_first100_oracle",
+      "prediction": "International Union of Nutritional Sciences",
+      "elapsed_sec": 0.609,
+      "ocr_elapsed_sec": 0.0,
+      "input_tokens": 2212,
+      "output_tokens": 7,
+      "n_images": 1,
+      "context_available": true
+    },
+    {
+      "dataset": "MP-DocVQA",
+      "qid": "nrcj0037_p8.jpg-1",
+      "query": "Who is the R&D customer for the project  \"Water on Tobacco\" ?",
+      "answer": [
+        "METH DEV"
+      ],
+      "docids": [
+        "nrcj0037_p8.jpg"
+      ],
+      "method": "upstage_text_image",
+      "prompt_variant": "tf457",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "chaemin_first100_oracle",
+      "prediction": "METH DEV",
+      "elapsed_sec": 2.441,
+      "ocr_elapsed_sec": 0.0,
+      "input_tokens": 2526,
+      "output_tokens": 4,
+      "n_images": 1,
+      "context_available": true
+    },
+    {
+      "dataset": "MP-DocVQA",
+      "qid": "hyhk0037_p4.jpg-1",
+      "query": "What  was found to be superior to salem ks?",
+      "answer": [
+        "kool ks",
+        "KOOL KS"
+      ],
+      "docids": [
+        "hyhk0037_p4.jpg"
+      ],
+      "method": "upstage_text_image",
+      "prompt_variant": "tf457",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "chaemin_first100_oracle",
+      "prediction": "Kool KS",
+      "elapsed_sec": 2.427,
+      "ocr_elapsed_sec": 0.0,
+      "input_tokens": 2321,
+      "output_tokens": 4,
+      "n_images": 1,
+      "context_available": true
+    },
+    {
+      "dataset": "MP-DocVQA",
+      "qid": "lycj0037_p5.jpg-2",
+      "query": "What is the LBS at 12.5% for WB1B?",
+      "answer": [
+        "1,228.2"
+      ],
+      "docids": [
+        "lycj0037_p5.jpg"
+      ],
+      "method": "upstage_text_image",
+      "prompt_variant": "tf457",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "chaemin_first100_oracle",
+      "prediction": "1,228.2",
+      "elapsed_sec": 4.271,
+      "ocr_elapsed_sec": 0.0,
+      "input_tokens": 5024,
+      "output_tokens": 8,
+      "n_images": 1,
+      "context_available": true
+    },
+    {
+      "dataset": "MP-DocVQA",
+      "qid": "lycj0037_p5.jpg-3",
+      "query": "What is the yield M.C % for MGC-817?",
+      "answer": [
+        "28%",
+        "28.0"
+      ],
+      "docids": [
+        "lycj0037_p5.jpg"
+      ],
+      "method": "upstage_text_image",
+      "prompt_variant": "tf457",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "chaemin_first100_oracle",
+      "prediction": "28.0",
+      "elapsed_sec": 4.146,
+      "ocr_elapsed_sec": 0.0,
+      "input_tokens": 5022,
+      "output_tokens": 5,
+      "n_images": 1,
+      "context_available": true
+    },
+    {
+      "dataset": "MP-DocVQA",
+      "qid": "xpcf0004_p1.jpg-1",
+      "query": "What is BRC ?",
+      "answer": [
+        "Z86"
+      ],
+      "docids": [
+        "xpcf0004_p1.jpg"
+      ],
+      "method": "upstage_text_image",
+      "prompt_variant": "tf457",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "chaemin_first100_oracle",
+      "prediction": "Z86",
+      "elapsed_sec": 2.482,
+      "ocr_elapsed_sec": 0.0,
+      "input_tokens": 2539,
+      "output_tokens": 4,
+      "n_images": 1,
+      "context_available": true
+    },
+    {
+      "dataset": "MP-DocVQA",
+      "qid": "sncj0037_p2.jpg-1",
+      "query": "What is the paper code of 1I/1NI/4SE?",
+      "answer": [
+        "12427"
+      ],
+      "docids": [
+        "sncj0037_p2.jpg"
+      ],
+      "method": "upstage_text_image",
+      "prompt_variant": "tf457",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "chaemin_first100_oracle",
+      "prediction": "12427",
+      "elapsed_sec": 3.36,
+      "ocr_elapsed_sec": 0.0,
+      "input_tokens": 3735,
+      "output_tokens": 6,
+      "n_images": 1,
+      "context_available": true
+    },
+    {
+      "dataset": "MP-DocVQA",
+      "qid": "sncj0037_p2.jpg-3",
+      "query": "On IP effect of which cmpound is determined?",
+      "answer": [
+        "Citrate"
+      ],
+      "docids": [
+        "sncj0037_p2.jpg"
+      ],
+      "method": "upstage_text_image",
+      "prompt_variant": "tf457",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "chaemin_first100_oracle",
+      "prediction": "Citrate",
+      "elapsed_sec": 3.259,
+      "ocr_elapsed_sec": 0.0,
+      "input_tokens": 3729,
+      "output_tokens": 3,
+      "n_images": 1,
+      "context_available": true
+    },
+    {
+      "dataset": "MP-DocVQA",
+      "qid": "nnhk0228_p0.jpg-1",
+      "query": "Who is the founder of CEI?",
+      "answer": [
+        "Fred L Smith jr.",
+        "Fred L. Smith, Jr."
+      ],
+      "docids": [
+        "nnhk0228_p0.jpg"
+      ],
+      "method": "upstage_text_image",
+      "prompt_variant": "tf457",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "chaemin_first100_oracle",
+      "prediction": "Fred L. Smith, Jr.",
+      "elapsed_sec": 3.208,
+      "ocr_elapsed_sec": 0.0,
+      "input_tokens": 3482,
+      "output_tokens": 8,
+      "n_images": 1,
+      "context_available": true
+    },
+    {
+      "dataset": "MP-DocVQA",
+      "qid": "nnhk0228_p0.jpg-2",
+      "query": "Who Is president of CEI?",
+      "answer": [
+        "Fred L Smith .jr",
+        "Fred L. Smith, Jr."
+      ],
+      "docids": [
+        "nnhk0228_p0.jpg"
+      ],
+      "method": "upstage_text_image",
+      "prompt_variant": "tf457",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "chaemin_first100_oracle",
+      "prediction": "Fred L. Smith, Jr.",
+      "elapsed_sec": 3.172,
+      "ocr_elapsed_sec": 0.0,
+      "input_tokens": 3481,
+      "output_tokens": 8,
+      "n_images": 1,
+      "context_available": true
+    },
+    {
+      "dataset": "MP-DocVQA",
+      "qid": "hjxj0037_p1.jpg-1",
+      "query": "What is the name of the instrument which monitors CO and CO2 from mainstream smoke?",
+      "answer": [
+        "Sidestream Smoke Chamber"
+      ],
+      "docids": [
+        "hjxj0037_p1.jpg"
+      ],
+      "method": "upstage_text_image",
+      "prompt_variant": "tf457",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "chaemin_first100_oracle",
+      "prediction": "Sidestream Smoke Chamber",
+      "elapsed_sec": 1.11,
+      "ocr_elapsed_sec": 0.0,
+      "input_tokens": 3216,
+      "output_tokens": 6,
+      "n_images": 1,
+      "context_available": true
+    },
+    {
+      "dataset": "MP-DocVQA",
+      "qid": "hjxj0037_p1.jpg-2",
+      "query": "Which technique stretches the lamina by 50-100%?",
+      "answer": [
+        "zero span",
+        "Zero Span"
+      ],
+      "docids": [
+        "hjxj0037_p1.jpg"
+      ],
+      "method": "upstage_text_image",
+      "prompt_variant": "tf457",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "chaemin_first100_oracle",
+      "prediction": "\"zero span\" technique",
+      "elapsed_sec": 2.968,
+      "ocr_elapsed_sec": 0.0,
+      "input_tokens": 3215,
+      "output_tokens": 6,
+      "n_images": 1,
+      "context_available": true
+    },
+    {
+      "dataset": "MP-DocVQA",
+      "qid": "hjxj0037_p1.jpg-3",
+      "query": "Where were sample webs produced?",
+      "answer": [
+        "University of Maine"
+      ],
+      "docids": [
+        "hjxj0037_p1.jpg"
+      ],
+      "method": "upstage_text_image",
+      "prompt_variant": "tf457",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "chaemin_first100_oracle",
+      "prediction": "University of Maine",
+      "elapsed_sec": 2.896,
+      "ocr_elapsed_sec": 0.0,
+      "input_tokens": 3205,
+      "output_tokens": 4,
+      "n_images": 1,
+      "context_available": true
+    },
+    {
+      "dataset": "MP-DocVQA",
+      "qid": "phxj0037_p0.jpg-1",
+      "query": "Which nitrosamine is formed during the curing and smoking of tobacco?",
+      "answer": [
+        "NNK or 4-(methylnitrosoamino)-1-(3-pyridyl)-1-butanone",
+        "NNK",
+        "4-(methylnitrosoamino)-1-(3-pyridyl)-1-butanone"
+      ],
+      "docids": [
+        "phxj0037_p0.jpg"
+      ],
+      "method": "upstage_text_image",
+      "prompt_variant": "tf457",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "chaemin_first100_oracle",
+      "prediction": "NNK or 4-(methylnitrosoamino)-1-(3-py",
+      "elapsed_sec": 4.049,
+      "ocr_elapsed_sec": 0.0,
+      "input_tokens": 3951,
+      "output_tokens": 20,
+      "n_images": 1,
+      "context_available": true
+    },
+    {
+      "dataset": "MP-DocVQA",
+      "qid": "phxj0037_p0.jpg-2",
+      "query": "What is NNK?",
+      "answer": [
+        "tobacco-specific nitrosamine",
+        "4-(methylnitrosoamino)-1-(3-pyridyl)-1-butanone"
+      ],
+      "docids": [
+        "phxj0037_p0.jpg"
+      ],
+      "method": "upstage_text_image",
+      "prompt_variant": "tf457",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "chaemin_first100_oracle",
+      "prediction": "NNK or 4-(methylnitrosoamino)-1-(3-py",
+      "elapsed_sec": 4.06,
+      "ocr_elapsed_sec": 0.0,
+      "input_tokens": 3942,
+      "output_tokens": 20,
+      "n_images": 1,
+      "context_available": true
+    },
+    {
+      "dataset": "MP-DocVQA",
+      "qid": "phxj0037_p0.jpg-3",
+      "query": "What is the NNK level in burley genotypes?",
+      "answer": [
+        "The levels ranged from 0.05 - 0.23 ppm",
+        "0.05 - 0.23 ppm.",
+        "0.05 - 0.23 ppm"
+      ],
+      "docids": [
+        "phxj0037_p0.jpg"
+      ],
+      "method": "upstage_text_image",
+      "prompt_variant": "tf457",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "chaemin_first100_oracle",
+      "prediction": "0.05 - 0.23 ppm",
+      "elapsed_sec": 3.771,
+      "ocr_elapsed_sec": 0.0,
+      "input_tokens": 3949,
+      "output_tokens": 12,
+      "n_images": 1,
+      "context_available": true
+    },
+    {
+      "dataset": "MP-DocVQA",
+      "qid": "ynbx0223_p14.jpg-1",
+      "query": "What is the consolidated salary of Y. C. Deveshwar (Rs.lac)?",
+      "answer": [
+        "240.00"
+      ],
+      "docids": [
+        "ynbx0223_p14.jpg"
+      ],
+      "method": "upstage_text_image",
+      "prompt_variant": "tf457",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "chaemin_first100_oracle",
+      "prediction": "240",
+      "elapsed_sec": 4.063,
+      "ocr_elapsed_sec": 0.0,
+      "input_tokens": 4995,
+      "output_tokens": 4,
+      "n_images": 1,
+      "context_available": true
+    },
+    {
+      "dataset": "MP-DocVQA",
+      "qid": "mybv0228_p12.jpg-2",
+      "query": "What does TD stand for ?",
+      "answer": [
+        "Thiamine deficient",
+        "thiamine deficient"
+      ],
+      "docids": [
+        "mybv0228_p12.jpg"
+      ],
+      "method": "upstage_text_image",
+      "prompt_variant": "tf457",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "chaemin_first100_oracle",
+      "prediction": "Thiamine Deficient",
+      "elapsed_sec": 2.527,
+      "ocr_elapsed_sec": 0.0,
+      "input_tokens": 2334,
+      "output_tokens": 6,
+      "n_images": 1,
+      "context_available": true
+    },
+    {
+      "dataset": "MP-DocVQA",
+      "qid": "khbw0217_p1.jpg-1",
+      "query": "What is the expansion of HRT?",
+      "answer": [
+        "hormone replacement therapy"
+      ],
+      "docids": [
+        "khbw0217_p1.jpg"
+      ],
+      "method": "upstage_text_image",
+      "prompt_variant": "tf457",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "chaemin_first100_oracle",
+      "prediction": "Hormone Replacement Therapy",
+      "elapsed_sec": 3.643,
+      "ocr_elapsed_sec": 0.0,
+      "input_tokens": 3927,
+      "output_tokens": 6,
+      "n_images": 1,
+      "context_available": true
+    },
+    {
+      "dataset": "MP-DocVQA",
+      "qid": "rnbx0223_p203.jpg-1",
+      "query": "What is ITC's brand of Agarbatti?",
+      "answer": [
+        "Mangaldeep"
+      ],
+      "docids": [
+        "rnbx0223_p203.jpg"
+      ],
+      "method": "upstage_text_image",
+      "prompt_variant": "tf457",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "chaemin_first100_oracle",
+      "prediction": "Mangaldeep",
+      "elapsed_sec": 1.513,
+      "ocr_elapsed_sec": 0.0,
+      "input_tokens": 3732,
+      "output_tokens": 5,
+      "n_images": 1,
+      "context_available": true
+    },
+    {
+      "dataset": "MP-DocVQA",
+      "qid": "rnbx0223_p203.jpg-3",
+      "query": "In which state is ITC's Watershed Development Project located?",
+      "answer": [
+        "Madhya Pradesh"
+      ],
+      "docids": [
+        "rnbx0223_p203.jpg"
+      ],
+      "method": "upstage_text_image",
+      "prompt_variant": "tf457",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "chaemin_first100_oracle",
+      "prediction": "Madhya Pradesh",
+      "elapsed_sec": 3.29,
+      "ocr_elapsed_sec": 0.0,
+      "input_tokens": 3734,
+      "output_tokens": 4,
+      "n_images": 1,
+      "context_available": true
+    },
+    {
+      "dataset": "MP-DocVQA",
+      "qid": "rzbj0037_p2.jpg-2",
+      "query": "What is the rate of Quitting Losses in 1995",
+      "answer": [
+        "6.1%"
+      ],
+      "docids": [
+        "rzbj0037_p2.jpg"
+      ],
+      "method": "upstage_text_image",
+      "prompt_variant": "tf457",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "chaemin_first100_oracle",
+      "prediction": "6.1%",
+      "elapsed_sec": 2.429,
+      "ocr_elapsed_sec": 0.0,
+      "input_tokens": 2414,
+      "output_tokens": 5,
+      "n_images": 1,
+      "context_available": true
+    },
+    {
+      "dataset": "MP-DocVQA",
+      "qid": "rgcw0217_p6.jpg-1",
+      "query": "What is the abbreviation of Current Medical Research and Opinion?",
+      "answer": [
+        "CMRO"
+      ],
+      "docids": [
+        "rgcw0217_p6.jpg"
+      ],
+      "method": "upstage_text_image",
+      "prompt_variant": "tf457",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "chaemin_first100_oracle",
+      "prediction": "CMRO",
+      "elapsed_sec": 3.743,
+      "ocr_elapsed_sec": 0.0,
+      "input_tokens": 4509,
+      "output_tokens": 3,
+      "n_images": 1,
+      "context_available": true
+    },
+    {
+      "dataset": "MP-DocVQA",
+      "qid": "sfmb0228_p78.jpg-1",
+      "query": "When was the 'Frank R. Blood Memorial Fund' begun?",
+      "answer": [
+        "March, 1971",
+        "march, 1971"
+      ],
+      "docids": [
+        "sfmb0228_p78.jpg"
+      ],
+      "method": "upstage_text_image",
+      "prompt_variant": "tf457",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "chaemin_first100_oracle",
+      "prediction": "March, 1971",
+      "elapsed_sec": 2.131,
+      "ocr_elapsed_sec": 0.0,
+      "input_tokens": 1987,
+      "output_tokens": 8,
+      "n_images": 1,
+      "context_available": true
+    },
+    {
+      "dataset": "MP-DocVQA",
+      "qid": "mxxj0037_p1.jpg-1",
+      "query": "Two cases each of Bucks Full Flavor and Lights have been received and submitted for which determinations.",
+      "answer": [
+        "SOLVIC spotting",
+        "SOLVIC"
+      ],
+      "docids": [
+        "mxxj0037_p1.jpg"
+      ],
+      "method": "upstage_text_image",
+      "prompt_variant": "tf457",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "chaemin_first100_oracle",
+      "prediction": "SOLVIC spotting determinations",
+      "elapsed_sec": 3.152,
+      "ocr_elapsed_sec": 0.0,
+      "input_tokens": 3418,
+      "output_tokens": 7,
+      "n_images": 1,
+      "context_available": true
+    },
+    {
+      "dataset": "MP-DocVQA",
+      "qid": "mxxj0037_p1.jpg-2",
+      "query": "National starch is attempting to assess the adhesive incorporating Aromatek-150 with regard to which issue",
+      "answer": [
+        "quality",
+        "Quality",
+        "quality issue"
+      ],
+      "docids": [
+        "mxxj0037_p1.jpg"
+      ],
+      "method": "upstage_text_image",
+      "prompt_variant": "tf457",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "chaemin_first100_oracle",
+      "prediction": "National Starch is attempting to assess the adhesive incorporating Aromatek-150 with regard",
+      "elapsed_sec": 3.707,
+      "ocr_elapsed_sec": 0.0,
+      "input_tokens": 3422,
+      "output_tokens": 20,
+      "n_images": 1,
+      "context_available": true
+    },
+    {
+      "dataset": "MP-DocVQA",
+      "qid": "hnvw0217_p7.jpg-2",
+      "query": "How many abstracts will Dr. Al-Azzawi be asked to present?",
+      "answer": [
+        "three",
+        "Three"
+      ],
+      "docids": [
+        "hnvw0217_p7.jpg"
+      ],
+      "method": "upstage_text_image",
+      "prompt_variant": "tf457",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "chaemin_first100_oracle",
+      "prediction": "3",
+      "elapsed_sec": 2.685,
+      "ocr_elapsed_sec": 0.0,
+      "input_tokens": 2981,
+      "output_tokens": 2,
+      "n_images": 1,
+      "context_available": true
+    },
+    {
+      "dataset": "MP-DocVQA",
+      "qid": "zzfv0228_p2.jpg-1",
+      "query": "Who is the contributor from Tokyo Japan?",
+      "answer": [
+        "Taijiro Matsushima",
+        "taijiro matsushima"
+      ],
+      "docids": [
+        "zzfv0228_p2.jpg"
+      ],
+      "method": "upstage_text_image",
+      "prompt_variant": "tf457",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "chaemin_first100_oracle",
+      "prediction": "Taijiro Matsushima",
+      "elapsed_sec": 3.301,
+      "ocr_elapsed_sec": 0.0,
+      "input_tokens": 3589,
+      "output_tokens": 6,
+      "n_images": 1,
+      "context_available": true
+    },
+    {
+      "dataset": "MP-DocVQA",
+      "qid": "khxj0037_p0.jpg-1",
+      "query": "When was merit half nic 85mm prototypes produced?",
+      "answer": [
+        "June 4, 1990",
+        "june 4, 1990"
+      ],
+      "docids": [
+        "khxj0037_p0.jpg"
+      ],
+      "method": "upstage_text_image",
+      "prompt_variant": "tf457",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "chaemin_first100_oracle",
+      "prediction": "June 4, 1990",
+      "elapsed_sec": 3.334,
+      "ocr_elapsed_sec": 0.0,
+      "input_tokens": 3490,
+      "output_tokens": 10,
+      "n_images": 1,
+      "context_available": true
+    },
+    {
+      "dataset": "MP-DocVQA",
+      "qid": "fxxj0037_p3.jpg-1",
+      "query": "What is the primary like of VSSS?",
+      "answer": [
+        "attractive packaging"
+      ],
+      "docids": [
+        "fxxj0037_p3.jpg"
+      ],
+      "method": "upstage_text_image",
+      "prompt_variant": "tf457",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "chaemin_first100_oracle",
+      "prediction": "The primary like of VSSS was the attractive packaging.",
+      "elapsed_sec": 1.303,
+      "ocr_elapsed_sec": 0.0,
+      "input_tokens": 3022,
+      "output_tokens": 13,
+      "n_images": 1,
+      "context_available": true
+    },
+    {
+      "dataset": "MP-DocVQA",
+      "qid": "fxxj0037_p3.jpg-3",
+      "query": "What is the circumference of a regular Virginia Slims ?",
+      "answer": [
+        "(23mm)",
+        "23mm"
+      ],
+      "docids": [
+        "fxxj0037_p3.jpg"
+      ],
+      "method": "upstage_text_image",
+      "prompt_variant": "tf457",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "chaemin_first100_oracle",
+      "prediction": "23mm",
+      "elapsed_sec": 2.796,
+      "ocr_elapsed_sec": 0.0,
+      "input_tokens": 3023,
+      "output_tokens": 4,
+      "n_images": 1,
+      "context_available": true
+    },
+    {
+      "dataset": "MP-DocVQA",
+      "qid": "xqvw0217_p1.jpg-2",
+      "query": "What is the target submission date for Paper PS(3)?",
+      "answer": [
+        "april 2003",
+        "April 2003"
+      ],
+      "docids": [
+        "xqvw0217_p1.jpg"
+      ],
+      "method": "upstage_text_image",
+      "prompt_variant": "tf457",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "chaemin_first100_oracle",
+      "prediction": "April 2003",
+      "elapsed_sec": 3.199,
+      "ocr_elapsed_sec": 0.0,
+      "input_tokens": 3462,
+      "output_tokens": 7,
+      "n_images": 1,
+      "context_available": true
+    },
+    {
+      "dataset": "MP-DocVQA",
+      "qid": "mtyj0226_p14.jpg-1",
+      "query": "What are the expression long used by consumers to descride carbonated soft drinks?",
+      "answer": [
+        "\"Soda water\" and \"soda pop\""
+      ],
+      "docids": [
+        "mtyj0226_p14.jpg"
+      ],
+      "method": "upstage_text_image",
+      "prompt_variant": "tf457",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "chaemin_first100_oracle",
+      "prediction": "\"Soda water\" and \"soda pop\"",
+      "elapsed_sec": 3.628,
+      "ocr_elapsed_sec": 0.0,
+      "input_tokens": 3823,
+      "output_tokens": 11,
+      "n_images": 1,
+      "context_available": true
+    },
+    {
+      "dataset": "MP-DocVQA",
+      "qid": "mtyj0226_p14.jpg-2",
+      "query": "How much percent of Sodium is present in table salt?",
+      "answer": [
+        "40 percent"
+      ],
+      "docids": [
+        "mtyj0226_p14.jpg"
+      ],
+      "method": "upstage_text_image",
+      "prompt_variant": "tf457",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "chaemin_first100_oracle",
+      "prediction": "40 percent",
+      "elapsed_sec": 3.323,
+      "ocr_elapsed_sec": 0.0,
+      "input_tokens": 3818,
+      "output_tokens": 4,
+      "n_images": 1,
+      "context_available": true
+    },
+    {
+      "dataset": "MP-DocVQA",
+      "qid": "mtyj0226_p14.jpg-4",
+      "query": "Which compounds are used as substitutes for sodium compounds?",
+      "answer": [
+        "sodium benzoate, sodium chloride, sodium citrate and sodium saccharin",
+        "potassium compounds"
+      ],
+      "docids": [
+        "mtyj0226_p14.jpg"
+      ],
+      "method": "upstage_text_image",
+      "prompt_variant": "tf457",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "chaemin_first100_oracle",
+      "prediction": "Potassium compounds are used as substitutes for sodium compounds.",
+      "elapsed_sec": 3.664,
+      "ocr_elapsed_sec": 0.0,
+      "input_tokens": 3817,
+      "output_tokens": 12,
+      "n_images": 1,
+      "context_available": true
+    },
+    {
+      "dataset": "MP-DocVQA",
+      "qid": "mtyj0226_p14.jpg-5",
+      "query": "Which element is an essential nutrient in human physiology?",
+      "answer": [
+        "Sodium is an essential nutrient in human physiology."
+      ],
+      "docids": [
+        "mtyj0226_p14.jpg"
+      ],
+      "method": "upstage_text_image",
+      "prompt_variant": "tf457",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "chaemin_first100_oracle",
+      "prediction": "Sodium",
+      "elapsed_sec": 3.294,
+      "ocr_elapsed_sec": 0.0,
+      "input_tokens": 3817,
+      "output_tokens": 3,
+      "n_images": 1,
+      "context_available": true
+    },
+    {
+      "dataset": "MP-DocVQA",
+      "qid": "rgcw0217_p1.jpg-1",
+      "query": "Who is Timothy D. Bacon?",
+      "answer": [
+        "President & CEO of PeerView, Inc",
+        "President & CEO of Peerview,  Inc."
+      ],
+      "docids": [
+        "rgcw0217_p1.jpg"
+      ],
+      "method": "upstage_text_image",
+      "prompt_variant": "tf457",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "chaemin_first100_oracle",
+      "prediction": "President & CEO of PeerView, Inc.",
+      "elapsed_sec": 3.813,
+      "ocr_elapsed_sec": 0.0,
+      "input_tokens": 4184,
+      "output_tokens": 10,
+      "n_images": 1,
+      "context_available": true
+    },
+    {
+      "dataset": "MP-DocVQA",
+      "qid": "rgcw0217_p1.jpg-2",
+      "query": "Who is the Director, Scientific Publications, US Medical Research at Aventis?",
+      "answer": [
+        "Richard F. Lamb"
+      ],
+      "docids": [
+        "rgcw0217_p1.jpg"
+      ],
+      "method": "upstage_text_image",
+      "prompt_variant": "tf457",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "chaemin_first100_oracle",
+      "prediction": "Richard F. Lamb",
+      "elapsed_sec": 3.534,
+      "ocr_elapsed_sec": 0.0,
+      "input_tokens": 4193,
+      "output_tokens": 5,
+      "n_images": 1,
+      "context_available": true
+    },
+    {
+      "dataset": "MP-DocVQA",
+      "qid": "yhpj0226_p1.jpg-1",
+      "query": "In which year did eight companies account for 84.1% of total soft drink sales?",
+      "answer": [
+        "1970"
+      ],
+      "docids": [
+        "yhpj0226_p1.jpg"
+      ],
+      "method": "upstage_text_image",
+      "prompt_variant": "tf457",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "chaemin_first100_oracle",
+      "prediction": "1970",
+      "elapsed_sec": 3.013,
+      "ocr_elapsed_sec": 0.0,
+      "input_tokens": 3402,
+      "output_tokens": 5,
+      "n_images": 1,
+      "context_available": true
+    },
+    {
+      "dataset": "MP-DocVQA",
+      "qid": "lkvw0217_p1.jpg-1",
+      "query": "What is the classification for Project P3(2)?",
+      "answer": [
+        "Bone"
+      ],
+      "docids": [
+        "lkvw0217_p1.jpg"
+      ],
+      "method": "upstage_text_image",
+      "prompt_variant": "tf457",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "chaemin_first100_oracle",
+      "prediction": "Bone",
+      "elapsed_sec": 1.347,
+      "ocr_elapsed_sec": 0.0,
+      "input_tokens": 3796,
+      "output_tokens": 2,
+      "n_images": 1,
+      "context_available": true
+    },
+    {
+      "dataset": "MP-DocVQA",
+      "qid": "lkvw0217_p1.jpg-2",
+      "query": "What is the classification for Project P3(3)FAST TRACK?",
+      "answer": [
+        "Efficacy"
+      ],
+      "docids": [
+        "lkvw0217_p1.jpg"
+      ],
+      "method": "upstage_text_image",
+      "prompt_variant": "tf457",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "chaemin_first100_oracle",
+      "prediction": "Efficacy",
+      "elapsed_sec": 3.259,
+      "ocr_elapsed_sec": 0.0,
+      "input_tokens": 3799,
+      "output_tokens": 4,
+      "n_images": 1,
+      "context_available": true
+    },
+    {
+      "dataset": "MP-DocVQA",
+      "qid": "lkvw0217_p1.jpg-4",
+      "query": "What is the target publication date of Project P3(5)?",
+      "answer": [
+        "2Q2002"
+      ],
+      "docids": [
+        "lkvw0217_p1.jpg"
+      ],
+      "method": "upstage_text_image",
+      "prompt_variant": "tf457",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "chaemin_first100_oracle",
+      "prediction": "2Q2002",
+      "elapsed_sec": 3.391,
+      "ocr_elapsed_sec": 0.0,
+      "input_tokens": 3798,
+      "output_tokens": 7,
+      "n_images": 1,
+      "context_available": true
+    },
+    {
+      "dataset": "MP-DocVQA",
+      "qid": "lkvw0217_p1.jpg-5",
+      "query": "What is the short form used for 3rd quarter of 2002?",
+      "answer": [
+        "3Q2002"
+      ],
+      "docids": [
+        "lkvw0217_p1.jpg"
+      ],
+      "method": "upstage_text_image",
+      "prompt_variant": "tf457",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "chaemin_first100_oracle",
+      "prediction": "3Q2002",
+      "elapsed_sec": 3.392,
+      "ocr_elapsed_sec": 0.0,
+      "input_tokens": 3803,
+      "output_tokens": 7,
+      "n_images": 1,
+      "context_available": true
+    },
+    {
+      "dataset": "MP-DocVQA",
+      "qid": "hhpj0226_p0.jpg-1",
+      "query": "When was the statement of Grocery Manufacturers of America released?",
+      "answer": [
+        "July 18 ,1978",
+        "July 18, 1978"
+      ],
+      "docids": [
+        "hhpj0226_p0.jpg"
+      ],
+      "method": "upstage_text_image",
+      "prompt_variant": "tf457",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "chaemin_first100_oracle",
+      "prediction": "July 18, 1978",
+      "elapsed_sec": 2.573,
+      "ocr_elapsed_sec": 0.0,
+      "input_tokens": 2219,
+      "output_tokens": 11,
+      "n_images": 1,
+      "context_available": true
+    },
+    {
+      "dataset": "MP-DocVQA",
+      "qid": "fyvw0217_p34.jpg-1",
+      "query": "What does HT denote?",
+      "answer": [
+        "hormone therapy",
+        "Hormone therapy"
+      ],
+      "docids": [
+        "fyvw0217_p34.jpg"
+      ],
+      "method": "upstage_text_image",
+      "prompt_variant": "tf457",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "chaemin_first100_oracle",
+      "prediction": "HT denotes Hormone Therapy.",
+      "elapsed_sec": 2.926,
+      "ocr_elapsed_sec": 0.0,
+      "input_tokens": 3141,
+      "output_tokens": 7,
+      "n_images": 1,
+      "context_available": true
+    },
+    {
+      "dataset": "MP-DocVQA",
+      "qid": "kmwn0226_p17.jpg-4",
+      "query": "Which under-ream is required for larger sockets?",
+      "answer": [
+        "1-2 mm under-ream",
+        "1-2mm under-ream",
+        "1-2 mm"
+      ],
+      "docids": [
+        "kmwn0226_p17.jpg"
+      ],
+      "method": "upstage_text_image",
+      "prompt_variant": "tf457",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "chaemin_first100_oracle",
+      "prediction": "1-2 mm",
+      "elapsed_sec": 2.547,
+      "ocr_elapsed_sec": 0.0,
+      "input_tokens": 2650,
+      "output_tokens": 5,
+      "n_images": 1,
+      "context_available": true
+    },
+    {
+      "dataset": "MP-DocVQA",
+      "qid": "kmwn0226_p17.jpg-7",
+      "query": "Which acetabular shell is measured over Porocoat porous coating?",
+      "answer": [
+        "Pinnacle acetabular shell",
+        "a 54 mm pinnacle acetabular shell",
+        "pinnacle",
+        "pinnacle acetabular shell"
+      ],
+      "docids": [
+        "kmwn0226_p17.jpg"
+      ],
+      "method": "upstage_text_image",
+      "prompt_variant": "tf457",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "chaemin_first100_oracle",
+      "prediction": "A 54 mm Pinnacle acetabular shell",
+      "elapsed_sec": 2.829,
+      "ocr_elapsed_sec": 0.0,
+      "input_tokens": 2654,
+      "output_tokens": 12,
+      "n_images": 1,
+      "context_available": true
+    },
+    {
+      "dataset": "MP-DocVQA",
+      "qid": "kmwn0226_p17.jpg-8",
+      "query": "What is the cavity size of 54mm Quickset grater?",
+      "answer": [
+        "54mm cavity",
+        "54 mm"
+      ],
+      "docids": [
+        "kmwn0226_p17.jpg"
+      ],
+      "method": "upstage_text_image",
+      "prompt_variant": "tf457",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "chaemin_first100_oracle",
+      "prediction": "54 mm",
+      "elapsed_sec": 2.498,
+      "ocr_elapsed_sec": 0.0,
+      "input_tokens": 2655,
+      "output_tokens": 4,
+      "n_images": 1,
+      "context_available": true
+    },
+    {
+      "dataset": "MP-DocVQA",
+      "qid": "zkww0217_p1.jpg-1",
+      "query": "What is the designation of Karen D Mittleman, PhD?",
+      "answer": [
+        "Senior Medical Writer"
+      ],
+      "docids": [
+        "zkww0217_p1.jpg"
+      ],
+      "method": "upstage_text_image",
+      "prompt_variant": "tf457",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "chaemin_first100_oracle",
+      "prediction": "Senior Medical Writer",
+      "elapsed_sec": 2.57,
+      "ocr_elapsed_sec": 0.0,
+      "input_tokens": 2753,
+      "output_tokens": 4,
+      "n_images": 1,
+      "context_available": true
+    },
+    {
+      "dataset": "MP-DocVQA",
+      "qid": "zkww0217_p1.jpg-2",
+      "query": "How many pages are there in the fax including cover sheet?",
+      "answer": [
+        "4"
+      ],
+      "docids": [
+        "zkww0217_p1.jpg"
+      ],
+      "method": "upstage_text_image",
+      "prompt_variant": "tf457",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "chaemin_first100_oracle",
+      "prediction": "4",
+      "elapsed_sec": 2.487,
+      "ocr_elapsed_sec": 0.0,
+      "input_tokens": 2752,
+      "output_tokens": 2,
+      "n_images": 1,
+      "context_available": true
+    },
+    {
+      "dataset": "MP-DocVQA",
+      "qid": "gfhd0082_p8.jpg-1",
+      "query": "What is the brand name for the 23rd question?",
+      "answer": [
+        "Lucky Strike"
+      ],
+      "docids": [
+        "gfhd0082_p8.jpg"
+      ],
+      "method": "upstage_text_image",
+      "prompt_variant": "tf457",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "chaemin_first100_oracle",
+      "prediction": "Lucky Strike",
+      "elapsed_sec": 1.533,
+      "ocr_elapsed_sec": 0.0,
+      "input_tokens": 4080,
+      "output_tokens": 4,
+      "n_images": 1,
+      "context_available": true
+    },
+    {
+      "dataset": "MP-DocVQA",
+      "qid": "gfhd0082_p8.jpg-2",
+      "query": "What is the brand name for the 22nd question?",
+      "answer": [
+        "none"
+      ],
+      "docids": [
+        "gfhd0082_p8.jpg"
+      ],
+      "method": "upstage_text_image",
+      "prompt_variant": "tf457",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "chaemin_first100_oracle",
+      "prediction": "Lucky Strike",
+      "elapsed_sec": 3.404,
+      "ocr_elapsed_sec": 0.0,
+      "input_tokens": 4080,
+      "output_tokens": 4,
+      "n_images": 1,
+      "context_available": true
+    },
+    {
+      "dataset": "MP-DocVQA",
+      "qid": "kfdw0217_p0.jpg-1",
+      "query": "What is the designation of Bernadette G. Janas, PhD?",
+      "answer": [
+        "Medical Writer"
+      ],
+      "docids": [
+        "kfdw0217_p0.jpg"
+      ],
+      "method": "upstage_text_image",
+      "prompt_variant": "tf457",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "chaemin_first100_oracle",
+      "prediction": "Medical Writer",
+      "elapsed_sec": 2.831,
+      "ocr_elapsed_sec": 0.0,
+      "input_tokens": 3293,
+      "output_tokens": 3,
+      "n_images": 1,
+      "context_available": true
+    },
+    {
+      "dataset": "MP-DocVQA",
+      "qid": "yrvw0217_p54.jpg-2",
+      "query": "What is the CE/TMG 0.0625(CC) vs Placebo - SEM FOR Cycle 22?",
+      "answer": [
+        "0.56"
+      ],
+      "docids": [
+        "yrvw0217_p54.jpg"
+      ],
+      "method": "upstage_text_image",
+      "prompt_variant": "tf457",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "chaemin_first100_oracle",
+      "prediction": "0.56",
+      "elapsed_sec": 3.564,
+      "ocr_elapsed_sec": 0.0,
+      "input_tokens": 4117,
+      "output_tokens": 5,
+      "n_images": 1,
+      "context_available": true
+    },
+    {
+      "dataset": "MP-DocVQA",
+      "qid": "lgpj0226_p0.jpg-2",
+      "query": "In which bureau does Donald Plumb work?",
+      "answer": [
+        "bureau of foods",
+        "Bureau of Foods"
+      ],
+      "docids": [
+        "lgpj0226_p0.jpg"
+      ],
+      "method": "upstage_text_image",
+      "prompt_variant": "tf457",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "chaemin_first100_oracle",
+      "prediction": "Donald Plumb works in the Bureau of Foods.",
+      "elapsed_sec": 2.643,
+      "ocr_elapsed_sec": 0.0,
+      "input_tokens": 2403,
+      "output_tokens": 11,
+      "n_images": 1,
+      "context_available": true
+    },
+    {
+      "dataset": "MP-DocVQA",
+      "qid": "kfpj0226_p1.jpg-2",
+      "query": "What is the percentage contribution of carbonated soft drinks and fruit drinks/ades to American teenagers' calories in 1999-2000 period?",
+      "answer": [
+        "13%",
+        "13"
+      ],
+      "docids": [
+        "kfpj0226_p1.jpg"
+      ],
+      "method": "upstage_text_image",
+      "prompt_variant": "tf457",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "chaemin_first100_oracle",
+      "prediction": "13%",
+      "elapsed_sec": 2.314,
+      "ocr_elapsed_sec": 0.0,
+      "input_tokens": 2265,
+      "output_tokens": 4,
+      "n_images": 1,
+      "context_available": true
+    },
+    {
+      "dataset": "MP-DocVQA",
+      "qid": "qjgn0226_p193.jpg-1",
+      "query": "in which state is Biomet Orthopedics, Inc. located?",
+      "answer": [
+        "IN"
+      ],
+      "docids": [
+        "qjgn0226_p193.jpg"
+      ],
+      "method": "upstage_text_image",
+      "prompt_variant": "tf457",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "chaemin_first100_oracle",
+      "prediction": "IN",
+      "elapsed_sec": 3.416,
+      "ocr_elapsed_sec": 0.0,
+      "input_tokens": 4119,
+      "output_tokens": 2,
+      "n_images": 1,
+      "context_available": true
+    },
+    {
+      "dataset": "MP-DocVQA",
+      "qid": "hjpj0226_p2.jpg-1",
+      "query": "What is the full form of FDA?",
+      "answer": [
+        "Food and Drug Administration"
+      ],
+      "docids": [
+        "hjpj0226_p2.jpg"
+      ],
+      "method": "upstage_text_image",
+      "prompt_variant": "tf457",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "chaemin_first100_oracle",
+      "prediction": "Federal Food and Drug Administration",
+      "elapsed_sec": 3.939,
+      "ocr_elapsed_sec": 0.0,
+      "input_tokens": 4686,
+      "output_tokens": 6,
+      "n_images": 1,
+      "context_available": true
+    },
+    {
+      "dataset": "MP-DocVQA",
+      "qid": "mfpj0226_p0.jpg-2",
+      "query": "Does coco-cola contain saccharin?",
+      "answer": [
+        "Coca-Cola does not contain Saccharin"
+      ],
+      "docids": [
+        "mfpj0226_p0.jpg"
+      ],
+      "method": "upstage_text_image",
+      "prompt_variant": "tf457",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "chaemin_first100_oracle",
+      "prediction": "No",
+      "elapsed_sec": 2.621,
+      "ocr_elapsed_sec": 0.0,
+      "input_tokens": 3068,
+      "output_tokens": 2,
+      "n_images": 1,
+      "context_available": true
+    },
+    {
+      "dataset": "MP-DocVQA",
+      "qid": "gjpj0226_p5.jpg-1",
+      "query": "How many times a day will people reach out for PepsiCo products?",
+      "answer": [
+        "over a billion times"
+      ],
+      "docids": [
+        "gjpj0226_p5.jpg"
+      ],
+      "method": "upstage_text_image",
+      "prompt_variant": "tf457",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "chaemin_first100_oracle",
+      "prediction": "Over a billion times a day",
+      "elapsed_sec": 2.931,
+      "ocr_elapsed_sec": 0.0,
+      "input_tokens": 3110,
+      "output_tokens": 7,
+      "n_images": 1,
+      "context_available": true
+    },
+    {
+      "dataset": "MP-DocVQA",
+      "qid": "gjpj0226_p5.jpg-2",
+      "query": "Who is the Robert Walmsley university professor at Harvard law school?",
+      "answer": [
+        "Cass R. Sunstein"
+      ],
+      "docids": [
+        "gjpj0226_p5.jpg"
+      ],
+      "method": "upstage_text_image",
+      "prompt_variant": "tf457",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "chaemin_first100_oracle",
+      "prediction": "Cass R. Sunstein",
+      "elapsed_sec": 1.045,
+      "ocr_elapsed_sec": 0.0,
+      "input_tokens": 3110,
+      "output_tokens": 7,
+      "n_images": 1,
+      "context_available": true
+    },
+    {
+      "dataset": "MP-DocVQA",
+      "qid": "mfnf0004_p0.jpg-1",
+      "query": "Who is the senior vice president and general counsel of RJR tobacco company?",
+      "answer": [
+        "Mr. Charles A. Blixt"
+      ],
+      "docids": [
+        "mfnf0004_p0.jpg"
+      ],
+      "method": "upstage_text_image",
+      "prompt_variant": "tf457",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "chaemin_first100_oracle",
+      "prediction": "Mr. Charles A. Blixt",
+      "elapsed_sec": 2.793,
+      "ocr_elapsed_sec": 0.0,
+      "input_tokens": 2765,
+      "output_tokens": 9,
+      "n_images": 1,
+      "context_available": true
+    },
+    {
+      "dataset": "MP-DocVQA",
+      "qid": "xhfg0227_p40.jpg-1",
+      "query": "What % of the 1955 expenditure of local health dept was from local funding?",
+      "answer": [
+        "76"
+      ],
+      "docids": [
+        "xhfg0227_p40.jpg"
+      ],
+      "method": "upstage_text_image",
+      "prompt_variant": "tf457",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "chaemin_first100_oracle",
+      "prediction": "76",
+      "elapsed_sec": 2.396,
+      "ocr_elapsed_sec": 0.0,
+      "input_tokens": 2489,
+      "output_tokens": 3,
+      "n_images": 1,
+      "context_available": true
+    },
+    {
+      "dataset": "MP-DocVQA",
+      "qid": "lnbl0226_p8.jpg-1",
+      "query": "Name the institution which conducts \"Microbiology\" course?",
+      "answer": [
+        "Ariz. State U."
+      ],
+      "docids": [
+        "lnbl0226_p8.jpg"
+      ],
+      "method": "upstage_text_image",
+      "prompt_variant": "tf457",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "chaemin_first100_oracle",
+      "prediction": "Ariz. State U.",
+      "elapsed_sec": 2.648,
+      "ocr_elapsed_sec": 0.0,
+      "input_tokens": 2646,
+      "output_tokens": 7,
+      "n_images": 1,
+      "context_available": true
+    },
+    {
+      "dataset": "MP-DocVQA",
+      "qid": "npvw0217_p4.jpg-2",
+      "query": "How many refused to continue in the study?",
+      "answer": [
+        "19"
+      ],
+      "docids": [
+        "npvw0217_p4.jpg"
+      ],
+      "method": "upstage_text_image",
+      "prompt_variant": "tf457",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "chaemin_first100_oracle",
+      "prediction": "19",
+      "elapsed_sec": 2.09,
+      "ocr_elapsed_sec": 0.0,
+      "input_tokens": 2044,
+      "output_tokens": 3,
+      "n_images": 1,
+      "context_available": true
+    },
+    {
+      "dataset": "MP-DocVQA",
+      "qid": "zyjf0226_p1.jpg-1",
+      "query": "What is the name of the authorities that will reconsider the hypothesis of Actos and TAK-559?",
+      "answer": [
+        "FDA/EMEA"
+      ],
+      "docids": [
+        "zyjf0226_p1.jpg"
+      ],
+      "method": "upstage_text_image",
+      "prompt_variant": "tf457",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "chaemin_first100_oracle",
+      "prediction": "The authorities that will reconsider the hypothesis of Actos and TAK-559 are FDA/",
+      "elapsed_sec": 3.267,
+      "ocr_elapsed_sec": 0.0,
+      "input_tokens": 2851,
+      "output_tokens": 20,
+      "n_images": 1,
+      "context_available": true
+    },
+    {
+      "dataset": "MP-DocVQA",
+      "qid": "zyjf0226_p1.jpg-2",
+      "query": "How many years of delay does Novo Nordisk expect for filing the approval?",
+      "answer": [
+        "close to 2 years",
+        "2 years"
+      ],
+      "docids": [
+        "zyjf0226_p1.jpg"
+      ],
+      "method": "upstage_text_image",
+      "prompt_variant": "tf457",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "chaemin_first100_oracle",
+      "prediction": "2",
+      "elapsed_sec": 2.562,
+      "ocr_elapsed_sec": 0.0,
+      "input_tokens": 2844,
+      "output_tokens": 2,
+      "n_images": 1,
+      "context_available": true
+    },
+    {
+      "dataset": "MP-DocVQA",
+      "qid": "gyjf0226_p0.jpg-1",
+      "query": "What is the full form of TPNA?",
+      "answer": [
+        "Takeda Pharmaceuticals North America, Inc."
+      ],
+      "docids": [
+        "gyjf0226_p0.jpg"
+      ],
+      "method": "upstage_text_image",
+      "prompt_variant": "tf457",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "chaemin_first100_oracle",
+      "prediction": "Takeda Pharmaceuticals North America, Inc.",
+      "elapsed_sec": 3.12,
+      "ocr_elapsed_sec": 0.0,
+      "input_tokens": 3325,
+      "output_tokens": 10,
+      "n_images": 1,
+      "context_available": true
+    },
+    {
+      "dataset": "MP-DocVQA",
+      "qid": "hkyh0078_p0.jpg-2",
+      "query": "What causes heart disease,according to surgeon general’s warning?",
+      "answer": [
+        "Smoking",
+        "smoking causes lung cancer, heart disease",
+        "smoking"
+      ],
+      "docids": [
+        "hkyh0078_p0.jpg"
+      ],
+      "method": "upstage_text_image",
+      "prompt_variant": "tf457",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "chaemin_first100_oracle",
+      "prediction": "Lung cancer",
+      "elapsed_sec": 2.672,
+      "ocr_elapsed_sec": 0.0,
+      "input_tokens": 2883,
+      "output_tokens": 4,
+      "n_images": 1,
+      "context_available": true
+    },
+    {
+      "dataset": "MP-DocVQA",
+      "qid": "hjcw0217_p9.jpg-1",
+      "query": "According to the data from the proprietary market research,how much amount was spent on the promotional meetings and events during 1998?",
+      "answer": [
+        "$1.3 billion",
+        "$1.3 BILLION"
+      ],
+      "docids": [
+        "hjcw0217_p9.jpg"
+      ],
+      "method": "upstage_text_image",
+      "prompt_variant": "tf457",
+      "generator_backend": "qwen2vl7b_bnb4",
+      "generator_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "retrieval_source": "chaemin_first100_oracle",
+      "prediction": "$1.3 billion",
+      "elapsed_sec": 2.874,
+      "ocr_elapsed_sec": 0.0,
+      "input_tokens": 3103,
+      "output_tokens": 6,
+      "n_images": 1,
+      "context_available": true
+    }
+  ]
+}

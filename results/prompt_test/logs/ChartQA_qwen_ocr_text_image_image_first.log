@@ -1,0 +1,72 @@
+[ChartQA/qwen_ocr_text_image/image_first] 63 queries, 60 corpus images
+`torch_dtype` is deprecated! Use `dtype` instead!
+Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]Loading checkpoint shards:  20%|██        | 1/5 [00:03<00:13,  3.46s/it]Loading checkpoint shards:  40%|████      | 2/5 [00:07<00:11,  3.70s/it]Loading checkpoint shards:  60%|██████    | 3/5 [00:11<00:07,  3.77s/it]Loading checkpoint shards:  80%|████████  | 4/5 [00:15<00:03,  3.79s/it]Loading checkpoint shards: 100%|██████████| 5/5 [00:15<00:00,  2.57s/it]Loading checkpoint shards: 100%|██████████| 5/5 [00:15<00:00,  3.08s/it]
+[1/63] 3960.png-2: imgs=1 pred='3'
+[2/63] 13750.png-1: imgs=1 pred='2%'
+[3/63] 939.png-1: imgs=1 pred='68'
+[4/63] 4554.png-2: imgs=1 pred='89'
+[5/63] OECD_DEATHS_FROM_CANCER_COL_CRI_SVN_000015.png-1: imgs=1 pred='yes'
+[6/63] 4444.png-1: imgs=1 pred='67'
+[7/63] 12316.png-1: imgs=1 pred='8%'
+[8/63] 13543.png-1: imgs=1 pred='75'
+[9/63] 16008.png-1: imgs=1 pred='76'
+[10/63] 7812.png-1: imgs=1 pred='16'
+[11/63] 15017697005003.png-1: imgs=1 pred='20.98 m²'
+[12/63] 40414580016324.png-1: imgs=1 pred='95%'
+[13/63] 69203350003800.png-1: imgs=1 pred='Argentina'
+[14/63] 78465227007926.png-2: imgs=1 pred='1.89'
+[15/63] 15979830001410.png-2: imgs=1 pred='No'
+[16/63] 26767847002300.png-2: imgs=1 pred='4'
+[17/63] 39071385004003.png-1: imgs=1 pred='Gabon'
+[18/63] 67940673002511.png-1: imgs=1 pred='Chile'
+[19/63] 72161631006508.png-1: imgs=1 pred='Cape Verde'
+[20/63] 74801584018932.png-2: imgs=1 pred='1990'
+[21/63] 3641.png-1: imgs=1 pred='Ages 18-29'
+[22/63] 4353.png-1: imgs=1 pred='71'
+[23/63] 4353.png-2: imgs=1 pred='58'
+[24/63] 5983.png-2: imgs=1 pred='0.426595745'
+[25/63] 8520.png-2: imgs=1 pred='12'
+[26/63] 9581.png-2: imgs=1 pred='2'
+[27/63] 9987.png-1: imgs=1 pred='48'
+[28/63] 93336229007592.png-1: imgs=1 pred='22.18'
+[29/63] two_col_62141.png-2: imgs=1 pred='58.6'
+[30/63] two_col_62148.png-1: imgs=1 pred='4:1'
+[31/63] two_col_82108.png-1: imgs=1 pred='6.6'
+[32/63] two_col_82496.png-1: imgs=1 pred='123.3'
+[33/63] two_col_82565.png-2: imgs=1 pred='65.7'
+[34/63] two_col_101214.png-1: imgs=1 pred='41132'
+[35/63] two_col_101214.png-2: imgs=1 pred='43576'
+[36/63] two_col_102054.png-2: imgs=1 pred='11878'
+[37/63] two_col_104528.png-1: imgs=1 pred='2'
+[38/63] two_col_104683.png-2: imgs=1 pred='17.8'
+[39/63] two_col_3017.png-1: imgs=1 pred='58'
+[40/63] two_col_2536.png-1: imgs=1 pred='Texas'
+[41/63] two_col_4228.png-1: imgs=1 pred='2012'
+[42/63] two_col_4340.png-1: imgs=1 pred='53'
+[43/63] two_col_21800.png-1: imgs=1 pred='2009'
+[44/63] two_col_24236.png-1: imgs=1 pred='50.31'
+[45/63] two_col_60182.png-1: imgs=1 pred='24'
+[46/63] two_col_60414.png-1: imgs=1 pred='2014'
+[47/63] two_col_60664.png-1: imgs=1 pred='25'
+[48/63] multi_col_1189.png-2: imgs=1 pred='89'
+[49/63] multi_col_970.png-1: imgs=1 pred="Pirates of the Caribbean: Dead Man's Chest"
+[50/63] multi_col_20328.png-1: imgs=1 pred='69.4'
+[51/63] multi_col_20350.png-2: imgs=1 pred='10'
+[52/63] multi_col_20387.png-1: imgs=1 pred='99750'
+[53/63] multi_col_20387.png-2: imgs=1 pred='113702'
+[54/63] multi_col_20416.png-1: imgs=1 pred='69'
+[55/63] multi_col_40633.png-1: imgs=1 pred='Men'
+[56/63] multi_col_40666.png-1: imgs=1 pred='28'
+[57/63] multi_col_60979.png-2: imgs=1 pred='0.0'
+[58/63] multi_col_80088.png-1: imgs=1 pred='blue'
+[59/63] two_col_101095.png-1: imgs=1 pred='Netflix'
+[60/63] two_col_4223.png-1: imgs=1 pred='No'
+[61/63] two_col_101945.png-2: imgs=1 pred='47'
+[62/63] multi_col_60653.png-1: imgs=1 pred='Helps me identify trending products'
+[63/63] multi_col_60971.png-1: imgs=1 pred='Compatibility'
+{
+  "total": 63,
+  "correct": 44,
+  "accuracy": 0.6984126984126984
+}
+wrote /home/chaemin/projects/AI algorithm study/results/prompt_test/ChartQA_qwen_ocr_text_image_image_first.json
