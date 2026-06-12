@@ -31,6 +31,7 @@ from __future__ import annotations
 import argparse
 import json
 import os
+import re
 import sys
 import time
 from io import BytesIO
@@ -201,6 +202,36 @@ def load_upstage_text(dataset: str) -> dict[str, str]:
     return cache
 
 
+# Self-OCR alignment hypothesis test: rewrite Upstage's layout-preserving text
+# so its surface form is closer to what Qwen2-VL would emit if it OCR'd the
+# same page (continuous prose, no spurious bullet markers, single-line blocks).
+# If the hypothesis is right, this should reduce the cross-modal-alignment cost
+# at answer time and move Upstage I+T closer to Qwen OCR I+T.
+_BULLET_LINE_RE = re.compile(r"^\s*[•●○■□▪▫\-\*•]+\s*$", re.MULTILINE)
+_KOREAN_PARSE_MARKER_RE = re.compile(r"^\s*-\s*수집\s*$", re.MULTILINE)
+_DASH_RULE_LINE_RE = re.compile(r"^\s*[-_=]{2,}\s*$", re.MULTILINE)
+
+
+def normalize_upstage_text(text: str) -> str:
+    text = _BULLET_LINE_RE.sub("", text)
+    text = _KOREAN_PARSE_MARKER_RE.sub("", text)
+    text = _DASH_RULE_LINE_RE.sub("", text)
+    # Strip trailing spaces on each line + collapse intra-line whitespace.
+    text = re.sub(r"[ \t]+\n", "\n", text)
+    text = re.sub(r"[ \t]+", " ", text)
+    # Join visual line-wraps: blank lines between a non-terminator end and a
+    # continuation start (lowercase / conjunction) collapse to a single space.
+    text = re.sub(
+        r"(?<=[A-Za-z0-9,;:\-])\n\s*\n\s*(?=[a-z])",
+        " ",
+        text,
+    )
+    text = re.sub(r"(?<=[A-Za-z0-9,;:\-])\n(?=[a-z])", " ", text)
+    # Collapse remaining 3+ newlines down to a single paragraph break.
+    text = re.sub(r"\n{3,}", "\n\n", text)
+    return text.strip()
+
+
 def get_ocr_text(corpus_id: str, image: Image.Image, cache: JsonlCache, model_name: str) -> tuple[str, float]:
     cached = cache.get(corpus_id)
     if cached is not None:
@@ -262,6 +293,11 @@ def main() -> None:
     parser.add_argument("--max-new-tokens", type=int, default=20)
     parser.add_argument("--model", default=None)
     parser.add_argument("--results-dir", default=None)
+    parser.add_argument(
+        "--upstage-normalize",
+        action="store_true",
+        help="Normalize Upstage text to Qwen-OCR-style (self-OCR alignment test).",
+    )
     args = parser.parse_args()
 
     if args.model is None:
@@ -288,6 +324,8 @@ def main() -> None:
         if args.mode == "upstage_text_image":
             for d in s["docids"]:
                 t = upstage_text.get(d, "")
+                if t and args.upstage_normalize:
+                    t = normalize_upstage_text(t)
                 if t:
                     chunks.append(f"[Document {d}]\n{t}")
         else:  # qwen_ocr_text_image
@@ -324,7 +362,8 @@ def main() -> None:
 
     summary = accuracy(rows, pred_key="prediction", answer_key="answer")
     payload = {"summary": summary, "rows": rows}
-    out_path = results_dir / f"{args.dataset}_{args.mode}_{args.prompt}.json"
+    suffix = "_norm" if args.upstage_normalize and args.mode == "upstage_text_image" else ""
+    out_path = results_dir / f"{args.dataset}_{args.mode}_{args.prompt}{suffix}.json"
     write_json(out_path, payload)
     print(json.dumps(summary, ensure_ascii=False, indent=2))
     print(f"wrote {out_path}", flush=True)

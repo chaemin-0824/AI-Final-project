@@ -153,3 +153,24 @@ Hardware: local RTX 4060 8GB. tf457 numbers below for context (different GPU).
 | Image+Text (Upstage)  | tf457 | 0.5400 | 0.5079 | 0.8000 | 0.5200 |
 
 wrote /home/chaemin/projects/AI algorithm study/results/prompt_test/table.md
+=== 21:45:04 InfoVQA ===
+  "correct": 68,
+  "accuracy": 0.68
+}
+wrote /home/chaemin/projects/AI algorithm study/results/prompt_test/InfoVQA_upstage_text_image_tf457_norm.json
+=== 22:42:10 ChartQA ===
+  "correct": 45,
+  "accuracy": 0.7142857142857143
+}
+wrote /home/chaemin/projects/AI algorithm study/results/prompt_test/ChartQA_upstage_text_image_tf457_norm.json
+=== 22:44:33 MP-DocVQA ===
+  "correct": 86,
+  "accuracy": 0.86
+}
+wrote /home/chaemin/projects/AI algorithm study/results/prompt_test/MP-DocVQA_upstage_text_image_tf457_norm.json
+=== 22:50:03 SlideVQA ===
+  "correct": 58,
+  "accuracy": 0.58
+}
+wrote /home/chaemin/projects/AI algorithm study/results/prompt_test/SlideVQA_upstage_text_image_tf457_norm.json
+=== ALL DONE Thu Jun 11 22:53:11 KST 2026 ===
