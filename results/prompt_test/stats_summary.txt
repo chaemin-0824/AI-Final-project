@@ -1,0 +1,33 @@
+=== Macro accuracy with 95% bootstrap CI (n=2000) ===
+  upstage_tf457            macro=0.7061 [0.6596, 0.7525]   per-ds: InfoVQA: 0.680 / ChartQA: 0.714 / MP-DocVQA: 0.860 / SlideVQA: 0.570
+  upstage_image_first      macro=0.7211 [0.6754, 0.7665]   per-ds: InfoVQA: 0.690 / ChartQA: 0.714 / MP-DocVQA: 0.880 / SlideVQA: 0.600
+  upstage_tf457_norm       macro=0.7086 [0.6612, 0.7544]   per-ds: InfoVQA: 0.680 / ChartQA: 0.714 / MP-DocVQA: 0.860 / SlideVQA: 0.580
+  qwen_ocr_tf457           macro=0.7246 [0.6787, 0.7724]   per-ds: InfoVQA: 0.710 / ChartQA: 0.698 / MP-DocVQA: 0.860 / SlideVQA: 0.630
+  qwen_ocr_image_first     macro=0.7346 [0.6898, 0.7796]   per-ds: InfoVQA: 0.730 / ChartQA: 0.698 / MP-DocVQA: 0.890 / SlideVQA: 0.620
+
+=== Paired McNemar / sign tests ===
+  Upstage I+T vs self-OCR I+T (original prompt)
+    upstage_tf457 (a) vs qwen_ocr_tf457 (b)
+    a-only: 11, b-only: 19, both correct: 245, both wrong: 88
+    n_disc: 30, McNemar chi2: 1.633, p(cont): 0.2012, sign-test p: 0.2005
+
+  Upstage I+T vs self-OCR I+T (image-first prompt)
+    upstage_image_first (a) vs qwen_ocr_image_first (b)
+    a-only: 12, b-only: 18, both correct: 250, both wrong: 83
+    n_disc: 30, McNemar chi2: 0.833, p(cont): 0.3613, sign-test p: 0.3616
+
+  Upstage I+T: image-first vs original prompt
+    upstage_tf457 (a) vs upstage_image_first (b)
+    a-only: 2, b-only: 8, both correct: 254, both wrong: 99
+    n_disc: 10, McNemar chi2: 2.500, p(cont): 0.1138, sign-test p: 0.1094
+
+  self-OCR I+T: image-first vs original prompt
+    qwen_ocr_tf457 (a) vs qwen_ocr_image_first (b)
+    a-only: 4, b-only: 8, both correct: 260, both wrong: 91
+    n_disc: 12, McNemar chi2: 0.750, p(cont): 0.3865, sign-test p: 0.3877
+
+  Upstage I+T: normalised vs original text (same prompt)
+    upstage_tf457 (a) vs upstage_tf457_norm (b)
+    a-only: 1, b-only: 2, both correct: 255, both wrong: 105
+    n_disc: 3, McNemar chi2: 0.000, p(cont): 1.0000, sign-test p: 1.0000
+

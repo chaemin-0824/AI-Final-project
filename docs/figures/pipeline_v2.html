@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>Fig. 1 — Oracle-controlled evidence pipeline (v2 draft)</title>
+<style>
+  :root {
+    --ink: #0f0f0f;
+    --line: #2a2a2a;
+    --muted: #555;
+    --bg: #ffffff;
+
+    --q-fill:   #FFF0D8; --q-edge:   #B95F00;
+    --img-fill: #DDEAF7; --img-edge: #1F4E79;
+    --par-fill: #E7F0E3; --par-edge: #3D6B2C;
+    --evd-fill: #FFF5C7; --evd-edge: #8A6D00;
+    --gen-fill: #F9D7CB; --gen-edge: #A03A00;
+    --ans-fill: #EEE8FA; --ans-edge: #5B3F9B;
+  }
+  html, body {
+    margin: 0; padding: 0;
+    background: #f4f4f4;
+    font-family: "Helvetica Neue", Helvetica, Arial, "Apple SD Gothic Neo",
+                 "Noto Sans KR", sans-serif;
+    color: var(--ink);
+  }
+  .page {
+    max-width: 880px;
+    margin: 24px auto;
+    background: var(--bg);
+    padding: 28px 28px 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  h1 {
+    font-size: 14px;
+    font-weight: 700;
+    margin: 0 0 14px;
+    color: #111;
+  }
+  .caption {
+    font-size: 11.5px;
+    line-height: 1.45;
+    color: #222;
+    margin-top: 10px;
+  }
+  .caption b { font-weight: 700; }
+  svg { display: block; margin: 0 auto; }
+  text { font-family: inherit; fill: var(--ink); }
+  .lbl-sm  { font-size: 10.5px; }
+  .lbl     { font-size: 11.5px; }
+  .lbl-b   { font-size: 11.5px; font-weight: 700; }
+  .lbl-mut { font-size: 10px;   fill: var(--muted); }
+  .mode    { font-size: 10.5px; }
+  .mode-b  { font-size: 11px;   font-weight: 700; }
+</style>
+</head>
+<body>
+<div class="page">
+  <h1>Figure 1 — Oracle-controlled evidence pipeline (draft v2.1)</h1>
+
+  <svg viewBox="0 0 820 520" width="820" height="520"
+       xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5"
+              markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+        <path d="M0,0 L10,5 L0,10 z" fill="#222"/>
+      </marker>
+    </defs>
+
+    <!-- ============ top row: inputs ============ -->
+    <!-- Question q (left) -->
+    <rect x="40"  y="30" width="140" height="50" rx="10" ry="10"
+          fill="var(--q-fill)" stroke="var(--q-edge)" stroke-width="1.2"/>
+    <text x="110" y="60" text-anchor="middle" class="lbl-b">Question q</text>
+
+    <!-- Gold page I (middle) -->
+    <rect x="240" y="30" width="140" height="50" rx="10" ry="10"
+          fill="var(--img-fill)" stroke="var(--img-edge)" stroke-width="1.2"/>
+    <text x="310" y="60" text-anchor="middle" class="lbl-b">Gold page I</text>
+
+    <!-- Parsed text T (right) -->
+    <rect x="440" y="30" width="300" height="50" rx="10" ry="10"
+          fill="var(--par-fill)" stroke="var(--par-edge)" stroke-width="1.2"/>
+    <text x="590" y="50" text-anchor="middle" class="lbl-b">
+      Parsed text T = g(I)
+    </text>
+    <text x="590" y="69" text-anchor="middle" class="lbl-sm">
+      Qwen self-OCR  /  Upstage Document Parse
+    </text>
+
+    <!-- ============ arrows: I, T → evidence builder (straight) ============ -->
+    <line x1="310" y1="80" x2="310" y2="180" stroke="#222"
+          stroke-width="1.1" marker-end="url(#arrow)"/>
+    <line x1="590" y1="80" x2="590" y2="180" stroke="#222"
+          stroke-width="1.1" marker-end="url(#arrow)"/>
+
+    <!-- ============ evidence builder ============ -->
+    <rect x="170" y="180" width="580" height="140" rx="12" ry="12"
+          fill="var(--evd-fill)" stroke="var(--evd-edge)" stroke-width="1.3"/>
+    <text x="460" y="202" text-anchor="middle" class="lbl-b">
+      Evidence builder — assemble E from { I, T }
+    </text>
+
+    <g transform="translate(200, 220)">
+      <!-- Image-only -->
+      <rect x="0"   y="0" width="120" height="80" rx="8" ry="8"
+            fill="#ffffff" stroke="#8A6D00" stroke-width="0.9"/>
+      <text x="60"  y="22" text-anchor="middle" class="mode-b">Image-only</text>
+      <text x="60"  y="42" text-anchor="middle" class="mode">E = I</text>
+      <text x="60"  y="66" text-anchor="middle" class="lbl-mut">1 mode</text>
+
+      <!-- Text-only -->
+      <rect x="130" y="0" width="120" height="80" rx="8" ry="8"
+            fill="#ffffff" stroke="#8A6D00" stroke-width="0.9"/>
+      <text x="190" y="22" text-anchor="middle" class="mode-b">Text-only</text>
+      <text x="190" y="42" text-anchor="middle" class="mode">E = T</text>
+      <text x="190" y="66" text-anchor="middle" class="lbl-mut">
+        2 modes (Qwen, Upstage)
+      </text>
+
+      <!-- Selective text -->
+      <rect x="260" y="0" width="130" height="80" rx="8" ry="8"
+            fill="#ffffff" stroke="#8A6D00" stroke-width="0.9"/>
+      <text x="325" y="22" text-anchor="middle" class="mode-b">Selective hybrid</text>
+      <text x="325" y="40" text-anchor="middle" class="mode">E = I on chart pages,</text>
+      <text x="325" y="54" text-anchor="middle" class="mode">T on others</text>
+      <text x="325" y="71" text-anchor="middle" class="lbl-mut">2 modes</text>
+
+      <!-- Image + Text -->
+      <rect x="400" y="0" width="120" height="80" rx="8" ry="8"
+            fill="#ffffff" stroke="#8A6D00" stroke-width="0.9"/>
+      <text x="460" y="22" text-anchor="middle" class="mode-b">Image + Text</text>
+      <text x="460" y="42" text-anchor="middle" class="mode">E = (I, T)</text>
+      <text x="460" y="66" text-anchor="middle" class="lbl-mut">
+        2 modes (Qwen, Upstage)
+      </text>
+    </g>
+
+    <!-- ============ q → generator (orthogonal: down, right, down) ============ -->
+    <!-- (110,80) → (110,355) → (240,355) → (240,370) -->
+    <polyline points="110,80 110,355 240,355 240,370"
+              fill="none" stroke="#222" stroke-width="1.1"
+              marker-end="url(#arrow)"/>
+
+    <!-- ============ evidence builder → generator (straight) ============ -->
+    <line x1="460" y1="320" x2="460" y2="370" stroke="#222"
+          stroke-width="1.1" marker-end="url(#arrow)"/>
+
+    <!-- ============ generator ============ -->
+    <rect x="210" y="370" width="500" height="58" rx="10" ry="10"
+          fill="var(--gen-fill)" stroke="var(--gen-edge)" stroke-width="1.3"/>
+    <text x="460" y="391" text-anchor="middle" class="lbl-b">
+      Qwen2-VL generator  f(q, E)
+    </text>
+    <text x="460" y="411" text-anchor="middle" class="lbl-sm">
+      NF4 4-bit  ·  do_sample = False  ·  max_new_tokens = 20
+    </text>
+
+    <!-- ============ generator → answer (straight) ============ -->
+    <line x1="460" y1="428" x2="460" y2="465" stroke="#222"
+          stroke-width="1.1" marker-end="url(#arrow)"/>
+
+    <!-- ============ answer ============ -->
+    <rect x="385" y="465" width="150" height="40" rx="9" ry="9"
+          fill="var(--ans-fill)" stroke="var(--ans-edge)" stroke-width="1.2"/>
+    <text x="460" y="490" text-anchor="middle" class="lbl-b">answer â</text>
+  </svg>
+
+  <div class="caption">
+    <b>Figure 1.</b> Oracle-controlled evidence pipeline. Only the evidence set
+    <i>E</i> varies across the seven modes.
+  </div>
+</div>
+</body>
+</html>
