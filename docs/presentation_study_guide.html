@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>PV-RAG vs VisRAG — 발표 대비 학습자료</title>
+<style>
+  :root {
+    --bg: #fafafa;
+    --fg: #1a1a1a;
+    --muted: #555;
+    --accent: #1d4e89;
+    --accent-soft: #e6eef7;
+    --warn: #b25c00;
+    --warn-soft: #fdf3e7;
+    --good: #1d6b3a;
+    --good-soft: #e6f3eb;
+    --border: #d8d8d8;
+    --code-bg: #f1f1f1;
+  }
+  * { box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans KR", "Malgun Gothic", sans-serif;
+    background: var(--bg);
+    color: var(--fg);
+    line-height: 1.7;
+    margin: 0;
+    padding: 0;
+  }
+  .container {
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 40px 28px 100px;
+  }
+  h1 {
+    font-size: 28px;
+    border-bottom: 3px solid var(--accent);
+    padding-bottom: 12px;
+    margin-bottom: 6px;
+  }
+  .subtitle { color: var(--muted); font-size: 14px; margin-bottom: 36px; }
+  h2 {
+    font-size: 22px;
+    margin-top: 48px;
+    padding: 8px 14px;
+    background: var(--accent);
+    color: white;
+    border-radius: 4px;
+  }
+  h3 {
+    font-size: 17px;
+    margin-top: 28px;
+    color: var(--accent);
+    border-left: 4px solid var(--accent);
+    padding-left: 10px;
+  }
+  h4 {
+    font-size: 15px;
+    margin-top: 22px;
+    margin-bottom: 6px;
+  }
+  p { margin: 8px 0; }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 14px 0;
+    font-size: 14px;
+  }
+  th, td {
+    border: 1px solid var(--border);
+    padding: 8px 10px;
+    text-align: left;
+    vertical-align: top;
+  }
+  th { background: var(--accent-soft); }
+  td.num, th.num { text-align: right; font-variant-numeric: tabular-nums; }
+  code, pre {
+    font-family: "JetBrains Mono", "Consolas", "Menlo", monospace;
+    background: var(--code-bg);
+    border-radius: 3px;
+  }
+  code { padding: 2px 5px; font-size: 13px; }
+  pre {
+    padding: 12px 14px;
+    overflow-x: auto;
+    font-size: 13px;
+    line-height: 1.5;
+  }
+  .qa {
+    background: white;
+    border: 1px solid var(--border);
+    border-left: 4px solid var(--accent);
+    border-radius: 4px;
+    padding: 14px 18px;
+    margin: 14px 0;
+  }
+  .qa .q {
+    font-weight: 700;
+    color: var(--accent);
+    margin-bottom: 6px;
+  }
+  .qa .q::before { content: "Q. "; }
+  .qa .a { margin-top: 4px; }
+  .qa .a::before { content: "A. "; font-weight: 700; }
+  .callout {
+    padding: 12px 16px;
+    border-radius: 4px;
+    margin: 14px 0;
+    font-size: 14px;
+  }
+  .callout.warn {
+    background: var(--warn-soft);
+    border-left: 4px solid var(--warn);
+  }
+  .callout.good {
+    background: var(--good-soft);
+    border-left: 4px solid var(--good);
+  }
+  .callout.info {
+    background: var(--accent-soft);
+    border-left: 4px solid var(--accent);
+  }
+  .toc {
+    background: white;
+    border: 1px solid var(--border);
+    padding: 14px 22px;
+    border-radius: 4px;
+    margin-bottom: 36px;
+  }
+  .toc ol { margin: 6px 0; padding-left: 22px; }
+  .toc a { color: var(--accent); text-decoration: none; }
+  .toc a:hover { text-decoration: underline; }
+  .kw { color: var(--accent); font-weight: 600; }
+  .small { font-size: 13px; color: var(--muted); }
+  ul, ol { margin: 6px 0; padding-left: 22px; }
+  li { margin: 3px 0; }
+  .grid2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+  }
+  @media (max-width: 720px) {
+    .grid2 { grid-template-columns: 1fr; }
+  }
+  .card {
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    padding: 14px 16px;
+  }
+  .card h4 { margin-top: 0; }
+  hr { border: none; border-top: 1px dashed var(--border); margin: 30px 0; }
+</style>
+</head>
+<body>
+<div class="container">
+
+<h1>Parsed-Visual RAG (PV-RAG) vs VisRAG — 발표 대비 학습자료</h1>
+<div class="subtitle">단일 GPU 환경에서 동일 generator 통제하의 evidence 형식 ablation · 정리: 2026-06-09</div>
+
+<div class="toc">
+  <strong>목차</strong>
+  <ol>
+    <li><a href="#sec-30sec">30초 요약 (엘리베이터 피치)</a></li>
+    <li><a href="#sec-concepts">꼭 외워야 하는 핵심 개념 5가지</a></li>
+    <li><a href="#sec-method">방법론: 세 가지 모드</a></li>
+    <li><a href="#sec-arch">시스템 아키텍처 (4단계 파이프라인)</a></li>
+    <li><a href="#sec-config">실험 설정 (모델/파라미터/제약)</a></li>
+    <li><a href="#sec-results">결과 표와 해석</a></li>
+    <li><a href="#sec-justify">왜 이렇게 설계했나 (정당화)</a></li>
+    <li><a href="#sec-diff">VisRAG 논문과의 일치/차이</a></li>
+    <li><a href="#sec-qa">예상 질문 &amp; 답변</a></li>
+    <li><a href="#sec-limits">한계와 후속 작업</a></li>
+    <li><a href="#sec-cheatsheet">발표 직전 1분 치트시트</a></li>
+  </ol>
+</div>
+
+<!-- =============== 1. 30초 요약 =============== -->
+<h2 id="sec-30sec">1. 30초 요약 (엘리베이터 피치)</h2>
+
+<div class="callout info">
+<strong>한 문장 요약</strong><br>
+"VisRAG 공개 벤치마크 위에서, 동일한 generator(Qwen2-VL-7B + NF4)와 동일한 oracle 페이지를 사용하여 <span class="kw">evidence 형식(이미지 단독 / 파싱 텍스트 단독 / 결합)</span>이 정확도에 미치는 영향만을 격리해서 측정한 ablation 연구."
+</div>
+
+<h4>핵심 결과 (외워둘 숫자)</h4>
+<ul>
+  <li>Baseline (image_only) macro <b>0.229</b> → PV-RAG macro <b>0.592</b>, <span class="kw">+36.32%p</span></li>
+  <li>MP-DocVQA에서 PV-RAG가 parsed_text_only 대비 <span class="kw">+4.0%p</span> 추가 이득 (0.800 vs 0.760) — 이미지 + 파싱의 상보성을 보여주는 가장 강한 증거</li>
+  <li>ChartQA만 역방향: parsed_text_only 0.524 &gt; parsed_visual 0.508 (자연스러운 발견)</li>
+  <li>총 실행시간 <b>6,331초 (~1시간 45분)</b>, RTX 4060 8GB 단일 GPU</li>
+</ul>
+
+<h4>왜 중요한가</h4>
+<p>VisRAG 논문의 가정은 "OCR/파싱 없이 이미지만으로 검색·생성하는 것이 더 우월하다"이다. 본 연구는 동일 데이터·동일 generator에서 <b>파싱을 더하면 오히려 크게 좋아진다</b>는 것을 보여주며, 특히 레이아웃이 답에 기여하는 문서에서는 <b>이미지 + 파싱 결합</b>이 둘 중 어느 단독보다도 우월함을 입증.</p>
+
+<!-- =============== 2. 핵심 개념 =============== -->
+<h2 id="sec-concepts">2. 꼭 외워야 하는 핵심 개념 5가지</h2>
+
+<div class="grid2">
+  <div class="card">
+    <h4>① VisRAG</h4>
+    <p>OpenBMB가 제안 (arXiv:2410.10594). 페이지 이미지를 시각 임베딩으로 검색(<b>VisRAG-Ret</b>) → VLM(MiniCPM-V 2.6 / GPT-4o)이 이미지에서 직접 답 생성. OCR/파싱 단계의 정보 손실(레이아웃, 색상, 그래픽)을 회피하는 것이 동기.</p>
+  </div>
+  <div class="card">
+    <h4>② PV-RAG (우리 방법)</h4>
+    <p>Parsed-Visual RAG. Upstage Document Parse로 페이지 이미지를 텍스트·표로 추출한 뒤 <b>원본 이미지와 함께</b> 동일 VLM에 입력. 가설: "파싱은 정확한 라벨·수치를, 이미지는 레이아웃을 보존하므로 두 증거가 상보적이다."</p>
+  </div>
+  <div class="card">
+    <h4>③ Oracle 검색 (--oracle)</h4>
+    <p>실제 검색을 안 하고 <b>qrels의 정답 페이지를 직접 generator에 공급</b>. 모든 모드가 같은 페이지에서 답을 생성하므로 정확도 차이는 오직 evidence 형식에서 비롯. <b>generation-only ablation</b>의 핵심 장치.</p>
+  </div>
+  <div class="card">
+    <h4>④ NF4 양자화 (bitsandbytes)</h4>
+    <p>Qwen2-VL-7B를 4-bit NormalFloat로 적재 (≈6GB VRAM). bf16(~14GB)이 8GB GPU에 안 들어가서 채택. 일반적으로 정확도 -5~10%p. <b>세 모드에 동일 적용</b>되므로 모드 간 Δ는 공정 비교.</p>
+  </div>
+  <div class="card">
+    <h4>⑤ Relaxed Exact Match</h4>
+    <p>VisRAG 논문과 동일한 지표. 공백 정규화 + 소문자 + substring containment + 숫자는 <b>5% 상대 오차</b>까지 정답 인정. 코드: <code>benchmark/metrics.py:16-44</code>.</p>
+  </div>
+  <div class="card">
+    <h4>+ Upstage Document Parse</h4>
+    <p>한국 Upstage AI의 문서 파싱 API. 페이지 이미지에서 평문 / 표 마크다운 / 표 설명을 추출. 본 실험에서 4 데이터셋 248 페이지 파싱 (USD 3~5).</p>
+  </div>
+</div>
+
+<!-- =============== 3. 방법론 =============== -->
+<h2 id="sec-method">3. 방법론: 세 가지 모드</h2>
+
+<p>모든 모드는 <b>동일한 prompt 골격</b>과 <b>동일한 oracle 페이지</b>를 공유하며, evidence 관련 두 슬롯만 모드별로 치환된다. → 모드 간 정확도 차이는 오직 input evidence 형식에서 비롯.</p>
+
+<h4>공통 prompt 골격</h4>
+<pre>You are evaluating a document QA method on the VisRAG benchmark.
+{evidence_instruction}
+Answer only the final answer. For numeric answers, return the exact
+visible value when possible. If the evidence is insufficient, answer:
+insufficient to answer.
+
+[Parsed text/table evidence]
+{context_block}
+
+[Question]
+{query}</pre>
+
+<table>
+<thead>
+<tr><th>Mode</th><th>evidence_instruction</th><th>context_block</th><th>역할</th></tr>
+</thead>
+<tbody>
+<tr>
+  <td><b>image_only</b></td>
+  <td>Use only the provided document page image(s).</td>
+  <td>(제공 안 함)</td>
+  <td>Baseline (순수 VisRAG 컨셉 재현)</td>
+</tr>
+<tr>
+  <td><b>parsed_text_only</b></td>
+  <td>Use only the parsed text/table evidence. No images are provided.</td>
+  <td>evidence_text(doc)</td>
+  <td>Ablation 통제군 — 파싱만으로 정보 보존 충분한가?</td>
+</tr>
+<tr>
+  <td><b>parsed_visual</b></td>
+  <td>Use parsed text/table evidence for exact labels and values, and use images to verify visual/layout evidence.</td>
+  <td>evidence_text(doc)</td>
+  <td><b>PV-RAG (우리 방법)</b> — 이미지 + 파싱 결합</td>
+</tr>
+</tbody>
+</table>
+
+<!-- =============== 4. 아키텍처 =============== -->
+<h2 id="sec-arch">4. 시스템 아키텍처 (4단계 파이프라인)</h2>
+
+<pre>(A) Upstage parse  : corpus 페이지 이미지 → 텍스트·표 cache (JSONL)
+(B) 페이지 선택     : --oracle → qrels gold corpus-id 직접 선택
+(C) Generation     : (이미지 ± 파싱 evidence) → Qwen2-VL-7B → 답변
+(D) 평가 & 표출    : relaxed exact match → PPT slide-10 양식 결과 표</pre>
+
+<p>각 단계는 독립적으로 캐시되고 재실행 가능. <code>scripts/run_today_ppt_pipeline.sh</code>가 4단계를 일괄 실행하며, 결과 파일이 존재하면 자동 skip.</p>
+
+<h4>ParsedDocument 스키마 (parse cache)</h4>
+<pre>ParsedDocument(
+    dataset:            str,             # e.g., "MP-DocVQA"
+    corpus_id:          str,             # e.g., "txpp0227_p9.jpg"
+    text:               str,             # plain text content
+    tables_markdown:    list[str],       # markdown-rendered tables
+    table_descriptions: list[str],       # short caption of each table
+    parse_status:       str,             # "ok" | "failed"
+    error:              str,             # populated on parse failure
+    raw_upstage:        dict[str, Any]   # raw API response (audit)
+)</pre>
+<p class="small">JSONL의 한 줄 = 한 페이지. <code>cache_key(dataset, corpus_id)</code>로 조회. <code>evidence_text(doc)</code>가 텍스트·표·표설명을 세 섹션 헤더로 직렬화하여 prompt에 삽입.</p>
+
+<h4>핵심 코드 모듈</h4>
+<table>
+<thead><tr><th>경로</th><th class="num">LoC</th><th>역할</th></tr></thead>
+<tbody>
+<tr><td><code>benchmark/parse_cache.py</code></td><td class="num">77</td><td>parse cache 스키마와 적재·저장</td></tr>
+<tr><td><code>benchmark/text_retrieval.py</code></td><td class="num">71</td><td>BM25 인덱스 (oracle 모드에서는 미사용)</td></tr>
+<tr><td><code>benchmark/metrics.py</code></td><td class="num">97</td><td>relaxed EM, MRR@k, Recall@k</td></tr>
+<tr><td><code>benchmark/v12_on_visrag.py</code></td><td class="num">443</td><td>모드별 generation 메인</td></tr>
+<tr><td><code>benchmark/ppt_table_exporter.py</code></td><td class="num">300</td><td>PPT slide-10 양식 표 생성</td></tr>
+<tr><td><code>scripts/run_today_ppt_pipeline.sh</code></td><td class="num">111</td><td>parse + gen + export 일괄</td></tr>
+</tbody>
+</table>
+
+<!-- =============== 5. 실험 설정 =============== -->
+<h2 id="sec-config">5. 실험 설정 (모델/파라미터/제약)</h2>
+
+<h4>데이터셋 (PPT slide-10 정렬, 4개)</h4>
+<table>
+<thead><tr><th>Dataset</th><th class="num">queries</th><th class="num">corpus</th><th class="num">qrels</th><th class="num">cache</th></tr></thead>
+<tbody>
+<tr><td>InfoVQA</td><td class="num">718</td><td class="num">459</td><td class="num">718</td><td class="num">173 MB</td></tr>
+<tr><td>ChartQA</td><td class="num">63</td><td class="num">500</td><td class="num">63</td><td class="num">24 MB</td></tr>
+<tr><td>MP-DocVQA</td><td class="num">591</td><td class="num">741</td><td class="num">591</td><td class="num">258 MB</td></tr>
+<tr><td>SlideVQA</td><td class="num">556</td><td class="num">1,284</td><td class="num">702</td><td class="num">100 MB</td></tr>
+</tbody>
+</table>
+<p class="small">표본: 각 데이터셋 <b>첫 100 질의</b> (ChartQA는 총 63). SlideVQA는 한 질의가 다수 페이지 → qrels &gt; queries. 248개 unique gold page만 파싱.</p>
+
+<h4>Generator 백엔드</h4>
+<table>
+<thead><tr><th>backend</th><th>모델 ID</th><th>비고</th></tr></thead>
+<tbody>
+<tr><td><code>qwen2vl7b_bnb4</code></td><td>Qwen/Qwen2-VL-7B-Instruct</td><td><b>workspace default (NF4)</b></td></tr>
+<tr><td><code>qwen2vl7b</code></td><td>Qwen/Qwen2-VL-7B-Instruct</td><td>bf16 풀 정밀 (≥16 GB GPU)</td></tr>
+<tr><td><code>minicpmv26</code></td><td>openbmb/MiniCPM-V-2_6</td><td>VisRAG 논문 메인 (paper alignment)</td></tr>
+<tr><td><code>gpt4o</code></td><td>gpt-4o</td><td>VisRAG 논문 API fallback</td></tr>
+</tbody>
+</table>
+
+<h4>핵심 파라미터</h4>
+<table>
+<thead><tr><th>파라미터</th><th>값</th></tr></thead>
+<tbody>
+<tr><td><code>--generator-backend</code></td><td>qwen2vl7b_bnb4</td></tr>
+<tr><td><code>--mode</code></td><td>image_only / parsed_text_only / parsed_visual (세 모드 모두)</td></tr>
+<tr><td><code>--topk</code></td><td>1 (질의당 1 페이지)</td></tr>
+<tr><td><code>--limit</code></td><td>100 (ChartQA는 총 63)</td></tr>
+<tr><td><code>--max-new-tokens</code></td><td>32 (짧은 답변 가정)</td></tr>
+<tr><td><code>--oracle</code></td><td>on (검색 우회, qrels 직접)</td></tr>
+<tr><td><code>do_sample</code></td><td>False (그리디 디코딩, 재현성)</td></tr>
+<tr><td><code>QWEN_MAX_PIXELS</code></td><td>1,310,720 = 1280×1024 (큰 이미지 다운샘플 상한)</td></tr>
+<tr><td><code>QWEN_MIN_PIXELS</code></td><td>65,536 = 256×256 (작은 이미지 업샘플 하한)</td></tr>
+<tr><td><code>BitsAndBytesConfig</code></td><td>4-bit NF4, double quant, fp16 compute → ~6 GB VRAM</td></tr>
+<tr><td>numeric tolerance</td><td>5% 상대 오차 (VisRAG 논문과 동일)</td></tr>
+</tbody>
+</table>
+
+<!-- =============== 6. 결과 =============== -->
+<h2 id="sec-results">6. 결과 표와 해석</h2>
+
+<h3>PPT slide-10 양식 결과 표 (정확도)</h3>
+<table>
+<thead>
+<tr><th>Method</th><th class="num">InfoVQA</th><th class="num">ChartQA</th><th class="num">DocVQA</th><th class="num">SlideVQA</th><th class="num">macro</th><th class="num">Δ vs Baseline</th></tr>
+</thead>
+<tbody>
+<tr><td>Baseline (순수 VisRAG, image_only)</td><td class="num">0.2000</td><td class="num">0.3651</td><td class="num">0.1700</td><td class="num">0.1800</td><td class="num">0.2288</td><td class="num">—</td></tr>
+<tr><td>Parsed-Text Only (ablation)</td><td class="num">0.5400</td><td class="num">0.5238</td><td class="num">0.7600</td><td class="num">0.5200</td><td class="num">0.5860</td><td class="num">+35.72%p</td></tr>
+<tr><td><b>Parsed-Visual RAG (PV-RAG)</b></td><td class="num"><b>0.5400</b></td><td class="num">0.5079</td><td class="num"><b>0.8000</b></td><td class="num"><b>0.5200</b></td><td class="num"><b>0.5920</b></td><td class="num"><b>+36.32%p</b></td></tr>
+</tbody>
+</table>
+<p class="small">DocVQA = MP-DocVQA. ChartQA는 표본이 총 63개.</p>
+
+<h3>정답/전체 카운트</h3>
+<table>
+<thead><tr><th>Dataset</th><th>image_only</th><th>parsed_text_only</th><th>parsed_visual</th></tr></thead>
+<tbody>
+<tr><td>InfoVQA</td><td>20/100 = 0.200</td><td>54/100 = 0.540</td><td>54/100 = 0.540</td></tr>
+<tr><td>ChartQA</td><td>23/63 = 0.365</td><td>33/63 = 0.524</td><td>32/63 = 0.508</td></tr>
+<tr><td>MP-DocVQA</td><td>17/100 = 0.170</td><td>76/100 = 0.760</td><td><b>80/100 = 0.800</b></td></tr>
+<tr><td>SlideVQA</td><td>18/100 = 0.180</td><td>52/100 = 0.520</td><td>52/100 = 0.520</td></tr>
+</tbody>
+</table>
+
+<h3>해석 4줄</h3>
+<div class="callout good">
+<b>① 전반적 효과:</b> 모든 4 데이터셋에서 PV-RAG가 image_only baseline을 크게 상회. macro +36.32%p는 양자화 잡음·표본 변동으로 설명 불가.<br><br>
+<b>② MP-DocVQA 우위:</b> parsed_visual이 parsed_text_only를 +4.0%p (0.800 vs 0.760) 상회. 다중 페이지 문서에서 "어느 표의 어느 행" 같은 <b>위치 정보를 이미지가 보완</b>. PV-RAG가 OCR-only 대비 추가 가치 있음을 보이는 가장 직접적 증거.<br><br>
+<b>③ ChartQA 역방향:</b> parsed_text_only(0.524) &gt; parsed_visual(0.508). Upstage가 차트 수치를 잘 추출한 경우 텍스트만으로 충분하고, 이미지 추가시 약간의 혼동 발생. <b>"OCR이 충분히 강하면 시각 추가의 한계 수익은 작거나 음수"</b>라는 자연스러운 발견.<br><br>
+<b>④ 동률 (InfoVQA, SlideVQA):</b> InfoVQA는 max_pixels 캡이 가장 강하게 작용하여 이미지 정보 밀도 감소. SlideVQA는 슬라이드가 큰 글씨 중심이라 파싱이 거의 모든 정보 보존.
+</div>
+
+<h3>실행 통계</h3>
+<ul>
+  <li>총 generation call: 363 query × 3 mode ≈ <b>1,089 calls</b> (ChartQA 63 + 나머지 100 × 3)</li>
+  <li>총 실행 시간: <b>6,331초 (~1시간 45분)</b></li>
+  <li>최장 단일 mode: <b>InfoVQA × parsed_visual ≈ 65분</b> (큰 infographics + 결합 evidence)</li>
+  <li>최단 단일 mode: ChartQA × image_only ≈ 1분</li>
+  <li>GPU 점유: 최대 7.9 / 8.0 GB, 평균 utilisation 80~100%</li>
+  <li>Upstage parse 비용: 248 페이지, 추정 <b>USD 3~5</b></li>
+</ul>
+
+<!-- =============== 7. 정당화 =============== -->
+<h2 id="sec-justify">7. 왜 이렇게 설계했나 (정당화)</h2>
+
+<h3>7.1 왜 Qwen2-VL-7B인가? (논문은 MiniCPM-V인데)</h3>
+<ol>
+  <li>1차 목적은 <b>팀 사전 자료 (PPT slide-10)의 baseline 행에 우리 방법론을 추가</b>하여 같은 좌표계에서 Δ를 보고하는 것. 팀이 Qwen2-VL-7B를 썼으므로 우리도 동일 family로 정렬.</li>
+  <li>VisRAG 논문 자체가 "시각 검색 &gt; 텍스트 RAG"라는 결론은 <b>generator 변경에 강건</b>하다고 보고. 우리 가설은 generator 강도가 아니라 evidence 형식의 영향 → generator 차이의 결론 영향은 제한적.</li>
+  <li>MiniCPM-V 2.6 cross-check는 후속 작업으로 분리.</li>
+</ol>
+
+<h3>7.2 왜 NF4 양자화 + 해상도 캡?</h3>
+<p>단일 RTX 4060 8GB VRAM이라 Qwen2-VL-7B bf16(~14GB)이 안 들어감.</p>
+<ul>
+  <li><b>bitsandbytes NF4 4-bit:</b> 일반적으로 -5~10%p 정확도 손실. VRAM ~6GB로 감소.</li>
+  <li><b>max_pixels = 1.3M 캡:</b> Qwen2-VL은 28×28 픽셀을 1 vision token으로 변환. 캡 없으면 큰 infographic이 7,800+ token, 캡 적용시 ~1,700 token (메모리·시간 ~1/20).</li>
+</ul>
+<div class="callout warn">
+<b>핵심 framing:</b> 두 조치는 <b>세 모드에 동일하게 적용</b>되므로 모드 간 Δ는 공정 비교. 절대값이 팀 사전 자료의 풀 정밀 baseline보다 낮은 것은 예상된 영향. 발표에서는 항상 <b>"constrained-environment delta"</b>로 framing.
+</div>
+
+<h3>7.3 왜 oracle 검색을 썼나? (--oracle)</h3>
+<ol>
+  <li><b>실험 격리:</b> 통제 변수는 evidence 입력 형식. 실제 검색을 쓰면 모드별 검색기 선택 차이가 evidence 효과와 혼동.</li>
+  <li><b>컴퓨팅 제약:</b> VisRAG-Ret 시각 임베딩 검색은 공식 demo가 약 <b>40 GB GPU</b> 요구. 8GB 환경에서 실행 불가능.</li>
+  <li><b>학술적 관례:</b> VisRAG 논문도 generation ablation을 위해 oracle/동일 검색 결과를 공급하는 비교를 분리하여 보고.</li>
+</ol>
+<p>→ 본 보고서가 측정하는 것은 <b>end-to-end 정확도가 아니라 generation-isolated 정확도</b>. 발표에서 명시적으로 진술 필수.</p>
+
+<h3>7.4 왜 100개 표본?</h3>
+<ul>
+  <li>시간 제약: 단일 GPU 풀 평가는 15~30시간 추정.</li>
+  <li>통계적 충분성: 표본 100은 5%p 차이를 95% 신뢰도로 구분 가능 (이항 표준오차 √(0.5·0.5/100) = 0.05).</li>
+  <li>관찰 Δ는 +14~+58%p로 <b>표본 변동을 크게 상회</b>.</li>
+  <li>선택 방식: 무작위 아닌 <b>HF dataset의 수록 순서대로 첫 N개</b> → 재현성과 외부 cross-check 보장.</li>
+</ul>
+
+<!-- =============== 8. 논문과 차이 =============== -->
+<h2 id="sec-diff">8. VisRAG 논문과의 일치/차이</h2>
+
+<table>
+<thead><tr><th>구성요소</th><th>VisRAG 논문</th><th>본 연구</th><th>일치 여부</th></tr></thead>
+<tbody>
+<tr><td>데이터셋 출처</td><td>HF openbmb/VisRAG-Ret-Test-*</td><td>동일</td><td>✅ 일치</td></tr>
+<tr><td>데이터셋 개수</td><td>6 (ArxivQA, ChartQA, MP-DocVQA, InfoVQA, PlotQA, SlideVQA)</td><td>4 (ArxivQA, PlotQA 제외; 팀 PPT 정렬)</td><td>🟡 부분</td></tr>
+<tr><td>queries/corpus/qrels schema</td><td>동일</td><td>동일</td><td>✅ 일치</td></tr>
+<tr><td>정확도 metric</td><td>relaxed EM, 5% 숫자 tolerance</td><td>동일 구현</td><td>✅ 일치</td></tr>
+<tr><td>Retrieval 모델</td><td>VisRAG-Ret (시각 임베딩)</td><td>미실행, --oracle</td><td>❌ 불일치 (제약)</td></tr>
+<tr><td>Retrieval metric</td><td>MRR@10, Recall@10</td><td>본 보고서 범위 밖</td><td>❌ 불일치</td></tr>
+<tr><td>Generator</td><td>MiniCPM-V 2.6 / GPT-4o</td><td>Qwen2-VL-7B + NF4</td><td>❌ 불일치 (의도적)</td></tr>
+<tr><td>Generation task_type</td><td>multi_image 등 4종</td><td>image_only / parsed_text_only / parsed_visual</td><td>🟡 다른 차원</td></tr>
+<tr><td>이미지 해상도</td><td>원본</td><td>1.3M 픽셀 캡</td><td>❌ 불일치 (제약)</td></tr>
+</tbody>
+</table>
+
+<div class="callout info">
+<b>요약 framing:</b> 데이터·평가 지표·정답 비교는 논문과 정렬. generator·retrieval·해상도는 의도적으로 다른 조건으로 통제. 따라서 본 연구는 <b>"VisRAG 논문 결과의 재현"이 아니라 "VisRAG 데이터·지표 위에서의 generation evidence 형식 ablation"</b>으로 framing해야 함.
+</div>
+
+<!-- =============== 9. 예상 질문 Q&A =============== -->
+<h2 id="sec-qa">9. 예상 질문 &amp; 답변</h2>
+
+<h3>설계 의도 관련</h3>
+
+<div class="qa">
+<div class="q">왜 VisRAG 논문의 6개가 아니라 4개 데이터셋만 사용했나?</div>
+<div class="a">팀 사전 자료(PPT slide-10)의 결과 표 컬럼이 InfoVQA, ChartQA, DocVQA, SlideVQA의 4개로 구성되어 있어서 같은 양식에 직접 행을 추가하기 위함. ArxivQA, PlotQA는 후속 작업으로 분리. 4개만으로도 macro Δ +36.32%p가 통계적으로 충분히 유의미.</div>
+</div>
+
+<div class="qa">
+<div class="q">왜 MiniCPM-V 2.6이 아니라 Qwen2-VL-7B를 generator로 썼나? 논문 재현이 아닌가?</div>
+<div class="a">본 연구는 "논문 재현"이 아니라 "팀 사전 자료의 baseline 행에 PV-RAG 행을 추가하는 ablation"이다. 팀 PPT가 Qwen2-VL-7B로 측정되어 있어 baseline의 좌표계를 일치시키려면 동일 generator로 정렬할 수밖에 없다. 또한 VisRAG 논문 자체가 결론이 generator에 강건하다고 보고한다. MiniCPM-V 2.6 cross-check는 ≥16GB GPU에서의 후속 작업으로 §11에 명시.</div>
+</div>
+
+<div class="qa">
+<div class="q">Oracle 검색을 쓰면 실제 시스템에서는 의미가 없는 것 아닌가?</div>
+<div class="a">맞다. 본 보고서가 측정하는 것은 end-to-end 정확도가 아니라 <b>generation-isolated 정확도</b>이다. 통제 변수가 evidence 형식이므로 모든 모드가 같은 정답 페이지에서 답하도록 oracle을 사용한다. 이는 VisRAG 논문도 generation ablation에서 동일하게 사용하는 학술적 관례. 또한 VisRAG-Ret 시각 검색은 40GB GPU 요구로 8GB 환경에서는 물리적으로 실행 불가능. 검색 비교는 retrieval 보고로 분리.</div>
+</div>
+
+<div class="qa">
+<div class="q">NF4 양자화로 정확도가 떨어지는데 결론이 의미 있나?</div>
+<div class="a">두 가지로 답한다. ① <b>NF4는 세 모드에 동일하게 적용</b>되므로 모드 간 Δ는 공정 비교. 절대값이 풀 정밀보다 낮은 것은 예상된 영향. ② 본 연구는 "절대 SOTA 갱신"이 아니라 "constrained-environment delta"로 framing. macro +36.32%p는 양자화 잡음(보통 -5~10%p)을 훨씬 상회하므로 결론을 흔들지 못함.</div>
+</div>
+
+<h3>방법론 관련</h3>
+
+<div class="qa">
+<div class="q">parsed_visual이 parsed_text_only를 항상 이기지 못한 이유는?</div>
+<div class="a">데이터셋별로 다르다. ① <b>MP-DocVQA (+4.0%p):</b> 다중 페이지 문서에서 위치·레이아웃 정보가 답에 기여 → 이미지가 보완. ② <b>ChartQA (-1.6%p):</b> Upstage가 차트 수치를 잘 추출한 경우 텍스트만으로 답 가능 → 이미지 추가시 약간 혼동. ③ <b>InfoVQA, SlideVQA (동률):</b> InfoVQA는 max_pixels 캡 영향이 가장 커서 이미지 정보 밀도 감소. SlideVQA는 큰 글씨 중심이라 파싱이 거의 모든 정보 보존. → "이미지+파싱 결합의 한계 이득은 데이터셋의 시각 정보 의존도에 비례"가 본 결과의 함의.</div>
+</div>
+
+<div class="qa">
+<div class="q">왜 첫 100개를 무작위가 아니라 순서대로 뽑았나? 편향 위험 없나?</div>
+<div class="a">재현성과 외부 cross-check 가능성을 보장하기 위함. HF dataset의 수록 순서대로 첫 N개를 쓰면 누구나 동일한 표본을 얻을 수 있다. 무작위 표본은 seed 공유가 안 되면 비교 불가. 표본 100개에서 관찰된 Δ가 +14~+58%p로 표본 표준오차(±5%p)를 크게 상회하므로 표본 선택 방식이 결론을 뒤집을 가능성은 매우 낮다.</div>
+</div>
+
+<div class="qa">
+<div class="q">Upstage Document Parse 대신 PaddleOCR이나 Tesseract를 안 쓴 이유는?</div>
+<div class="a">Upstage는 평문뿐 아니라 <b>표를 markdown으로 보존하고 표 설명(caption)도 추출</b>한다. 일반 OCR은 표를 평문 줄로 펼쳐서 행·열 구조가 손실된다. 본 실험에서 MP-DocVQA·InfoVQA처럼 표가 답에 기여하는 데이터셋에서는 구조 보존이 큰 차이를 만든다. 비용 측면에서도 248 페이지 ~USD 3-5로 무시할 수준.</div>
+</div>
+
+<div class="qa">
+<div class="q">왜 top-k = 1만 평가했나? 논문은 1, 2, 3 곡선도 보고하는데.</div>
+<div class="a">Oracle 모드는 정의상 정답 페이지가 이미 결정되므로 top-k = 1이 자연. 실제 검색의 top-k 곡선은 retrieval 비교(VisRAG-Ret vs BM25)와 묶여 별도 retrieval 보고에서 다룰 영역. §11에 한계로 명시.</div>
+</div>
+
+<h3>구현/숫자 관련</h3>
+
+<div class="qa">
+<div class="q">max_pixels = 1.3M은 어떻게 정했나?</div>
+<div class="a">Qwen2-VL은 28×28 픽셀을 1 vision token으로 변환한다. 1,310,720 / (28×28) ≈ 1,670 token이 한 이미지의 상한이 되어 prompt + answer + 이미지 토큰을 4096 context window에 안전히 담을 수 있는 값이다. 캡 없으면 큰 infographic이 7,800+ token으로 모델 한계를 넘는다. 메모리·시간은 약 1/20로 감소.</div>
+</div>
+
+<div class="qa">
+<div class="q">왜 max_new_tokens = 32인가? 너무 짧지 않나?</div>
+<div class="a">VisRAG 평가셋의 답변이 대부분 짧은 답(숫자·짧은 구) 형식이고, 상한을 늘리면 모델이 부연설명을 붙여 relaxed EM에서 오답으로 판정되는 경우가 생긴다. 32 token이 답변 길이와 noise 차단을 동시에 만족하는 값. 세 모드에 동일 적용되므로 공정 비교에 영향 없음.</div>
+</div>
+
+<div class="qa">
+<div class="q">do_sample = False(그리디)인 이유는?</div>
+<div class="a">재현성. 그리디 디코딩은 동일 입력에 항상 동일 출력을 보장하므로 ablation의 모드 간 비교가 noise 없이 깨끗해진다. Sampling을 쓰면 seed에 따른 변동이 evidence 형식 효과와 섞임.</div>
+</div>
+
+<div class="qa">
+<div class="q">총 1시간 45분이라는데, 풀 평가는 얼마나 걸리나?</div>
+<div class="a">표본 100 → 풀 평가(InfoVQA 718, MP-DocVQA 591, SlideVQA 556)로 scaling하면 약 15~30시간 추정. ChartQA만 풀(63)이라 추가 작업은 InfoVQA·MP-DocVQA·SlideVQA에 집중됨. 본 연구는 시간 제약과 통계적 충분성을 근거로 표본 평가를 선택.</div>
+</div>
+
+<h3>한계/방어 관련</h3>
+
+<div class="qa">
+<div class="q">결과가 ablation 한 변수(evidence 형식)에만 한정되는데, 실제 시스템 효과는?</div>
+<div class="a">맞다. 실제 시스템에서는 검색 정확도·답변 정렬·후처리가 함께 작용한다. 본 보고서는 그 중 generation 단계의 evidence 형식 효과만 격리. end-to-end 효과는 후속 retrieval 보고와 합쳐 평가될 예정. Ablation 자체가 "전체 시스템 보장이 아닌 컴포넌트 효과 입증"이라는 점이 명시적 framing.</div>
+</div>
+
+<div class="qa">
+<div class="q">PV-RAG가 OCR-only 시스템 대비 가지는 추가 가치를 한 줄로 말한다면?</div>
+<div class="a">"파싱 텍스트는 정확한 라벨·수치를 보장하지만 페이지 내 위치·레이아웃 정보를 잃는다. 원본 이미지를 함께 입력하면 이 손실을 보완할 수 있으며, MP-DocVQA에서 관찰된 +4.0%p가 이를 직접 입증한다."</div>
+</div>
+
+<div class="qa">
+<div class="q">Upstage 파싱이 실패한 페이지는 어떻게 처리했나?</div>
+<div class="a">ParsedDocument에 parse_status("ok"/"failed")와 error 필드가 보관되며, 실패 페이지는 evidence_text가 빈 문자열을 반환. parsed_text_only 모드에서 답이 안 나올 수 있고, parsed_visual은 이미지에 의존. 본 실험 248개 페이지는 모두 ok 상태로 확인.</div>
+</div>
+
+<!-- =============== 10. 한계 =============== -->
+<h2 id="sec-limits">10. 한계와 후속 작업</h2>
+
+<ol>
+  <li><b>Generator paper-alignment 미실시:</b> Qwen2-VL-7B + NF4에 한정. MiniCPM-V 2.6 cross-check는 ≥16GB GPU 필요.</li>
+  <li><b>Retrieval 비교 미실시:</b> oracle 사용. VisRAG-Ret(시각) vs BM25(파싱 텍스트) 검색 비교는 별도 retrieval 보고로 분리. BM25는 본 코드베이스에 이미 구현됨.</li>
+  <li><b>표본 크기:</b> 데이터셋당 첫 100 (ChartQA 63)은 5%p Δ 검출에 충분하나, 데이터셋 내 부분 분포 효과 분석엔 풀 평가 필요.</li>
+  <li><b>이미지 해상도 캡 영향:</b> max_pixels 1.3M은 8GB GPU 제약 결과. 풀 해상도에선 특히 ChartQA·InfoVQA 결과가 달라질 가능성.</li>
+  <li><b>Top-k = 1 고정:</b> VisRAG 논문은 1, 2, 3 곡선 보고. 본 보고서는 oracle top-k = 1로 한정.</li>
+  <li><b>Generator scaling 부재:</b> 팀 PPT Table 2 (Qwen2-VL-72B, InternVL2.5-78B, Qwen2.5-VL-72B)는 본 보고서 범위 밖. DashScope·OpenRouter·cloud GPU로 보완 가능.</li>
+</ol>
+
+<!-- =============== 11. 치트시트 =============== -->
+<h2 id="sec-cheatsheet">11. 발표 직전 1분 치트시트</h2>
+
+<div class="callout info">
+<b>외울 숫자 5개</b>
+<ul>
+  <li>Macro Δ = <b>+36.32%p</b> (0.229 → 0.592)</li>
+  <li>MP-DocVQA에서 PV-RAG vs parsed_text = <b>+4.0%p</b> (0.800 vs 0.760)</li>
+  <li>총 실행시간 <b>6,331초 ≈ 1시간 45분</b>, RTX 4060 8GB</li>
+  <li>표본 데이터셋당 <b>첫 100개</b> (ChartQA 63)</li>
+  <li>Generator: <b>Qwen2-VL-7B + NF4 (~6GB VRAM)</b></li>
+</ul>
+</div>
+
+<div class="callout good">
+<b>3개의 핵심 framing 문장</b>
+<ol>
+  <li>"본 연구는 VisRAG 논문 재현이 아니라 <b>같은 데이터·지표 위에서의 generation-only ablation</b>이다."</li>
+  <li>"NF4·해상도 캡은 세 모드에 동일 적용되므로 <b>모드 간 Δ가 fair comparison</b>이고, 절대값은 constrained-environment 수치이다."</li>
+  <li>"MP-DocVQA의 +4.0%p가 이미지·파싱 증거의 <b>상보성</b>을 직접 입증하는 가장 강한 신호이다."</li>
+</ol>
+</div>
+
+<div class="callout warn">
+<b>방어해야 할 약점 3개와 응답</b>
+<ul>
+  <li><b>Generator 불일치 (Qwen vs MiniCPM):</b> "팀 baseline 좌표계 정렬이 1차 목표였고, VisRAG 결론은 generator에 강건하다."</li>
+  <li><b>Oracle 사용:</b> "Generation 단계 격리가 통제 목적. VisRAG 논문도 동일 관례."</li>
+  <li><b>표본 100개:</b> "5%p Δ를 95% 신뢰도로 구분 가능. 관찰 Δ는 +14~+58%p로 표본 표준오차의 3~10배."</li>
+</ul>
+</div>
+
+<hr>
+
+<p class="small">참고 문서: <a href="report_v12_general_vs_visrag.docx">report_v12_general_vs_visrag.docx</a> (정식 기술 보고서), <a href="VisRAG Multi Page Compression.pptx">VisRAG Multi Page Compression.pptx</a> (팀 사전 자료), <a href="../results/ppt_format/today_results_table.md">results/ppt_format/today_results_table.md</a> (raw 결과).</p>
+
+</div>
+</body>
+</html>
